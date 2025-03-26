@@ -1,0 +1,27 @@
+var classlibphonenumber_1_1_number_format =
+[
+    [ "addLeadingDigitsPattern", "classlibphonenumber_1_1_number_format.html#ae0a71e835dc80dea574e3156c8252044", null ],
+    [ "clear", "classlibphonenumber_1_1_number_format.html#aa821bec12eaa7e0f649397c9675ff505", null ],
+    [ "clearNationalPrefixFormattingRule", "classlibphonenumber_1_1_number_format.html#a58e8d98ff23d244b119c4783abbc89aa", null ],
+    [ "fromArray", "classlibphonenumber_1_1_number_format.html#a7b56a2c802e302008ad799b39200f3d3", null ],
+    [ "getDomesticCarrierCodeFormattingRule", "classlibphonenumber_1_1_number_format.html#acd0ea19c701874d887b91723780ca663", null ],
+    [ "getFormat", "classlibphonenumber_1_1_number_format.html#ae3c4fbe3e8eb0d6755694bc597d6c52f", null ],
+    [ "getLeadingDigitsPattern", "classlibphonenumber_1_1_number_format.html#a1ca8b7f888445178482eb6e7db9e356a", null ],
+    [ "getNationalPrefixFormattingRule", "classlibphonenumber_1_1_number_format.html#a34ba766dcb05002e0bd294e866dd760a", null ],
+    [ "getNationalPrefixOptionalWhenFormatting", "classlibphonenumber_1_1_number_format.html#ae7b0e765f1245349751f332549b097ae", null ],
+    [ "getPattern", "classlibphonenumber_1_1_number_format.html#a86d92279529520a45589a56c2247355e", null ],
+    [ "hasDomesticCarrierCodeFormattingRule", "classlibphonenumber_1_1_number_format.html#a632b4793995f52b31f1c91aa8266a531", null ],
+    [ "hasFormat", "classlibphonenumber_1_1_number_format.html#a46c66bf38fcbcfe1d818298d5fb6e6ca", null ],
+    [ "hasNationalPrefixFormattingRule", "classlibphonenumber_1_1_number_format.html#af6674aed963a15f1b7e7a68a67793048", null ],
+    [ "hasNationalPrefixOptionalWhenFormatting", "classlibphonenumber_1_1_number_format.html#a0fb584d25ae11e462723782fe373aa39", null ],
+    [ "hasPattern", "classlibphonenumber_1_1_number_format.html#add79de47f8e502bdfd848d2ee390a644", null ],
+    [ "leadingDigitPatterns", "classlibphonenumber_1_1_number_format.html#a038fb6a81d7dbdbd7996b4e566dcbef3", null ],
+    [ "leadingDigitsPatternSize", "classlibphonenumber_1_1_number_format.html#ae347f57f122c822114cc18f948b123b5", null ],
+    [ "mergeFrom", "classlibphonenumber_1_1_number_format.html#a4a5eb8c265dc0451cd4d379ebb63b62e", null ],
+    [ "setDomesticCarrierCodeFormattingRule", "classlibphonenumber_1_1_number_format.html#a069def99aeb495ab8051f6a0274b2b80", null ],
+    [ "setFormat", "classlibphonenumber_1_1_number_format.html#a38eb495ab887ec73a1eac7214e21c866", null ],
+    [ "setNationalPrefixFormattingRule", "classlibphonenumber_1_1_number_format.html#a087e8458da73c7ea43782cd416842ec4", null ],
+    [ "setNationalPrefixOptionalWhenFormatting", "classlibphonenumber_1_1_number_format.html#ae44e1a0c1505ed1a682b57d3902e88d2", null ],
+    [ "setPattern", "classlibphonenumber_1_1_number_format.html#ae788f7f5e39460026524b5984c47d317", null ],
+    [ "toArray", "classlibphonenumber_1_1_number_format.html#a658defb34762c8f40085aec87e16ba1a", null ]
+];

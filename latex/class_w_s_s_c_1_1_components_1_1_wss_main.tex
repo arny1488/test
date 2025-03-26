@@ -1,0 +1,169 @@
+\doxysection{Wss\+Main Class Reference}
+\hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main}{}\label{class_w_s_s_c_1_1_components_1_1_wss_main}\index{WssMain@{WssMain}}
+Inheritance diagram for Wss\+Main\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_w_s_s_c_1_1_components_1_1_wss_main}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a900b6df88861755e5612db3b923df181}{decode}} (string \$data)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6}{is\+Pcntl\+Loaded}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a378120ad00487a912accd601aff0e9af}{set\+Is\+Pcntl\+Loaded}} (bool \$\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6}{is\+Pcntl\+Loaded}})
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a26228abeaaa11cae6114614876d50ecf}{less\+Conn\+Than\+Proc}} (int \$total\+Clients, int \$max\+Clients)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a84d5d030e1d7bfda782418db2cb4533d}{clean\+Socket\+Resources}} (array \&\$read\+Socks)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract}{Commons\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PING} = \textquotesingle{}ping\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PONG} = \textquotesingle{}pong\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+TEXT} = \textquotesingle{}text\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CLOSE} = \textquotesingle{}close\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+BINARY} = \textquotesingle{}binary\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CONTINUATION} = \textquotesingle{}continuation\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract_a45c53e70c31f6f5aaf83fc0148c61e98}{MAP\+\_\+\+EVENT\+\_\+\+TYPE\+\_\+\+TO\+\_\+\+METHODS}}
+\item 
+const {\bfseries DECODE\+\_\+\+TEXT} = 1
+\item 
+const {\bfseries DECODE\+\_\+\+BINARY} = 2
+\item 
+const {\bfseries DECODE\+\_\+\+CLOSE} = 8
+\item 
+const {\bfseries DECODE\+\_\+\+PING} = 9
+\item 
+const {\bfseries DECODE\+\_\+\+PONG} = 10
+\item 
+const {\bfseries ENCODE\+\_\+\+TEXT} = 129
+\item 
+const {\bfseries ENCODE\+\_\+\+CLOSE} = 136
+\item 
+const {\bfseries ENCODE\+\_\+\+PING} = 137
+\item 
+const {\bfseries ENCODE\+\_\+\+PONG} = 138
+\item 
+const {\bfseries MASK\+\_\+125} = 125
+\item 
+const {\bfseries MASK\+\_\+126} = 126
+\item 
+const {\bfseries MASK\+\_\+127} = 127
+\item 
+const {\bfseries MASK\+\_\+128} = 128
+\item 
+const {\bfseries MASK\+\_\+254} = 254
+\item 
+const {\bfseries MASK\+\_\+255} = 255
+\item 
+const {\bfseries PAYLOAD\+\_\+\+CHUNK} = 8
+\item 
+const {\bfseries PAYLOAD\+\_\+\+MAX\+\_\+\+BITS} = 65535
+\item 
+const {\bfseries SERVER\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+BIND\+\_\+\+TO\+\_\+\+SOCKET} = 101
+\item 
+const {\bfseries SERVER\+\_\+\+SELECT\+\_\+\+ERROR} = 102
+\item 
+const {\bfseries SERVER\+\_\+\+HEADERS\+\_\+\+NOT\+\_\+\+SET} = 103
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+OPEN\+\_\+\+SOCKET} = 104
+\item 
+const {\bfseries CLIENT\+\_\+\+INCORRECT\+\_\+\+SCHEME} = 105
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+UPGRADE\+\_\+\+RESPONSE} = 106
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 107
+\item 
+const {\bfseries CLIENT\+\_\+\+BAD\+\_\+\+OPCODE} = 108
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+ONLY\+\_\+\+WRITE\+\_\+\+LESS} = 109
+\item 
+const {\bfseries CLIENT\+\_\+\+BROKEN\+\_\+\+FRAME} = 110
+\item 
+const {\bfseries CLIENT\+\_\+\+EMPTY\+\_\+\+READ} = 111
+\item 
+const {\bfseries SERVER\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 112
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main_a84d5d030e1d7bfda782418db2cb4533d}\index{WssMain@{WssMain}!cleanSocketResources@{cleanSocketResources}}
+\index{cleanSocketResources@{cleanSocketResources}!WssMain@{WssMain}}
+\doxysubsubsection{\texorpdfstring{cleanSocketResources()}{cleanSocketResources()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_wss_main_a84d5d030e1d7bfda782418db2cb4533d} 
+clean\+Socket\+Resources (\begin{DoxyParamCaption}\item[{array \&}]{\$read\+Socks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Clean socket resources that were closed, thus avoiding (stream\+\_\+select()\+: supplied resource is not a valid stream resource) 
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$read\+Socks} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main_a900b6df88861755e5612db3b923df181}\index{WssMain@{WssMain}!decode@{decode}}
+\index{decode@{decode}!WssMain@{WssMain}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_wss_main_a900b6df88861755e5612db3b923df181} 
+decode (\begin{DoxyParamCaption}\item[{string}]{\$data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Message frames decoder
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed null on empty data\texorpdfstring{$\vert$}{|}false on improper data\texorpdfstring{$\vert$}{|}array -\/ on success 
+\end{DoxyReturn}
+We have to check for large frames here. socket\+\_\+recv cuts at 1024 bytes so if websocket-\/frame is \texorpdfstring{$>$}{>} 1024 bytes we have to wait until whole data is transferd.\Hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6}\index{WssMain@{WssMain}!isPcntlLoaded@{isPcntlLoaded}}
+\index{isPcntlLoaded@{isPcntlLoaded}!WssMain@{WssMain}}
+\doxysubsubsection{\texorpdfstring{isPcntlLoaded()}{isPcntlLoaded()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6} 
+is\+Pcntl\+Loaded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if pcntl ext loaded and false otherwise
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main_a26228abeaaa11cae6114614876d50ecf}\index{WssMain@{WssMain}!lessConnThanProc@{lessConnThanProc}}
+\index{lessConnThanProc@{lessConnThanProc}!WssMain@{WssMain}}
+\doxysubsubsection{\texorpdfstring{lessConnThanProc()}{lessConnThanProc()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_wss_main_a26228abeaaa11cae6114614876d50ecf} 
+less\+Conn\+Than\+Proc (\begin{DoxyParamCaption}\item[{int}]{\$total\+Clients}{, }\item[{int}]{\$max\+Clients}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks if there are less connections for amount of processes 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$total\+Clients} & \\
+\hline
+int & {\em \$max\+Clients} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_wss_main_a378120ad00487a912accd601aff0e9af}\index{WssMain@{WssMain}!setIsPcntlLoaded@{setIsPcntlLoaded}}
+\index{setIsPcntlLoaded@{setIsPcntlLoaded}!WssMain@{WssMain}}
+\doxysubsubsection{\texorpdfstring{setIsPcntlLoaded()}{setIsPcntlLoaded()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_wss_main_a378120ad00487a912accd601aff0e9af} 
+set\+Is\+Pcntl\+Loaded (\begin{DoxyParamCaption}\item[{bool}]{\$is\+Pcntl\+Loaded}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sets pre-\/loaded pcntl state
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$is\+Pcntl\+Loaded} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Web\+Socket/\+WSSC/\+Components/Wss\+Main.\+php\end{DoxyCompactItemize}

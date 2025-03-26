@@ -1,0 +1,769 @@
+\doxysection{Easy\+DB Class Reference}
+\hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b}{}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b}\index{EasyDB@{EasyDB}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_afbe14d98d8045c249facf36cf1b1399c}{\+\_\+\+\_\+construct}} (PDO \$pdo, string \$db\+Engine=\textquotesingle{}\textquotesingle{}, array \$options=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3e194e78846973ced26a33778e53aed8}{col}} (string \$statement, int \$offset=0,... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2f8d3e151c59bf65332c452e525d4e1d}{column}} (string \$statement, array \$params=\mbox{[}$\,$\mbox{]}, int \$offset=0)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a547ab7d8388566b16e61a3bf8b1cbdcf}{cell}} (string \$statement, float\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null ... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7778dcd0bc72ec7c994813c35d232d60}{delete}} (string \$table, \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_statement}{Easy\+Statement}}\texorpdfstring{$\vert$}{|}array \$conditions)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8b355c0c1a24fda478062f20cc66ad2d}{escape\+Identifier}} (string \$string, bool \$\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae116e2662a2e4dc9608a4eba8518a455}{quote}}=true)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a5cb9c0e7320563a187d960c982c78641}{escape\+Like\+Value}} (string \$value)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a43eb561bb369c79c80f9c0a6c5f23387}{exists}} (string \$statement,... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a9ff27bce57c3f2e0f3b06d8dfc953309}{first}} (string \$statement,... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac88d3a4c3a1bf357eda28403a4704995}{get\+Driver}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a6e7560ad95a7986be67f7528c80e7f1a}{get\+Pdo}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aff97773a1d089a318e49d6175f09d4fb}{insert\+Ignore}} (string \$table, array \$map)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_acb1f86920d79728e74ff9098d6c5232d}{insert\+On\+Duplicate\+Key\+Update}} (string \$table, array \$map, array \$on\+\_\+duplicate\+\_\+key\+\_\+update)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adc5211d8f594cf6708ce718514b18c13}{insert\+Return\+Id}} (string \$table, array \$map, string \$sequence\+Name=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8d4eb44264461fcaee379bcf3ba5afd5}{build\+Insert\+Query}} (string \$table, array \$columns)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2584822264cda92fad6de6e7a6be6dd9}{q}} (string \$statement,... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a1a0b47feb176b3f5c4b810cd753c331c}{run}} (string \$statement,... \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ab0dc1eed1900a3b1aa6b38bf8cfa7dee}{single}} (string \$statement, array \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae04495c218375596a19a0ca3e2fde68c}{update}} (string \$table, array \$changes, \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_statement}{Easy\+Statement}}\texorpdfstring{$\vert$}{|}array \$conditions)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a448061617758216fd3f0fd810a542d75}{set\+Allow\+Separators}} (bool \$value)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_abf3021a33a6ff82b70801e36bcdcae25}{is1\+DArray}} (array \$params)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af3380f3b13931d581fa973a382946b32}{begin\+Transaction}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a928a98b280c4dd8971ce6998eb157409}{error\+Code}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac5230ce6cd46c5e922146a441d807877}{error\+Info}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7609c3f874a4aec1e0398a5c8b288b2b}{exec}} (... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a044ee98de1799e2ec88dabd086b2196b}{get\+Attribute}} (... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3749418ce02278e560662ab42682d34c}{get\+Available\+Drivers}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aaf34a959f7c26d1f97713adab5a6c429}{in\+Transaction}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aa744d55d149700c77a0855d3421a2b8a}{last\+Insert\+Id}} (... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae62720fae82e45e51e7806358f701ac6}{prepare}} (mixed ... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a30a1ad04b51258177af63e89f000dd41}{query}} (... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae116e2662a2e4dc9608a4eba8518a455}{quote}} (... \$args)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aebaea4cae21e0e75ec1489c1648caeb3}{roll\+Back}} ()
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae024ddabba4b293d36e5a906ab320191}{set\+Attribute}} (int \$attr, string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac71736cc59307989769b4d482468911e}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac71736cc59307989769b4d482468911e} 
+const {\bfseries DEFAULT\+\_\+\+FETCH\+\_\+\+STYLE} = 0x31420000
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adeb9a9a1f9ef50e13f3f009bdf4fc312}{get\+Value\+Type}} (mixed \$v=null)
+\item 
+\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a28dc2bfc07e56d327ca40d9b6932b80a}{make\+Boolean\+Argument}} (string \$\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2f8d3e151c59bf65332c452e525d4e1d}{column}}, bool \$value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a6ed42442a27e303fca1c590772526893}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a6ed42442a27e303fca1c590772526893} 
+string {\bfseries \$db\+Engine} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a9db61e1721b616500bce6ed60491752a}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a9db61e1721b616500bce6ed60491752a} 
+PDO {\bfseries \$pdo}
+\item 
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aa75bf2044136a12fd7d99d6e468a1584}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aa75bf2044136a12fd7d99d6e468a1584} 
+array {\bfseries \$options} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac0c23d3ac36e15ebcd634f5720ac65d1}\label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac0c23d3ac36e15ebcd634f5720ac65d1} 
+bool {\bfseries \$allow\+Separators} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_afbe14d98d8045c249facf36cf1b1399c}\index{EasyDB@{EasyDB}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_afbe14d98d8045c249facf36cf1b1399c} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{PDO}]{\$pdo}{, }\item[{string}]{\$db\+Engine}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Dependency-\/\+Injectable constructor
+
+
+\begin{DoxyParams}[1]{Parameters}
+PDO & {\em \$pdo} & \\
+\hline
+string & {\em \$db\+Engine} & \\
+\hline
+array & {\em \$options} & Extra options \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af3380f3b13931d581fa973a382946b32}\index{EasyDB@{EasyDB}!beginTransaction@{beginTransaction}}
+\index{beginTransaction@{beginTransaction}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{beginTransaction()}{beginTransaction()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af3380f3b13931d581fa973a382946b32} 
+begin\+Transaction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+PUNTER METHODS -\/ see PDO class definition \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Initiates a transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8d4eb44264461fcaee379bcf3ba5afd5}\index{EasyDB@{EasyDB}!buildInsertQuery@{buildInsertQuery}}
+\index{buildInsertQuery@{buildInsertQuery}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{buildInsertQuery()}{buildInsertQuery()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8d4eb44264461fcaee379bcf3ba5afd5} 
+build\+Insert\+Query (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$columns}{}\end{DoxyParamCaption})}
+
+Get a query string for an INSERT statement.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+array & {\em \$columns} & list of columns that will be inserted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Must\+Be\+One\+Dimensional\+Array} & If \$columns is not a one-\/dimensional array. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a547ab7d8388566b16e61a3bf8b1cbdcf}\index{EasyDB@{EasyDB}!cell@{cell}}
+\index{cell@{cell}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{cell()}{cell()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a547ab7d8388566b16e61a3bf8b1cbdcf} 
+cell (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{float\texorpdfstring{$\vert$}{|}object\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null ...}]{\$params}{}\end{DoxyParamCaption})}
+
+Variadic version of \$this-\/\texorpdfstring{$>$}{>}single()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & SQL query without user data \\
+\hline
+ & {\em scalar\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}object} & ...\$params Parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+scalar\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3e194e78846973ced26a33778e53aed8}\index{EasyDB@{EasyDB}!col@{col}}
+\index{col@{col}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{col()}{col()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3e194e78846973ced26a33778e53aed8} 
+col (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{int}]{\$offset}{ = {\ttfamily 0}, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Variadic version of \$this-\/\texorpdfstring{$>$}{>}column()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & SQL query without user data \\
+\hline
+int & {\em \$offset} & How many columns from the left are we grabbing from each row? \\
+\hline
+ & {\em scalar\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}object} & ...\$params Parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2f8d3e151c59bf65332c452e525d4e1d}\index{EasyDB@{EasyDB}!column@{column}}
+\index{column@{column}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{column()}{column()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2f8d3e151c59bf65332c452e525d4e1d} 
+column (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{int}]{\$offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Fetch a column
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & SQL query without user data \\
+\hline
+array & {\em \$params} & Parameters \\
+\hline
+int & {\em \$offset} & How many columns from the left are we grabbing from each row? \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af5674c27d4a92f6228565010eacbb9cb}\index{EasyDB@{EasyDB}!commit@{commit}}
+\index{commit@{commit}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_af5674c27d4a92f6228565010eacbb9cb} 
+commit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Commits a transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7778dcd0bc72ec7c994813c35d232d60}\index{EasyDB@{EasyDB}!delete@{delete}}
+\index{delete@{delete}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7778dcd0bc72ec7c994813c35d232d60} 
+delete (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_statement}{Easy\+Statement}}\texorpdfstring{$\vert$}{|}array}]{\$conditions}{}\end{DoxyParamCaption})}
+
+Delete rows in a database table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+Easy\+Statement | array & {\em \$conditions} & Defines the WHERE clause \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Type\+Error} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a928a98b280c4dd8971ce6998eb157409}\index{EasyDB@{EasyDB}!errorCode@{errorCode}}
+\index{errorCode@{errorCode}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{errorCode()}{errorCode()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a928a98b280c4dd8971ce6998eb157409} 
+error\+Code (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fetch the SQLSTATE associated with the last operation on the database handle
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac5230ce6cd46c5e922146a441d807877}\index{EasyDB@{EasyDB}!errorInfo@{errorInfo}}
+\index{errorInfo@{errorInfo}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{errorInfo()}{errorInfo()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac5230ce6cd46c5e922146a441d807877} 
+error\+Info (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Fetch extended error information associated with the last operation on the database handle
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8b355c0c1a24fda478062f20cc66ad2d}\index{EasyDB@{EasyDB}!escapeIdentifier@{escapeIdentifier}}
+\index{escapeIdentifier@{escapeIdentifier}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{escapeIdentifier()}{escapeIdentifier()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a8b355c0c1a24fda478062f20cc66ad2d} 
+escape\+Identifier (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{bool}]{\$quote}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Make sure only valid characters make it in column/table names
+
+\href{https://stackoverflow.com/questions/10573922/what-does-the-sql-standard-say-about-usage-of-backtick}{\texttt{ https\+://stackoverflow.\+com/questions/10573922/what-\/does-\/the-\/sql-\/standard-\/say-\/about-\/usage-\/of-\/backtick}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & Table or column name \\
+\hline
+bool & {\em \$quote} & Certain SQLs escape column names (i.\+e. mysql with {\ttfamily backticks}) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Identifier} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/taint-\/escape sql\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a5cb9c0e7320563a187d960c982c78641}\index{EasyDB@{EasyDB}!escapeLikeValue@{escapeLikeValue}}
+\index{escapeLikeValue@{escapeLikeValue}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{escapeLikeValue()}{escapeLikeValue()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a5cb9c0e7320563a187d960c982c78641} 
+escape\+Like\+Value (\begin{DoxyParamCaption}\item[{string}]{\$value}{}\end{DoxyParamCaption})}
+
+Escape a value that will be used as a LIKE condition.
+
+Input\+: ("{}string\+\_\+not\%escaped"{}) Output\+: "{}string\textbackslash{}\+\_\+not\textbackslash{}\%escaped"{}
+
+WARNING\+: This function always escapes wildcards using backslash!
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7609c3f874a4aec1e0398a5c8b288b2b}\index{EasyDB@{EasyDB}!exec@{exec}}
+\index{exec@{exec}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{exec()}{exec()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a7609c3f874a4aec1e0398a5c8b288b2b} 
+exec (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Execute an SQL statement and return the number of affected rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a43eb561bb369c79c80f9c0a6c5f23387}\index{EasyDB@{EasyDB}!exists@{exists}}
+\index{exists@{exists}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a43eb561bb369c79c80f9c0a6c5f23387} 
+exists (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Use with SELECT COUNT queries to determine if a record exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+ & {\em mixed} & ...\$params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a9ff27bce57c3f2e0f3b06d8dfc953309}\index{EasyDB@{EasyDB}!first@{first}}
+\index{first@{first}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a9ff27bce57c3f2e0f3b06d8dfc953309} 
+first (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+ & {\em scalar\texorpdfstring{$\vert$}{|}null\texorpdfstring{$\vert$}{|}object} & ...\$params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}false
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a044ee98de1799e2ec88dabd086b2196b}\index{EasyDB@{EasyDB}!getAttribute@{getAttribute}}
+\index{getAttribute@{getAttribute}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{getAttribute()}{getAttribute()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a044ee98de1799e2ec88dabd086b2196b} 
+get\+Attribute (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Retrieve a database connection attribute
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3749418ce02278e560662ab42682d34c}\index{EasyDB@{EasyDB}!getAvailableDrivers@{getAvailableDrivers}}
+\index{getAvailableDrivers@{getAvailableDrivers}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{getAvailableDrivers()}{getAvailableDrivers()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a3749418ce02278e560662ab42682d34c} 
+get\+Available\+Drivers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return an array of available PDO drivers
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac88d3a4c3a1bf357eda28403a4704995}\index{EasyDB@{EasyDB}!getDriver@{getDriver}}
+\index{getDriver@{getDriver}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{getDriver()}{getDriver()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ac88d3a4c3a1bf357eda28403a4704995} 
+get\+Driver (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Which database driver are we operating on?
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a6e7560ad95a7986be67f7528c80e7f1a}\index{EasyDB@{EasyDB}!getPdo@{getPdo}}
+\index{getPdo@{getPdo}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{getPdo()}{getPdo()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a6e7560ad95a7986be67f7528c80e7f1a} 
+get\+Pdo (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return a copy of the PDO object (to prevent it from being modified to disable safety/security features).
+
+\begin{DoxyReturn}{Returns}
+PDO 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adeb9a9a1f9ef50e13f3f009bdf4fc312}\index{EasyDB@{EasyDB}!getValueType@{getValueType}}
+\index{getValueType@{getValueType}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{getValueType()}{getValueType()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adeb9a9a1f9ef50e13f3f009bdf4fc312} 
+get\+Value\+Type (\begin{DoxyParamCaption}\item[{mixed}]{\$v}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the specific type of the given variable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed | null & {\em \$v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aff97773a1d089a318e49d6175f09d4fb}\index{EasyDB@{EasyDB}!insertIgnore@{insertIgnore}}
+\index{insertIgnore@{insertIgnore}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{insertIgnore()}{insertIgnore()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aff97773a1d089a318e49d6175f09d4fb} 
+insert\+Ignore (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$map}{}\end{DoxyParamCaption})}
+
+Insert a row into the table, ignoring on key collisions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & -\/ table name \\
+\hline
+array & {\em \$map} & -\/ associative array of which values should be assigned to each field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Must\+Be\+One\+Dimensional\+Array} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/param array\texorpdfstring{$<$}{<}string, scalar\texorpdfstring{$\vert$}{|}\+Easy\+Placeholder\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} \$map \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_acb1f86920d79728e74ff9098d6c5232d}\index{EasyDB@{EasyDB}!insertOnDuplicateKeyUpdate@{insertOnDuplicateKeyUpdate}}
+\index{insertOnDuplicateKeyUpdate@{insertOnDuplicateKeyUpdate}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{insertOnDuplicateKeyUpdate()}{insertOnDuplicateKeyUpdate()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_acb1f86920d79728e74ff9098d6c5232d} 
+insert\+On\+Duplicate\+Key\+Update (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$map}{, }\item[{array}]{\$on\+\_\+duplicate\+\_\+key\+\_\+update}{}\end{DoxyParamCaption})}
+
+Insert a row into the table, ignoring on key collisions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & -\/ table name \\
+\hline
+array & {\em \$map} & -\/ associative array of which values should be assigned to each field \\
+\hline
+array & {\em \$on\+\_\+duplicate\+\_\+key\+\_\+update} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Must\+Be\+One\+Dimensional\+Array} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/param array\texorpdfstring{$<$}{<}string, scalar\texorpdfstring{$\vert$}{|}\+Easy\+Placeholder\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} \$map @psalm-\/param array$<$int, string$>$ \$on\+\_\+duplicate\+\_\+key\+\_\+update \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adc5211d8f594cf6708ce718514b18c13}\index{EasyDB@{EasyDB}!insertReturnId@{insertReturnId}}
+\index{insertReturnId@{insertReturnId}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{insertReturnId()}{insertReturnId()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_adc5211d8f594cf6708ce718514b18c13} 
+insert\+Return\+Id (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$map}{, }\item[{string}]{\$sequence\+Name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Wrapper for insert() and last\+Insert\+Id()
+
+Do not use this with the pgsql driver. It is extremely unreliable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & \\
+\hline
+array & {\em \$map} & \\
+\hline
+string & {\em \$sequence\+Name} & (optional) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Easy\+DBException} & \\
+\hline
+{\em Query\+Error} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/param array\texorpdfstring{$<$}{<}string, scalar\texorpdfstring{$\vert$}{|}\+Easy\+Placeholder\texorpdfstring{$\vert$}{|}null\texorpdfstring{$>$}{>} \$map \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aaf34a959f7c26d1f97713adab5a6c429}\index{EasyDB@{EasyDB}!inTransaction@{inTransaction}}
+\index{inTransaction@{inTransaction}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{inTransaction()}{inTransaction()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aaf34a959f7c26d1f97713adab5a6c429} 
+in\+Transaction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Checks if inside a transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_abf3021a33a6ff82b70801e36bcdcae25}\index{EasyDB@{EasyDB}!is1DArray@{is1DArray}}
+\index{is1DArray@{is1DArray}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{is1DArray()}{is1DArray()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_abf3021a33a6ff82b70801e36bcdcae25} 
+is1\+DArray (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Make sure none of this array\textquotesingle{}s elements are arrays
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aa744d55d149700c77a0855d3421a2b8a}\index{EasyDB@{EasyDB}!lastInsertId@{lastInsertId}}
+\index{lastInsertId@{lastInsertId}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{lastInsertId()}{lastInsertId()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aa744d55d149700c77a0855d3421a2b8a} 
+last\+Insert\+Id (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Returns the ID of the last inserted row or sequence value
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a28dc2bfc07e56d327ca40d9b6932b80a}\index{EasyDB@{EasyDB}!makeBooleanArgument@{makeBooleanArgument}}
+\index{makeBooleanArgument@{makeBooleanArgument}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{makeBooleanArgument()}{makeBooleanArgument()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a28dc2bfc07e56d327ca40d9b6932b80a} 
+make\+Boolean\+Argument (\begin{DoxyParamCaption}\item[{string}]{\$column}{, }\item[{bool}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$column} & \\
+\hline
+bool & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae62720fae82e45e51e7806358f701ac6}\index{EasyDB@{EasyDB}!prepare@{prepare}}
+\index{prepare@{prepare}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{prepare()}{prepare()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae62720fae82e45e51e7806358f701ac6} 
+prepare (\begin{DoxyParamCaption}\item[{mixed ...}]{\$args}{}\end{DoxyParamCaption})}
+
+Prepares a statement for execution and returns a statement object
+
+@psalm-\/taint-\/sink sql \$args\mbox{[}0\mbox{]}
+
+
+\begin{DoxyParams}{Parameters}
+{\em mixed} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PDOStatement
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Query\+Error} & @psalm-\/taint-\/sink sql \$args \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2584822264cda92fad6de6e7a6be6dd9}\index{EasyDB@{EasyDB}!q@{q}}
+\index{q@{q}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{q()}{q()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a2584822264cda92fad6de6e7a6be6dd9} 
+q (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Variadic shorthand for \$this-\/\texorpdfstring{$>$}{>}safe\+Query()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & SQL query without user data \\
+\hline
+ & {\em mixed} & ...\$params Parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Type\+Error} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a30a1ad04b51258177af63e89f000dd41}\index{EasyDB@{EasyDB}!query@{query}}
+\index{query@{query}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a30a1ad04b51258177af63e89f000dd41} 
+query (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Executes an SQL statement, returning a result set as a PDOStatement object
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+PDOStatement @psalm-\/taint-\/sink sql \$args 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae116e2662a2e4dc9608a4eba8518a455}\index{EasyDB@{EasyDB}!quote@{quote}}
+\index{quote@{quote}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{quote()}{quote()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae116e2662a2e4dc9608a4eba8518a455} 
+quote (\begin{DoxyParamCaption}\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Quotes a string for use in a query
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & ...\$args \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string @psalm-\/suppress Invalid\+Argument 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aebaea4cae21e0e75ec1489c1648caeb3}\index{EasyDB@{EasyDB}!rollBack@{rollBack}}
+\index{rollBack@{rollBack}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{rollBack()}{rollBack()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_aebaea4cae21e0e75ec1489c1648caeb3} 
+roll\+Back (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Rolls back a transaction
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a1a0b47feb176b3f5c4b810cd753c331c}\index{EasyDB@{EasyDB}!run@{run}}
+\index{run@{run}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a1a0b47feb176b3f5c4b810cd753c331c} 
+run (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+Variadic shorthand for \$this-\/\texorpdfstring{$>$}{>}safe\+Query()
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & SQL query without user data \\
+\hline
+ & {\em scalar\texorpdfstring{$\vert$}{|}null} & ...\$params Parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array
+\end{DoxyReturn}
+@psalm-\/taint-\/sink sql \$statement \Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a448061617758216fd3f0fd810a542d75}\index{EasyDB@{EasyDB}!setAllowSeparators@{setAllowSeparators}}
+\index{setAllowSeparators@{setAllowSeparators}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{setAllowSeparators()}{setAllowSeparators()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_a448061617758216fd3f0fd810a542d75} 
+set\+Allow\+Separators (\begin{DoxyParamCaption}\item[{bool}]{\$value}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae024ddabba4b293d36e5a906ab320191}\index{EasyDB@{EasyDB}!setAttribute@{setAttribute}}
+\index{setAttribute@{setAttribute}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{setAttribute()}{setAttribute()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae024ddabba4b293d36e5a906ab320191} 
+set\+Attribute (\begin{DoxyParamCaption}\item[{int}]{\$attr}{, }\item[{string\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float}]{\$value}{}\end{DoxyParamCaption})}
+
+Set an attribute
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$attr} & \\
+\hline
+string | bool | int | float & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Easy\+DBException} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ab0dc1eed1900a3b1aa6b38bf8cfa7dee}\index{EasyDB@{EasyDB}!single@{single}}
+\index{single@{single}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{single()}{single()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ab0dc1eed1900a3b1aa6b38bf8cfa7dee} 
+single (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{array}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Fetch a single result -- useful for SELECT COUNT() queries
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}null
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Must\+Be\+One\+Dimensional\+Array} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae04495c218375596a19a0ca3e2fde68c}\index{EasyDB@{EasyDB}!update@{update}}
+\index{update@{update}!EasyDB@{EasyDB}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b_ae04495c218375596a19a0ca3e2fde68c} 
+update (\begin{DoxyParamCaption}\item[{string}]{\$table}{, }\item[{array}]{\$changes}{, }\item[{\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_statement}{Easy\+Statement}}\texorpdfstring{$\vert$}{|}array}]{\$conditions}{}\end{DoxyParamCaption})}
+
+Update a row in a database table.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$table} & Table name \\
+\hline
+array & {\em \$changes} & Associative array of which values should be assigned to each field \\
+\hline
+array | Easy\+Statement & {\em \$conditions} & WHERE clause \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Query\+Error} & \\
+\hline
+{\em Invalid\+Table\+Name} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/db/\+Paragon\+IE/\+Easy\+DB/Easy\+DB.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,98 @@
+\doxysection{Smarty\+\_\+\+Internal\+\_\+\+Runtime\+\_\+\+Get\+Include\+Path Class Reference}
+\hypertarget{class_smarty___internal___runtime___get_include_path}{}\label{class_smarty___internal___runtime___get_include_path}\index{Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___get_include_path_acf226e232c6168815c6052355b1032d7}{is\+New\+Include\+Path}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___get_include_path_a1dec9456e818518ca05b225db04c403f}{get\+Include\+Path\+Dirs}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___get_include_path_a5553b76f0aab7bf676c22fb1bb101023}{get\+Include\+Path}} (\$dirs, \$file, \mbox{\hyperlink{class_smarty}{Smarty}} \$smarty)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_afd9bda78373ed66d4b6ffaf3d4633c29}\label{class_smarty___internal___runtime___get_include_path_afd9bda78373ed66d4b6ffaf3d4633c29} 
+{\bfseries \$\+\_\+include\+\_\+path} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a873f1f09cf424835fdd7290f0cdf12de}\label{class_smarty___internal___runtime___get_include_path_a873f1f09cf424835fdd7290f0cdf12de} 
+{\bfseries \$\+\_\+include\+\_\+dirs} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_af9161c5e24496c42d51b52138ef22514}\label{class_smarty___internal___runtime___get_include_path_af9161c5e24496c42d51b52138ef22514} 
+{\bfseries \$\+\_\+user\+\_\+dirs} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a77cf2e1eed7ea9bb2b24c36053a212c2}\label{class_smarty___internal___runtime___get_include_path_a77cf2e1eed7ea9bb2b24c36053a212c2} 
+{\bfseries \$is\+File} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a07b37c62086a074aa265447aedbe2e71}\label{class_smarty___internal___runtime___get_include_path_a07b37c62086a074aa265447aedbe2e71} 
+{\bfseries \$is\+Path} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a1b649fd4bc5bd3d48575e2059dd93fb8}\label{class_smarty___internal___runtime___get_include_path_a1b649fd4bc5bd3d48575e2059dd93fb8} 
+{\bfseries \$number} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a1284e781111f9861c2a9fecf7e733baf}\label{class_smarty___internal___runtime___get_include_path_a1284e781111f9861c2a9fecf7e733baf} 
+{\bfseries \$\+\_\+has\+\_\+stream\+\_\+include} = null
+\item 
+\Hypertarget{class_smarty___internal___runtime___get_include_path_adc0a189fac719187ba2e6f01ca0f2466}\label{class_smarty___internal___runtime___get_include_path_adc0a189fac719187ba2e6f01ca0f2466} 
+{\bfseries \$counter} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a5553b76f0aab7bf676c22fb1bb101023}\index{Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}!getIncludePath@{getIncludePath}}
+\index{getIncludePath@{getIncludePath}!Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}}
+\doxysubsubsection{\texorpdfstring{getIncludePath()}{getIncludePath()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___get_include_path_a5553b76f0aab7bf676c22fb1bb101023} 
+get\+Include\+Path (\begin{DoxyParamCaption}\item[{}]{\$dirs}{, }\item[{}]{\$file}{, }\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{}\end{DoxyParamCaption})}
+
+Return full file path from PHP include\+\_\+path
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$dirs} & \\
+\hline
+string & {\em \$file} & \\
+\hline
+\textbackslash{}\+Smarty & {\em \$smarty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string full filepath or false 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___internal___runtime___get_include_path_a1dec9456e818518ca05b225db04c403f}\index{Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}!getIncludePathDirs@{getIncludePathDirs}}
+\index{getIncludePathDirs@{getIncludePathDirs}!Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}}
+\doxysubsubsection{\texorpdfstring{getIncludePathDirs()}{getIncludePathDirs()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___get_include_path_a1dec9456e818518ca05b225db04c403f} 
+get\+Include\+Path\+Dirs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{}\end{DoxyParamCaption})}
+
+return array with include path directories
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty & {\em \$smarty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___internal___runtime___get_include_path_acf226e232c6168815c6052355b1032d7}\index{Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}!isNewIncludePath@{isNewIncludePath}}
+\index{isNewIncludePath@{isNewIncludePath}!Smarty\_Internal\_Runtime\_GetIncludePath@{Smarty\_Internal\_Runtime\_GetIncludePath}}
+\doxysubsubsection{\texorpdfstring{isNewIncludePath()}{isNewIncludePath()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___get_include_path_acf226e232c6168815c6052355b1032d7} 
+is\+New\+Include\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{}\end{DoxyParamCaption})}
+
+Check if include path was updated
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty & {\em \$smarty} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+internal\+\_\+runtime\+\_\+getincludepath.\+php\end{DoxyCompactItemize}

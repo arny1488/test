@@ -1,0 +1,43 @@
+\doxysection{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}
+\hypertarget{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{}\label{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}Check if this Transport mechanism is alive.
+
+If a Transport mechanism session is no longer functional, the method returns FALSE. It is the responsibility of the developer to handle this case and restart the Transport mechanism manually.
+
+if (!\$transport-\/\texorpdfstring{$>$}{>}ping()) \{ \$transport-\/\texorpdfstring{$>$}{>}stop(); \$transport-\/\texorpdfstring{$>$}{>}start(); \}
+
+The Transport mechanism will be started, if it is not already.
+
+It is undefined if the Transport mechanism attempts to restart as long as the return value reflects whether the mechanism is now functional.
+
+\begin{DoxyReturn}{Returns}
+bool TRUE if the transport is alive
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{/*}}
+\DoxyCodeLine{\textcolor{comment}{\ *\ This\ file\ is\ part\ of\ SwiftMailer.}}
+\DoxyCodeLine{\textcolor{comment}{\ *\ (c)\ 2004-\/2009\ Chris\ Corbyn}}
+\DoxyCodeLine{\textcolor{comment}{\ *}}
+\DoxyCodeLine{\textcolor{comment}{\ *\ For\ the\ full\ copyright\ and\ license\ information,\ please\ view\ the\ LICENSE}}
+\DoxyCodeLine{\textcolor{comment}{\ *\ file\ that\ was\ distributed\ with\ this\ source\ code.}}
+\DoxyCodeLine{\textcolor{comment}{\ */}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{interface\ }\mbox{\hyperlink{interface_swift___transport}{Swift\_Transport}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}{isStarted}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}{start}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}}();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ ping();}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}}(Swift\_Mime\_SimpleMessage\ \$message,\ \&\$failedRecipients\ =\ \textcolor{keyword}{null});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}{registerPlugin}}(Swift\_Events\_EventListener\ \$plugin);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

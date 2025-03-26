@@ -1,0 +1,541 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+NTLMAuthenticator Class Reference}
+\hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator}{}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+NTLMAuthenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___transport___esmtp___auth___n_t_l_m_authenticator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0e624347a41af5150f04849d5f97c806}{get\+Auth\+Keyword}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{authenticate}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$username, \$password)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae35da2cc4fa45498fb8617cfee4bca59}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae35da2cc4fa45498fb8617cfee4bca59} 
+const {\bfseries NTLMSIG} = "{}NTLMSSP\textbackslash{}x00"{}
+\item 
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac0f810f9ec042b107c6c48bba5cb0e7b}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac0f810f9ec042b107c6c48bba5cb0e7b} 
+const {\bfseries DESCONST} = \textquotesingle{}KGS!@\#\$\%\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a1ccd6e5823a79846dd557e3ab4eb9ed5}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a1ccd6e5823a79846dd557e3ab4eb9ed5} 
+{\bfseries si2bin} (\$si, \$bits=32)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae85feac02a4bbbf6a214c39f459e6693}{send\+Message1}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a038447d9b4a1ef211395f9f7e439cfff}{parse\+Message2}} (\$response)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0975f7db498dc7dfc8b5eb93d09d0f4f}{read\+Sub\+Block}} (\$block)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa5d4893d188844cbef42fa330ff7ce43}{send\+Message3}} (\$response, \$username, \$password, \$timestamp, \$client, \mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$v2=true)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_abe8b4bd2bab2f52f1ec11c600da954bb}{create\+Message1}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8a023513057cd86265fe50c81fc11835}{create\+Message3}} (\$domain, \$username, \$workstation, \$lm\+Response, \$ntlm\+Response)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a591933cc97403086f0424787b8f5d2e5}{create\+Blob}} (\$timestamp, \$client, \$target\+Info)
+\item 
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae37521402b2ec730e55710ce150988f6}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae37521402b2ec730e55710ce150988f6} 
+{\bfseries get\+Domain\+And\+Username} (\$name)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a774be0fdbca276097b943ba0527bef36}{create\+LMPassword}} (\$password, \$challenge)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2a684cf0757760c1d1fcaa4b510af346}{create\+NTLMPassword}} (\$password, \$challenge)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa32c9158805aaa17ed9e420f48590805}{get\+Correct\+Timestamp}} (\$time)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2ce70482fa0ccb95de3b571978ca514e}{create\+LMv2\+Password}} (\$password, \$username, \$domain, \$challenge, \$client)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a9a9330c816cfdcc0958bb8b86dc7533f}{create\+NTLMv2\+Hash}} (\$password, \$username, \$domain, \$challenge, \$target\+Info, \$timestamp, \$client)
+\item 
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a7995cb39a5281192c8932c9af37ea7b1}\label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a7995cb39a5281192c8932c9af37ea7b1} 
+{\bfseries create\+Des\+Key} (\$key)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a68df572507ad55624897bc83ec697d86}{create\+Security\+Buffer}} (\$value, \$offset, \$is16=false)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a141015c54f8beea39c6a4c4c6fd1a7da}{read\+Security\+Buffer}} (\$value)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac7bb4b760dd72bc7967392e7b4773c72}{cast\+To\+Byte}} (\$v)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a960822caf76d2a23a28b7d8b6c265d18}{u\+RShift}} (\$a, \$b)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa171f35b2464058a0b4ffde1a62305e3}{create\+Byte}} (\$input, \$bytes=4, \$is\+Hex=true)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a5c111eed09ebb9864531473434cb78a4}{des\+Encrypt}} (\$value, \$key)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac5b8bca25b8eb60f8c53b8ced21a0ba2}{md5\+Encrypt}} (\$key, \$msg)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a15ce128620e156105465446f83706f79}{md4\+Encrypt}} (\$input)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8c28d0fc83e1286719deda5854ef9dc4}{convert\+To16bit}} (\$input)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a568d49c8c4f47314610017c56d159482}{debug}} (\$message)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles NTLM authentication.
+
+\begin{DoxyAuthor}{Author}
+Ward Peeters \href{mailto:ward@coding-tech.com}{\texttt{ ward@coding-\/tech.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a31dbc6b53c7437e485b96e1337db5e61}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a31dbc6b53c7437e485b96e1337db5e61} 
+authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$username}{, }\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+\{Try to authenticate the user with \$username and \$password.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if authentication worked (returning false is deprecated, throw a \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception} instead)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} & Allows the message to bubble up when authentication was not successful\\
+\hline
+\end{DoxyExceptions}
+\}
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Logic\+Exception 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac7bb4b760dd72bc7967392e7b4773c72}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!castToByte@{castToByte}}
+\index{castToByte@{castToByte}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{castToByte()}{castToByte()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac7bb4b760dd72bc7967392e7b4773c72} 
+cast\+To\+Byte (\begin{DoxyParamCaption}\item[{}]{\$v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\doxylink{class_cast}{Cast} to byte java equivalent to (byte).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$v} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8c28d0fc83e1286719deda5854ef9dc4}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!convertTo16bit@{convertTo16bit}}
+\index{convertTo16bit@{convertTo16bit}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{convertTo16bit()}{convertTo16bit()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8c28d0fc83e1286719deda5854ef9dc4} 
+convert\+To16bit (\begin{DoxyParamCaption}\item[{}]{\$input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convert UTF-\/8 to UTF-\/16.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a591933cc97403086f0424787b8f5d2e5}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createBlob@{createBlob}}
+\index{createBlob@{createBlob}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createBlob()}{createBlob()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a591933cc97403086f0424787b8f5d2e5} 
+create\+Blob (\begin{DoxyParamCaption}\item[{}]{\$timestamp}{, }\item[{}]{\$client}{, }\item[{}]{\$target\+Info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$timestamp} & Epoch timestamp in microseconds \\
+\hline
+string & {\em \$client} & Random bytes \\
+\hline
+string & {\em \$target\+Info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa171f35b2464058a0b4ffde1a62305e3}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createByte@{createByte}}
+\index{createByte@{createByte}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createByte()}{createByte()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa171f35b2464058a0b4ffde1a62305e3} 
+create\+Byte (\begin{DoxyParamCaption}\item[{}]{\$input}{, }\item[{}]{\$bytes}{ = {\ttfamily 4}, }\item[{}]{\$is\+Hex}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Right padding with 0 to certain length.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+int & {\em \$bytes} & Length of bytes \\
+\hline
+bool & {\em \$is\+Hex} & Did we provided hex value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a774be0fdbca276097b943ba0527bef36}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createLMPassword@{createLMPassword}}
+\index{createLMPassword@{createLMPassword}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createLMPassword()}{createLMPassword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a774be0fdbca276097b943ba0527bef36} 
+create\+LMPassword (\begin{DoxyParamCaption}\item[{}]{\$password}{, }\item[{}]{\$challenge}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create LMv1 response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+string & {\em \$challenge} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2ce70482fa0ccb95de3b571978ca514e}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createLMv2Password@{createLMv2Password}}
+\index{createLMv2Password@{createLMv2Password}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createLMv2Password()}{createLMv2Password()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2ce70482fa0ccb95de3b571978ca514e} 
+create\+LMv2\+Password (\begin{DoxyParamCaption}\item[{}]{\$password}{, }\item[{}]{\$username}{, }\item[{}]{\$domain}{, }\item[{}]{\$challenge}{, }\item[{}]{\$client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create LMv2 response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$domain} & \\
+\hline
+string & {\em \$challenge} & NTLM Challenge \\
+\hline
+string & {\em \$client} & Random string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_abe8b4bd2bab2f52f1ec11c600da954bb}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createMessage1@{createMessage1}}
+\index{createMessage1@{createMessage1}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createMessage1()}{createMessage1()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_abe8b4bd2bab2f52f1ec11c600da954bb} 
+create\+Message1 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create our message 1.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8a023513057cd86265fe50c81fc11835}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createMessage3@{createMessage3}}
+\index{createMessage3@{createMessage3}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createMessage3()}{createMessage3()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a8a023513057cd86265fe50c81fc11835} 
+create\+Message3 (\begin{DoxyParamCaption}\item[{}]{\$domain}{, }\item[{}]{\$username}{, }\item[{}]{\$workstation}{, }\item[{}]{\$lm\+Response}{, }\item[{}]{\$ntlm\+Response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create our message 3.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain} & \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$workstation} & \\
+\hline
+string & {\em \$lm\+Response} & \\
+\hline
+string & {\em \$ntlm\+Response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2a684cf0757760c1d1fcaa4b510af346}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createNTLMPassword@{createNTLMPassword}}
+\index{createNTLMPassword@{createNTLMPassword}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createNTLMPassword()}{createNTLMPassword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a2a684cf0757760c1d1fcaa4b510af346} 
+create\+NTLMPassword (\begin{DoxyParamCaption}\item[{}]{\$password}{, }\item[{}]{\$challenge}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create NTLMv1 response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+string & {\em \$challenge} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a9a9330c816cfdcc0958bb8b86dc7533f}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createNTLMv2Hash@{createNTLMv2Hash}}
+\index{createNTLMv2Hash@{createNTLMv2Hash}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createNTLMv2Hash()}{createNTLMv2Hash()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a9a9330c816cfdcc0958bb8b86dc7533f} 
+create\+NTLMv2\+Hash (\begin{DoxyParamCaption}\item[{}]{\$password}{, }\item[{}]{\$username}{, }\item[{}]{\$domain}{, }\item[{}]{\$challenge}{, }\item[{}]{\$target\+Info}{, }\item[{}]{\$timestamp}{, }\item[{}]{\$client}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Create NTLMv2 response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$domain} & \\
+\hline
+string & {\em \$challenge} & Hex values \\
+\hline
+string & {\em \$target\+Info} & Hex values \\
+\hline
+string & {\em \$timestamp} & \\
+\hline
+string & {\em \$client} & Random bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{http://davenport.sourceforge.net/ntlm.html\#theNtlmResponse}{\texttt{ http\+://davenport.\+sourceforge.\+net/ntlm.\+html\#the\+Ntlm\+Response}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a68df572507ad55624897bc83ec697d86}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!createSecurityBuffer@{createSecurityBuffer}}
+\index{createSecurityBuffer@{createSecurityBuffer}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{createSecurityBuffer()}{createSecurityBuffer()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a68df572507ad55624897bc83ec697d86} 
+create\+Security\+Buffer (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$offset}{, }\item[{}]{\$is16}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+HELPER FUNCTIONS Create our security buffer depending on length and offset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & Value we want to put in \\
+\hline
+int & {\em \$offset} & start of value \\
+\hline
+bool & {\em \$is16} & Do we 16bit string or not?\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a568d49c8c4f47314610017c56d159482}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!debug@{debug}}
+\index{debug@{debug}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a568d49c8c4f47314610017c56d159482} 
+debug (\begin{DoxyParamCaption}\item[{}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a5c111eed09ebb9864531473434cb78a4}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!desEncrypt@{desEncrypt}}
+\index{desEncrypt@{desEncrypt}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{desEncrypt()}{desEncrypt()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a5c111eed09ebb9864531473434cb78a4} 
+des\+Encrypt (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+ENCRYPTION ALGORITHMS DES Encryption.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & An 8-\/byte string \\
+\hline
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0e624347a41af5150f04849d5f97c806}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!getAuthKeyword@{getAuthKeyword}}
+\index{getAuthKeyword@{getAuthKeyword}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{getAuthKeyword()}{getAuthKeyword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0e624347a41af5150f04849d5f97c806} 
+get\+Auth\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the AUTH mechanism this Authenticator handles.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa32c9158805aaa17ed9e420f48590805}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!getCorrectTimestamp@{getCorrectTimestamp}}
+\index{getCorrectTimestamp@{getCorrectTimestamp}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{getCorrectTimestamp()}{getCorrectTimestamp()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa32c9158805aaa17ed9e420f48590805} 
+get\+Correct\+Timestamp (\begin{DoxyParamCaption}\item[{}]{\$time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Convert a normal timestamp to a tenth of a microtime epoch time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$time} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a15ce128620e156105465446f83706f79}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!md4Encrypt@{md4Encrypt}}
+\index{md4Encrypt@{md4Encrypt}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{md4Encrypt()}{md4Encrypt()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a15ce128620e156105465446f83706f79} 
+md4\+Encrypt (\begin{DoxyParamCaption}\item[{}]{\$input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+MD4 Encryption.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/ref.hash.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/ref.\+hash.\+php}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac5b8bca25b8eb60f8c53b8ced21a0ba2}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!md5Encrypt@{md5Encrypt}}
+\index{md5Encrypt@{md5Encrypt}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{md5Encrypt()}{md5Encrypt()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ac5b8bca25b8eb60f8c53b8ced21a0ba2} 
+md5\+Encrypt (\begin{DoxyParamCaption}\item[{}]{\$key}{, }\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+MD5 Encryption.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & Encryption key \\
+\hline
+string & {\em \$msg} & Message to encrypt\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a038447d9b4a1ef211395f9f7e439cfff}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!parseMessage2@{parseMessage2}}
+\index{parseMessage2@{parseMessage2}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{parseMessage2()}{parseMessage2()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a038447d9b4a1ef211395f9f7e439cfff} 
+parse\+Message2 (\begin{DoxyParamCaption}\item[{}]{\$response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fetch all details of our response (message 2).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$response} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array our response parsed 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a141015c54f8beea39c6a4c4c6fd1a7da}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!readSecurityBuffer@{readSecurityBuffer}}
+\index{readSecurityBuffer@{readSecurityBuffer}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{readSecurityBuffer()}{readSecurityBuffer()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a141015c54f8beea39c6a4c4c6fd1a7da} 
+read\+Security\+Buffer (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read our security buffer to fetch length and offset of our value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & Securitybuffer in hex\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array array with length and offset 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0975f7db498dc7dfc8b5eb93d09d0f4f}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!readSubBlock@{readSubBlock}}
+\index{readSubBlock@{readSubBlock}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{readSubBlock()}{readSubBlock()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0975f7db498dc7dfc8b5eb93d09d0f4f} 
+read\+Sub\+Block (\begin{DoxyParamCaption}\item[{}]{\$block}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read the blob information in from message2.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae85feac02a4bbbf6a214c39f459e6693}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!sendMessage1@{sendMessage1}}
+\index{sendMessage1@{sendMessage1}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{sendMessage1()}{sendMessage1()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_ae85feac02a4bbbf6a214c39f459e6693} 
+send\+Message1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send our auth message and returns the response.
+
+\begin{DoxyReturn}{Returns}
+string SMTP \doxylink{class_response}{Response} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa5d4893d188844cbef42fa330ff7ce43}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!sendMessage3@{sendMessage3}}
+\index{sendMessage3@{sendMessage3}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{sendMessage3()}{sendMessage3()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_aa5d4893d188844cbef42fa330ff7ce43} 
+send\+Message3 (\begin{DoxyParamCaption}\item[{}]{\$response}{, }\item[{}]{\$username}{, }\item[{}]{\$password}{, }\item[{}]{\$timestamp}{, }\item[{}]{\$client}{, }\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$v2}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send our final message with all our data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$response} & Message 1 response (message 2) \\
+\hline
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+string & {\em \$timestamp} & \\
+\hline
+string & {\em \$client} & \\
+\hline
+bool & {\em \$v2} & Use version2 of the protocol\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a960822caf76d2a23a28b7d8b6c265d18}\index{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}!uRShift@{uRShift}}
+\index{uRShift@{uRShift}!Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator@{Swift\_Transport\_Esmtp\_Auth\_NTLMAuthenticator}}
+\doxysubsubsection{\texorpdfstring{uRShift()}{uRShift()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a960822caf76d2a23a28b7d8b6c265d18} 
+u\+RShift (\begin{DoxyParamCaption}\item[{}]{\$a}{, }\item[{}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Java unsigned right bitwise \$a \texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>}\texorpdfstring{$>$}{>} \$b.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$a} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/\+Esmtp/\+Auth/NTLMAuthenticator.\+php\end{DoxyCompactItemize}

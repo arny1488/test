@@ -1,0 +1,299 @@
+\doxysection{Swift\+\_\+\+Key\+Cache\+\_\+\+Disk\+Key\+Cache Class Reference}
+\hypertarget{class_swift___key_cache___disk_key_cache}{}\label{class_swift___key_cache___disk_key_cache}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+Inheritance diagram for Swift\+\_\+\+Key\+Cache\+\_\+\+Disk\+Key\+Cache\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___key_cache___disk_key_cache}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a259f798795d5e51d2ac961aae85fe3d3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream}{Swift\+\_\+\+Key\+Cache\+\_\+\+Key\+Cache\+Input\+Stream}} \$stream, \$path)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a886e58a1c1832427c18d0736810a3884}{set\+String}} (\$ns\+Key, \$item\+Key, \$string, \$mode)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a5a02aef17d8e5f7d5c9e125d9eaf9716}{import\+From\+Byte\+Stream}} (\$ns\+Key, \$item\+Key, \mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os, \$mode)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_ab19ec38671ed46988d2e09b329d33339}{get\+Input\+Byte\+Stream}} (\$ns\+Key, \$item\+Key, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$write\+Through=null)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_aca0c89a658dfcb6bfe3ebd49b862de87}{get\+String}} (\$ns\+Key, \$item\+Key)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a9401ea27eeceed4731f38d4bd9dc217b}{export\+To\+Byte\+Stream}} (\$ns\+Key, \$item\+Key, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a60b314dac36bd88a86a95b78d1afee0b}{has\+Key}} (\$ns\+Key, \$item\+Key)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a56e6e9f327de45a8fdcae2097762583a}{clear\+Key}} (\$ns\+Key, \$item\+Key)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a0ea97eb8dc368ff63c8416fac43d3cb4}{clear\+All}} (\$ns\+Key)
+\item 
+\mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\item 
+\Hypertarget{class_swift___key_cache___disk_key_cache_a19dd44fe063cfd1cbafe97452e57666c}\label{class_swift___key_cache___disk_key_cache_a19dd44fe063cfd1cbafe97452e57666c} 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_swift___key_cache___disk_key_cache_a09f97ea44cce27ada0a2bd17e5ddf39e}{POSITION\+\_\+\+START}} = 0
+\item 
+const \mbox{\hyperlink{class_swift___key_cache___disk_key_cache_ad7f8e8e56f694eb80e65b9f5235bbe73}{POSITION\+\_\+\+END}} = 1
+\item 
+const \mbox{\hyperlink{class_swift___key_cache___disk_key_cache_aed342df74c9acad68d740e573ca8629b}{POSITION\+\_\+\+CURRENT}} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_swift___key_cache}{Swift\+\_\+\+Key\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_swift___key_cache_a8718202097bae2e31fea563858b95535}{MODE\+\_\+\+WRITE}} = 1
+\item 
+const \mbox{\hyperlink{interface_swift___key_cache_af30033ac24c664f91d99e414dbca372f}{MODE\+\_\+\+APPEND}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Key\+Cache which streams to and from disk.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___key_cache___disk_key_cache_a259f798795d5e51d2ac961aae85fe3d3}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a259f798795d5e51d2ac961aae85fe3d3} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream}{Swift\+\_\+\+Key\+Cache\+\_\+\+Key\+Cache\+Input\+Stream}}}]{\$stream}{, }\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Create a new Disk\+Key\+Cache with the given \$stream for cloning to make Input\+Byte\+Streams, and the given \$path to save to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & to save to \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___key_cache___disk_key_cache_a421831a265621325e1fdd19aace0c758}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a421831a265621325e1fdd19aace0c758} 
+\+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___key_cache___disk_key_cache_a0ea97eb8dc368ff63c8416fac43d3cb4}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!clearAll@{clearAll}}
+\index{clearAll@{clearAll}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{clearAll()}{clearAll()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a0ea97eb8dc368ff63c8416fac43d3cb4} 
+clear\+All (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{}\end{DoxyParamCaption})}
+
+Clear all data in the namespace \$ns\+Key if it exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a0ea97eb8dc368ff63c8416fac43d3cb4}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_a56e6e9f327de45a8fdcae2097762583a}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!clearKey@{clearKey}}
+\index{clearKey@{clearKey}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{clearKey()}{clearKey()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a56e6e9f327de45a8fdcae2097762583a} 
+clear\+Key (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{}\end{DoxyParamCaption})}
+
+Clear data for \$item\+Key in the namespace \$ns\+Key if it exists.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a56e6e9f327de45a8fdcae2097762583a}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_a9401ea27eeceed4731f38d4bd9dc217b}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!exportToByteStream@{exportToByteStream}}
+\index{exportToByteStream@{exportToByteStream}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{exportToByteStream()}{exportToByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a9401ea27eeceed4731f38d4bd9dc217b} 
+export\+To\+Byte\+Stream (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{, }\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Get data back out of the cache as a Byte\+Stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+\doxylink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream} & {\em \$is} & to write the data to \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a9401ea27eeceed4731f38d4bd9dc217b}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_ab19ec38671ed46988d2e09b329d33339}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!getInputByteStream@{getInputByteStream}}
+\index{getInputByteStream@{getInputByteStream}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{getInputByteStream()}{getInputByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_ab19ec38671ed46988d2e09b329d33339} 
+get\+Input\+Byte\+Stream (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{, }\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$write\+Through}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Provides a Byte\+Stream which when written to, writes data to \$item\+Key.
+
+NOTE\+: The stream will always write in append mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_abee459de828c8824060966ec54fe8b89}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_aca0c89a658dfcb6bfe3ebd49b862de87}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!getString@{getString}}
+\index{getString@{getString}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{getString()}{getString()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_aca0c89a658dfcb6bfe3ebd49b862de87} 
+get\+String (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{}\end{DoxyParamCaption})}
+
+Get data back out of the cache as a string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_aca0c89a658dfcb6bfe3ebd49b862de87}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_a60b314dac36bd88a86a95b78d1afee0b}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!hasKey@{hasKey}}
+\index{hasKey@{hasKey}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{hasKey()}{hasKey()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a60b314dac36bd88a86a95b78d1afee0b} 
+has\+Key (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{}\end{DoxyParamCaption})}
+
+Check if the given \$item\+Key exists in the namespace \$ns\+Key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a60b314dac36bd88a86a95b78d1afee0b}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_a5a02aef17d8e5f7d5c9e125d9eaf9716}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!importFromByteStream@{importFromByteStream}}
+\index{importFromByteStream@{importFromByteStream}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{importFromByteStream()}{importFromByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a5a02aef17d8e5f7d5c9e125d9eaf9716} 
+import\+From\+Byte\+Stream (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{, }\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})}
+
+Set a Byte\+Stream into the cache under \$item\+Key for the namespace \$ns\+Key.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___key_cache_a8718202097bae2e31fea563858b95535}{MODE\+\_\+\+WRITE}, \doxylink{interface_swift___key_cache_af30033ac24c664f91d99e414dbca372f}{MODE\+\_\+\+APPEND}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+int & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a5a02aef17d8e5f7d5c9e125d9eaf9716}{Swift\+\_\+\+Key\+Cache}}.
+
+\Hypertarget{class_swift___key_cache___disk_key_cache_a886e58a1c1832427c18d0736810a3884}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!setString@{setString}}
+\index{setString@{setString}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{setString()}{setString()}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a886e58a1c1832427c18d0736810a3884} 
+set\+String (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{, }\item[{}]{\$item\+Key}{, }\item[{}]{\$string}{, }\item[{}]{\$mode}{}\end{DoxyParamCaption})}
+
+Set a string into the cache under \$item\+Key for the namespace \$ns\+Key.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___key_cache_a8718202097bae2e31fea563858b95535}{MODE\+\_\+\+WRITE}, \doxylink{interface_swift___key_cache_af30033ac24c664f91d99e414dbca372f}{MODE\+\_\+\+APPEND}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+string & {\em \$item\+Key} & \\
+\hline
+string & {\em \$string} & \\
+\hline
+int & {\em \$mode} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___key_cache_a886e58a1c1832427c18d0736810a3884}{Swift\+\_\+\+Key\+Cache}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_swift___key_cache___disk_key_cache_aed342df74c9acad68d740e573ca8629b}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!POSITION\_CURRENT@{POSITION\_CURRENT}}
+\index{POSITION\_CURRENT@{POSITION\_CURRENT}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{POSITION\_CURRENT}{POSITION\_CURRENT}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_aed342df74c9acad68d740e573ca8629b} 
+const POSITION\+\_\+\+CURRENT = 2}
+
+Signal to leave pointer in whatever position it currently is \Hypertarget{class_swift___key_cache___disk_key_cache_ad7f8e8e56f694eb80e65b9f5235bbe73}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!POSITION\_END@{POSITION\_END}}
+\index{POSITION\_END@{POSITION\_END}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{POSITION\_END}{POSITION\_END}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_ad7f8e8e56f694eb80e65b9f5235bbe73} 
+const POSITION\+\_\+\+END = 1}
+
+Signal to place pointer at end of file \Hypertarget{class_swift___key_cache___disk_key_cache_a09f97ea44cce27ada0a2bd17e5ddf39e}\index{Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}!POSITION\_START@{POSITION\_START}}
+\index{POSITION\_START@{POSITION\_START}!Swift\_KeyCache\_DiskKeyCache@{Swift\_KeyCache\_DiskKeyCache}}
+\doxysubsubsection{\texorpdfstring{POSITION\_START}{POSITION\_START}}
+{\footnotesize\ttfamily \label{class_swift___key_cache___disk_key_cache_a09f97ea44cce27ada0a2bd17e5ddf39e} 
+const POSITION\+\_\+\+START = 0}
+
+Signal to place pointer at start of file 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Key\+Cache/Disk\+Key\+Cache.\+php\end{DoxyCompactItemize}

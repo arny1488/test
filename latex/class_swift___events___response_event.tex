@@ -1,0 +1,84 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Response\+Event Class Reference}
+\hypertarget{class_swift___events___response_event}{}\label{class_swift___events___response_event}\index{Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Response\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___events___response_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___response_event_ac72fa01dcfbb215630c05cbd45e899a5}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \$response, \$valid=false)
+\item 
+\mbox{\hyperlink{class_swift___events___response_event_a6c907e8af775e517a77037dd0164222f}{get\+Response}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___response_event_a7b37efab7473a1effc29f8be2421f6e3}{is\+Valid}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___events___event_object}{Swift\+\_\+\+Events\+\_\+\+Event\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654}{\+\_\+\+\_\+construct}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a}{get\+Source}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054}{cancel\+Bubble}} (\$cancel=true)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a}{bubble\+Cancelled}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generated when a response is received on a SMTP connection.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___events___response_event_ac72fa01dcfbb215630c05cbd45e899a5}\index{Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___events___response_event_ac72fa01dcfbb215630c05cbd45e899a5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{}]{\$response}{, }\item[{}]{\$valid}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Create a new Response\+Event for \$source and \$response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$response} & \\
+\hline
+bool & {\em \$valid} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___events___response_event_a6c907e8af775e517a77037dd0164222f}\index{Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}!getResponse@{getResponse}}
+\index{getResponse@{getResponse}!Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}}
+\doxysubsubsection{\texorpdfstring{getResponse()}{getResponse()}}
+{\footnotesize\ttfamily \label{class_swift___events___response_event_a6c907e8af775e517a77037dd0164222f} 
+get\+Response (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the response which was received from the server.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___response_event_a7b37efab7473a1effc29f8be2421f6e3}\index{Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}!isValid@{isValid}}
+\index{isValid@{isValid}!Swift\_Events\_ResponseEvent@{Swift\_Events\_ResponseEvent}}
+\doxysubsubsection{\texorpdfstring{isValid()}{isValid()}}
+{\footnotesize\ttfamily \label{class_swift___events___response_event_a7b37efab7473a1effc29f8be2421f6e3} 
+is\+Valid (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the success status of this Event.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Response\+Event.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,163 @@
+\doxysection{Phone\+Number\+To\+Time\+Zones\+Mapper Class Reference}
+\hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper}{}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a0bfb982a245c4bd727e1b549cbc1ef6a}{get\+Time\+Zones\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a150b627828909e9e1c2785ee853ab9a6}{get\+Time\+Zones\+For\+Geographical\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a31639c53e2824e10406a538d69a9d892}{get\+Instance}} (\$mapping\+Dir=self\+::\+MAPPING\+\_\+\+DATA\+\_\+\+DIRECTORY)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a5f48bcee756abcd8c5adf906cadd0464}{get\+Unknown\+Time\+Zone}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a6d9c3d2f0d6fb86630beaae8fde5643d}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a6d9c3d2f0d6fb86630beaae8fde5643d} 
+const {\bfseries UNKNOWN\+\_\+\+TIMEZONE} = \textquotesingle{}Etc/Unknown\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ae4e8cbe67551db2a987270769c66ce69}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ae4e8cbe67551db2a987270769c66ce69} 
+const {\bfseries MAPPING\+\_\+\+DATA\+\_\+\+DIRECTORY} = \textquotesingle{}/timezone/data/\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a45e3b3c0f02d48a128a94f3e4980b2e1}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a45e3b3c0f02d48a128a94f3e4980b2e1} 
+const {\bfseries MAPPING\+\_\+\+DATA\+\_\+\+FILE\+\_\+\+NAME} = \textquotesingle{}map\+\_\+data.\+php\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_afb97ee3755cff4430a2957ff3260a848}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_afb97ee3755cff4430a2957ff3260a848} 
+{\bfseries \+\_\+\+\_\+construct} (\$phone\+Prefix\+Data\+Directory)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ab3274443fd39e7019790fea3d395e9b0}{get\+Country\+Level\+Time\+Zonesfor\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a4b7c68f21103d8e356d9006d4ac203b6}{get\+Time\+Zones\+For\+Geocodable\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_aef49eeeceb30ee450d7a0898b8caf8d1}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_aef49eeeceb30ee450d7a0898b8caf8d1} 
+static {\bfseries load\+Prefix\+Time\+Zones\+Map\+From\+File} (\$path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a9aa0c25921b7054280626159c1db08d6}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a9aa0c25921b7054280626159c1db08d6} 
+{\bfseries \$unknown\+Time\+Zone\+List} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a45b9547156b8e76a1df9ed371f1b6b86}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a45b9547156b8e76a1df9ed371f1b6b86} 
+{\bfseries \$phone\+Util}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_af9c792c39b8d73c228e8de51db6de2bf}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_af9c792c39b8d73c228e8de51db6de2bf} 
+{\bfseries \$prefix\+Time\+Zones\+Map}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ad9d7ce33ebb142b70e58b68052ca0ea8}\label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ad9d7ce33ebb142b70e58b68052ca0ea8} 
+static {\bfseries \$instance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ab3274443fd39e7019790fea3d395e9b0}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getCountryLevelTimeZonesforNumber@{getCountryLevelTimeZonesforNumber}}
+\index{getCountryLevelTimeZonesforNumber@{getCountryLevelTimeZonesforNumber}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getCountryLevelTimeZonesforNumber()}{getCountryLevelTimeZonesforNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_ab3274443fd39e7019790fea3d395e9b0} 
+get\+Country\+Level\+Time\+Zonesfor\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the list of time zones corresponding to the country calling code of {\ttfamily number}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & Phone\+Number the phone number to look up \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the list of corresponding time zones or a single element list with the default unknown time zone if no other time zone was found 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a31639c53e2824e10406a538d69a9d892}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a31639c53e2824e10406a538d69a9d892} 
+static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$mapping\+Dir}{ = {\ttfamily self\+:\+:MAPPING\+\_\+DATA\+\_\+DIRECTORY}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets a {\ttfamily \doxylink{}{Phone\+Number\+To\+Time\+Zones\+Mapper}} instance.
+
+The {\ttfamily \doxylink{}{Phone\+Number\+To\+Time\+Zones\+Mapper}} is implemented as a singleton. Therefore, calling this method multiple times will only result in one instance being created.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$mapping\+Dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\+To\+Time\+Zones\+Mapper instance 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a4b7c68f21103d8e356d9006d4ac203b6}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getTimeZonesForGeocodableNumber@{getTimeZonesForGeocodableNumber}}
+\index{getTimeZonesForGeocodableNumber@{getTimeZonesForGeocodableNumber}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getTimeZonesForGeocodableNumber()}{getTimeZonesForGeocodableNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a4b7c68f21103d8e356d9006d4ac203b6} 
+get\+Time\+Zones\+For\+Geocodable\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a list of time zones to which a geocodable phone number belongs.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & The phone number for which we want to get the time zones to which it belongs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the list of correspondiing time zones or a single element list with the default unknown timezone if no other time zone was found or if the number was invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a150b627828909e9e1c2785ee853ab9a6}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getTimeZonesForGeographicalNumber@{getTimeZonesForGeographicalNumber}}
+\index{getTimeZonesForGeographicalNumber@{getTimeZonesForGeographicalNumber}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getTimeZonesForGeographicalNumber()}{getTimeZonesForGeographicalNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a150b627828909e9e1c2785ee853ab9a6} 
+get\+Time\+Zones\+For\+Geographical\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Returns a list of time zones to which a phone number belongs.
+
+This method assumes the validity of the number passed in has already been checked, and that the number is geo-\/localizable. We consider fixed-\/line and mobile numbers possible candidates for geo-\/localization.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & Phone\+Number a valid phone number for which we want to get the time zones to which it belongs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array a list of the corresponding time zones or a single element list with the default unknown time zone if no other time zone was found or if the number was invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a0bfb982a245c4bd727e1b549cbc1ef6a}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getTimeZonesForNumber@{getTimeZonesForNumber}}
+\index{getTimeZonesForNumber@{getTimeZonesForNumber}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getTimeZonesForNumber()}{getTimeZonesForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a0bfb982a245c4bd727e1b549cbc1ef6a} 
+get\+Time\+Zones\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+As per {\ttfamily \doxylink{}{get\+Time\+Zones\+For\+Geographical\+Number(\+Phone\+Number)}} but explicitly checks the validity of the number passed in.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & Phone\+Number the phone number for which we want to get the time zones to which it belongs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array a list of the corresponding time zones or a single element list with the default unknown time zone if no other time zone was found or if the number was invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a5f48bcee756abcd8c5adf906cadd0464}\index{PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}!getUnknownTimeZone@{getUnknownTimeZone}}
+\index{getUnknownTimeZone@{getUnknownTimeZone}!PhoneNumberToTimeZonesMapper@{PhoneNumberToTimeZonesMapper}}
+\doxysubsubsection{\texorpdfstring{getUnknownTimeZone()}{getUnknownTimeZone()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_to_time_zones_mapper_a5f48bcee756abcd8c5adf906cadd0464} 
+static get\+Unknown\+Time\+Zone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a String with the ICU unknown time zone. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Phone\+Number\+To\+Time\+Zones\+Mapper.\+php\end{DoxyCompactItemize}

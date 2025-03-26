@@ -1,0 +1,177 @@
+\doxysection{Idn Class Reference}
+\hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn}{}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn}\index{Idn@{Idn}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a12303e261455f4bf48cb6611137bb06e}{idn\+\_\+to\+\_\+ascii}} (\$domain\+Name, \$options=self\+::\+IDNA\+\_\+\+DEFAULT, \$variant=self\+::\+INTL\+\_\+\+IDNA\+\_\+\+VARIANT\+\_\+\+UTS46, \&\$idna\+\_\+info=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_abaf3085ab477fc79b1776394c20ab7a3}{idn\+\_\+to\+\_\+utf8}} (\$domain\+Name, \$options=self\+::\+IDNA\+\_\+\+DEFAULT, \$variant=self\+::\+INTL\+\_\+\+IDNA\+\_\+\+VARIANT\+\_\+\+UTS46, \&\$idna\+\_\+info=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a058e6f9c2f62826a639e3544b056fb62}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a058e6f9c2f62826a639e3544b056fb62} 
+const {\bfseries ERROR\+\_\+\+EMPTY\+\_\+\+LABEL} = 1
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a14a32cabfd08faf91a8e852af74f6417}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a14a32cabfd08faf91a8e852af74f6417} 
+const {\bfseries ERROR\+\_\+\+LABEL\+\_\+\+TOO\+\_\+\+LONG} = 2
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a326919252431ac7a6a2e36d2acc12a5d}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a326919252431ac7a6a2e36d2acc12a5d} 
+const {\bfseries ERROR\+\_\+\+DOMAIN\+\_\+\+NAME\+\_\+\+TOO\+\_\+\+LONG} = 4
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a603702cf91813d62dbdda589463869e7}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a603702cf91813d62dbdda589463869e7} 
+const {\bfseries ERROR\+\_\+\+LEADING\+\_\+\+HYPHEN} = 8
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ac12d5d43eda18d0cbc4cebc9ba35929c}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ac12d5d43eda18d0cbc4cebc9ba35929c} 
+const {\bfseries ERROR\+\_\+\+TRAILING\+\_\+\+HYPHEN} = 0x10
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a3cf25fc8a758cfb67a0aeba8b459cfb9}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a3cf25fc8a758cfb67a0aeba8b459cfb9} 
+const {\bfseries ERROR\+\_\+\+HYPHEN\+\_\+3\+\_\+4} = 0x20
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a428b67b71e15e92a90479d23c1f93bc3}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a428b67b71e15e92a90479d23c1f93bc3} 
+const {\bfseries ERROR\+\_\+\+LEADING\+\_\+\+COMBINING\+\_\+\+MARK} = 0x40
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a01e60ddb5dde9c054251dbbab6d5c4ff}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a01e60ddb5dde9c054251dbbab6d5c4ff} 
+const {\bfseries ERROR\+\_\+\+DISALLOWED} = 0x80
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aa219316ce7e0b084a3d42afc6617bfde}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aa219316ce7e0b084a3d42afc6617bfde} 
+const {\bfseries ERROR\+\_\+\+PUNYCODE} = 0x100
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aeb9adece200b7116ce797e24e144e06e}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aeb9adece200b7116ce797e24e144e06e} 
+const {\bfseries ERROR\+\_\+\+LABEL\+\_\+\+HAS\+\_\+\+DOT} = 0x200
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a04d070f6fefda221914722ecf2f2191d}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a04d070f6fefda221914722ecf2f2191d} 
+const {\bfseries ERROR\+\_\+\+INVALID\+\_\+\+ACE\+\_\+\+LABEL} = 0x400
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a76af77e3f9dd5a787a7c88d8eec16436}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a76af77e3f9dd5a787a7c88d8eec16436} 
+const {\bfseries ERROR\+\_\+\+BIDI} = 0x800
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a84e7ad288fddf5b799c41c18215a9ae0}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a84e7ad288fddf5b799c41c18215a9ae0} 
+const {\bfseries ERROR\+\_\+\+CONTEXTJ} = 0x1000
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a1fdc5081f21dc5c196a86d345fd39cdb}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a1fdc5081f21dc5c196a86d345fd39cdb} 
+const {\bfseries ERROR\+\_\+\+CONTEXTO\+\_\+\+PUNCTUATION} = 0x2000
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9a29c9bacc09b221ca6818b28af425ef}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9a29c9bacc09b221ca6818b28af425ef} 
+const {\bfseries ERROR\+\_\+\+CONTEXTO\+\_\+\+DIGITS} = 0x4000
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a8c83a4515e86c861310a15aed0fbc687}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a8c83a4515e86c861310a15aed0fbc687} 
+const {\bfseries INTL\+\_\+\+IDNA\+\_\+\+VARIANT\+\_\+2003} = 0
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a130e6c69b50078e04e2cfa6537578a37}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a130e6c69b50078e04e2cfa6537578a37} 
+const {\bfseries INTL\+\_\+\+IDNA\+\_\+\+VARIANT\+\_\+\+UTS46} = 1
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ac1a2b745de09568c58d4f42be0fc4d00}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ac1a2b745de09568c58d4f42be0fc4d00} 
+const {\bfseries IDNA\+\_\+\+DEFAULT} = 0
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a7ebd2453e69bb08ca778403bfbc01e1d}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a7ebd2453e69bb08ca778403bfbc01e1d} 
+const {\bfseries IDNA\+\_\+\+ALLOW\+\_\+\+UNASSIGNED} = 1
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aa110634033d1a820c88ed974270750bd}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aa110634033d1a820c88ed974270750bd} 
+const {\bfseries IDNA\+\_\+\+USE\+\_\+\+STD3\+\_\+\+RULES} = 2
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a5678ec7d897f8aa3f40e8555c0cee6e4}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a5678ec7d897f8aa3f40e8555c0cee6e4} 
+const {\bfseries IDNA\+\_\+\+CHECK\+\_\+\+BIDI} = 4
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9adfe95fdf97683e8afd3021b7e43487}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9adfe95fdf97683e8afd3021b7e43487} 
+const {\bfseries IDNA\+\_\+\+CHECK\+\_\+\+CONTEXTJ} = 8
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a4d6a3ed6a25613402311d0d6ce044681}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a4d6a3ed6a25613402311d0d6ce044681} 
+const {\bfseries IDNA\+\_\+\+NONTRANSITIONAL\+\_\+\+TO\+\_\+\+ASCII} = 16
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a8644cf6cc3c0e35e2dbe9272c19a2983}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a8644cf6cc3c0e35e2dbe9272c19a2983} 
+const {\bfseries IDNA\+\_\+\+NONTRANSITIONAL\+\_\+\+TO\+\_\+\+UNICODE} = 32
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aad103bf3d1738d26097b27551ca2f4ba}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_aad103bf3d1738d26097b27551ca2f4ba} 
+const {\bfseries MAX\+\_\+\+DOMAIN\+\_\+\+SIZE} = 253
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a4758043bb0e4727163c9851ae1635461}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a4758043bb0e4727163c9851ae1635461} 
+const {\bfseries MAX\+\_\+\+LABEL\+\_\+\+SIZE} = 63
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_afa8ceb2c8f9851f6cfb2c709aa9fe1b0}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_afa8ceb2c8f9851f6cfb2c709aa9fe1b0} 
+const {\bfseries BASE} = 36
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a009b9c45ee9a6bdcaf06ea7690d2e64f}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a009b9c45ee9a6bdcaf06ea7690d2e64f} 
+const {\bfseries TMIN} = 1
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9b0b866a1374acdc97497cdc9022a84a}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9b0b866a1374acdc97497cdc9022a84a} 
+const {\bfseries TMAX} = 26
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a6b75479b0af72f4fe4871b67508ce68d}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a6b75479b0af72f4fe4871b67508ce68d} 
+const {\bfseries SKEW} = 38
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a2294de56fc0a489479282aed4f619276}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a2294de56fc0a489479282aed4f619276} 
+const {\bfseries DAMP} = 700
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9425e7d2a85c11927101f17f38ec3d87}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a9425e7d2a85c11927101f17f38ec3d87} 
+const {\bfseries INITIAL\+\_\+\+BIAS} = 72
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_af7db91f7019fe5c690aa7f0213237b08}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_af7db91f7019fe5c690aa7f0213237b08} 
+const {\bfseries INITIAL\+\_\+N} = 128
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ad71988bbc6816f80670ab4d8e6228ec7}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_ad71988bbc6816f80670ab4d8e6228ec7} 
+const {\bfseries DELIMITER} = \textquotesingle{}-\/\textquotesingle{}
+\item 
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a73afebf3a029c76e84dada7d00d34725}\label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a73afebf3a029c76e84dada7d00d34725} 
+const {\bfseries MAX\+\_\+\+INT} = 2147483647
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxySeeAlso}{See also}
+\href{https://www.unicode.org/reports/tr46/}{\texttt{ https\+://www.\+unicode.\+org/reports/tr46/}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a12303e261455f4bf48cb6611137bb06e}\index{Idn@{Idn}!idn\_to\_ascii@{idn\_to\_ascii}}
+\index{idn\_to\_ascii@{idn\_to\_ascii}!Idn@{Idn}}
+\doxysubsubsection{\texorpdfstring{idn\_to\_ascii()}{idn\_to\_ascii()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_a12303e261455f4bf48cb6611137bb06e} 
+static idn\+\_\+to\+\_\+ascii (\begin{DoxyParamCaption}\item[{}]{\$domain\+Name}{, }\item[{}]{\$options}{ = {\ttfamily self\+:\+:IDNA\+\_\+DEFAULT}, }\item[{}]{\$variant}{ = {\ttfamily self\+:\+:INTL\+\_\+IDNA\+\_\+VARIANT\+\_\+UTS46}, }\item[{\&}]{\$idna\+\_\+info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\href{https://www.unicode.org/reports/tr46/\#ToASCII}{\texttt{ https\+://www.\+unicode.\+org/reports/tr46/\#\+To\+ASCII}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain\+Name} & \\
+\hline
+int & {\em \$options} & \\
+\hline
+int & {\em \$variant} & \\
+\hline
+array & {\em \$idna\+\_\+info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+\Hypertarget{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_abaf3085ab477fc79b1776394c20ab7a3}\index{Idn@{Idn}!idn\_to\_utf8@{idn\_to\_utf8}}
+\index{idn\_to\_utf8@{idn\_to\_utf8}!Idn@{Idn}}
+\doxysubsubsection{\texorpdfstring{idn\_to\_utf8()}{idn\_to\_utf8()}}
+{\footnotesize\ttfamily \label{class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_idn_abaf3085ab477fc79b1776394c20ab7a3} 
+static idn\+\_\+to\+\_\+utf8 (\begin{DoxyParamCaption}\item[{}]{\$domain\+Name}{, }\item[{}]{\$options}{ = {\ttfamily self\+:\+:IDNA\+\_\+DEFAULT}, }\item[{}]{\$variant}{ = {\ttfamily self\+:\+:INTL\+\_\+IDNA\+\_\+VARIANT\+\_\+UTS46}, }\item[{\&}]{\$idna\+\_\+info}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxySeeAlso}{See also}
+\href{https://www.unicode.org/reports/tr46/\#ToUnicode}{\texttt{ https\+://www.\+unicode.\+org/reports/tr46/\#\+To\+Unicode}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain\+Name} & \\
+\hline
+int & {\em \$options} & \\
+\hline
+int & {\em \$variant} & \\
+\hline
+array & {\em \$idna\+\_\+info} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/mailer/\+Symfony/\+Polyfill/\+Intl/\+Idn/Idn.\+php\end{DoxyCompactItemize}

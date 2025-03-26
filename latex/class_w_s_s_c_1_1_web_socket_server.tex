@@ -1,0 +1,211 @@
+\doxysection{Web\+Socket\+Server Class Reference}
+\hypertarget{class_w_s_s_c_1_1_web_socket_server}{}\label{class_w_s_s_c_1_1_web_socket_server}\index{WebSocketServer@{WebSocketServer}}
+Inheritance diagram for Web\+Socket\+Server\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_w_s_s_c_1_1_web_socket_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_web_socket_server_a78675bfb921ef66ea74d562a680e9a4e}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket}{Web\+Socket}} \$handler, \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_server_config}{Server\+Config}} \$config)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_web_socket_server_ae414f05e4eff50c295bc2bd3076ed66e}{print\+Exception}} (bool \$print\+Exception)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_web_socket_server_afb0fafe7e02a3ae1993c01c19fad2bae}{run}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_w_s_s_c_1_1_web_socket_server_a9235adb2738a5e8276014cba91e276cf}\label{class_w_s_s_c_1_1_web_socket_server_a9235adb2738a5e8276014cba91e276cf} 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_server_config}{Server\+Config}} {\bfseries \$config}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract}{Commons\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PING} = \textquotesingle{}ping\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PONG} = \textquotesingle{}pong\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+TEXT} = \textquotesingle{}text\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CLOSE} = \textquotesingle{}close\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+BINARY} = \textquotesingle{}binary\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CONTINUATION} = \textquotesingle{}continuation\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract_a45c53e70c31f6f5aaf83fc0148c61e98}{MAP\+\_\+\+EVENT\+\_\+\+TYPE\+\_\+\+TO\+\_\+\+METHODS}}
+\item 
+const {\bfseries DECODE\+\_\+\+TEXT} = 1
+\item 
+const {\bfseries DECODE\+\_\+\+BINARY} = 2
+\item 
+const {\bfseries DECODE\+\_\+\+CLOSE} = 8
+\item 
+const {\bfseries DECODE\+\_\+\+PING} = 9
+\item 
+const {\bfseries DECODE\+\_\+\+PONG} = 10
+\item 
+const {\bfseries ENCODE\+\_\+\+TEXT} = 129
+\item 
+const {\bfseries ENCODE\+\_\+\+CLOSE} = 136
+\item 
+const {\bfseries ENCODE\+\_\+\+PING} = 137
+\item 
+const {\bfseries ENCODE\+\_\+\+PONG} = 138
+\item 
+const {\bfseries MASK\+\_\+125} = 125
+\item 
+const {\bfseries MASK\+\_\+126} = 126
+\item 
+const {\bfseries MASK\+\_\+127} = 127
+\item 
+const {\bfseries MASK\+\_\+128} = 128
+\item 
+const {\bfseries MASK\+\_\+254} = 254
+\item 
+const {\bfseries MASK\+\_\+255} = 255
+\item 
+const {\bfseries PAYLOAD\+\_\+\+CHUNK} = 8
+\item 
+const {\bfseries PAYLOAD\+\_\+\+MAX\+\_\+\+BITS} = 65535
+\item 
+const {\bfseries SERVER\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+BIND\+\_\+\+TO\+\_\+\+SOCKET} = 101
+\item 
+const {\bfseries SERVER\+\_\+\+SELECT\+\_\+\+ERROR} = 102
+\item 
+const {\bfseries SERVER\+\_\+\+HEADERS\+\_\+\+NOT\+\_\+\+SET} = 103
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+OPEN\+\_\+\+SOCKET} = 104
+\item 
+const {\bfseries CLIENT\+\_\+\+INCORRECT\+\_\+\+SCHEME} = 105
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+UPGRADE\+\_\+\+RESPONSE} = 106
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 107
+\item 
+const {\bfseries CLIENT\+\_\+\+BAD\+\_\+\+OPCODE} = 108
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+ONLY\+\_\+\+WRITE\+\_\+\+LESS} = 109
+\item 
+const {\bfseries CLIENT\+\_\+\+BROKEN\+\_\+\+FRAME} = 110
+\item 
+const {\bfseries CLIENT\+\_\+\+EMPTY\+\_\+\+READ} = 111
+\item 
+const {\bfseries SERVER\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 112
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_server_contract}{Web\+Socket\+Server\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries DEFAULT\+\_\+\+HOST} = \textquotesingle{}0.\+0.\+0.\+0\textquotesingle{}
+\item 
+const {\bfseries DEFAULT\+\_\+\+PORT} = 8000
+\item 
+const {\bfseries ERR\+\_\+\+PROTOCOL} = \textquotesingle{}protocol error (1002)\textquotesingle{}
+\item 
+const {\bfseries ERR\+\_\+\+UNKNOWN\+\_\+\+OPCODE} = \textquotesingle{}unknown opcode (1003)\textquotesingle{}
+\item 
+const {\bfseries ERR\+\_\+\+FRAME\+\_\+\+TOO\+\_\+\+LARGE} = \textquotesingle{}frame too large (1004)\textquotesingle{}
+\item 
+const {\bfseries HEADER\+\_\+\+HTTP1\+\_\+1} = \textquotesingle{}HTTP/1.\+1 101 Web Socket Protocol Handshake\textquotesingle{}
+\item 
+const {\bfseries HEADER\+\_\+\+WEBSOCKET\+\_\+\+ACCEPT\+\_\+\+HASH} = \textquotesingle{}258EAFA5-\/E914-\/47DA-\/95CA-\/C5\+AB0\+DC85\+B11\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+UPGRADE\+\_\+\+KEY} = \textquotesingle{}Upgrade\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+CONNECTION\+\_\+\+KEY} = \textquotesingle{}\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection}{Connection}}\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+SEC\+\_\+\+WEBSOCKET\+\_\+\+ACCEPT\+\_\+\+KEY} = \textquotesingle{}Sec-\/\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket}{Web\+Socket}}-\/Accept\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+UPGRADE\+\_\+\+VALUE} = \textquotesingle{}websocket\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+CONNECTION\+\_\+\+VALUE} = \textquotesingle{}Upgrade\textquotesingle{}
+\item 
+const {\bfseries HEADERS\+\_\+\+EOL} = "{}\textbackslash{}r\textbackslash{}n"{}
+\item 
+const {\bfseries SEC\+\_\+\+WEBSOCKET\+\_\+\+KEY\+\_\+\+PTRN} = \textquotesingle{}/Sec-\/\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket}{Web\+Socket}}-\/Key\+:\textbackslash{}s(.\texorpdfstring{$\ast$}{*})\textbackslash{}n/\textquotesingle{}
+\item 
+const {\bfseries PAYLOAD\+\_\+\+OFFSET\+\_\+6} = 6
+\item 
+const {\bfseries PAYLOAD\+\_\+\+OFFSET\+\_\+8} = 8
+\item 
+const {\bfseries PAYLOAD\+\_\+\+OFFSET\+\_\+14} = 14
+\item 
+const {\bfseries CLIENTS\+\_\+\+PER\+\_\+\+FORK} = 1000
+\item 
+const {\bfseries STREAM\+\_\+\+SELECT\+\_\+\+TIMEOUT} = 3600
+\item 
+const {\bfseries PROC\+\_\+\+TITLE} = \textquotesingle{}php-\/wss\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main}{Wss\+Main}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a900b6df88861755e5612db3b923df181}{decode}} (string \$data)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6}{is\+Pcntl\+Loaded}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a378120ad00487a912accd601aff0e9af}{set\+Is\+Pcntl\+Loaded}} (bool \$\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_aece3bbe844be5f4a189927c3ff3b42c6}{is\+Pcntl\+Loaded}})
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a26228abeaaa11cae6114614876d50ecf}{less\+Conn\+Than\+Proc}} (int \$total\+Clients, int \$max\+Clients)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wss_main_a84d5d030e1d7bfda782418db2cb4533d}{clean\+Socket\+Resources}} (array \&\$read\+Socks)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_w_s_s_c_1_1_web_socket_server_a78675bfb921ef66ea74d562a680e9a4e}\index{WebSocketServer@{WebSocketServer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_web_socket_server_a78675bfb921ef66ea74d562a680e9a4e} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket}{Web\+Socket}}}]{\$handler}{, }\item[{\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_server_config}{Server\+Config}}}]{\$config}{}\end{DoxyParamCaption})}
+
+Web\+Socket\+Server constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Web\+Socket & {\em \$handler} & \\
+\hline
+Server\+Config & {\em \$config} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_w_s_s_c_1_1_web_socket_server_ae414f05e4eff50c295bc2bd3076ed66e}\index{WebSocketServer@{WebSocketServer}!printException@{printException}}
+\index{printException@{printException}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{printException()}{printException()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_web_socket_server_ae414f05e4eff50c295bc2bd3076ed66e} 
+print\+Exception (\begin{DoxyParamCaption}\item[{bool}]{\$print\+Exception}{}\end{DoxyParamCaption})}
+
+Configure if error exceptions should be printed
+
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\Hypertarget{class_w_s_s_c_1_1_web_socket_server_afb0fafe7e02a3ae1993c01c19fad2bae}\index{WebSocketServer@{WebSocketServer}!run@{run}}
+\index{run@{run}!WebSocketServer@{WebSocketServer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_web_socket_server_afb0fafe7e02a3ae1993c01c19fad2bae} 
+run (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Runs main process -\/ Anscestor with server socket on TCP
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Socket\+Exception} & \\
+\hline
+{\em Connection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_server_contract}{Web\+Socket\+Server\+Contract}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Web\+Socket/\+WSSC/Web\+Socket\+Server.\+php\end{DoxyCompactItemize}

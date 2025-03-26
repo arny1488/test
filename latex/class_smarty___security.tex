@@ -1,0 +1,481 @@
+\doxysection{Smarty\+\_\+\+Security Class Reference}
+\hypertarget{class_smarty___security}{}\label{class_smarty___security}\index{Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___security_a7913fd4038ea6c7d99e49bd3ba9028ca}{\+\_\+\+\_\+construct}} (\$smarty)
+\item 
+\mbox{\hyperlink{class_smarty___security_a1c3bb26febe9c5abd37e7ff8cdce46be}{is\+Trusted\+Php\+Function}} (\$function\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a9a4cceec7287368a9e015502b1e91887}{is\+Trusted\+Static\+Class}} (\$class\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a3ac9d95acbc07880d3ea6b6d5cfe7312}{is\+Trusted\+Static\+Class\+Access}} (\$class\+\_\+name, \$params, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a77c41bf39b1a8da4b9ba860bc3e60cf2}{is\+Trusted\+Php\+Modifier}} (\$modifier\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_ad9ce0943f892bf751358992b0db54375}{is\+Trusted\+Tag}} (\$tag\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a1131ef19a5b62dd3f1a00d3c59bd1aa6}{is\+Trusted\+Special\+Smarty\+Var}} (\$var\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a503165596f59f6496cd9ea55ad8b36e1}{is\+Trusted\+Modifier}} (\$modifier\+\_\+name, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a003e5b6b736acebb6b3c60ea4aa9adb2}{is\+Trusted\+Constant}} (\$const, \$compiler)
+\item 
+\mbox{\hyperlink{class_smarty___security_a078d58aafa3e3322ebc8dca910a1a36d}{is\+Trusted\+Stream}} (\$stream\+\_\+name)
+\item 
+\mbox{\hyperlink{class_smarty___security_a13ba9cce3dfe943157da678137794e7c}{is\+Trusted\+Resource\+Dir}} (\$filepath, \$is\+Config=null)
+\item 
+\mbox{\hyperlink{class_smarty___security_a5b20c21ee6e41e8ff29e5f7a6671f095}{is\+Trusted\+Uri}} (\$uri)
+\item 
+\mbox{\hyperlink{class_smarty___security_a3d2102d8957efd78fe8866fb26940c6e}{is\+Trusted\+PHPDir}} (\$filepath)
+\item 
+\mbox{\hyperlink{class_smarty___security_af996e13042070c3f769f6602c5617620}{start\+Template}} (\$template)
+\item 
+\mbox{\hyperlink{class_smarty___security_a72162b5be72fab9f0cc841ec781274d1}{end\+Template}} ()
+\item 
+\mbox{\hyperlink{class_smarty___security_a20928c493e01cb883bd4e576ba6e105e}{register\+Call\+Backs}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$template)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_smarty___security_a153d6a1b289d1b7a643daa50d66910f8}{enable\+Security}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \$security\+\_\+class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___security_abb37c3c6b2bcb9a527c4139bffb7e6ca}\label{class_smarty___security_abb37c3c6b2bcb9a527c4139bffb7e6ca} 
+{\bfseries \$php\+\_\+handling} = Smarty\+::\+PHP\+\_\+\+PASSTHRU
+\item 
+\Hypertarget{class_smarty___security_a7694029b12fccde3ffae27a1d1d7b5be}\label{class_smarty___security_a7694029b12fccde3ffae27a1d1d7b5be} 
+{\bfseries \$secure\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_a4541edfa0e2dd6b0e4b1da10c14fa52c}\label{class_smarty___security_a4541edfa0e2dd6b0e4b1da10c14fa52c} 
+{\bfseries \$trusted\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_acac0932b45462f6ec294170ba2398970}\label{class_smarty___security_acac0932b45462f6ec294170ba2398970} 
+{\bfseries \$trusted\+\_\+uri} = array()
+\item 
+\Hypertarget{class_smarty___security_a3a821f94ee62c60938e4c10abcd8f0f2}\label{class_smarty___security_a3a821f94ee62c60938e4c10abcd8f0f2} 
+{\bfseries \$trusted\+\_\+constants} = array()
+\item 
+\Hypertarget{class_smarty___security_acceeada3b86f5ee9d7bef68b272d2aa3}\label{class_smarty___security_acceeada3b86f5ee9d7bef68b272d2aa3} 
+{\bfseries \$static\+\_\+classes} = array()
+\item 
+\Hypertarget{class_smarty___security_a148aeeb2f34e9393ff12f5184716bc3a}\label{class_smarty___security_a148aeeb2f34e9393ff12f5184716bc3a} 
+{\bfseries \$trusted\+\_\+static\+\_\+methods} = array()
+\item 
+\Hypertarget{class_smarty___security_af947161371291145768c1339641b3615}\label{class_smarty___security_af947161371291145768c1339641b3615} 
+{\bfseries \$trusted\+\_\+static\+\_\+properties} = array()
+\item 
+\Hypertarget{class_smarty___security_ae18d58916b29bf6fb282992c68a966bc}\label{class_smarty___security_ae18d58916b29bf6fb282992c68a966bc} 
+{\bfseries \$php\+\_\+functions} = array(\textquotesingle{}isset\textquotesingle{}, \textquotesingle{}empty\textquotesingle{}, \textquotesingle{}count\textquotesingle{}, \textquotesingle{}sizeof\textquotesingle{}, \textquotesingle{}in\+\_\+array\textquotesingle{}, \textquotesingle{}is\+\_\+array\textquotesingle{}, \textquotesingle{}time\textquotesingle{},)
+\item 
+\Hypertarget{class_smarty___security_aef98f7874c2babd06275f77d62af7d1f}\label{class_smarty___security_aef98f7874c2babd06275f77d62af7d1f} 
+{\bfseries \$php\+\_\+modifiers} = array(\textquotesingle{}escape\textquotesingle{}, \textquotesingle{}count\textquotesingle{}, \textquotesingle{}nl2br\textquotesingle{},)
+\item 
+\Hypertarget{class_smarty___security_a0beeeb8bad11f6da7b4d66e93de9b123}\label{class_smarty___security_a0beeeb8bad11f6da7b4d66e93de9b123} 
+{\bfseries \$allowed\+\_\+tags} = array()
+\item 
+\Hypertarget{class_smarty___security_aff1c2833a6915a9a74ef13a4f57b2ecf}\label{class_smarty___security_aff1c2833a6915a9a74ef13a4f57b2ecf} 
+{\bfseries \$disabled\+\_\+tags} = array()
+\item 
+\Hypertarget{class_smarty___security_a216fbbb00b5f51a8b0d6e4b949112ac4}\label{class_smarty___security_a216fbbb00b5f51a8b0d6e4b949112ac4} 
+{\bfseries \$allowed\+\_\+modifiers} = array()
+\item 
+\Hypertarget{class_smarty___security_a2b05ea7f3d61015d28f4b60fd7aec870}\label{class_smarty___security_a2b05ea7f3d61015d28f4b60fd7aec870} 
+{\bfseries \$disabled\+\_\+modifiers} = array()
+\item 
+\Hypertarget{class_smarty___security_a1f45abbdf67afa29e2babd25b245dc67}\label{class_smarty___security_a1f45abbdf67afa29e2babd25b245dc67} 
+{\bfseries \$disabled\+\_\+special\+\_\+smarty\+\_\+vars} = array()
+\item 
+\Hypertarget{class_smarty___security_acb5ee85532714639acc90fbe44a17f9e}\label{class_smarty___security_acb5ee85532714639acc90fbe44a17f9e} 
+{\bfseries \$streams} = array(\textquotesingle{}file\textquotesingle{})
+\item 
+\Hypertarget{class_smarty___security_af21890600774bbfb4eb4fb5598199c7c}\label{class_smarty___security_af21890600774bbfb4eb4fb5598199c7c} 
+{\bfseries \$allow\+\_\+constants} = true
+\item 
+\Hypertarget{class_smarty___security_a92167d53a3b46a8ff5a5839665082801}\label{class_smarty___security_a92167d53a3b46a8ff5a5839665082801} 
+{\bfseries \$allow\+\_\+super\+\_\+globals} = true
+\item 
+\Hypertarget{class_smarty___security_a3a83fc7bb593373df1d01d2060b0ecb3}\label{class_smarty___security_a3a83fc7bb593373df1d01d2060b0ecb3} 
+{\bfseries \$max\+\_\+template\+\_\+nesting} = 0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___security_a1171bd8e03154f5a51a5281dfa549e42}\label{class_smarty___security_a1171bd8e03154f5a51a5281dfa549e42} 
+{\bfseries \$\+\_\+resource\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_a2705ee017c57656fabe78b207bebf1e3}\label{class_smarty___security_a2705ee017c57656fabe78b207bebf1e3} 
+{\bfseries \$\+\_\+template\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_aae1432ad33bfda17c8f9639238bb9044}\label{class_smarty___security_aae1432ad33bfda17c8f9639238bb9044} 
+{\bfseries \$\+\_\+config\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_a44bcdc3903d219b61b716f623bb44aeb}\label{class_smarty___security_a44bcdc3903d219b61b716f623bb44aeb} 
+{\bfseries \$\+\_\+secure\+\_\+dir} = array()
+\item 
+\Hypertarget{class_smarty___security_a8440e45f7029e15cc8230cd4b9681f98}\label{class_smarty___security_a8440e45f7029e15cc8230cd4b9681f98} 
+{\bfseries \$\+\_\+php\+\_\+resource\+\_\+dir} = null
+\item 
+\Hypertarget{class_smarty___security_acaed8a42f8cb73f370cce501020d712b}\label{class_smarty___security_acaed8a42f8cb73f370cce501020d712b} 
+{\bfseries \$\+\_\+trusted\+\_\+dir} = null
+\item 
+\Hypertarget{class_smarty___security_af1dc0be4674b3b6d07b1eac103133f64}\label{class_smarty___security_af1dc0be4674b3b6d07b1eac103133f64} 
+{\bfseries \$\+\_\+include\+\_\+path\+\_\+status} = false
+\item 
+\Hypertarget{class_smarty___security_ad533a43bf7d1000059b1690ba35a00ec}\label{class_smarty___security_ad533a43bf7d1000059b1690ba35a00ec} 
+{\bfseries \$\+\_\+include\+\_\+dir} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class does contain the security settings 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smarty___security_a7913fd4038ea6c7d99e49bd3ba9028ca}\index{Smarty\_Security@{Smarty\_Security}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a7913fd4038ea6c7d99e49bd3ba9028ca} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$smarty}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty}{Smarty} & {\em \$smarty} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___security_a153d6a1b289d1b7a643daa50d66910f8}\index{Smarty\_Security@{Smarty\_Security}!enableSecurity@{enableSecurity}}
+\index{enableSecurity@{enableSecurity}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{enableSecurity()}{enableSecurity()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a153d6a1b289d1b7a643daa50d66910f8} 
+static enable\+Security (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{}]{\$security\+\_\+class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Loads security class and enables security
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty & {\em \$smarty} & \\
+\hline
+string | \doxylink{class_smarty___security}{Smarty\+\_\+\+Security} & {\em \$security\+\_\+class} & if a string is used, it must be class-\/name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Smarty current \doxylink{class_smarty}{Smarty} instance for chaining 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} when an invalid class name is provided \Hypertarget{class_smarty___security_a72162b5be72fab9f0cc841ec781274d1}\index{Smarty\_Security@{Smarty\_Security}!endTemplate@{endTemplate}}
+\index{endTemplate@{endTemplate}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{endTemplate()}{endTemplate()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a72162b5be72fab9f0cc841ec781274d1} 
+end\+Template (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Exit template processing \Hypertarget{class_smarty___security_a003e5b6b736acebb6b3c60ea4aa9adb2}\index{Smarty\_Security@{Smarty\_Security}!isTrustedConstant@{isTrustedConstant}}
+\index{isTrustedConstant@{isTrustedConstant}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedConstant()}{isTrustedConstant()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a003e5b6b736acebb6b3c60ea4aa9adb2} 
+is\+Trusted\+Constant (\begin{DoxyParamCaption}\item[{}]{\$const}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if constants are enabled or trusted
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$const} & constant name \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___security_a503165596f59f6496cd9ea55ad8b36e1}\index{Smarty\_Security@{Smarty\_Security}!isTrustedModifier@{isTrustedModifier}}
+\index{isTrustedModifier@{isTrustedModifier}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedModifier()}{isTrustedModifier()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a503165596f59f6496cd9ea55ad8b36e1} 
+is\+Trusted\+Modifier (\begin{DoxyParamCaption}\item[{}]{\$modifier\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if modifier plugin is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$modifier\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if tag is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if modifier is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a3d2102d8957efd78fe8866fb26940c6e}\index{Smarty\_Security@{Smarty\_Security}!isTrustedPHPDir@{isTrustedPHPDir}}
+\index{isTrustedPHPDir@{isTrustedPHPDir}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedPHPDir()}{isTrustedPHPDir()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a3d2102d8957efd78fe8866fb26940c6e} 
+is\+Trusted\+PHPDir (\begin{DoxyParamCaption}\item[{}]{\$filepath}{}\end{DoxyParamCaption})}
+
+Check if directory of file resource is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if directory is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_exception}{Smarty\+Exception}} & if PHP directory is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a1c3bb26febe9c5abd37e7ff8cdce46be}\index{Smarty\_Security@{Smarty\_Security}!isTrustedPhpFunction@{isTrustedPhpFunction}}
+\index{isTrustedPhpFunction@{isTrustedPhpFunction}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedPhpFunction()}{isTrustedPhpFunction()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a1c3bb26febe9c5abd37e7ff8cdce46be} 
+is\+Trusted\+Php\+Function (\begin{DoxyParamCaption}\item[{}]{\$function\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if PHP function is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$function\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if function is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if php function is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a77c41bf39b1a8da4b9ba860bc3e60cf2}\index{Smarty\_Security@{Smarty\_Security}!isTrustedPhpModifier@{isTrustedPhpModifier}}
+\index{isTrustedPhpModifier@{isTrustedPhpModifier}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedPhpModifier()}{isTrustedPhpModifier()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a77c41bf39b1a8da4b9ba860bc3e60cf2} 
+is\+Trusted\+Php\+Modifier (\begin{DoxyParamCaption}\item[{}]{\$modifier\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if PHP modifier is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$modifier\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if modifier is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if modifier is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a13ba9cce3dfe943157da678137794e7c}\index{Smarty\_Security@{Smarty\_Security}!isTrustedResourceDir@{isTrustedResourceDir}}
+\index{isTrustedResourceDir@{isTrustedResourceDir}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedResourceDir()}{isTrustedResourceDir()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a13ba9cce3dfe943157da678137794e7c} 
+is\+Trusted\+Resource\+Dir (\begin{DoxyParamCaption}\item[{}]{\$filepath}{, }\item[{}]{\$is\+Config}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Check if directory of file resource is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filepath} & \\
+\hline
+null | bool & {\em \$is\+Config} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if directory is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} if directory is not trusted \Hypertarget{class_smarty___security_a1131ef19a5b62dd3f1a00d3c59bd1aa6}\index{Smarty\_Security@{Smarty\_Security}!isTrustedSpecialSmartyVar@{isTrustedSpecialSmartyVar}}
+\index{isTrustedSpecialSmartyVar@{isTrustedSpecialSmartyVar}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedSpecialSmartyVar()}{isTrustedSpecialSmartyVar()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a1131ef19a5b62dd3f1a00d3c59bd1aa6} 
+is\+Trusted\+Special\+Smarty\+Var (\begin{DoxyParamCaption}\item[{}]{\$var\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if special \$smarty variable is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$var\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if tag is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if modifier is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a9a4cceec7287368a9e015502b1e91887}\index{Smarty\_Security@{Smarty\_Security}!isTrustedStaticClass@{isTrustedStaticClass}}
+\index{isTrustedStaticClass@{isTrustedStaticClass}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedStaticClass()}{isTrustedStaticClass()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a9a4cceec7287368a9e015502b1e91887} 
+is\+Trusted\+Static\+Class (\begin{DoxyParamCaption}\item[{}]{\$class\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if static class is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if class is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if static class is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a3ac9d95acbc07880d3ea6b6d5cfe7312}\index{Smarty\_Security@{Smarty\_Security}!isTrustedStaticClassAccess@{isTrustedStaticClassAccess}}
+\index{isTrustedStaticClassAccess@{isTrustedStaticClassAccess}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedStaticClassAccess()}{isTrustedStaticClassAccess()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a3ac9d95acbc07880d3ea6b6d5cfe7312} 
+is\+Trusted\+Static\+Class\+Access (\begin{DoxyParamCaption}\item[{}]{\$class\+\_\+name}{, }\item[{}]{\$params}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if static class method/property is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+\_\+name} & \\
+\hline
+string & {\em \$params} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if class method is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if static class method is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a078d58aafa3e3322ebc8dca910a1a36d}\index{Smarty\_Security@{Smarty\_Security}!isTrustedStream@{isTrustedStream}}
+\index{isTrustedStream@{isTrustedStream}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedStream()}{isTrustedStream()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a078d58aafa3e3322ebc8dca910a1a36d} 
+is\+Trusted\+Stream (\begin{DoxyParamCaption}\item[{}]{\$stream\+\_\+name}{}\end{DoxyParamCaption})}
+
+Check if stream is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$stream\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if stream is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_exception}{Smarty\+Exception}} & if stream is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_ad9ce0943f892bf751358992b0db54375}\index{Smarty\_Security@{Smarty\_Security}!isTrustedTag@{isTrustedTag}}
+\index{isTrustedTag@{isTrustedTag}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedTag()}{isTrustedTag()}}
+{\footnotesize\ttfamily \label{class_smarty___security_ad9ce0943f892bf751358992b0db54375} 
+is\+Trusted\+Tag (\begin{DoxyParamCaption}\item[{}]{\$tag\+\_\+name}{, }\item[{}]{\$compiler}{}\end{DoxyParamCaption})}
+
+Check if tag is trusted.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag\+\_\+name} & \\
+\hline
+object & {\em \$compiler} & compiler object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if tag is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_compiler_exception}{Smarty\+Compiler\+Exception}} & if modifier is not trusted \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a5b20c21ee6e41e8ff29e5f7a6671f095}\index{Smarty\_Security@{Smarty\_Security}!isTrustedUri@{isTrustedUri}}
+\index{isTrustedUri@{isTrustedUri}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{isTrustedUri()}{isTrustedUri()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a5b20c21ee6e41e8ff29e5f7a6671f095} 
+is\+Trusted\+Uri (\begin{DoxyParamCaption}\item[{}]{\$uri}{}\end{DoxyParamCaption})}
+
+Check if URI (e.\+g. \{fetch\} or \{html\+\_\+image\}) is trusted To simplify things, \doxylink{class_smarty___security_a5b20c21ee6e41e8ff29e5f7a6671f095}{is\+Trusted\+Uri()} resolves all input to "{}\{\$\+PROTOCOL\}\+://\{\$\+HOSTNAME\}"{}. So "{}http\+://username\+:password@hello.\+world.\+example.\+org\+:8080/some-\/path?some=query-\/string"{} is reduced to "{}http\+://hello.\+world.\+example.\+org"{} prior to applying the patters from {\ttfamily \doxylink{acac0932b45462f6ec294170ba2398970}{\$trusted\+\_\+uri}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if URI is trusted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_exception}{Smarty\+Exception}} & if URI is not trusted @uses \$trusted\+\_\+uri for list of patterns to match against \$uri \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_smarty___security_a20928c493e01cb883bd4e576ba6e105e}\index{Smarty\_Security@{Smarty\_Security}!registerCallBacks@{registerCallBacks}}
+\index{registerCallBacks@{registerCallBacks}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{registerCallBacks()}{registerCallBacks()}}
+{\footnotesize\ttfamily \label{class_smarty___security_a20928c493e01cb883bd4e576ba6e105e} 
+register\+Call\+Backs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$template}{}\end{DoxyParamCaption})}
+
+Register callback functions call at start/end of template rendering
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$template} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___security_af996e13042070c3f769f6602c5617620}\index{Smarty\_Security@{Smarty\_Security}!startTemplate@{startTemplate}}
+\index{startTemplate@{startTemplate}!Smarty\_Security@{Smarty\_Security}}
+\doxysubsubsection{\texorpdfstring{startTemplate()}{startTemplate()}}
+{\footnotesize\ttfamily \label{class_smarty___security_af996e13042070c3f769f6602c5617620} 
+start\+Template (\begin{DoxyParamCaption}\item[{}]{\$template}{}\end{DoxyParamCaption})}
+
+Start template processing
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$template} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_smarty_exception}{Smarty\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+security.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{Matcher\+APIInterface Interface Reference}
+\hypertarget{interfacelibphonenumber_1_1_matcher_a_p_i_interface}{}\label{interfacelibphonenumber_1_1_matcher_a_p_i_interface}\index{MatcherAPIInterface@{MatcherAPIInterface}}
+Inheritance diagram for Matcher\+APIInterface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacelibphonenumber_1_1_matcher_a_p_i_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacelibphonenumber_1_1_matcher_a_p_i_interface_a2fddc1fc11b95f5434d9272dc1ed3286}{match\+National\+Number}} (\$number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}} \$number\+Desc, \$allow\+Prefix\+Match)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacelibphonenumber_1_1_matcher_a_p_i_interface_a2fddc1fc11b95f5434d9272dc1ed3286}\index{MatcherAPIInterface@{MatcherAPIInterface}!matchNationalNumber@{matchNationalNumber}}
+\index{matchNationalNumber@{matchNationalNumber}!MatcherAPIInterface@{MatcherAPIInterface}}
+\doxysubsubsection{\texorpdfstring{matchNationalNumber()}{matchNationalNumber()}}
+{\footnotesize\ttfamily \label{interfacelibphonenumber_1_1_matcher_a_p_i_interface_a2fddc1fc11b95f5434d9272dc1ed3286} 
+match\+National\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}}}]{\$number\+Desc}{, }\item[{}]{\$allow\+Prefix\+Match}{}\end{DoxyParamCaption})}
+
+Returns whether the given national number (a string containing only decimal digits) matches the national number pattern defined in the given {\ttfamily Phone\+Number\+Desc} message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & \\
+\hline
+Phone\+Number\+Desc & {\em \$number\+Desc} & \\
+\hline
+boolean & {\em \$allow\+Prefix\+Match} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classlibphonenumber_1_1_regex_based_matcher_a2fddc1fc11b95f5434d9272dc1ed3286}{Regex\+Based\+Matcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Matcher\+APIInterface.\+php\end{DoxyCompactItemize}

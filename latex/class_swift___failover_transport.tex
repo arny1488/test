@@ -1,0 +1,81 @@
+\doxysection{Swift\+\_\+\+Failover\+Transport Class Reference}
+\hypertarget{class_swift___failover_transport}{}\label{class_swift___failover_transport}\index{Swift\_FailoverTransport@{Swift\_FailoverTransport}}
+Inheritance diagram for Swift\+\_\+\+Failover\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___failover_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___failover_transport_ac376f024730034d461362567bdc77163}{\+\_\+\+\_\+construct}} (\$transports=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___transport___failover_transport}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___failover_transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___failover_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___transport___load_balanced_transport}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a3a792aa18c6c9cd906b7a214eaf0a7d5}{set\+Transports}} (array \$transports)
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_aad454089f500b9773ac793474a9c02ef}{get\+Transports}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a56f73f7c51fd721e43e9039e2e05bf48}{get\+Last\+Used\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_swift___transport___failover_transport}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___failover_transport_af64dc468c020e131bdd990b0a8632b95}{get\+Next\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___failover_transport_a8e1225c1640bbd6935f8676e218274d2}{kill\+Current\+Transport}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_swift___transport___load_balanced_transport}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$transports} = \mbox{[}$\,$\mbox{]}
+\item 
+{\bfseries \$last\+Used\+Transport} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains a list of redundant Transports so when one fails, the next is used.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___failover_transport_ac376f024730034d461362567bdc77163}\index{Swift\_FailoverTransport@{Swift\_FailoverTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_FailoverTransport@{Swift\_FailoverTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___failover_transport_ac376f024730034d461362567bdc77163} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$transports}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Creates a new Failover\+Transport with \$transports.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport}\mbox{[}$\,$\mbox{]} & {\em \$transports} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Failover\+Transport.\+php\end{DoxyCompactItemize}

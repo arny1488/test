@@ -1,0 +1,76 @@
+\doxysection{Valid Class Reference}
+\hypertarget{class_valid}{}\label{class_valid}\index{Valid@{Valid}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_valid_a9c1a3046ce9c8db496416aaa08d017e4}{email}} (string \$email)
+\item 
+\Hypertarget{class_valid_ac1cadf585ad34afc24a8a2ebebe830e7}\label{class_valid_ac1cadf585ad34afc24a8a2ebebe830e7} 
+static {\bfseries normalize\+Email} (string \$email)
+\item 
+\Hypertarget{class_valid_abd0894b4038c17584896539abc12b23e}\label{class_valid_abd0894b4038c17584896539abc12b23e} 
+static {\bfseries phone} (string \$phone, string \$country\+\_\+code)
+\item 
+\Hypertarget{class_valid_ae3b6e5026a779d60bec31985c6bedd5f}\label{class_valid_ae3b6e5026a779d60bec31985c6bedd5f} 
+static {\bfseries is\+Mobile} (string \$phone, string \$country\+\_\+code)
+\item 
+\Hypertarget{class_valid_a39109a7962b65805827477a753496e89}\label{class_valid_a39109a7962b65805827477a753496e89} 
+static {\bfseries inn} (?string \$inn)
+\item 
+\Hypertarget{class_valid_ad9340338956bb51f05cae13257261dfa}\label{class_valid_ad9340338956bb51f05cae13257261dfa} 
+static {\bfseries international\+Phone} (string \$phone, string \$country\+\_\+code)
+\item 
+\Hypertarget{class_valid_abe5c5367a80e421d74f05b4149821ab3}\label{class_valid_abe5c5367a80e421d74f05b4149821ab3} 
+static {\bfseries normalize\+Phone} (string\texorpdfstring{$\vert$}{|}array \$phone)
+\item 
+static \mbox{\hyperlink{class_valid_a9d640e0a6d6d98fa3c0b205b8f780b3b}{ip}} (string \$ip)
+\item 
+\Hypertarget{class_valid_a72fb2aede340299c9dd5dcc20675120b}\label{class_valid_a72fb2aede340299c9dd5dcc20675120b} 
+static {\bfseries get\+All\+Countries} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_valid_a36df8098b95748f04f0cb7e59a6ca7ea}\label{class_valid_a36df8098b95748f04f0cb7e59a6ca7ea} 
+const {\bfseries EMAIL\+\_\+\+REGEX} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}(?!(?\+:(?\+:\textbackslash{}x22?\textbackslash{}x5C\mbox{[}\textbackslash{}x00-\/\textbackslash{}x7E\mbox{]}\textbackslash{}x22?)\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x22?\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}x5\+C\textbackslash{}x22\mbox{]}\textbackslash{}x22?))\{255,\})(?!(?\+:(?\+:\textbackslash{}x22?\textbackslash{}x5C\mbox{[}\textbackslash{}x00-\/\textbackslash{}x7E\mbox{]}\textbackslash{}x22?)\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x22?\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}x5\+C\textbackslash{}x22\mbox{]}\textbackslash{}x22?))\{65,\}@)(?\+:(?\+:\mbox{[}\textbackslash{}x21\textbackslash{}x23-\/\textbackslash{}x27\textbackslash{}x2\+A\textbackslash{}x2\+B\textbackslash{}x2\+D\textbackslash{}x2F-\/\textbackslash{}x39\textbackslash{}x3\+D\textbackslash{}x3\+F\textbackslash{}x5E-\/\textbackslash{}x7E\mbox{]}+)\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x22(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x1\+F\textbackslash{}x21\textbackslash{}x23-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x5C\mbox{[}\textbackslash{}x00-\/\textbackslash{}x7F\mbox{]}))\texorpdfstring{$\ast$}{*}\textbackslash{}x22))(?\+:\textbackslash{}.(?\+:(?\+:\mbox{[}\textbackslash{}x21\textbackslash{}x23-\/\textbackslash{}x27\textbackslash{}x2\+A\textbackslash{}x2\+B\textbackslash{}x2\+D\textbackslash{}x2F-\/\textbackslash{}x39\textbackslash{}x3\+D\textbackslash{}x3\+F\textbackslash{}x5E-\/\textbackslash{}x7E\mbox{]}+)\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x22(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x1\+F\textbackslash{}x21\textbackslash{}x23-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}x5C\mbox{[}\textbackslash{}x00-\/\textbackslash{}x7F\mbox{]}))\texorpdfstring{$\ast$}{*}\textbackslash{}x22)))\texorpdfstring{$\ast$}{*}@(?\+:(?\+:(?!.\texorpdfstring{$\ast$}{*}\mbox{[}\texorpdfstring{$^\wedge$}{\string^}.\mbox{]}\{64,\})(?\+:(?\+:(?\+:xn-\/-\/)?\mbox{[}a-\/z0-\/9\mbox{]}+(?\+:-\/\mbox{[}a-\/z0-\/9\mbox{]}+)\texorpdfstring{$\ast$}{*}\textbackslash{}.)\{1,126\})\{1,\}(?\+:(?\+:\mbox{[}a-\/z\mbox{]}\mbox{[}a-\/z0-\/9\mbox{]}\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}(?\+:(?\+:xn-\/-\/)\mbox{[}a-\/z0-\/9\mbox{]}+))(?\+:-\/\mbox{[}a-\/z0-\/9\mbox{]}+)\texorpdfstring{$\ast$}{*})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\mbox{[}(?\+:(?\+:IPv6\+:(?\+:(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{7\})\texorpdfstring{$\vert$}{|}(?\+:(?!(?\+:.\texorpdfstring{$\ast$}{*}\mbox{[}a-\/f0-\/9\mbox{]}\mbox{[}\+:\textbackslash{}\mbox{]}\mbox{]})\{7,\})(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{0,5\})?\+::(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{0,5\})?)))\texorpdfstring{$\vert$}{|}(?\+:(?\+:IPv6\+:(?\+:(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{5\}\+:)\texorpdfstring{$\vert$}{|}(?\+:(?!(?\+:.\texorpdfstring{$\ast$}{*}\mbox{[}a-\/f0-\/9\mbox{]}\+:)\{5,\})(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{0,3\})?\+::(?\+:\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\}(?\+::\mbox{[}a-\/f0-\/9\mbox{]}\{1,4\})\{0,3\}\+:)?)))?(?\+:(?\+:25\mbox{[}0-\/5\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:2\mbox{[}0-\/4\mbox{]}\mbox{[}0-\/9\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:1\mbox{[}0-\/9\mbox{]}\{2\})\texorpdfstring{$\vert$}{|}(?\+:\mbox{[}1-\/9\mbox{]}?\mbox{[}0-\/9\mbox{]}))(?\+:\textbackslash{}.(?\+:(?\+:25\mbox{[}0-\/5\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:2\mbox{[}0-\/4\mbox{]}\mbox{[}0-\/9\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:1\mbox{[}0-\/9\mbox{]}\{2\})\texorpdfstring{$\vert$}{|}(?\+:\mbox{[}1-\/9\mbox{]}?\mbox{[}0-\/9\mbox{]})))\{3\}))\textbackslash{}\mbox{]}))\$/iD\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_valid_a9c1a3046ce9c8db496416aaa08d017e4}\index{Valid@{Valid}!email@{email}}
+\index{email@{email}!Valid@{Valid}}
+\doxysubsubsection{\texorpdfstring{email()}{email()}}
+{\footnotesize\ttfamily \label{class_valid_a9c1a3046ce9c8db496416aaa08d017e4} 
+static email (\begin{DoxyParamCaption}\item[{string}]{\$email}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if valid email address
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_valid_a9d640e0a6d6d98fa3c0b205b8f780b3b}\index{Valid@{Valid}!ip@{ip}}
+\index{ip@{ip}!Valid@{Valid}}
+\doxysubsubsection{\texorpdfstring{ip()}{ip()}}
+{\footnotesize\ttfamily \label{class_valid_a9d640e0a6d6d98fa3c0b205b8f780b3b} 
+static ip (\begin{DoxyParamCaption}\item[{string}]{\$ip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if valid \doxylink{class_i_p}{IP}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ip} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Valid.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,121 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___decorator_plugin}{}\label{class_swift___plugins___decorator_plugin}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Decorator\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___decorator_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___decorator_plugin_a5116885ea4ac5ed58b11cd0130bd3c08}{\+\_\+\+\_\+construct}} (\$replacements)
+\item 
+\mbox{\hyperlink{class_swift___plugins___decorator_plugin_a4ea01a952ee65cd0829def649d9a65ce}{set\+Replacements}} (\$replacements)
+\item 
+\mbox{\hyperlink{class_swift___plugins___decorator_plugin_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___decorator_plugin_a9c6c16c132f7c4d04c9b92f65bed9e98}{get\+Replacements\+For}} (\$address)
+\item 
+\mbox{\hyperlink{class_swift___plugins___decorator_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Allows customization of Messages on-\/the-\/fly.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___decorator_plugin_a5116885ea4ac5ed58b11cd0130bd3c08}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___decorator_plugin_a5116885ea4ac5ed58b11cd0130bd3c08} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$replacements}{}\end{DoxyParamCaption})}
+
+Create a new Decorator\+Plugin with \$replacements.
+
+The \$replacements can either be an associative array, or an implementation of {\ttfamily \doxylink{interface_swift___plugins___decorator___replacements}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements}}.
+
+When using an array, it should be of the form\+: {\ttfamily  \$replacements = array( "{}address1@domain.\+tld"{} =\texorpdfstring{$>$}{>} array("{}\{a\}"{} =\texorpdfstring{$>$}{>} "{}b"{}, "{}\{c\}"{} =\texorpdfstring{$>$}{>} "{}d"{}), "{}address2@domain.\+tld"{} =\texorpdfstring{$>$}{>} array("{}\{a\}"{} =\texorpdfstring{$>$}{>} "{}x"{}, "{}\{c\}"{} =\texorpdfstring{$>$}{>} "{}y"{}) ) }
+
+When using an instance of {\ttfamily \doxylink{interface_swift___plugins___decorator___replacements}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements}}, the object should return just the array of replacements for the address given to {\ttfamily \doxylink{interface_swift___plugins___decorator___replacements_a9c6c16c132f7c4d04c9b92f65bed9e98}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements\+::get\+Replacements\+For()}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$replacements} & Array or \doxylink{interface_swift___plugins___decorator___replacements}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___decorator_plugin_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___decorator_plugin_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___decorator_plugin_a9c6c16c132f7c4d04c9b92f65bed9e98}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}!getReplacementsFor@{getReplacementsFor}}
+\index{getReplacementsFor@{getReplacementsFor}!Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+\doxysubsubsection{\texorpdfstring{getReplacementsFor()}{getReplacementsFor()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___decorator_plugin_a9c6c16c132f7c4d04c9b92f65bed9e98} 
+get\+Replacements\+For (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})}
+
+Find a map of replacements for the address.
+
+If this plugin was provided with a delegate instance of {\ttfamily \doxylink{interface_swift___plugins___decorator___replacements}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements}} then the call will be delegated to it. Otherwise, it will attempt to find the replacements from the array provided in the constructor.
+
+If no replacements can be found, an empty value (NULL) is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___decorator___replacements_a9c6c16c132f7c4d04c9b92f65bed9e98}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements}}.
+
+\Hypertarget{class_swift___plugins___decorator_plugin_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___decorator_plugin_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___decorator_plugin_a4ea01a952ee65cd0829def649d9a65ce}\index{Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}!setReplacements@{setReplacements}}
+\index{setReplacements@{setReplacements}!Swift\_Plugins\_DecoratorPlugin@{Swift\_Plugins\_DecoratorPlugin}}
+\doxysubsubsection{\texorpdfstring{setReplacements()}{setReplacements()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___decorator_plugin_a4ea01a952ee65cd0829def649d9a65ce} 
+set\+Replacements (\begin{DoxyParamCaption}\item[{}]{\$replacements}{}\end{DoxyParamCaption})}
+
+Sets replacements.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$replacements} & Array or \doxylink{interface_swift___plugins___decorator___replacements}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+\_\+\+Replacements}\\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___plugins___decorator_plugin_a5116885ea4ac5ed58b11cd0130bd3c08}{\+\_\+\+\_\+construct()} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Decorator\+Plugin.\+php\end{DoxyCompactItemize}

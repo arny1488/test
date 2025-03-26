@@ -1,0 +1,114 @@
+\doxysection{Swift\+\_\+\+Spool Interface Reference}
+\hypertarget{interface_swift___spool}{}\label{interface_swift___spool}\index{Swift\_Spool@{Swift\_Spool}}
+Inheritance diagram for Swift\+\_\+\+Spool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_swift___spool}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___spool_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{queue\+Message}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{interface_swift___spool_a36cb9b4369999eb8a08b0ccff35a0591}{flush\+Queue}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$transport, \&\$failed\+Recipients=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for spools.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___spool_a36cb9b4369999eb8a08b0ccff35a0591}\index{Swift\_Spool@{Swift\_Spool}!flushQueue@{flushQueue}}
+\index{flushQueue@{flushQueue}!Swift\_Spool@{Swift\_Spool}}
+\doxysubsubsection{\texorpdfstring{flushQueue()}{flushQueue()}}
+{\footnotesize\ttfamily \label{interface_swift___spool_a36cb9b4369999eb8a08b0ccff35a0591} 
+flush\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$transport}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sends messages using the given transport instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} & {\em \$transport} & A transport instance \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of sent emails 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___file_spool_a36cb9b4369999eb8a08b0ccff35a0591}{Swift\+\_\+\+File\+Spool}}, and \mbox{\hyperlink{class_swift___memory_spool_a36cb9b4369999eb8a08b0ccff35a0591}{Swift\+\_\+\+Memory\+Spool}}.
+
+\Hypertarget{interface_swift___spool_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_Spool@{Swift\_Spool}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_Spool@{Swift\_Spool}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{interface_swift___spool_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tests if this Spool mechanism has started.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___file_spool_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+File\+Spool}}, and \mbox{\hyperlink{class_swift___memory_spool_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Memory\+Spool}}.
+
+\Hypertarget{interface_swift___spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}\index{Swift\_Spool@{Swift\_Spool}!queueMessage@{queueMessage}}
+\index{queueMessage@{queueMessage}!Swift\_Spool@{Swift\_Spool}}
+\doxysubsubsection{\texorpdfstring{queueMessage()}{queueMessage()}}
+{\footnotesize\ttfamily \label{interface_swift___spool_abf760f9e54194d9cc7e2cd5c7cc6fe66} 
+queue\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Queues a message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message} & {\em \$message} & The message to store\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the operation has succeeded 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___file_spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{Swift\+\_\+\+File\+Spool}}, and \mbox{\hyperlink{class_swift___memory_spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{Swift\+\_\+\+Memory\+Spool}}.
+
+\Hypertarget{interface_swift___spool_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_Spool@{Swift\_Spool}!start@{start}}
+\index{start@{start}!Swift\_Spool@{Swift\_Spool}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{interface_swift___spool_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Starts this Spool mechanism. 
+
+Implemented in \mbox{\hyperlink{class_swift___file_spool_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+File\+Spool}}, and \mbox{\hyperlink{class_swift___memory_spool_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Memory\+Spool}}.
+
+\Hypertarget{interface_swift___spool_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_Spool@{Swift\_Spool}!stop@{stop}}
+\index{stop@{stop}!Swift\_Spool@{Swift\_Spool}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{interface_swift___spool_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stops this Spool mechanism. 
+
+Implemented in \mbox{\hyperlink{class_swift___file_spool_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+File\+Spool}}, and \mbox{\hyperlink{class_swift___memory_spool_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Memory\+Spool}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Spool.\+php\end{DoxyCompactItemize}

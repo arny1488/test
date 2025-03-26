@@ -1,0 +1,72 @@
+\doxysection{Json Class Reference}
+\hypertarget{class_json}{}\label{class_json}\index{Json@{Json}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_json_a85d0d088d2add9d379ad59d40133a502}{encode}} (array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$value, int \$flags=0)
+\item 
+static \mbox{\hyperlink{class_json_a2c73a4a4042ffef8368ade20d7d54f82}{decode}} (?string \$string, bool \$object=false)
+\item 
+static \mbox{\hyperlink{class_json_ac1ce3835533cd59db8b23f16d6366978}{output}} (array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null \$output, bool \$shutdown=false, ?int \$status=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_json_a2c73a4a4042ffef8368ade20d7d54f82}\index{Json@{Json}!decode@{decode}}
+\index{decode@{decode}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_json_a2c73a4a4042ffef8368ade20d7d54f82} 
+static decode (\begin{DoxyParamCaption}\item[{?string}]{\$string}{, }\item[{bool}]{\$object}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert JSON to array or object
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$string} & \$string JSON string \\
+\hline
+bool & {\em \$object} & to object flag \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_json_a85d0d088d2add9d379ad59d40133a502}\index{Json@{Json}!encode@{encode}}
+\index{encode@{encode}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_json_a85d0d088d2add9d379ad59d40133a502} 
+static encode (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$value}{, }\item[{int}]{\$flags}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert array to JSON
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$value} & \\
+\hline
+int & {\em \$flags} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_json_ac1ce3835533cd59db8b23f16d6366978}\index{Json@{Json}!output@{output}}
+\index{output@{output}!Json@{Json}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily \label{class_json_ac1ce3835533cd59db8b23f16d6366978} 
+static output (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string\texorpdfstring{$\vert$}{|}null}]{\$output}{, }\item[{bool}]{\$shutdown}{ = {\ttfamily false}, }\item[{?int}]{\$status}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Output JSON
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string | null & {\em \$output} & \$array data to output \\
+\hline
+bool & {\em \$shutdown} & shutdown after output \\
+\hline
+int | null & {\em \$status} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Json.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\doxysection{Swift\+\_\+\+Character\+Stream Interface Reference}
+\hypertarget{interface_swift___character_stream}{}\label{interface_swift___character_stream}\index{Swift\_CharacterStream@{Swift\_CharacterStream}}
+Inheritance diagram for Swift\+\_\+\+Character\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.958042cm]{interface_swift___character_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}{set\+Character\+Set}} (\$charset)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_aeb55290697c0f268ac8d58929c37686a}{set\+Character\+Reader\+Factory}} (\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}} \$factory)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{import\+Byte\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{import\+String}} (\$string)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a2acacba716a933935d63b2bacf52cff6}{read}} (\$length)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a80949d4d73f53497c94385b164a4ec06}{read\+Bytes}} (\$length)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a7177c479366fe53609a37ca70a0130b5}{write}} (\$chars)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a34d080813705b65531a6aca4f372d98f}{set\+Pointer}} (\$char\+Offset)
+\item 
+\mbox{\hyperlink{interface_swift___character_stream_a30b098fadaf991b5ffe27402ba7f705d}{flush\+Contents}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An abstract means of reading and writing data in terms of characters as opposed to bytes.
+
+Classes implementing this interface may use a subsystem which requires less memory than working with large strings of data.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___character_stream_a30b098fadaf991b5ffe27402ba7f705d}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!flushContents@{flushContents}}
+\index{flushContents@{flushContents}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{flushContents()}{flushContents()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a30b098fadaf991b5ffe27402ba7f705d} 
+flush\+Contents (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Empty the stream and reset the internal pointer. 
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a30b098fadaf991b5ffe27402ba7f705d}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a30b098fadaf991b5ffe27402ba7f705d}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a8ff715be7d98ad5fa0bad502ae82c620}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!importByteStream@{importByteStream}}
+\index{importByteStream@{importByteStream}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{importByteStream()}{importByteStream()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a8ff715be7d98ad5fa0bad502ae82c620} 
+import\+Byte\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{}\end{DoxyParamCaption})}
+
+Overwrite this character stream using the byte sequence in the byte stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream} & {\em \$os} & output stream to read from \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!importString@{importString}}
+\index{importString@{importString}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{importString()}{importString()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a704baff7ed73afcdf9d5ab38c8c2b199} 
+import\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})}
+
+Import a string a bytes into this Character\+Stream, overwriting any existing data in the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a2acacba716a933935d63b2bacf52cff6}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!read@{read}}
+\index{read@{read}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a2acacba716a933935d63b2bacf52cff6} 
+read (\begin{DoxyParamCaption}\item[{}]{\$length}{}\end{DoxyParamCaption})}
+
+Read \$length characters from the stream and move the internal pointer \$length further into the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a2acacba716a933935d63b2bacf52cff6}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a2acacba716a933935d63b2bacf52cff6}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a80949d4d73f53497c94385b164a4ec06}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!readBytes@{readBytes}}
+\index{readBytes@{readBytes}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{readBytes()}{readBytes()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a80949d4d73f53497c94385b164a4ec06} 
+read\+Bytes (\begin{DoxyParamCaption}\item[{}]{\$length}{}\end{DoxyParamCaption})}
+
+Read \$length characters from the stream and return a 1-\/dimensional array containing there octet values.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a80949d4d73f53497c94385b164a4ec06}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a80949d4d73f53497c94385b164a4ec06}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_aeb55290697c0f268ac8d58929c37686a}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!setCharacterReaderFactory@{setCharacterReaderFactory}}
+\index{setCharacterReaderFactory@{setCharacterReaderFactory}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{setCharacterReaderFactory()}{setCharacterReaderFactory()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_aeb55290697c0f268ac8d58929c37686a} 
+set\+Character\+Reader\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}}}]{\$factory}{}\end{DoxyParamCaption})}
+
+Set the Character\+Reader\+Factory for multi charset support. 
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_aeb55290697c0f268ac8d58929c37686a}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_aeb55290697c0f268ac8d58929c37686a}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!setCharacterSet@{setCharacterSet}}
+\index{setCharacterSet@{setCharacterSet}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{setCharacterSet()}{setCharacterSet()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd} 
+set\+Character\+Set (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Set the character set used in this Character\+Stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a34d080813705b65531a6aca4f372d98f}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!setPointer@{setPointer}}
+\index{setPointer@{setPointer}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{setPointer()}{setPointer()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a34d080813705b65531a6aca4f372d98f} 
+set\+Pointer (\begin{DoxyParamCaption}\item[{}]{\$char\+Offset}{}\end{DoxyParamCaption})}
+
+Move the internal pointer to \$char\+Offset in the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$char\+Offset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a34d080813705b65531a6aca4f372d98f}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a34d080813705b65531a6aca4f372d98f}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+\Hypertarget{interface_swift___character_stream_a7177c479366fe53609a37ca70a0130b5}\index{Swift\_CharacterStream@{Swift\_CharacterStream}!write@{write}}
+\index{write@{write}!Swift\_CharacterStream@{Swift\_CharacterStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{interface_swift___character_stream_a7177c479366fe53609a37ca70a0130b5} 
+write (\begin{DoxyParamCaption}\item[{}]{\$chars}{}\end{DoxyParamCaption})}
+
+Write \$chars to the end of the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$chars} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_stream___array_character_stream_a7177c479366fe53609a37ca70a0130b5}{Swift\+\_\+\+Character\+Stream\+\_\+\+Array\+Character\+Stream}}, and \mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a7177c479366fe53609a37ca70a0130b5}{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Character\+Stream.\+php\end{DoxyCompactItemize}

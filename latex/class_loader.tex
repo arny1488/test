@@ -1,0 +1,215 @@
+\doxysection{Loader Class Reference}
+\hypertarget{class_loader}{}\label{class_loader}\index{Loader@{Loader}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_loader_ad9957c928e4a11d56efc5e54ae853fd3}{add\+Class}} (string \$class\+Name, string \$class\+Path)
+\item 
+static \mbox{\hyperlink{class_loader_ad3bfd69f12f079d1b7362a513878778c}{add\+Classes}} (array \$classes)
+\item 
+static \mbox{\hyperlink{class_loader_a1687cd7afdea3cd67012b2928a233e2a}{add\+Files}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_loader_a6b1955836e1a9347155ff7c35bd6b2ae}{add\+Modules}} (string \$path=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_loader_a8c6ed31c37f528ae892381d98d62ce19}{load\+Module}} (string \$name=\textquotesingle{}\textquotesingle{})
+\item 
+\Hypertarget{class_loader_aa810fc8866544e9a595875ff09229109}\label{class_loader_aa810fc8866544e9a595875ff09229109} 
+static {\bfseries get\+Module} (string \$name)
+\item 
+static \mbox{\hyperlink{class_loader_ac49c9d84d28c79557058f4259897f2c1}{add\+Directory}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_loader_a54cd6a096d8eb3be9213b0b1b5687024}{reg\+Namespace}} (string \$namespace, string \$path)
+\item 
+static \mbox{\hyperlink{class_loader_afb1be05412ee31200b8038839f9d5051}{add\+Alias}} (string \$alias, string \$class\+Name)
+\item 
+static \mbox{\hyperlink{class_loader_a47dc16d8e6bd5d57c849cc2bc0e416e7}{load\+Class}} (string \$class\+Name)
+\item 
+static \mbox{\hyperlink{class_loader_a9f0be6ae273d3669e11c29910a0be338}{init}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_loader_a179075f286032a2b3137928bed304071}{PSR0}} (string \$class\+Name, ?string \$directory=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_loader_a95b30665fdcfeb963f54c3eef5fc0f4d}\label{class_loader_a95b30665fdcfeb963f54c3eef5fc0f4d} 
+static array {\bfseries \$classes} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_loader_af780c1ce347170464264295bad64baba}\label{class_loader_af780c1ce347170464264295bad64baba} 
+static array {\bfseries \$directories} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_loader_a037cb9dc7fd4dee92bf40872e519fccc}\label{class_loader_a037cb9dc7fd4dee92bf40872e519fccc} 
+static array {\bfseries \$namespaces} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_loader_a30c35e4d7f0e56c0bdb6a00e6c5f1beb}\label{class_loader_a30c35e4d7f0e56c0bdb6a00e6c5f1beb} 
+static array {\bfseries \$aliases} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_loader_a5489d3afebf07725649f7d34b2e80c44}\label{class_loader_a5489d3afebf07725649f7d34b2e80c44} 
+static array {\bfseries \$modules} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_loader_afb1be05412ee31200b8038839f9d5051}\index{Loader@{Loader}!addAlias@{addAlias}}
+\index{addAlias@{addAlias}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addAlias()}{addAlias()}}
+{\footnotesize\ttfamily \label{class_loader_afb1be05412ee31200b8038839f9d5051} 
+static add\+Alias (\begin{DoxyParamCaption}\item[{string}]{\$alias}{, }\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add class alias
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$alias} & псевдоним \\
+\hline
+string & {\em \$class\+Name} & имя класса \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_loader_ad9957c928e4a11d56efc5e54ae853fd3}\index{Loader@{Loader}!addClass@{addClass}}
+\index{addClass@{addClass}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addClass()}{addClass()}}
+{\footnotesize\ttfamily \label{class_loader_ad9957c928e4a11d56efc5e54ae853fd3} 
+static add\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{, }\item[{string}]{\$class\+Path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add class to autoloader
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & class name \\
+\hline
+string & {\em \$class\+Path} & class file path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_loader_ad3bfd69f12f079d1b7362a513878778c}\index{Loader@{Loader}!addClasses@{addClasses}}
+\index{addClasses@{addClasses}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addClasses()}{addClasses()}}
+{\footnotesize\ttfamily \label{class_loader_ad3bfd69f12f079d1b7362a513878778c} 
+static add\+Classes (\begin{DoxyParamCaption}\item[{array}]{\$classes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add array of classes to autoloader
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$classes} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_loader_ac49c9d84d28c79557058f4259897f2c1}\index{Loader@{Loader}!addDirectory@{addDirectory}}
+\index{addDirectory@{addDirectory}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addDirectory()}{addDirectory()}}
+{\footnotesize\ttfamily \label{class_loader_ac49c9d84d28c79557058f4259897f2c1} 
+static add\+Directory (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add directory to autoloader
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & путь к папке с классами \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_loader_a1687cd7afdea3cd67012b2928a233e2a}\index{Loader@{Loader}!addFiles@{addFiles}}
+\index{addFiles@{addFiles}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addFiles()}{addFiles()}}
+{\footnotesize\ttfamily \label{class_loader_a1687cd7afdea3cd67012b2928a233e2a} 
+static add\+Files (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Includes and evaluates all PHP files in specified directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to directory with PHP files \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_loader_a6b1955836e1a9347155ff7c35bd6b2ae}\index{Loader@{Loader}!addModules@{addModules}}
+\index{addModules@{addModules}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{addModules()}{addModules()}}
+{\footnotesize\ttfamily \label{class_loader_a6b1955836e1a9347155ff7c35bd6b2ae} 
+static add\+Modules (\begin{DoxyParamCaption}\item[{string}]{\$path}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load modules
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to modules directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_loader_a9f0be6ae273d3669e11c29910a0be338}\index{Loader@{Loader}!init@{init}}
+\index{init@{init}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_loader_a9f0be6ae273d3669e11c29910a0be338} 
+static init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register autoloader \Hypertarget{class_loader_a47dc16d8e6bd5d57c849cc2bc0e416e7}\index{Loader@{Loader}!loadClass@{loadClass}}
+\index{loadClass@{loadClass}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{loadClass()}{loadClass()}}
+{\footnotesize\ttfamily \label{class_loader_a47dc16d8e6bd5d57c849cc2bc0e416e7} 
+static load\+Class (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load class
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & имя класса \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_loader_a8c6ed31c37f528ae892381d98d62ce19}\index{Loader@{Loader}!loadModule@{loadModule}}
+\index{loadModule@{loadModule}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{loadModule()}{loadModule()}}
+{\footnotesize\ttfamily \label{class_loader_a8c6ed31c37f528ae892381d98d62ce19} 
+static load\+Module (\begin{DoxyParamCaption}\item[{string}]{\$name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load module and its classes
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_loader_a179075f286032a2b3137928bed304071}\index{Loader@{Loader}!PSR0@{PSR0}}
+\index{PSR0@{PSR0}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{PSR0()}{PSR0()}}
+{\footnotesize\ttfamily \label{class_loader_a179075f286032a2b3137928bed304071} 
+static PSR0 (\begin{DoxyParamCaption}\item[{string}]{\$class\+Name}{, }\item[{?string}]{\$directory}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+PSR0
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & имя класса \\
+\hline
+string | null & {\em \$directory} & папка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_loader_a54cd6a096d8eb3be9213b0b1b5687024}\index{Loader@{Loader}!regNamespace@{regNamespace}}
+\index{regNamespace@{regNamespace}!Loader@{Loader}}
+\doxysubsubsection{\texorpdfstring{regNamespace()}{regNamespace()}}
+{\footnotesize\ttfamily \label{class_loader_a54cd6a096d8eb3be9213b0b1b5687024} 
+static reg\+Namespace (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{, }\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Register namespace
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & имя \\
+\hline
+string & {\em \$path} & путь \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/loader/Loader.\+php\end{DoxyCompactItemize}

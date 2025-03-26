@@ -1,0 +1,464 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport Class Reference}
+\hypertarget{class_swift___transport___abstract_smtp_transport}{}\label{class_swift___transport___abstract_smtp_transport}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___transport___abstract_smtp_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a6181d2e7c40366ddd8b3639ace4258a4}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}} \$buf, \mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}} \$dispatcher, \$local\+Domain=\textquotesingle{}127.\+0.\+0.\+1\textquotesingle{}, \mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aca167d6eae84ad5946b0b982a46ed210}{set\+Local\+Domain}} (\$domain)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a1627a9f04f0c176a5581eaa08d01cf88}{get\+Local\+Domain}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a576fe979101ebb1791329a0aa2d87192}{set\+Source\+Ip}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_acd584a7846ea4a658b609500728ad5f1}{get\+Source\+Ip}} ()
+\item 
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a89f181842e235b6316e18e10787f6bb2}\label{class_swift___transport___abstract_smtp_transport_a89f181842e235b6316e18e10787f6bb2} 
+{\bfseries set\+Address\+Encoder} (\mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder)
+\item 
+\Hypertarget{class_swift___transport___abstract_smtp_transport_ab8a7fc673dbd2434f7a752b2a65aab02}\label{class_swift___transport___abstract_smtp_transport_ab8a7fc673dbd2434f7a752b2a65aab02} 
+{\bfseries get\+Address\+Encoder} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ae26c1e9de1a05d5b5dae90a079408ed0}{get\+Buffer}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ae034560c3fa4247254560f4e082705f6}{execute\+Command}} (\$command, \$codes=\mbox{[}$\,$\mbox{]}, \&\$failures=null, \$pipeline=false, \$address=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\item 
+\Hypertarget{class_swift___transport___abstract_smtp_transport_aaf11785905da71774e052912d784e3b4}\label{class_swift___transport___abstract_smtp_transport_aaf11785905da71774e052912d784e3b4} 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\item 
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a19dd44fe063cfd1cbafe97452e57666c}\label{class_swift___transport___abstract_smtp_transport_a19dd44fe063cfd1cbafe97452e57666c} 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}{get\+Buffer\+Params}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a2f8ffd80780e4197f4d809495eda3e3c}{read\+Greeting}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a51df65d25c5384d5dc832c236a857355}{do\+Helo\+Command}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aca41d865445be0a6a71484365c9890da}{do\+Mail\+From\+Command}} (\$address)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}{do\+Rcpt\+To\+Command}} (\$address)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_afcf9be955976a03fac855e020da31daf}{do\+Data\+Command}} (\&\$failed\+Recipients)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a2a6607a03863e786fc5183a8fb618b36}{stream\+Message}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ad6a09ec1eaabb551c4e46ddbcf0be2fb}{get\+Reverse\+Path}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a423361b4f57e9ef586f2b531f5e53492}{throw\+Exception}} (\mbox{\hyperlink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} \$e)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af3b318b14470cb61924788801622f2a9}{assert\+Response\+Code}} (\$response, \$wanted)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a25b6254d51108bbc71b4d6b0a22ffe97}{get\+Full\+Response}} (\$seq)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af1862006a19e84e552f66189adc792ae}{\$buffer}}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a026c0305d62db3dbb5ad555bc077f018}{\$started}} = false
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aef9cf198312d2f89238a8e8e2f0f67f3}{\$domain}} = \textquotesingle{}\mbox{[}127.\+0.\+0.\+1\mbox{]}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a9defbea70f3dcceef0b7b148a11e3e5e}{\$event\+Dispatcher}}
+\item 
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a535a36e4c316af43d70b764585f05980}\label{class_swift___transport___abstract_smtp_transport_a535a36e4c316af43d70b764585f05980} 
+{\bfseries \$address\+Encoder}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a17ef6db592279caf905553fcc26fe1cc}{\$pipelining}} = null
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ab606d7bce1ab858b1d2cc40487872c57}{\$pipeline}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a7d4de34f9a0aa29ad82e892dc24ac757}{\$source\+Ip}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sends Messages over SMTP.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a6181d2e7c40366ddd8b3639ace4258a4}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a6181d2e7c40366ddd8b3639ace4258a4} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}}]{\$buf}{, }\item[{\mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}}}]{\$dispatcher}{, }\item[{}]{\$local\+Domain}{ = {\ttfamily \textquotesingle{}127.0.0.1\textquotesingle{}}, }\item[{\mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}}}]{\$address\+Encoder}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a new Esmtp\+Transport using the given I/O buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$local\+Domain} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___sendmail_transport_a6181d2e7c40366ddd8b3639ace4258a4}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a421831a265621325e1fdd19aace0c758}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\_\_destruct@{\_\_destruct}}
+\index{\_\_destruct@{\_\_destruct}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_destruct()}{\_\_destruct()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a421831a265621325e1fdd19aace0c758} 
+\+\_\+\+\_\+destruct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Destructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_af3b318b14470cb61924788801622f2a9}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!assertResponseCode@{assertResponseCode}}
+\index{assertResponseCode@{assertResponseCode}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{assertResponseCode()}{assertResponseCode()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_af3b318b14470cb61924788801622f2a9} 
+assert\+Response\+Code (\begin{DoxyParamCaption}\item[{}]{\$response}{, }\item[{}]{\$wanted}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Throws an Exception if a response code is incorrect \Hypertarget{class_swift___transport___abstract_smtp_transport_afcf9be955976a03fac855e020da31daf}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!doDataCommand@{doDataCommand}}
+\index{doDataCommand@{doDataCommand}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doDataCommand()}{doDataCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_afcf9be955976a03fac855e020da31daf} 
+do\+Data\+Command (\begin{DoxyParamCaption}\item[{\&}]{\$failed\+Recipients}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the DATA command \Hypertarget{class_swift___transport___abstract_smtp_transport_a51df65d25c5384d5dc832c236a857355}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!doHeloCommand@{doHeloCommand}}
+\index{doHeloCommand@{doHeloCommand}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doHeloCommand()}{doHeloCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a51df65d25c5384d5dc832c236a857355} 
+do\+Helo\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the HELO welcome 
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_a51df65d25c5384d5dc832c236a857355}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_aca41d865445be0a6a71484365c9890da}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!doMailFromCommand@{doMailFromCommand}}
+\index{doMailFromCommand@{doMailFromCommand}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doMailFromCommand()}{doMailFromCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_aca41d865445be0a6a71484365c9890da} 
+do\+Mail\+From\+Command (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the MAIL FROM command 
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_aca41d865445be0a6a71484365c9890da}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!doRcptToCommand@{doRcptToCommand}}
+\index{doRcptToCommand@{doRcptToCommand}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doRcptToCommand()}{doRcptToCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72} 
+do\+Rcpt\+To\+Command (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Send the RCPT TO command 
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_ae034560c3fa4247254560f4e082705f6}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ae034560c3fa4247254560f4e082705f6} 
+execute\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$codes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\&}]{\$failures}{ = {\ttfamily null}, }\item[{}]{\$pipeline}{ = {\ttfamily false}, }\item[{}]{\$address}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run a command against the buffer, expecting the given response codes.
+
+If no response codes are given, the response will not be validated. If codes are given, an exception will be thrown on an invalid response. If the command is RCPT TO, and the pipeline is non-\/empty, no exception will be thrown; instead the failing address is added to \$failures.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+int\mbox{[}$\,$\mbox{]} & {\em \$codes} & \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$failures} & An array of failures by-\/reference \\
+\hline
+bool & {\em \$pipeline} & Do not wait for response \\
+\hline
+string & {\em \$address} & the address, if command is RCPT TO\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null The server response, or null if pipelining is enabled 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_ae034560c3fa4247254560f4e082705f6}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_ae26c1e9de1a05d5b5dae90a079408ed0}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getBuffer()}{getBuffer()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ae26c1e9de1a05d5b5dae90a079408ed0} 
+get\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Io\+Buffer where read/writes are occurring.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getBufferParams@{getBufferParams}}
+\index{getBufferParams@{getBufferParams}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getBufferParams()}{getBufferParams()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880} 
+get\+Buffer\+Params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Return an array of params for the Buffer 
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}, and \mbox{\hyperlink{class_swift___transport___sendmail_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a25b6254d51108bbc71b4d6b0a22ffe97}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getFullResponse@{getFullResponse}}
+\index{getFullResponse@{getFullResponse}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getFullResponse()}{getFullResponse()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a25b6254d51108bbc71b4d6b0a22ffe97} 
+get\+Full\+Response (\begin{DoxyParamCaption}\item[{}]{\$seq}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get an entire multi-\/line response using its sequence number \Hypertarget{class_swift___transport___abstract_smtp_transport_a1627a9f04f0c176a5581eaa08d01cf88}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getLocalDomain@{getLocalDomain}}
+\index{getLocalDomain@{getLocalDomain}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getLocalDomain()}{getLocalDomain()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a1627a9f04f0c176a5581eaa08d01cf88} 
+get\+Local\+Domain (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the domain \doxylink{class_swift}{Swift} will identify as.
+
+If an \doxylink{class_i_p}{IP} address was specified, this will be returned wrapped in square brackets as described in RFC 5321, section 4.\+1.\+3.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_ad6a09ec1eaabb551c4e46ddbcf0be2fb}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getReversePath@{getReversePath}}
+\index{getReversePath@{getReversePath}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getReversePath()}{getReversePath()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ad6a09ec1eaabb551c4e46ddbcf0be2fb} 
+get\+Reverse\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine the best-\/use reverse path for this message \Hypertarget{class_swift___transport___abstract_smtp_transport_acd584a7846ea4a658b609500728ad5f1}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!getSourceIp@{getSourceIp}}
+\index{getSourceIp@{getSourceIp}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getSourceIp()}{getSourceIp()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_acd584a7846ea4a658b609500728ad5f1} 
+get\+Source\+Ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the \doxylink{class_i_p}{IP} used to connect to the destination.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_acd584a7846ea4a658b609500728ad5f1}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Test if an SMTP connection has been established.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a6dad377f74b0ce6f21b485ba11052746}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!ping@{ping}}
+\index{ping@{ping}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a6dad377f74b0ce6f21b485ba11052746} 
+ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\} 
+
+Implements \mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a2f8ffd80780e4197f4d809495eda3e3c}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!readGreeting@{readGreeting}}
+\index{readGreeting@{readGreeting}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{readGreeting()}{readGreeting()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a2f8ffd80780e4197f4d809495eda3e3c} 
+read\+Greeting (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Read the opening SMTP greeting \Hypertarget{class_swift___transport___abstract_smtp_transport_ab89f0e56e80b5a21c0f09004a418ae92}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!registerPlugin@{registerPlugin}}
+\index{registerPlugin@{registerPlugin}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{registerPlugin()}{registerPlugin()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ab89f0e56e80b5a21c0f09004a418ae92} 
+register\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$plugin}{}\end{DoxyParamCaption})}
+
+Register a plugin. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a4a20559544fdf4dcb457e258dc976cf8}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!reset@{reset}}
+\index{reset@{reset}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Reset the current mail transaction. \Hypertarget{class_swift___transport___abstract_smtp_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!send@{send}}
+\index{send@{send}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ac2f1a5be8ad5f7740c8f95503d48a26e} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given Message.
+
+Recipient/sender data will be retrieved from the Message \doxylink{class_a_p_i}{API}. The return value is the number of recipients who were accepted for delivery.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___sendmail_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_aca167d6eae84ad5946b0b982a46ed210}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!setLocalDomain@{setLocalDomain}}
+\index{setLocalDomain@{setLocalDomain}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setLocalDomain()}{setLocalDomain()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_aca167d6eae84ad5946b0b982a46ed210} 
+set\+Local\+Domain (\begin{DoxyParamCaption}\item[{}]{\$domain}{}\end{DoxyParamCaption})}
+
+Set the name of the local domain which \doxylink{class_swift}{Swift} will identify itself as.
+
+This should be a fully-\/qualified domain name and should be truly the domain you\textquotesingle{}re using.
+
+If your server does not have a domain name, use the \doxylink{class_i_p}{IP} address. This will automatically be wrapped in square brackets as described in RFC 5321, section 4.\+1.\+3.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a576fe979101ebb1791329a0aa2d87192}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!setSourceIp@{setSourceIp}}
+\index{setSourceIp@{setSourceIp}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setSourceIp()}{setSourceIp()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a576fe979101ebb1791329a0aa2d87192} 
+set\+Source\+Ip (\begin{DoxyParamCaption}\item[{}]{\$source}{}\end{DoxyParamCaption})}
+
+Sets the source \doxylink{class_i_p}{IP}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___esmtp_transport_a576fe979101ebb1791329a0aa2d87192}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!start@{start}}
+\index{start@{start}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start the SMTP connection. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___sendmail_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!stop@{stop}}
+\index{stop@{stop}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stop the SMTP connection. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___abstract_smtp_transport_a2a6607a03863e786fc5183a8fb618b36}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!streamMessage@{streamMessage}}
+\index{streamMessage@{streamMessage}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{streamMessage()}{streamMessage()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a2a6607a03863e786fc5183a8fb618b36} 
+stream\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stream the contents of the message over the buffer \Hypertarget{class_swift___transport___abstract_smtp_transport_a423361b4f57e9ef586f2b531f5e53492}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!throwException@{throwException}}
+\index{throwException@{throwException}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{throwException()}{throwException()}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a423361b4f57e9ef586f2b531f5e53492} 
+throw\+Exception (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}}}]{\$e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Throw a Transport\+Exception, first sending it to any listeners 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_swift___transport___abstract_smtp_transport_af1862006a19e84e552f66189adc792ae}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$buffer@{\$buffer}}
+\index{\$buffer@{\$buffer}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$buffer}{\$buffer}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_af1862006a19e84e552f66189adc792ae} 
+\$buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+Input-\/\+Output buffer for sending/receiving SMTP commands and responses \Hypertarget{class_swift___transport___abstract_smtp_transport_aef9cf198312d2f89238a8e8e2f0f67f3}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$domain@{\$domain}}
+\index{\$domain@{\$domain}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$domain}{\$domain}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_aef9cf198312d2f89238a8e8e2f0f67f3} 
+\$domain = \textquotesingle{}\mbox{[}127.\+0.\+0.\+1\mbox{]}\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The domain name to use in HELO command \Hypertarget{class_swift___transport___abstract_smtp_transport_a9defbea70f3dcceef0b7b148a11e3e5e}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$eventDispatcher@{\$eventDispatcher}}
+\index{\$eventDispatcher@{\$eventDispatcher}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$eventDispatcher}{\$eventDispatcher}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a9defbea70f3dcceef0b7b148a11e3e5e} 
+\$event\+Dispatcher\hspace{0.3cm}{\ttfamily [protected]}}
+
+The event dispatching layer \Hypertarget{class_swift___transport___abstract_smtp_transport_ab606d7bce1ab858b1d2cc40487872c57}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$pipeline@{\$pipeline}}
+\index{\$pipeline@{\$pipeline}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$pipeline}{\$pipeline}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_ab606d7bce1ab858b1d2cc40487872c57} 
+\$pipeline = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+The pipelined commands waiting for response \Hypertarget{class_swift___transport___abstract_smtp_transport_a17ef6db592279caf905553fcc26fe1cc}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$pipelining@{\$pipelining}}
+\index{\$pipelining@{\$pipelining}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$pipelining}{\$pipelining}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a17ef6db592279caf905553fcc26fe1cc} 
+\$pipelining = null\hspace{0.3cm}{\ttfamily [protected]}}
+
+Whether the PIPELINING SMTP extension is enabled (RFC 2920) \Hypertarget{class_swift___transport___abstract_smtp_transport_a7d4de34f9a0aa29ad82e892dc24ac757}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$sourceIp@{\$sourceIp}}
+\index{\$sourceIp@{\$sourceIp}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$sourceIp}{\$sourceIp}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a7d4de34f9a0aa29ad82e892dc24ac757} 
+\$source\+Ip\hspace{0.3cm}{\ttfamily [protected]}}
+
+Source Ip \Hypertarget{class_swift___transport___abstract_smtp_transport_a026c0305d62db3dbb5ad555bc077f018}\index{Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}!\$started@{\$started}}
+\index{\$started@{\$started}!Swift\_Transport\_AbstractSmtpTransport@{Swift\_Transport\_AbstractSmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\$started}{\$started}}
+{\footnotesize\ttfamily \label{class_swift___transport___abstract_smtp_transport_a026c0305d62db3dbb5ad555bc077f018} 
+\$started = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+Connection status 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Abstract\+Smtp\+Transport.\+php\end{DoxyCompactItemize}

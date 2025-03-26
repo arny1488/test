@@ -1,0 +1,93 @@
+\doxysection{Secure Class Reference}
+\hypertarget{class_secure}{}\label{class_secure}\index{Secure@{Secure}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_secure_a4e59cec755fcacb94f79ed5f97e70110}{clean\+Out}} (string \$text)
+\item 
+static \mbox{\hyperlink{class_secure_abcf68b31474fda6f2a33f2e2623adc58}{sanitize}} (string \$string, bool \$trim=false, bool \$int=false, bool \$str=false)
+\item 
+static \mbox{\hyperlink{class_secure_a825086aca28ebec0ebd98f2550a09024}{random\+String}} (int \$length=16, string \$chars=\textquotesingle{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPRQSTUVWXYZ\texorpdfstring{$\sim$}{\string~}!@\#\$\%\texorpdfstring{$^\wedge$}{\string^}\&\texorpdfstring{$\ast$}{*}() -\/\+\_\+=+\{\mbox{[};\+:/?.,\mbox{]}\}0123456789\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_secure_a7c5dee3ce779184739053042c19489f0}{random\+Token}} (int \$length=32)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_secure_a4e59cec755fcacb94f79ed5f97e70110}\index{Secure@{Secure}!cleanOut@{cleanOut}}
+\index{cleanOut@{cleanOut}!Secure@{Secure}}
+\doxysubsubsection{\texorpdfstring{cleanOut()}{cleanOut()}}
+{\footnotesize\ttfamily \label{class_secure_a4e59cec755fcacb94f79ed5f97e70110} 
+static clean\+Out (\begin{DoxyParamCaption}\item[{string}]{\$text}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get string without escaping and HTML entities
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_secure_a825086aca28ebec0ebd98f2550a09024}\index{Secure@{Secure}!randomString@{randomString}}
+\index{randomString@{randomString}!Secure@{Secure}}
+\doxysubsubsection{\texorpdfstring{randomString()}{randomString()}}
+{\footnotesize\ttfamily \label{class_secure_a825086aca28ebec0ebd98f2550a09024} 
+static random\+String (\begin{DoxyParamCaption}\item[{int}]{\$length}{ = {\ttfamily 16}, }\item[{string}]{\$chars}{ = {\ttfamily \textquotesingle{}abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPRQSTUVWXYZ\texorpdfstring{$\sim$}{\string~}!@\#\$\%\texorpdfstring{$^\wedge$}{\string^}\&\texorpdfstring{$\ast$}{*}()-\/\+\_\+=+\{\mbox{[};\+:/?.,\mbox{]}\}0123456789\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get random string
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+string & {\em \$chars} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_secure_a7c5dee3ce779184739053042c19489f0}\index{Secure@{Secure}!randomToken@{randomToken}}
+\index{randomToken@{randomToken}!Secure@{Secure}}
+\doxysubsubsection{\texorpdfstring{randomToken()}{randomToken()}}
+{\footnotesize\ttfamily \label{class_secure_a7c5dee3ce779184739053042c19489f0} 
+static random\+Token (\begin{DoxyParamCaption}\item[{int}]{\$length}{ = {\ttfamily 32}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get random token
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_secure_abcf68b31474fda6f2a33f2e2623adc58}\index{Secure@{Secure}!sanitize@{sanitize}}
+\index{sanitize@{sanitize}!Secure@{Secure}}
+\doxysubsubsection{\texorpdfstring{sanitize()}{sanitize()}}
+{\footnotesize\ttfamily \label{class_secure_abcf68b31474fda6f2a33f2e2623adc58} 
+static sanitize (\begin{DoxyParamCaption}\item[{string}]{\$string}{, }\item[{bool}]{\$trim}{ = {\ttfamily false}, }\item[{bool}]{\$int}{ = {\ttfamily false}, }\item[{bool}]{\$str}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sanitize string
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+bool & {\em \$trim} & \\
+\hline
+bool & {\em \$int} & \\
+\hline
+bool & {\em \$str} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Secure.\+php\end{DoxyCompactItemize}

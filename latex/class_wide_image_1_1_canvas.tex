@@ -1,0 +1,127 @@
+\doxysection{Canvas Class Reference}
+\hypertarget{class_wide_image_1_1_canvas}{}\label{class_wide_image_1_1_canvas}\index{Canvas@{Canvas}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_canvas_a4215fc40ac47b7214821b59c1c7035b2}{\+\_\+\+\_\+construct}} (\$img)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_canvas_a464664089ec46f2be8ef1b0a695cb12e}{set\+Font}} (\$font)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_canvas_a2f7b3b3cc419716af9f68b0094ebff65}{use\+Font}} (\$file, \$size=12, \$color=0, \$bgcolor=null)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_canvas_a7726c0217eb4b120642e027f28f59570}{write\+Text}} (\$x, \$y, \$text, \$angle=0)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_canvas_ab4df0607f4cce23380da97ef639baa86}{\+\_\+\+\_\+call}} (\$method, \$params)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_wide_image_1_1_canvas_ad86c3fbc5672e1deeafc5229012b0b5d}\label{class_wide_image_1_1_canvas_ad86c3fbc5672e1deeafc5229012b0b5d} 
+{\bfseries \$handle} = 0
+\item 
+\Hypertarget{class_wide_image_1_1_canvas_aac6146b4cdec66c94263ddb55afd5946}\label{class_wide_image_1_1_canvas_aac6146b4cdec66c94263ddb55afd5946} 
+{\bfseries \$image} = null
+\item 
+\Hypertarget{class_wide_image_1_1_canvas_a9d63b61d7d442048fe453731932c6aed}\label{class_wide_image_1_1_canvas_a9d63b61d7d442048fe453731932c6aed} 
+{\bfseries \$font} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_wide_image_1_1_canvas_a4215fc40ac47b7214821b59c1c7035b2}\index{Canvas@{Canvas}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_canvas_a4215fc40ac47b7214821b59c1c7035b2} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$img}{}\end{DoxyParamCaption})}
+
+Creates a canvas object that writes to the image passed as a parameter
+
+Shouldn\textquotesingle{}t be used directly, use \textbackslash{}\+Wide\+Image\textbackslash{}\+Image\+::get\+Canvas() instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Wide\+Image\textbackslash{}\+Image & {\em \$img} & Image object \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wide_image_1_1_canvas_ab4df0607f4cce23380da97ef639baa86}\index{Canvas@{Canvas}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_canvas_ab4df0607f4cce23380da97ef639baa86} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$params}{}\end{DoxyParamCaption})}
+
+A magic method that allows you to call any PHP function that starts with "{}image"{}.
+
+This is a shortcut to call custom functions on the image handle.
+
+Example\+: {\ttfamily  \$img = \doxylink{class_wide_image_1_1_wide_image_ac0d79fb0b00418ed15fbe8f6047ff4b2}{Wide\+Image\textbackslash{}load}(\textquotesingle{}pic.\+jpg\textquotesingle{}); \$canvas = \$img-\/\texorpdfstring{$>$}{>}get\+Canvas(); \$canvas-\/\texorpdfstring{$>$}{>}filled\+Rect(10, 10, 20, 30, \$img-\/\texorpdfstring{$>$}{>}allocate\+Color(0, 0, 0)); \$canvas-\/\texorpdfstring{$>$}{>}line(60, 80, 30, 100, \$img-\/\texorpdfstring{$>$}{>}allocate\+Color(255, 0, 0)); } \Hypertarget{class_wide_image_1_1_canvas_a464664089ec46f2be8ef1b0a695cb12e}\index{Canvas@{Canvas}!setFont@{setFont}}
+\index{setFont@{setFont}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{setFont()}{setFont()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_canvas_a464664089ec46f2be8ef1b0a695cb12e} 
+set\+Font (\begin{DoxyParamCaption}\item[{}]{\$font}{}\end{DoxyParamCaption})}
+
+Sets the active font. Can be an instance of \textbackslash{}\+Wide\+Image\textbackslash{}\+Font\textbackslash{}\+TTF, \textbackslash{}\+Wide\+Image\textbackslash{}\+Font\textbackslash{}\+PS, or \textbackslash{}\+Wide\+Image\textbackslash{}\+Font\textbackslash{}\+GDF.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$font} & Font object to set for write\+Text() \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_wide_image_1_1_canvas_a2f7b3b3cc419716af9f68b0094ebff65}\index{Canvas@{Canvas}!useFont@{useFont}}
+\index{useFont@{useFont}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{useFont()}{useFont()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_canvas_a2f7b3b3cc419716af9f68b0094ebff65} 
+use\+Font (\begin{DoxyParamCaption}\item[{}]{\$file}{, }\item[{}]{\$size}{ = {\ttfamily 12}, }\item[{}]{\$color}{ = {\ttfamily 0}, }\item[{}]{\$bgcolor}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates and sets the current font
+
+The supported font types are\+: TTF/\+OTF, PS, and GDF. Font type is detected from the extension. If the \$file parameter doesn\textquotesingle{}t have an extension, TTF font is presumed.
+
+Note\+: not all parameters are supported by all fonts.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & Font file name (string) \\
+\hline
+int & {\em \$size} & Font size (supported for TTF/\+OTF and PS fonts, ignored for GDF) \\
+\hline
+int & {\em \$color} & Text color \\
+\hline
+int & {\em \$bgcolor} & Background color (supported only for PS font, ignored for TTF and PS) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed One of the \textbackslash{}\+Wide\+Image\textbackslash{}\+Font\texorpdfstring{$\ast$}{*} objects 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_canvas_a7726c0217eb4b120642e027f28f59570}\index{Canvas@{Canvas}!writeText@{writeText}}
+\index{writeText@{writeText}!Canvas@{Canvas}}
+\doxysubsubsection{\texorpdfstring{writeText()}{writeText()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_canvas_a7726c0217eb4b120642e027f28f59570} 
+write\+Text (\begin{DoxyParamCaption}\item[{}]{\$x}{, }\item[{}]{\$y}{, }\item[{}]{\$text}{, }\item[{}]{\$angle}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Write text on the image at specified position
+
+You must set a font with a call to \textbackslash{}\+Wide\+Image\textbackslash{}\+Canvas\+::set\+Font() prior to writing text to the image.
+
+Smart coordinates are supported for \$x and \$y arguments, but currently only for TTF/\+OTF fonts.
+
+Example\+: {\ttfamily  \$img = \doxylink{class_wide_image_1_1_wide_image_ac0d79fb0b00418ed15fbe8f6047ff4b2}{Wide\+Image\textbackslash{}load}(\textquotesingle{}pic.\+jpg\textquotesingle{}); \$canvas = \$img-\/\texorpdfstring{$>$}{>}get\+Canvas(); \$canvas-\/\texorpdfstring{$>$}{>}use\+Font(\textquotesingle{}Verdana.\+ttf\textquotesingle{}, 16, \$img-\/\texorpdfstring{$>$}{>}allocate\+Color(255, 0, 0)); \$canvas-\/\texorpdfstring{$>$}{>}write\+Text(\textquotesingle{}right\textquotesingle{}, \textquotesingle{}bottom\textquotesingle{}, \textquotesingle{}www.\+website.\+com\textquotesingle{}); }
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$x} & Left \\
+\hline
+int & {\em \$y} & Top \\
+\hline
+string & {\em \$text} & Text to write \\
+\hline
+int & {\em \$angle} & The angle, defaults to 0 \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Image\+Processing/\+Wide\+Image/Canvas.\+php\end{DoxyCompactItemize}

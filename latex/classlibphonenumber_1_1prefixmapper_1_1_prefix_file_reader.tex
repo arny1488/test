@@ -1,0 +1,86 @@
+\doxysection{Prefix\+File\+Reader Class Reference}
+\hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader}{}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader}\index{PrefixFileReader@{PrefixFileReader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_afb97ee3755cff4430a2957ff3260a848}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_afb97ee3755cff4430a2957ff3260a848} 
+{\bfseries \+\_\+\+\_\+construct} (\$phone\+Prefix\+Data\+Directory)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a07ebb9b7d747825d7c59909a38651600}{get\+Phone\+Prefix\+Descriptions}} (\$prefix\+Map\+Key, \$language, \$script, \$region)
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ac4b5a10b61410898217bef1dd5c8881d}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ac4b5a10b61410898217bef1dd5c8881d} 
+{\bfseries may\+Fall\+Back\+To\+English} (\$language)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a928f0bce78cdbcee2d19010e3a605202}{get\+Description\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$language, \$script, \$region)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ab8cfd251956bc34ba83873dfdd1649d3}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ab8cfd251956bc34ba83873dfdd1649d3} 
+{\bfseries load\+Mapping\+File\+Provider} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a9315bcfd73c332b36819b989145286dc}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a9315bcfd73c332b36819b989145286dc} 
+{\bfseries load\+Phone\+Prefix\+Map\+From\+File} (\$file\+Name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ae1a637055cbb4bb467e6ee52ec7f50fa}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_ae1a637055cbb4bb467e6ee52ec7f50fa} 
+{\bfseries \$phone\+Prefix\+Data\+Directory}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_abeda0cb3e013dc1417532fc100aa4eae}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_abeda0cb3e013dc1417532fc100aa4eae} 
+{\bfseries \$mapping\+File\+Provider}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a90060903c08ef9dcbd2ff968c4227326}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a90060903c08ef9dcbd2ff968c4227326} 
+{\bfseries \$available\+Phone\+Prefix\+Maps} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a928f0bce78cdbcee2d19010e3a605202}\index{PrefixFileReader@{PrefixFileReader}!getDescriptionForNumber@{getDescriptionForNumber}}
+\index{getDescriptionForNumber@{getDescriptionForNumber}!PrefixFileReader@{PrefixFileReader}}
+\doxysubsubsection{\texorpdfstring{getDescriptionForNumber()}{getDescriptionForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a928f0bce78cdbcee2d19010e3a605202} 
+get\+Description\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$language}{, }\item[{}]{\$script}{, }\item[{}]{\$region}{}\end{DoxyParamCaption})}
+
+Returns a text description in the given language for the given phone number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number for which we want to get a text description \\
+\hline
+string & {\em \$language} & two or three-\/letter lowercase ISO language as defined by ISO 639 \\
+\hline
+string & {\em \$script} & four-\/letter titlecase (the first letter is uppercase and the rest of the letters are lowercase) ISO script code as defined in ISO 15924 \\
+\hline
+string & {\em \$region} & two-\/letter uppercase ISO country code as defined by ISO 3166-\/1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string a text description for the given language code for the given phone number, or empty string if the number passed in is invalid or could belong to multiple countries 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a07ebb9b7d747825d7c59909a38651600}\index{PrefixFileReader@{PrefixFileReader}!getPhonePrefixDescriptions@{getPhonePrefixDescriptions}}
+\index{getPhonePrefixDescriptions@{getPhonePrefixDescriptions}!PrefixFileReader@{PrefixFileReader}}
+\doxysubsubsection{\texorpdfstring{getPhonePrefixDescriptions()}{getPhonePrefixDescriptions()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_file_reader_a07ebb9b7d747825d7c59909a38651600} 
+get\+Phone\+Prefix\+Descriptions (\begin{DoxyParamCaption}\item[{}]{\$prefix\+Map\+Key}{, }\item[{}]{\$language}{, }\item[{}]{\$script}{, }\item[{}]{\$region}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$prefix\+Map\+Key} & \\
+\hline
+{\em \$language} & \\
+\hline
+{\em \$script} & \\
+\hline
+{\em \$region} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Prefix\+Map\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/prefixmapper/Prefix\+File\+Reader.\+php\end{DoxyCompactItemize}

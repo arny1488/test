@@ -1,0 +1,85 @@
+\doxysection{Web\+Socket Class Reference}
+\hypertarget{class_w_s_s_c_1_1_contracts_1_1_web_socket}{}\label{class_w_s_s_c_1_1_contracts_1_1_web_socket}\index{WebSocket@{WebSocket}}
+Inheritance diagram for Web\+Socket\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_w_s_s_c_1_1_contracts_1_1_web_socket}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket_a2bbc31f0311d805d2247f4db78c8bab2}{on\+Ping}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$conn, \$msg)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket_a819925f0b22e26b5664ce51635e51b03}{on\+Pong}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$conn, \$msg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_contract}{Web\+Socket\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_contract_a7806132d20a1758fc065d26230d6384d}{on\+Open}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$conn)
+\item 
+\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_contract_a7c8510db96f8e0f48572fed8d6c9110a}{on\+Close}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$conn)
+\item 
+\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_web_socket_contract_a052abf6f461e5114291b211e2e95f183}{on\+Error}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$conn, \mbox{\hyperlink{class_w_s_s_c_1_1_exceptions_1_1_web_socket_exception}{Web\+Socket\+Exception}} \$ex)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_message_contract}{Message\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_message_contract_ab012b3dd8a9858fd3105ab2ff4fe312e}{on\+Message}} (\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}} \$recv, \$msg)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_w_s_s_c_1_1_contracts_1_1_web_socket_a61393cced5eca02fc1042f4758b28515}\label{class_w_s_s_c_1_1_contracts_1_1_web_socket_a61393cced5eca02fc1042f4758b28515} 
+array {\bfseries \$path\+Params} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Arthur Kushman 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_w_s_s_c_1_1_contracts_1_1_web_socket_a2bbc31f0311d805d2247f4db78c8bab2}\index{WebSocket@{WebSocket}!onPing@{onPing}}
+\index{onPing@{onPing}!WebSocket@{WebSocket}}
+\doxysubsubsection{\texorpdfstring{onPing()}{onPing()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_contracts_1_1_web_socket_a2bbc31f0311d805d2247f4db78c8bab2} 
+on\+Ping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}}]{\$conn}{, }\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+You may want to implement these methods to bring ping/pong events 
+\begin{DoxyParams}[1]{Parameters}
+Connection\+Contract & {\em \$conn} & \\
+\hline
+string & {\em \$msg} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Socket\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_w_s_s_c_1_1_contracts_1_1_web_socket_a819925f0b22e26b5664ce51635e51b03}\index{WebSocket@{WebSocket}!onPong@{onPong}}
+\index{onPong@{onPong}!WebSocket@{WebSocket}}
+\doxysubsubsection{\texorpdfstring{onPong()}{onPong()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_contracts_1_1_web_socket_a819925f0b22e26b5664ce51635e51b03} 
+on\+Pong (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}}]{\$conn}{, }\item[{}]{\$msg}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Connection\+Contract & {\em \$conn} & \\
+\hline
+ & {\em \$msg} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Socket\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Web\+Socket/\+WSSC/\+Contracts/Web\+Socket.\+php\end{DoxyCompactItemize}

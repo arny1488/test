@@ -1,0 +1,149 @@
+\doxysection{Add\+Noise Class Reference}
+\hypertarget{class_wide_image_1_1_operation_1_1_add_noise}{}\label{class_wide_image_1_1_operation_1_1_add_noise}\index{AddNoise@{AddNoise}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_a36836cb252a54ee6d54a883bb568623a}{execute}} (\$image, \$amount, \$type)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_afd15b17127a30c9be5bf97e1bf7d3d42}{filter}} (\$image, \$function, \$value)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_adea36c8a78200c8d818213c9b5e20f0b}{color\+Noise\+\_\+fun}} (\&\$r, \&\$g, \&\$b, \$amount)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_af6fdfe1505522dd3614cbb71c63d1ed6}{mono\+Noise\+\_\+fun}} (\&\$r, \&\$g, \&\$b, \$amount)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_a9f289a0afafe55a9b4de5b3e0c86a95f}{salt\+Pepper\+Noise\+\_\+fun}} (\&\$r, \&\$g, \&\$b, \$amount)
+\item 
+\mbox{\hyperlink{class_wide_image_1_1_operation_1_1_add_noise_a10d8bfe2b3c2007b7c5ce7f305116954}{byte}} (\$b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_a10d8bfe2b3c2007b7c5ce7f305116954}\index{AddNoise@{AddNoise}!byte@{byte}}
+\index{byte@{byte}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{byte()}{byte()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_a10d8bfe2b3c2007b7c5ce7f305116954} 
+byte (\begin{DoxyParamCaption}\item[{}]{\$b}{}\end{DoxyParamCaption})}
+
+Returns value within (0,255)
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$b} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_adea36c8a78200c8d818213c9b5e20f0b}\index{AddNoise@{AddNoise}!colorNoise\_fun@{colorNoise\_fun}}
+\index{colorNoise\_fun@{colorNoise\_fun}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{colorNoise\_fun()}{colorNoise\_fun()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_adea36c8a78200c8d818213c9b5e20f0b} 
+color\+Noise\+\_\+fun (\begin{DoxyParamCaption}\item[{\&}]{\$r}{, }\item[{\&}]{\$g}{, }\item[{\&}]{\$b}{, }\item[{}]{\$amount}{}\end{DoxyParamCaption})}
+
+Adds color noise by altering given R,G,B values using specififed amount
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$r} & \\
+\hline
+int & {\em \$g} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_a36836cb252a54ee6d54a883bb568623a}\index{AddNoise@{AddNoise}!execute@{execute}}
+\index{execute@{execute}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_a36836cb252a54ee6d54a883bb568623a} 
+execute (\begin{DoxyParamCaption}\item[{}]{\$image}{, }\item[{}]{\$amount}{, }\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Returns image with noise added
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Wide\+Image\textbackslash{}\+Image & {\em \$image} & \\
+\hline
+float & {\em \$amount} & \\
+\hline
+const & {\em \$type} & \\
+\hline
+float & {\em \$threshold} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Wide\+Image\textbackslash{}\+Image 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_afd15b17127a30c9be5bf97e1bf7d3d42}\index{AddNoise@{AddNoise}!filter@{filter}}
+\index{filter@{filter}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_afd15b17127a30c9be5bf97e1bf7d3d42} 
+filter (\begin{DoxyParamCaption}\item[{}]{\$image}{, }\item[{}]{\$function}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Returns image with every pixel changed by specififed function
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Wide\+Image\textbackslash{}\+Image & {\em \$image} & \\
+\hline
+str & {\em \$function} & \\
+\hline
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\textbackslash{}\+Wide\+Image\textbackslash{}\+Image 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_af6fdfe1505522dd3614cbb71c63d1ed6}\index{AddNoise@{AddNoise}!monoNoise\_fun@{monoNoise\_fun}}
+\index{monoNoise\_fun@{monoNoise\_fun}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{monoNoise\_fun()}{monoNoise\_fun()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_af6fdfe1505522dd3614cbb71c63d1ed6} 
+mono\+Noise\+\_\+fun (\begin{DoxyParamCaption}\item[{\&}]{\$r}{, }\item[{\&}]{\$g}{, }\item[{\&}]{\$b}{, }\item[{}]{\$amount}{}\end{DoxyParamCaption})}
+
+Adds mono noise by altering given R,G,B values using specififed amount
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$r} & \\
+\hline
+int & {\em \$g} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_operation_1_1_add_noise_a9f289a0afafe55a9b4de5b3e0c86a95f}\index{AddNoise@{AddNoise}!saltPepperNoise\_fun@{saltPepperNoise\_fun}}
+\index{saltPepperNoise\_fun@{saltPepperNoise\_fun}!AddNoise@{AddNoise}}
+\doxysubsubsection{\texorpdfstring{saltPepperNoise\_fun()}{saltPepperNoise\_fun()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_operation_1_1_add_noise_a9f289a0afafe55a9b4de5b3e0c86a95f} 
+salt\+Pepper\+Noise\+\_\+fun (\begin{DoxyParamCaption}\item[{\&}]{\$r}{, }\item[{\&}]{\$g}{, }\item[{\&}]{\$b}{, }\item[{}]{\$amount}{}\end{DoxyParamCaption})}
+
+Adds salt\&pepper noise by altering given R,G,B values using specififed amount
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$r} & \\
+\hline
+int & {\em \$g} & \\
+\hline
+int & {\em \$b} & \\
+\hline
+int & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Image\+Processing/\+Wide\+Image/\+Operation/Add\+Noise.\+php\end{DoxyCompactItemize}

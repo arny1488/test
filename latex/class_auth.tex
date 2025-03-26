@@ -1,0 +1,70 @@
+\doxysection{Auth Class Reference}
+\hypertarget{class_auth}{}\label{class_auth}\index{Auth@{Auth}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_auth_a83b4dbb810801ba15eee274c64fcb539}\label{class_auth_a83b4dbb810801ba15eee274c64fcb539} 
+static {\bfseries auth\+Check} ()
+\item 
+\Hypertarget{class_auth_a510b71c65be650b02ed51d92236b6685}\label{class_auth_a510b71c65be650b02ed51d92236b6685} 
+static {\bfseries auth\+Restore} ()
+\item 
+\Hypertarget{class_auth_a15200439dd9d244626e056eaff548b7f}\label{class_auth_a15200439dd9d244626e056eaff548b7f} 
+static {\bfseries auth\+Sessions} ()
+\item 
+\Hypertarget{class_auth_afa1312761dbca69d8c7928f8d17c103a}\label{class_auth_afa1312761dbca69d8c7928f8d17c103a} 
+static {\bfseries auth\+Cookie} ()
+\item 
+\Hypertarget{class_auth_a379fe85a69d707c5d746d2c73979b8cf}\label{class_auth_a379fe85a69d707c5d746d2c73979b8cf} 
+static {\bfseries auth\+Check\+Permission} ()
+\item 
+\Hypertarget{class_auth_a4a4902532a5ea9a227dd95c22a61e0d9}\label{class_auth_a4a4902532a5ea9a227dd95c22a61e0d9} 
+static {\bfseries user\+Logout} ()
+\item 
+\Hypertarget{class_auth_a9d4938ea82bb5b5bc9753449a0d9944d}\label{class_auth_a9d4938ea82bb5b5bc9753449a0d9944d} 
+static {\bfseries user\+Login} (string \$email, string \$password, bool \$attach\+\_\+ip=false, bool \$keep\+\_\+in=false, int \$sleep=0)
+\item 
+\Hypertarget{class_auth_a6b1c08030761e2b8663bcd9d4f837e38}\label{class_auth_a6b1c08030761e2b8663bcd9d4f837e38} 
+static {\bfseries get\+Password\+Hash} (string \$password, string \$salt)
+\item 
+\Hypertarget{class_auth_a0b31ee6948ac439f7c2dc6135d64e828}\label{class_auth_a0b31ee6948ac439f7c2dc6135d64e828} 
+static {\bfseries verify\+Password} (string \$password, string \$salt, string \$hash)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_auth_ac428898c6dda5688fa07112402946c02}\label{class_auth_ac428898c6dda5688fa07112402946c02} 
+const {\bfseries LOGIN\+\_\+\+SUCCESS} = 0
+\item 
+\Hypertarget{class_auth_ab7ace345196f758d38b064e6a0246301}\label{class_auth_ab7ace345196f758d38b064e6a0246301} 
+const {\bfseries EMPTY\+\_\+\+LOGIN} = 1
+\item 
+\Hypertarget{class_auth_ab766981673bdfc12e75db0228ade5435}\label{class_auth_ab766981673bdfc12e75db0228ade5435} 
+const {\bfseries WRONG\+\_\+\+LOGIN} = 2
+\item 
+\Hypertarget{class_auth_ae704253ef031200576bc5b065545b782}\label{class_auth_ae704253ef031200576bc5b065545b782} 
+const {\bfseries WRONG\+\_\+\+PASS} = 3
+\item 
+\Hypertarget{class_auth_a14fe0e97c926495fd0335d6d5e4ba261}\label{class_auth_a14fe0e97c926495fd0335d6d5e4ba261} 
+const {\bfseries WRONG\+\_\+\+PASS\+\_\+\+MAX\+\_\+\+ATTEMPTS} = 4
+\item 
+\Hypertarget{class_auth_a23a97f379324a7259cb4e52d023e7f2a}\label{class_auth_a23a97f379324a7259cb4e52d023e7f2a} 
+const {\bfseries USER\+\_\+\+INACTIVE} = 5
+\item 
+\Hypertarget{class_auth_a37daf8f0e3d80b5e07f8e774aa349787}\label{class_auth_a37daf8f0e3d80b5e07f8e774aa349787} 
+const {\bfseries BLACKLISTED} = 6
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_auth_affc2c27f7417aa6df48d1794b2f997cb}\label{class_auth_affc2c27f7417aa6df48d1794b2f997cb} 
+static {\bfseries set\+Constants} (?string \$user\+\_\+id, int \$role)
+\item 
+\Hypertarget{class_auth_af9e7dfc2d8bec3cd066ae4f7ad6b6050}\label{class_auth_af9e7dfc2d8bec3cd066ae4f7ad6b6050} 
+static {\bfseries set\+Session\+Vars} (object \$user)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/core/Auth.\+php\end{DoxyCompactItemize}

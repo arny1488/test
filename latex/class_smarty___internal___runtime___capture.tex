@@ -1,0 +1,135 @@
+\doxysection{Smarty\+\_\+\+Internal\+\_\+\+Runtime\+\_\+\+Capture Class Reference}
+\hypertarget{class_smarty___internal___runtime___capture}{}\label{class_smarty___internal___runtime___capture}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_aa7e24e7a44e0b0fead7dc0c2986f1690}{open}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template, \$buffer, \$assign, \$append)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_af6831bb90ef5b715b56370083b8e7bbb}{start\+Render}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_a5118f3371f83e86db38bb9de9512659b}{close}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_a2dc966c300cba09a691cb08faeb4b3f2}{error}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_a70719b1908f5ab467fcaccb0394899c7}{get\+Buffer}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template, \$name=null)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___capture_a98c74cd3a2c8eee1276c535d2e1f9fc1}{end\+Render}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___internal___runtime___capture_a077fccac16e117238bd2b2ebd89c8c9b}\label{class_smarty___internal___runtime___capture_a077fccac16e117238bd2b2ebd89c8c9b} 
+{\bfseries \$is\+Private\+Extension} = true
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___internal___runtime___capture_a5118f3371f83e86db38bb9de9512659b}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!close@{close}}
+\index{close@{close}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_a5118f3371f83e86db38bb9de9512659b} 
+close (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+Close capture section
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} \Hypertarget{class_smarty___internal___runtime___capture_a98c74cd3a2c8eee1276c535d2e1f9fc1}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!endRender@{endRender}}
+\index{endRender@{endRender}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{endRender()}{endRender()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_a98c74cd3a2c8eee1276c535d2e1f9fc1} 
+end\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+End render callback
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} \Hypertarget{class_smarty___internal___runtime___capture_a2dc966c300cba09a691cb08faeb4b3f2}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!error@{error}}
+\index{error@{error}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_a2dc966c300cba09a691cb08faeb4b3f2} 
+error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+Error exception on not matching \{capture\}\{/capture\}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} \Hypertarget{class_smarty___internal___runtime___capture_a70719b1908f5ab467fcaccb0394899c7}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{getBuffer()}{getBuffer()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_a70719b1908f5ab467fcaccb0394899c7} 
+get\+Buffer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{, }\item[{}]{\$name}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Return content of named capture buffer by key or as array
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+string | null & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}string\mbox{[}\mbox{]}\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___internal___runtime___capture_aa7e24e7a44e0b0fead7dc0c2986f1690}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!open@{open}}
+\index{open@{open}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_aa7e24e7a44e0b0fead7dc0c2986f1690} 
+open (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{, }\item[{}]{\$buffer}{, }\item[{}]{\$assign}{, }\item[{}]{\$append}{}\end{DoxyParamCaption})}
+
+Open capture section
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+string & {\em \$buffer} & capture name \\
+\hline
+string & {\em \$assign} & variable name \\
+\hline
+string & {\em \$append} & variable name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___internal___runtime___capture_af6831bb90ef5b715b56370083b8e7bbb}\index{Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}!startRender@{startRender}}
+\index{startRender@{startRender}!Smarty\_Internal\_Runtime\_Capture@{Smarty\_Internal\_Runtime\_Capture}}
+\doxysubsubsection{\texorpdfstring{startRender()}{startRender()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___capture_af6831bb90ef5b715b56370083b8e7bbb} 
+start\+Render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+Start render callback
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+template} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+internal\+\_\+runtime\+\_\+capture.\+php\end{DoxyCompactItemize}

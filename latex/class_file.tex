@@ -1,0 +1,474 @@
+\doxysection{File Class Reference}
+\hypertarget{class_file}{}\label{class_file}\index{File@{File}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_file_a42644eabb8fab0ba26557ec00138ca5b}{exists}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_ac96eba76877328f7232b790b3db309d6}{delete}} (array\texorpdfstring{$\vert$}{|}string \$path)
+\item 
+static \mbox{\hyperlink{class_file_ab21dfaff290367f62cb72f0462eaef73}{rename}} (string \$from, string \$to)
+\item 
+static \mbox{\hyperlink{class_file_ae4b9ae6ace38d43767d178ba242fe4ab}{copy}} (string \$from, string \$to)
+\item 
+static \mbox{\hyperlink{class_file_aee1c138df0a3a96f83c94d04879b6486}{ext}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a6b1c57dd077fdffa8b7aaf8aaf87a953}{name}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a8ba408dce957accff81eb161eefad4bb}{basename}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_ac1ddf0ed13e6f65d907f22333a71122f}{path}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_aa7f124c7015072caa26e73f680dd54d6}{size}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a23806b1e09fb26c4bd3ec6382ae2b747}{hash}} (string \$filename, string \$algo=\textquotesingle{}md5\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_file_ad86bc0b5c0239665ee58340cebd0a157}{get\+Contents}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a3ea7a7c9073062866b52e00b82139503}{put\+Contents}} (string \$path, string \$content, bool \$create\+\_\+file=true, bool \$append=false, int \$chmod=0666)
+\item 
+static \mbox{\hyperlink{class_file_a342797a3ad97d8218cc56aa6679c02b9}{last\+Change}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a9bb9ba3ffb54d02e9041d08b6ce47bb4}{last\+Access}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_a83ba4e5fdb98e836872646befab71384}{mime}} (string \$path, bool \$guess=true)
+\item 
+static \mbox{\hyperlink{class_file_a50d5621821a73d50829c127106cd8ab6}{ext\+By\+Mime}} (string \$mime)
+\item 
+static \mbox{\hyperlink{class_file_aea01ad007621ff8161613f70f74d36b2}{download}} (string \$path, ?string \$content\+\_\+type=null, ?string \$filename=null, int \$kbps=0)
+\item 
+static \mbox{\hyperlink{class_file_ab3887bbc91e6151219578bb775d7a358}{display}} (string \$path, ?string \$content\+\_\+type=null, ?string \$filename=null)
+\item 
+static \mbox{\hyperlink{class_file_ab7195e42a672572cb15f28855bc7c7ed}{download\+\_\+url}} (string \$url, string \$content\+\_\+type, string \$filename)
+\item 
+static \mbox{\hyperlink{class_file_adaf3af46e94610969c76c3dda544861e}{download\+\_\+string}} (string \$content, string \$content\+\_\+type, string \$filename)
+\item 
+static \mbox{\hyperlink{class_file_acfa5db87d646212e1f0abe887c1bf1f7}{display\+\_\+string}} (string \$content, string \$content\+\_\+type, string \$filename)
+\item 
+static \mbox{\hyperlink{class_file_a14436b5204e1ff9099fb2b7f5912c238}{writable}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_file_ab64a858cc84ecb76d421843d70ae5396}{upload}} (string \$key, string \$target, ?array \$allowed\+\_\+mime\+\_\+types=null, bool \$rewrite=false)
+\item 
+static \mbox{\hyperlink{class_file_a94c460c13edba19d944d8378e2de9575}{find}} (string \$mask)
+\item 
+\Hypertarget{class_file_a5d81893015ae175f32265e8b027992d0}\label{class_file_a5d81893015ae175f32265e8b027992d0} 
+static {\bfseries hash\+Path} (string \$filename, bool \$dir\+\_\+only=false)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_file_a8ba408dce957accff81eb161eefad4bb}\index{File@{File}!basename@{basename}}
+\index{basename@{basename}!File@{File}}
+\doxysubsubsection{\texorpdfstring{basename()}{basename()}}
+{\footnotesize\ttfamily \label{class_file_a8ba408dce957accff81eb161eefad4bb} 
+static basename (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file basename
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_ae4b9ae6ace38d43767d178ba242fe4ab}\index{File@{File}!copy@{copy}}
+\index{copy@{copy}!File@{File}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_file_ae4b9ae6ace38d43767d178ba242fe4ab} 
+static copy (\begin{DoxyParamCaption}\item[{string}]{\$from}{, }\item[{string}]{\$to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copies file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & path to source file \\
+\hline
+string & {\em \$to} & destination file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_file_ac96eba76877328f7232b790b3db309d6}\index{File@{File}!delete@{delete}}
+\index{delete@{delete}!File@{File}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_file_ac96eba76877328f7232b790b3db309d6} 
+static delete (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete file(s)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | string & {\em \$path} & path(s) to file(s) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_ab3887bbc91e6151219578bb775d7a358}\index{File@{File}!display@{display}}
+\index{display@{display}!File@{File}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_file_ab3887bbc91e6151219578bb775d7a358} 
+static display (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{?string}]{\$content\+\_\+type}{ = {\ttfamily null}, }\item[{?string}]{\$filename}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Display file in browser
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+string | null & {\em \$content\+\_\+type} & file content type \\
+\hline
+string | null & {\em \$filename} & displayed file name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_acfa5db87d646212e1f0abe887c1bf1f7}\index{File@{File}!display\_string@{display\_string}}
+\index{display\_string@{display\_string}!File@{File}}
+\doxysubsubsection{\texorpdfstring{display\_string()}{display\_string()}}
+{\footnotesize\ttfamily \label{class_file_acfa5db87d646212e1f0abe887c1bf1f7} 
+static display\+\_\+string (\begin{DoxyParamCaption}\item[{string}]{\$content}{, }\item[{string}]{\$content\+\_\+type}{, }\item[{string}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Output string as file to browser
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & data to download \\
+\hline
+string & {\em \$content\+\_\+type} & file content type \\
+\hline
+string & {\em \$filename} & displayed file name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_aea01ad007621ff8161613f70f74d36b2}\index{File@{File}!download@{download}}
+\index{download@{download}!File@{File}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{class_file_aea01ad007621ff8161613f70f74d36b2} 
+static download (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{?string}]{\$content\+\_\+type}{ = {\ttfamily null}, }\item[{?string}]{\$filename}{ = {\ttfamily null}, }\item[{int}]{\$kbps}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Output file for download to browser
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+string | null & {\em \$content\+\_\+type} & file content type \\
+\hline
+string | null & {\em \$filename} & displayed file name \\
+\hline
+int & {\em \$kbps} & limit download speed \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_adaf3af46e94610969c76c3dda544861e}\index{File@{File}!download\_string@{download\_string}}
+\index{download\_string@{download\_string}!File@{File}}
+\doxysubsubsection{\texorpdfstring{download\_string()}{download\_string()}}
+{\footnotesize\ttfamily \label{class_file_adaf3af46e94610969c76c3dda544861e} 
+static download\+\_\+string (\begin{DoxyParamCaption}\item[{string}]{\$content}{, }\item[{string}]{\$content\+\_\+type}{, }\item[{string}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Output string for download as file to browser
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$content} & data to download \\
+\hline
+string & {\em \$content\+\_\+type} & file content type \\
+\hline
+string & {\em \$filename} & displayed file name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_ab7195e42a672572cb15f28855bc7c7ed}\index{File@{File}!download\_url@{download\_url}}
+\index{download\_url@{download\_url}!File@{File}}
+\doxysubsubsection{\texorpdfstring{download\_url()}{download\_url()}}
+{\footnotesize\ttfamily \label{class_file_ab7195e42a672572cb15f28855bc7c7ed} 
+static download\+\_\+url (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{string}]{\$content\+\_\+type}{, }\item[{string}]{\$filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Output file from URL for download to browser
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & file URL \\
+\hline
+string & {\em \$content\+\_\+type} & file content type \\
+\hline
+string & {\em \$filename} & displayed file name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_file_a42644eabb8fab0ba26557ec00138ca5b}\index{File@{File}!exists@{exists}}
+\index{exists@{exists}!File@{File}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_file_a42644eabb8fab0ba26557ec00138ca5b} 
+static exists (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if file exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_file_aee1c138df0a3a96f83c94d04879b6486}\index{File@{File}!ext@{ext}}
+\index{ext@{ext}!File@{File}}
+\doxysubsubsection{\texorpdfstring{ext()}{ext()}}
+{\footnotesize\ttfamily \label{class_file_aee1c138df0a3a96f83c94d04879b6486} 
+static ext (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file extension
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_a50d5621821a73d50829c127106cd8ab6}\index{File@{File}!extByMime@{extByMime}}
+\index{extByMime@{extByMime}!File@{File}}
+\doxysubsubsection{\texorpdfstring{extByMime()}{extByMime()}}
+{\footnotesize\ttfamily \label{class_file_a50d5621821a73d50829c127106cd8ab6} 
+static ext\+By\+Mime (\begin{DoxyParamCaption}\item[{string}]{\$mime}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get extension by MIME type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mime} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_a94c460c13edba19d944d8378e2de9575}\index{File@{File}!find@{find}}
+\index{find@{find}!File@{File}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_file_a94c460c13edba19d944d8378e2de9575} 
+static find (\begin{DoxyParamCaption}\item[{string}]{\$mask}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Find files by mask
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mask} & mask \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_file_ad86bc0b5c0239665ee58340cebd0a157}\index{File@{File}!getContents@{getContents}}
+\index{getContents@{getContents}!File@{File}}
+\doxysubsubsection{\texorpdfstring{getContents()}{getContents()}}
+{\footnotesize\ttfamily \label{class_file_ad86bc0b5c0239665ee58340cebd0a157} 
+static get\+Contents (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_a23806b1e09fb26c4bd3ec6382ae2b747}\index{File@{File}!hash@{hash}}
+\index{hash@{hash}!File@{File}}
+\doxysubsubsection{\texorpdfstring{hash()}{hash()}}
+{\footnotesize\ttfamily \label{class_file_a23806b1e09fb26c4bd3ec6382ae2b747} 
+static hash (\begin{DoxyParamCaption}\item[{string}]{\$filename}{, }\item[{string}]{\$algo}{ = {\ttfamily \textquotesingle{}md5\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Получить хэш файла
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & имя файла \\
+\hline
+string & {\em \$algo} & алгоритм \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_a9bb9ba3ffb54d02e9041d08b6ce47bb4}\index{File@{File}!lastAccess@{lastAccess}}
+\index{lastAccess@{lastAccess}!File@{File}}
+\doxysubsubsection{\texorpdfstring{lastAccess()}{lastAccess()}}
+{\footnotesize\ttfamily \label{class_file_a9bb9ba3ffb54d02e9041d08b6ce47bb4} 
+static last\+Access (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get last access time of file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{class_file_a342797a3ad97d8218cc56aa6679c02b9}\index{File@{File}!lastChange@{lastChange}}
+\index{lastChange@{lastChange}!File@{File}}
+\doxysubsubsection{\texorpdfstring{lastChange()}{lastChange()}}
+{\footnotesize\ttfamily \label{class_file_a342797a3ad97d8218cc56aa6679c02b9} 
+static last\+Change (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file modification time
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int 
+\end{DoxyReturn}
+\Hypertarget{class_file_a83ba4e5fdb98e836872646befab71384}\index{File@{File}!mime@{mime}}
+\index{mime@{mime}!File@{File}}
+\doxysubsubsection{\texorpdfstring{mime()}{mime()}}
+{\footnotesize\ttfamily \label{class_file_a83ba4e5fdb98e836872646befab71384} 
+static mime (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{bool}]{\$guess}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file MIME type
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+bool & {\em \$guess} & as fallback get MIME by extension \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_file_a6b1c57dd077fdffa8b7aaf8aaf87a953}\index{File@{File}!name@{name}}
+\index{name@{name}!File@{File}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{class_file_a6b1c57dd077fdffa8b7aaf8aaf87a953} 
+static name (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file name
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_ac1ddf0ed13e6f65d907f22333a71122f}\index{File@{File}!path@{path}}
+\index{path@{path}!File@{File}}
+\doxysubsubsection{\texorpdfstring{path()}{path()}}
+{\footnotesize\ttfamily \label{class_file_ac1ddf0ed13e6f65d907f22333a71122f} 
+static path (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file dir
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_file_a3ea7a7c9073062866b52e00b82139503}\index{File@{File}!putContents@{putContents}}
+\index{putContents@{putContents}!File@{File}}
+\doxysubsubsection{\texorpdfstring{putContents()}{putContents()}}
+{\footnotesize\ttfamily \label{class_file_a3ea7a7c9073062866b52e00b82139503} 
+static put\+Contents (\begin{DoxyParamCaption}\item[{string}]{\$path}{, }\item[{string}]{\$content}{, }\item[{bool}]{\$create\+\_\+file}{ = {\ttfamily true}, }\item[{bool}]{\$append}{ = {\ttfamily false}, }\item[{int}]{\$chmod}{ = {\ttfamily 0666}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Write string to file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+string & {\em \$content} & content to write \\
+\hline
+bool & {\em \$create\+\_\+file} & create file if not exists \\
+\hline
+bool & {\em \$append} & append content if file exists \\
+\hline
+int & {\em \$chmod} & set file mode \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_file_ab21dfaff290367f62cb72f0462eaef73}\index{File@{File}!rename@{rename}}
+\index{rename@{rename}!File@{File}}
+\doxysubsubsection{\texorpdfstring{rename()}{rename()}}
+{\footnotesize\ttfamily \label{class_file_ab21dfaff290367f62cb72f0462eaef73} 
+static rename (\begin{DoxyParamCaption}\item[{string}]{\$from}{, }\item[{string}]{\$to}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Rename file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$from} & old name \\
+\hline
+string & {\em \$to} & new name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_file_aa7f124c7015072caa26e73f680dd54d6}\index{File@{File}!size@{size}}
+\index{size@{size}!File@{File}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_file_aa7f124c7015072caa26e73f680dd54d6} 
+static size (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get file size
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & file path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_file_ab64a858cc84ecb76d421843d70ae5396}\index{File@{File}!upload@{upload}}
+\index{upload@{upload}!File@{File}}
+\doxysubsubsection{\texorpdfstring{upload()}{upload()}}
+{\footnotesize\ttfamily \label{class_file_ab64a858cc84ecb76d421843d70ae5396} 
+static upload (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$target}{, }\item[{?array}]{\$allowed\+\_\+mime\+\_\+types}{ = {\ttfamily null}, }\item[{bool}]{\$rewrite}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Upload file from form
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & file key from form \\
+\hline
+string & {\em \$target} & destination file \\
+\hline
+array | null & {\em \$allowed\+\_\+mime\+\_\+types} & allowed mime types for upload \\
+\hline
+bool & {\em \$rewrite} & Overwrite target file if already exists. If set to {\ttfamily false} and the file exists, function will not load the file and returns {\ttfamily false}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_file_a14436b5204e1ff9099fb2b7f5912c238}\index{File@{File}!writable@{writable}}
+\index{writable@{writable}!File@{File}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily \label{class_file_a14436b5204e1ff9099fb2b7f5912c238} 
+static writable (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if file writable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path to file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/File.\+php\end{DoxyCompactItemize}

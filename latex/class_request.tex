@@ -1,0 +1,167 @@
+\doxysection{Request Class Reference}
+\hypertarget{class_request}{}\label{class_request}\index{Request@{Request}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_request_af81f7aab781d5a4757251f5c88c128e5}{redirect}} (string \$url, int \$status=302, ?int \$delay=null)
+\item 
+static \mbox{\hyperlink{class_request_a44685d21302f1e914682b99767ca99e5}{get}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_request_a60cd217b46e6283198c93164fbdb9741}{post}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_request_a937823a507addf672103840293480ff3}{request}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_request_aa3684aed63c7582373fe211ea4c10797}{referrer}} ()
+\item 
+static \mbox{\hyperlink{class_request_a0eeed30a0faa41e05209b8d3f4f9dbfb}{file}} (string \$key, ?array \$allowed\+\_\+mime\+\_\+types=null, ?int \$max\+\_\+size=100)
+\item 
+static \mbox{\hyperlink{class_request_afe26422be2a073c760831ff813a06ef5}{get\+Path}} ()
+\item 
+static \mbox{\hyperlink{class_request_a2b266c0de7a87b606b3926baafe483e5}{is\+Ajax}} ()
+\item 
+static \mbox{\hyperlink{class_request_a1fa65ac6ac90c03edb292711b8a53908}{header}} (string \$key, ?string \$default=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_request_a0eeed30a0faa41e05209b8d3f4f9dbfb}\index{Request@{Request}!file@{file}}
+\index{file@{file}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{file()}{file()}}
+{\footnotesize\ttfamily \label{class_request_a0eeed30a0faa41e05209b8d3f4f9dbfb} 
+static file (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{?array}]{\$allowed\+\_\+mime\+\_\+types}{ = {\ttfamily null}, }\item[{?int}]{\$max\+\_\+size}{ = {\ttfamily 100}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Save uploaded file into temporary directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & file key or path \\
+\hline
+array | null & {\em \$allowed\+\_\+mime\+\_\+types} & allowed file types \\
+\hline
+int | null & {\em \$max\+\_\+size} & max allowed file size \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null saves file path 
+\end{DoxyReturn}
+\Hypertarget{class_request_a44685d21302f1e914682b99767ca99e5}\index{Request@{Request}!get@{get}}
+\index{get@{get}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_request_a44685d21302f1e914682b99767ca99e5} 
+static get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get GET value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & parameter key or path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_request_afe26422be2a073c760831ff813a06ef5}\index{Request@{Request}!getPath@{getPath}}
+\index{getPath@{getPath}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{getPath()}{getPath()}}
+{\footnotesize\ttfamily \label{class_request_afe26422be2a073c760831ff813a06ef5} 
+static get\+Path (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get request path
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_request_a1fa65ac6ac90c03edb292711b8a53908}\index{Request@{Request}!header@{header}}
+\index{header@{header}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{header()}{header()}}
+{\footnotesize\ttfamily \label{class_request_a1fa65ac6ac90c03edb292711b8a53908} 
+static header (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{?string}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+string | null & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string \texorpdfstring{$\vert$}{|} null 
+\end{DoxyReturn}
+\Hypertarget{class_request_a2b266c0de7a87b606b3926baafe483e5}\index{Request@{Request}!isAjax@{isAjax}}
+\index{isAjax@{isAjax}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{isAjax()}{isAjax()}}
+{\footnotesize\ttfamily \label{class_request_a2b266c0de7a87b606b3926baafe483e5} 
+static is\+Ajax (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if AJAX request
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_request_a60cd217b46e6283198c93164fbdb9741}\index{Request@{Request}!post@{post}}
+\index{post@{post}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{class_request_a60cd217b46e6283198c93164fbdb9741} 
+static post (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get POST value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & parameter key or path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_request_af81f7aab781d5a4757251f5c88c128e5}\index{Request@{Request}!redirect@{redirect}}
+\index{redirect@{redirect}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{class_request_af81f7aab781d5a4757251f5c88c128e5} 
+static redirect (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{int}]{\$status}{ = {\ttfamily 302}, }\item[{?int}]{\$delay}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Redirect
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & destination URL \\
+\hline
+int & {\em \$status} & HTTP status code \\
+\hline
+int | null & {\em \$delay} & delay before redirect \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_request_aa3684aed63c7582373fe211ea4c10797}\index{Request@{Request}!referrer@{referrer}}
+\index{referrer@{referrer}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{referrer()}{referrer()}}
+{\footnotesize\ttfamily \label{class_request_aa3684aed63c7582373fe211ea4c10797} 
+static referrer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get Referrer
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_request_a937823a507addf672103840293480ff3}\index{Request@{Request}!request@{request}}
+\index{request@{request}!Request@{Request}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{class_request_a937823a507addf672103840293480ff3} 
+static request (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get GET or POST value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & parameter key or path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Request.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+\doxysection{Corner\+Interface Interface Reference}
+\hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface}{}\label{interface_paragon_i_e_1_1_corner_1_1_corner_interface}\index{CornerInterface@{CornerInterface}}
+Inheritance diagram for Corner\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=8.750000cm]{interface_paragon_i_e_1_1_corner_1_1_corner_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a053f88b09eac61b48b878202a1116e6f}{get\+Helpful\+Message}} ()
+\item 
+\mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_aab0a82e5111f2fa54e00490676e1f42a}{get\+Snippet}} (int \$lines\+Before=0, int \$lines\+After=0, int \$trace\+Walk=0)
+\item 
+\mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a487797a796be64111592ba9d9a820a05}{get\+Support\+Link}} ()
+\item 
+\mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a8b9d4d5fca50d1e389fa38541fdbeebe}{set\+Helpful\+Message}} (string \$message)
+\item 
+\mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a40575943cc42c685bda7e940c6379f5f}{set\+Support\+Link}} (string \$url)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_af45ac771acd9b34b70ff89270b4f6484}{HELPFUL\+\_\+\+MESSAGE}} = \textquotesingle{}\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a3145a1592c81aa2a71faf26c42b02a5f}{SUPPORT\+\_\+\+LINK}} = \textquotesingle{}\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a053f88b09eac61b48b878202a1116e6f}\index{CornerInterface@{CornerInterface}!getHelpfulMessage@{getHelpfulMessage}}
+\index{getHelpfulMessage@{getHelpfulMessage}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{getHelpfulMessage()}{getHelpfulMessage()}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a053f88b09eac61b48b878202a1116e6f} 
+get\+Helpful\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a more significant message.
+
+One way to think about this is to treat Throwable\+::get\+Message() as the subject line and Corner\+Interface\+::get\+Helpful\+Message() as the body of an email.
+
+The output should be allowed to contain newline characters, ASCII art diagrams, etc. Make it helpful for the developer.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_aab0a82e5111f2fa54e00490676e1f42a}\index{CornerInterface@{CornerInterface}!getSnippet@{getSnippet}}
+\index{getSnippet@{getSnippet}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{getSnippet()}{getSnippet()}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_aab0a82e5111f2fa54e00490676e1f42a} 
+get\+Snippet (\begin{DoxyParamCaption}\item[{int}]{\$lines\+Before}{ = {\ttfamily 0}, }\item[{int}]{\$lines\+After}{ = {\ttfamily 0}, }\item[{int}]{\$trace\+Walk}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$lines\+Before} & \\
+\hline
+int & {\em \$lines\+After} & \\
+\hline
+int & {\em \$trace\+Walk} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a487797a796be64111592ba9d9a820a05}\index{CornerInterface@{CornerInterface}!getSupportLink@{getSupportLink}}
+\index{getSupportLink@{getSupportLink}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{getSupportLink()}{getSupportLink()}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a487797a796be64111592ba9d9a820a05} 
+get\+Support\+Link (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns a string containing either an email address or an \href{https://}{\texttt{ https\+://}} URL linking to the most relevant help file possible for this Throwable object.
+
+If possible, link to a specific section of your project\textquotesingle{}s documentation (including page anchors, if applicable) to get the developer closer to the solution to whatever problem they\textquotesingle{}re encountering.
+
+If this is an exception for which no immediate solution is documented, the link should take the user to the bug tracker and/or reporting tool for your project.
+
+In the case where no public bug tracker is used for the project in question, an email address (or comma-\/separated list of email addresses) is acceptable here too.
+
+The intent of this method is to give the developer using your project the quickest possible path to troubleshooting and solving the problem that they\textquotesingle{}re most likely facing if this Throwable gets thrown.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a8b9d4d5fca50d1e389fa38541fdbeebe}\index{CornerInterface@{CornerInterface}!setHelpfulMessage@{setHelpfulMessage}}
+\index{setHelpfulMessage@{setHelpfulMessage}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{setHelpfulMessage()}{setHelpfulMessage()}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a8b9d4d5fca50d1e389fa38541fdbeebe} 
+set\+Helpful\+Message (\begin{DoxyParamCaption}\item[{string}]{\$message}{}\end{DoxyParamCaption})}
+
+See\+: self\+::get\+Helpful\+Message(). This is the setter counterpart. Mutates the object (changes its state in place rather than returning a new object).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$message} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Corner\+Interface 
+\end{DoxyReturn}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a40575943cc42c685bda7e940c6379f5f}\index{CornerInterface@{CornerInterface}!setSupportLink@{setSupportLink}}
+\index{setSupportLink@{setSupportLink}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{setSupportLink()}{setSupportLink()}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a40575943cc42c685bda7e940c6379f5f} 
+set\+Support\+Link (\begin{DoxyParamCaption}\item[{string}]{\$url}{}\end{DoxyParamCaption})}
+
+See\+: self\+::get\+Support\+Link(). This is the setter counterpart. Mutates the object (changes its state in place rather than returning a new object).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Corner\+Interface 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_af45ac771acd9b34b70ff89270b4f6484}\index{CornerInterface@{CornerInterface}!HELPFUL\_MESSAGE@{HELPFUL\_MESSAGE}}
+\index{HELPFUL\_MESSAGE@{HELPFUL\_MESSAGE}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{HELPFUL\_MESSAGE}{HELPFUL\_MESSAGE}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_af45ac771acd9b34b70ff89270b4f6484} 
+const HELPFUL\+\_\+\+MESSAGE = \textquotesingle{}\textquotesingle{}}
+
+You can override this to change the default value. \Hypertarget{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a3145a1592c81aa2a71faf26c42b02a5f}\index{CornerInterface@{CornerInterface}!SUPPORT\_LINK@{SUPPORT\_LINK}}
+\index{SUPPORT\_LINK@{SUPPORT\_LINK}!CornerInterface@{CornerInterface}}
+\doxysubsubsection{\texorpdfstring{SUPPORT\_LINK}{SUPPORT\_LINK}}
+{\footnotesize\ttfamily \label{interface_paragon_i_e_1_1_corner_1_1_corner_interface_a3145a1592c81aa2a71faf26c42b02a5f} 
+const SUPPORT\+\_\+\+LINK = \textquotesingle{}\textquotesingle{}}
+
+You can override this to change the default value. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/db/\+Paragon\+IE/\+Corner/Corner\+Interface.\+php\end{DoxyCompactItemize}

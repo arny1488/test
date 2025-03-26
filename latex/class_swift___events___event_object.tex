@@ -1,0 +1,91 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Event\+Object Class Reference}
+\hypertarget{class_swift___events___event_object}{}\label{class_swift___events___event_object}\index{Swift\_Events\_EventObject@{Swift\_Events\_EventObject}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Event\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.400000cm]{class_swift___events___event_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654}{\+\_\+\+\_\+construct}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a}{get\+Source}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054}{cancel\+Bubble}} (\$cancel=true)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a}{bubble\+Cancelled}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A base Event which all Event classes inherit from.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654}\index{Swift\_Events\_EventObject@{Swift\_Events\_EventObject}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Events\_EventObject@{Swift\_Events\_EventObject}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$source}{}\end{DoxyParamCaption})}
+
+Create a new Event\+Object originating at \$source.
+
+
+\begin{DoxyParams}[1]{Parameters}
+object & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a}\index{Swift\_Events\_EventObject@{Swift\_Events\_EventObject}!bubbleCancelled@{bubbleCancelled}}
+\index{bubbleCancelled@{bubbleCancelled}!Swift\_Events\_EventObject@{Swift\_Events\_EventObject}}
+\doxysubsubsection{\texorpdfstring{bubbleCancelled()}{bubbleCancelled()}}
+{\footnotesize\ttfamily \label{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a} 
+bubble\+Cancelled (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true if this Event will not bubble any further up the stack.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___events___event_a6a539b82f4ce42326434defbab9b454a}{Swift\+\_\+\+Events\+\_\+\+Event}}.
+
+\Hypertarget{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054}\index{Swift\_Events\_EventObject@{Swift\_Events\_EventObject}!cancelBubble@{cancelBubble}}
+\index{cancelBubble@{cancelBubble}!Swift\_Events\_EventObject@{Swift\_Events\_EventObject}}
+\doxysubsubsection{\texorpdfstring{cancelBubble()}{cancelBubble()}}
+{\footnotesize\ttfamily \label{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054} 
+cancel\+Bubble (\begin{DoxyParamCaption}\item[{}]{\$cancel}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Prevent this Event from bubbling any further up the stack. 
+
+Implements \mbox{\hyperlink{interface_swift___events___event_a1e97da9817b5ba54c36066b7c5394054}{Swift\+\_\+\+Events\+\_\+\+Event}}.
+
+\Hypertarget{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a}\index{Swift\_Events\_EventObject@{Swift\_Events\_EventObject}!getSource@{getSource}}
+\index{getSource@{getSource}!Swift\_Events\_EventObject@{Swift\_Events\_EventObject}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily \label{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a} 
+get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the source object of this event.
+
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___events___event_a42fdd8313c99d9c5f80219c1e192b93a}{Swift\+\_\+\+Events\+\_\+\+Event}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Event\+Object.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,42 @@
+\doxysection{Factory Class Reference}
+\hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_factory}{}\label{class_paragon_i_e_1_1_easy_d_b_1_1_factory}\index{Factory@{Factory}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_factory_a85ea53e8523ddac80c3754c172b9304e}{create}} (string \$dsn, string \$username=null, string \$password=null, array \$options=\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_paragon_i_e_1_1_easy_d_b_1_1_factory_a85ea53e8523ddac80c3754c172b9304e}\index{Factory@{Factory}!create@{create}}
+\index{create@{create}!Factory@{Factory}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_paragon_i_e_1_1_easy_d_b_1_1_factory_a85ea53e8523ddac80c3754c172b9304e} 
+static create (\begin{DoxyParamCaption}\item[{string}]{\$dsn}{, }\item[{string}]{\$username}{ = {\ttfamily null}, }\item[{string}]{\$password}{ = {\ttfamily null}, }\item[{array}]{\$options}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a new Easy\+DB object based on PDO constructors
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dsn} & \\
+\hline
+?string & {\em \$username} & \\
+\hline
+?string & {\em \$password} & \\
+\hline
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Easy\+DB
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Constructor\+Failed} & \\
+\hline
+\end{DoxyExceptions}
+@psalm-\/taint-\/sink user\+\_\+secret \$password 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/db/\+Paragon\+IE/\+Easy\+DB/Factory.\+php\end{DoxyCompactItemize}

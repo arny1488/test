@@ -1,0 +1,151 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport Class Reference}
+\hypertarget{class_swift___transport___spool_transport}{}\label{class_swift___transport___spool_transport}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___transport___spool_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_ac2a3903503af98f705dfe3ec6af018a5}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}} \$event\+Dispatcher, \mbox{\hyperlink{interface_swift___spool}{Swift\+\_\+\+Spool}} \$spool=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_a5dbb0d1ac954b49cdc6e73b840e54467}{set\+Spool}} (\mbox{\hyperlink{interface_swift___spool}{Swift\+\_\+\+Spool}} \$spool)
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_a7220dec401f35cf72939c4378c20b935}{get\+Spool}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___spool_transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores Messages in a queue.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___transport___spool_transport_ac2a3903503af98f705dfe3ec6af018a5}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_ac2a3903503af98f705dfe3ec6af018a5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}}}]{\$event\+Dispatcher}{, }\item[{\mbox{\hyperlink{interface_swift___spool}{Swift\+\_\+\+Spool}}}]{\$spool}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___spool_transport_a7220dec401f35cf72939c4378c20b935}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!getSpool@{getSpool}}
+\index{getSpool@{getSpool}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{getSpool()}{getSpool()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_a7220dec401f35cf72939c4378c20b935} 
+get\+Spool (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the spool object.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___spool}{Swift\+\_\+\+Spool} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___spool_transport_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tests if this Transport mechanism has started.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___spool_transport_a6dad377f74b0ce6f21b485ba11052746}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!ping@{ping}}
+\index{ping@{ping}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_a6dad377f74b0ce6f21b485ba11052746} 
+ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\} 
+
+Implements \mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___spool_transport_ab89f0e56e80b5a21c0f09004a418ae92}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!registerPlugin@{registerPlugin}}
+\index{registerPlugin@{registerPlugin}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{registerPlugin()}{registerPlugin()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_ab89f0e56e80b5a21c0f09004a418ae92} 
+register\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$plugin}{}\end{DoxyParamCaption})}
+
+Register a plugin. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___spool_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!send@{send}}
+\index{send@{send}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_ac2f1a5be8ad5f7740c8f95503d48a26e} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sends the given message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of sent e-\/mail\textquotesingle{}s 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___spool_transport_a5dbb0d1ac954b49cdc6e73b840e54467}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!setSpool@{setSpool}}
+\index{setSpool@{setSpool}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{setSpool()}{setSpool()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_a5dbb0d1ac954b49cdc6e73b840e54467} 
+set\+Spool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___spool}{Swift\+\_\+\+Spool}}}]{\$spool}{}\end{DoxyParamCaption})}
+
+Sets the spool object.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___spool_transport_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!start@{start}}
+\index{start@{start}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Starts this Transport mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___spool_transport_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}!stop@{stop}}
+\index{stop@{stop}!Swift\_Transport\_SpoolTransport@{Swift\_Transport\_SpoolTransport}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_swift___transport___spool_transport_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stops this Transport mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Spool\+Transport.\+php\end{DoxyCompactItemize}

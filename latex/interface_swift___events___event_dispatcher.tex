@@ -1,0 +1,157 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher Interface Reference}
+\hypertarget{interface_swift___events___event_dispatcher}{}\label{interface_swift___events___event_dispatcher}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_swift___events___event_dispatcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_a82659b57e0f9dd699bd86288f95f0301}{create\+Send\+Event}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_a1f4130ad26ead0ad90a7d2bbf533eb3b}{create\+Command\+Event}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \$command, \$success\+Codes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_aff62179d028287210a9830291e36d259}{create\+Response\+Event}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \$response, \$valid)
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_a7937d9190af92b3dae9cf11764108869}{create\+Transport\+Change\+Event}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source)
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_adf4b5fdd64235c4efffc0365ca21b47b}{create\+Transport\+Exception\+Event}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \mbox{\hyperlink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} \$ex)
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_a6cd28becdf201fe7747385d4fcc11911}{bind\+Event\+Listener}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$listener)
+\item 
+\mbox{\hyperlink{interface_swift___events___event_dispatcher_a2a404e4331b1f911e1df34c8afab3f02}{dispatch\+Event}} (\mbox{\hyperlink{class_swift___events___event_object}{Swift\+\_\+\+Events\+\_\+\+Event\+Object}} \$evt, \$target)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for the Event\+Dispatcher which handles the event dispatching layer.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___events___event_dispatcher_a6cd28becdf201fe7747385d4fcc11911}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!bindEventListener@{bindEventListener}}
+\index{bindEventListener@{bindEventListener}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{bindEventListener()}{bindEventListener()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_a6cd28becdf201fe7747385d4fcc11911} 
+bind\+Event\+Listener (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$listener}{}\end{DoxyParamCaption})}
+
+Bind an event listener to this dispatcher. 
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_a6cd28becdf201fe7747385d4fcc11911}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_a1f4130ad26ead0ad90a7d2bbf533eb3b}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!createCommandEvent@{createCommandEvent}}
+\index{createCommandEvent@{createCommandEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{createCommandEvent()}{createCommandEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_a1f4130ad26ead0ad90a7d2bbf533eb3b} 
+create\+Command\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{}]{\$command}{, }\item[{}]{\$success\+Codes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new Command\+Event for \$source and \$command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & That will be executed \\
+\hline
+array & {\em \$success\+Codes} & That are needed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___events___command_event}{Swift\+\_\+\+Events\+\_\+\+Command\+Event} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_a1f4130ad26ead0ad90a7d2bbf533eb3b}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_aff62179d028287210a9830291e36d259}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!createResponseEvent@{createResponseEvent}}
+\index{createResponseEvent@{createResponseEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{createResponseEvent()}{createResponseEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_aff62179d028287210a9830291e36d259} 
+create\+Response\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{}]{\$response}{, }\item[{}]{\$valid}{}\end{DoxyParamCaption})}
+
+Create a new Response\+Event for \$source and \$response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$response} & \\
+\hline
+bool & {\em \$valid} & If the response is valid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___events___response_event}{Swift\+\_\+\+Events\+\_\+\+Response\+Event} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_aff62179d028287210a9830291e36d259}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_a82659b57e0f9dd699bd86288f95f0301}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!createSendEvent@{createSendEvent}}
+\index{createSendEvent@{createSendEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{createSendEvent()}{createSendEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_a82659b57e0f9dd699bd86288f95f0301} 
+create\+Send\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Create a new Send\+Event for \$source and \$message.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_a82659b57e0f9dd699bd86288f95f0301}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_a7937d9190af92b3dae9cf11764108869}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!createTransportChangeEvent@{createTransportChangeEvent}}
+\index{createTransportChangeEvent@{createTransportChangeEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{createTransportChangeEvent()}{createTransportChangeEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_a7937d9190af92b3dae9cf11764108869} 
+create\+Transport\+Change\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{}\end{DoxyParamCaption})}
+
+Create a new Transport\+Change\+Event for \$source.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_a7937d9190af92b3dae9cf11764108869}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_adf4b5fdd64235c4efffc0365ca21b47b}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!createTransportExceptionEvent@{createTransportExceptionEvent}}
+\index{createTransportExceptionEvent@{createTransportExceptionEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{createTransportExceptionEvent()}{createTransportExceptionEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_adf4b5fdd64235c4efffc0365ca21b47b} 
+create\+Transport\+Exception\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{\mbox{\hyperlink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}}}]{\$ex}{}\end{DoxyParamCaption})}
+
+Create a new Transport\+Exception\+Event for \$source.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___events___transport_exception_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Exception\+Event} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_adf4b5fdd64235c4efffc0365ca21b47b}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+\Hypertarget{interface_swift___events___event_dispatcher_a2a404e4331b1f911e1df34c8afab3f02}\index{Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}!dispatchEvent@{dispatchEvent}}
+\index{dispatchEvent@{dispatchEvent}!Swift\_Events\_EventDispatcher@{Swift\_Events\_EventDispatcher}}
+\doxysubsubsection{\texorpdfstring{dispatchEvent()}{dispatchEvent()}}
+{\footnotesize\ttfamily \label{interface_swift___events___event_dispatcher_a2a404e4331b1f911e1df34c8afab3f02} 
+dispatch\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___event_object}{Swift\+\_\+\+Events\+\_\+\+Event\+Object}}}]{\$evt}{, }\item[{}]{\$target}{}\end{DoxyParamCaption})}
+
+Dispatch the given Event to all suitable listeners.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$target} & method \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___events___simple_event_dispatcher_a2a404e4331b1f911e1df34c8afab3f02}{Swift\+\_\+\+Events\+\_\+\+Simple\+Event\+Dispatcher}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Event\+Dispatcher.\+php\end{DoxyCompactItemize}

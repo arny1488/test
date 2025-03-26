@@ -1,0 +1,378 @@
+\doxysection{Arrays Class Reference}
+\hypertarget{class_arrays}{}\label{class_arrays}\index{Arrays@{Arrays}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_arrays_a7b7d9514898ef983d43b7218c4a3e37e}{get}} (array \&\$array, string \$path, string \$glue=\textquotesingle{}.\textquotesingle{}, mixed \$default=null)
+\item 
+static \mbox{\hyperlink{class_arrays_a1219c159c76603a8ed0d576cce2ed1cc}{search}} (array \$array, mixed \$value, mixed \$default=null)
+\item 
+static \mbox{\hyperlink{class_arrays_ad3142b8d54a7980619d77477fca9d7a2}{set}} (array \&\$array, string \$path, mixed \$value, string \$glue=\textquotesingle{}.\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_arrays_a95ed4c46979fe154452a998acb892f7b}{delete}} (array \&\$array, string \$path, string \$glue=\textquotesingle{}.\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_arrays_a5c552b484a8fe0f5b4521af7bc299f3c}{filter\+Keys}} (array \&\$array, array \$key\+\_\+names, bool \$delete=false)
+\item 
+static \mbox{\hyperlink{class_arrays_ac36a5a9a54b9e6ea2fa8491e4e8395ba}{filter\+Recursive}} (array \$input, \$callback=null)
+\item 
+static \mbox{\hyperlink{class_arrays_ab699bb88faf2e6ff0bb7714fe8fa3439}{trim\+All}} (array \&\$array, string \$characters="{} \textbackslash{}t\textbackslash{}n\textbackslash{}r\textbackslash{}0\textbackslash{}x0\+B"{})
+\item 
+static \mbox{\hyperlink{class_arrays_afc099effc7dc5449f6f5939608548662}{rename\+Keys}} (array \&\$array, array \$pattern)
+\item 
+static \mbox{\hyperlink{class_arrays_a4bb796e1dccb18714a988d9e34a13f3d}{delete\+Key}} (array \&\$array, string \$key\+\_\+name)
+\item 
+static \mbox{\hyperlink{class_arrays_a50c93d7bbef773f0edac3ef47c0c441c}{delete\+Key\+Value}} (array \&\$array, string \$key\+\_\+name, string \$val)
+\item 
+static \mbox{\hyperlink{class_arrays_a67b2924000054e423bc5bc345c4a8de6}{path\+By\+Key\+Value}} (array \$array, int\texorpdfstring{$\vert$}{|}string \$key, mixed \$val, string \$glue=\textquotesingle{}.\textquotesingle{}, bool \$add\+\_\+self\+\_\+key=true, array \&\$stack=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_arrays_a21bf238ff13418108df31107e0032c7b}{path\+By\+Value}} (array \$array, mixed \$val, string \$glue=\textquotesingle{}.\textquotesingle{}, bool \$add\+\_\+self\+\_\+key=true, array \&\$stack=\mbox{[}$\,$\mbox{]})
+\item 
+static \mbox{\hyperlink{class_arrays_a835cc718f17929b5db27be9825392b57}{to\+Object}} (array\texorpdfstring{$\vert$}{|}object \$array)
+\item 
+static \mbox{\hyperlink{class_arrays_af2cf75ecdede89acb0ecf811a1adb9ea}{to\+Array}} (object\texorpdfstring{$\vert$}{|}array \$object)
+\item 
+static \mbox{\hyperlink{class_arrays_aa5aedf0019ab964c04d7209cb172e5f9}{to\+XML}} (\$array, bool \$values\+\_\+to\+\_\+attributes=false)
+\item 
+static \mbox{\hyperlink{class_arrays_a6913efa924b8edf6e357b454b5d0cf5d}{to\+CSV}} (\$array)
+\item 
+static \mbox{\hyperlink{class_arrays_a49ae085e808d897f20662be39e2c0a9e}{multi\+Sort}} (array \$array, \$key, int \$sort\+\_\+way=SORT\+\_\+\+ASC)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_arrays_a95ed4c46979fe154452a998acb892f7b}\index{Arrays@{Arrays}!delete@{delete}}
+\index{delete@{delete}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_arrays_a95ed4c46979fe154452a998acb892f7b} 
+static delete (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$path}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete value by key or path
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & array to search in \\
+\hline
+string & {\em \$path} & key or path \\
+\hline
+string & {\em \$glue} & path divider \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_arrays_a4bb796e1dccb18714a988d9e34a13f3d}\index{Arrays@{Arrays}!deleteKey@{deleteKey}}
+\index{deleteKey@{deleteKey}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{deleteKey()}{deleteKey()}}
+{\footnotesize\ttfamily \label{class_arrays_a4bb796e1dccb18714a988d9e34a13f3d} 
+static delete\+Key (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$key\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unset value by key name (string only)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+string & {\em \$key\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a50c93d7bbef773f0edac3ef47c0c441c}\index{Arrays@{Arrays}!deleteKeyValue@{deleteKeyValue}}
+\index{deleteKeyValue@{deleteKeyValue}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{deleteKeyValue()}{deleteKeyValue()}}
+{\footnotesize\ttfamily \label{class_arrays_a50c93d7bbef773f0edac3ef47c0c441c} 
+static delete\+Key\+Value (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$key\+\_\+name}{, }\item[{string}]{\$val}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unset value by key name and value (string only)
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+string & {\em \$key\+\_\+name} & \\
+\hline
+string & {\em \$val} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a5c552b484a8fe0f5b4521af7bc299f3c}\index{Arrays@{Arrays}!filterKeys@{filterKeys}}
+\index{filterKeys@{filterKeys}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{filterKeys()}{filterKeys()}}
+{\footnotesize\ttfamily \label{class_arrays_a5c552b484a8fe0f5b4521af7bc299f3c} 
+static filter\+Keys (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{array}]{\$key\+\_\+names}{, }\item[{bool}]{\$delete}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Unset value by key name
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+array & {\em \$key\+\_\+names} & \\
+\hline
+bool & {\em \$delete} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_ac36a5a9a54b9e6ea2fa8491e4e8395ba}\index{Arrays@{Arrays}!filterRecursive@{filterRecursive}}
+\index{filterRecursive@{filterRecursive}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{filterRecursive()}{filterRecursive()}}
+{\footnotesize\ttfamily \label{class_arrays_ac36a5a9a54b9e6ea2fa8491e4e8395ba} 
+static filter\+Recursive (\begin{DoxyParamCaption}\item[{array}]{\$input}{, }\item[{}]{\$callback}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Recursively iterates over each value in the array passing them to the callback function
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$input} & \\
+\hline
+ & {\em \$callback} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a7b7d9514898ef983d43b7218c4a3e37e}\index{Arrays@{Arrays}!get@{get}}
+\index{get@{get}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_arrays_a7b7d9514898ef983d43b7218c4a3e37e} 
+static get (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$path}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get value by key or path
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & array to search in \\
+\hline
+string & {\em \$path} & key or path \\
+\hline
+string & {\em \$glue} & path divider \\
+\hline
+mixed | null & {\em \$default} & default value if nothing found \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a49ae085e808d897f20662be39e2c0a9e}\index{Arrays@{Arrays}!multiSort@{multiSort}}
+\index{multiSort@{multiSort}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{multiSort()}{multiSort()}}
+{\footnotesize\ttfamily \label{class_arrays_a49ae085e808d897f20662be39e2c0a9e} 
+static multi\+Sort (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{}]{\$key}{, }\item[{int}]{\$sort\+\_\+way}{ = {\ttfamily SORT\+\_\+ASC}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Sort multi-\/dimensional array by key
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+ & {\em \$key} & \\
+\hline
+int & {\em \$sort\+\_\+way} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a67b2924000054e423bc5bc345c4a8de6}\index{Arrays@{Arrays}!pathByKeyValue@{pathByKeyValue}}
+\index{pathByKeyValue@{pathByKeyValue}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{pathByKeyValue()}{pathByKeyValue()}}
+{\footnotesize\ttfamily \label{class_arrays_a67b2924000054e423bc5bc345c4a8de6} 
+static path\+By\+Key\+Value (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{int\texorpdfstring{$\vert$}{|}string}]{\$key}{, }\item[{mixed}]{\$val}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{bool}]{\$add\+\_\+self\+\_\+key}{ = {\ttfamily true}, }\item[{array \&}]{\$stack}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return element\textquotesingle{}s path by key-\/value pair
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+int | string & {\em \$key} & \\
+\hline
+mixed & {\em \$val} & \\
+\hline
+string & {\em \$glue} & \\
+\hline
+bool & {\em \$add\+\_\+self\+\_\+key} & \\
+\hline
+array & {\em \$stack} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a21bf238ff13418108df31107e0032c7b}\index{Arrays@{Arrays}!pathByValue@{pathByValue}}
+\index{pathByValue@{pathByValue}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{pathByValue()}{pathByValue()}}
+{\footnotesize\ttfamily \label{class_arrays_a21bf238ff13418108df31107e0032c7b} 
+static path\+By\+Value (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{mixed}]{\$val}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{bool}]{\$add\+\_\+self\+\_\+key}{ = {\ttfamily true}, }\item[{array \&}]{\$stack}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return element\textquotesingle{}s path by key-\/value pair
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+mixed & {\em \$val} & \\
+\hline
+string & {\em \$glue} & \\
+\hline
+bool & {\em \$add\+\_\+self\+\_\+key} & \\
+\hline
+array & {\em \$stack} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_afc099effc7dc5449f6f5939608548662}\index{Arrays@{Arrays}!renameKeys@{renameKeys}}
+\index{renameKeys@{renameKeys}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{renameKeys()}{renameKeys()}}
+{\footnotesize\ttfamily \label{class_arrays_afc099effc7dc5449f6f5939608548662} 
+static rename\+Keys (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{array}]{\$pattern}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Rename keys in array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+array & {\em \$pattern} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a1219c159c76603a8ed0d576cce2ed1cc}\index{Arrays@{Arrays}!search@{search}}
+\index{search@{search}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{class_arrays_a1219c159c76603a8ed0d576cce2ed1cc} 
+static search (\begin{DoxyParamCaption}\item[{array}]{\$array}{, }\item[{mixed}]{\$value}{, }\item[{mixed}]{\$default}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Searches the array for a given value and returns the first corresponding key if successful
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+mixed | null & {\em \$default} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_ad3142b8d54a7980619d77477fca9d7a2}\index{Arrays@{Arrays}!set@{set}}
+\index{set@{set}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_arrays_ad3142b8d54a7980619d77477fca9d7a2} 
+static set (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$path}{, }\item[{mixed}]{\$value}{, }\item[{string}]{\$glue}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get value by key or path
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & array \\
+\hline
+string & {\em \$path} & key or path \\
+\hline
+mixed & {\em \$value} & value \\
+\hline
+string & {\em \$glue} & path divider \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_arrays_af2cf75ecdede89acb0ecf811a1adb9ea}\index{Arrays@{Arrays}!toArray@{toArray}}
+\index{toArray@{toArray}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toArray()}{toArray()}}
+{\footnotesize\ttfamily \label{class_arrays_af2cf75ecdede89acb0ecf811a1adb9ea} 
+static to\+Array (\begin{DoxyParamCaption}\item[{object\texorpdfstring{$\vert$}{|}array}]{\$object}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert object to array
+
+
+\begin{DoxyParams}[1]{Parameters}
+object | array & {\em \$object} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Reflection\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_arrays_a6913efa924b8edf6e357b454b5d0cf5d}\index{Arrays@{Arrays}!toCSV@{toCSV}}
+\index{toCSV@{toCSV}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toCSV()}{toCSV()}}
+{\footnotesize\ttfamily \label{class_arrays_a6913efa924b8edf6e357b454b5d0cf5d} 
+static to\+CSV (\begin{DoxyParamCaption}\item[{}]{\$array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert array to CSV file
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$array} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_a835cc718f17929b5db27be9825392b57}\index{Arrays@{Arrays}!toObject@{toObject}}
+\index{toObject@{toObject}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toObject()}{toObject()}}
+{\footnotesize\ttfamily \label{class_arrays_a835cc718f17929b5db27be9825392b57} 
+static to\+Object (\begin{DoxyParamCaption}\item[{array\texorpdfstring{$\vert$}{|}object}]{\$array}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert array to object
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | object & {\em \$array} & массив для преобразования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_aa5aedf0019ab964c04d7209cb172e5f9}\index{Arrays@{Arrays}!toXML@{toXML}}
+\index{toXML@{toXML}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{toXML()}{toXML()}}
+{\footnotesize\ttfamily \label{class_arrays_aa5aedf0019ab964c04d7209cb172e5f9} 
+static to\+XML (\begin{DoxyParamCaption}\item[{}]{\$array}{, }\item[{bool}]{\$values\+\_\+to\+\_\+attributes}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Convert array to XML file
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$array} & \\
+\hline
+bool & {\em \$values\+\_\+to\+\_\+attributes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_arrays_ab699bb88faf2e6ff0bb7714fe8fa3439}\index{Arrays@{Arrays}!trimAll@{trimAll}}
+\index{trimAll@{trimAll}!Arrays@{Arrays}}
+\doxysubsubsection{\texorpdfstring{trimAll()}{trimAll()}}
+{\footnotesize\ttfamily \label{class_arrays_ab699bb88faf2e6ff0bb7714fe8fa3439} 
+static trim\+All (\begin{DoxyParamCaption}\item[{array \&}]{\$array}{, }\item[{string}]{\$characters}{ = {\ttfamily "{}~\textbackslash{}t\textbackslash{}n\textbackslash{}r\textbackslash{}0\textbackslash{}x0B"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Trim all array values
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$array} & \\
+\hline
+string & {\em \$characters} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Arrays.\+php\end{DoxyCompactItemize}

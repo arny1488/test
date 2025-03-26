@@ -1,0 +1,274 @@
+\doxysection{DB Class Reference}
+\hypertarget{class_d_b}{}\label{class_d_b}\index{DB@{DB}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_d_b_a6508a649a5a18377d046a2dfda71b003}{get\+Instance}} (array \$config)
+\item 
+static \mbox{\hyperlink{class_d_b_a9f0629b783c0c63d3c49be0a3df52147}{init}} (array \$config)
+\item 
+static \mbox{\hyperlink{class_d_b_a53e030781f00f3e9531dac956a4e422e}{shut\+Down}} (string \$error=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_d_b_a1839f83d2dbf39efd4f04a86c69673b7}{query}} (string \$statement,... \$params)
+\item 
+static \mbox{\hyperlink{class_d_b_a7a72c6a252c3c3935422dc94f9481df8}{row}} (string \$statement,... \$params)
+\item 
+static \mbox{\hyperlink{class_d_b_acd9b59d261e9a851b187ec2932d50c78}{cell}} (string \$statement,... \$params)
+\item 
+\Hypertarget{class_d_b_a590b833e25dcc78306805ad8dc16593e}\label{class_d_b_a590b833e25dcc78306805ad8dc16593e} 
+static {\bfseries clear\+Cache} (?string \$table)
+\item 
+static \mbox{\hyperlink{class_d_b_a61a19cb43fb2530a2f880c0d0672c471}{\+\_\+\+\_\+call\+Static}} (\$name, \$arguments)
+\item 
+static \mbox{\hyperlink{class_d_b_ac5aa2e01c11a5de4f8991f5c54412b93}{get\+Size}} ()
+\item 
+static \mbox{\hyperlink{class_d_b_a77b75d1503952d07fe4cc1844b4dfb29}{backup}} ()
+\item 
+static \mbox{\hyperlink{class_d_b_a5f0a7eaaeeeb2cb0128d51a2f1955652}{restore}} (string \$file)
+\item 
+static \mbox{\hyperlink{class_d_b_a2f1c4369e049d229af410e3bc59f2bba}{build\+Search}} (array \$fields, string \$search)
+\item 
+static \mbox{\hyperlink{class_d_b_a68fee789ddce4c269b2820c733acdd93}{statement}} ()
+\item 
+static \mbox{\hyperlink{class_d_b_acdb82ac44602cb123f1f1ccb7bf7bdc8}{placeholder}} (string \$mask,... \$values)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_d_b_aa4f2df3cf9074e0662595bb00815b335}\label{class_d_b_aa4f2df3cf9074e0662595bb00815b335} 
+static string {\bfseries \$db\+\_\+engine} = \textquotesingle{}mysql\textquotesingle{}
+\item 
+\Hypertarget{class_d_b_aeab6190aed91724d3f7db9c1f53183db}\label{class_d_b_aeab6190aed91724d3f7db9c1f53183db} 
+static PDO {\bfseries \$connection}
+\item 
+\Hypertarget{class_d_b_ad86f26b3a54d7286984b8244a99ef55d}\label{class_d_b_ad86f26b3a54d7286984b8244a99ef55d} 
+static \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b}{Easy\+DB}} {\bfseries \$driver} = null
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_d_b_a33e63f49a29e4e537ece05e099356326}\label{class_d_b_a33e63f49a29e4e537ece05e099356326} 
+static string {\bfseries \$db\+\_\+host}
+\item 
+\Hypertarget{class_d_b_ab294584c24ca3d7d05b03d6a045f677b}\label{class_d_b_ab294584c24ca3d7d05b03d6a045f677b} 
+static string {\bfseries \$db\+\_\+user}
+\item 
+\Hypertarget{class_d_b_ad42f69034f64939e5c4753d2671c2330}\label{class_d_b_ad42f69034f64939e5c4753d2671c2330} 
+static string {\bfseries \$db\+\_\+pass}
+\item 
+\Hypertarget{class_d_b_a1288953d21ca961472ed2b93bde29b3a}\label{class_d_b_a1288953d21ca961472ed2b93bde29b3a} 
+static string {\bfseries \$db\+\_\+port}
+\item 
+\Hypertarget{class_d_b_abdaf4b191e5b67053fe6d41ef931de95}\label{class_d_b_abdaf4b191e5b67053fe6d41ef931de95} 
+static string {\bfseries \$db\+\_\+socket}
+\item 
+\Hypertarget{class_d_b_a2db215d6cd26a1915e16cb5f7ff1fca3}\label{class_d_b_a2db215d6cd26a1915e16cb5f7ff1fca3} 
+static string {\bfseries \$db\+\_\+name}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_d_b_a61a19cb43fb2530a2f880c0d0672c471}\index{DB@{DB}!\_\_callStatic@{\_\_callStatic}}
+\index{\_\_callStatic@{\_\_callStatic}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{\_\_callStatic()}{\_\_callStatic()}}
+{\footnotesize\ttfamily \label{class_d_b_a61a19cb43fb2530a2f880c0d0672c471} 
+static \+\_\+\+\_\+call\+Static (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$arguments}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Wrap \doxylink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_d_b}{Easy\+DB} methods
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$name} & \\
+\hline
+{\em \$arguments} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a77b75d1503952d07fe4cc1844b4dfb29}\index{DB@{DB}!backup@{backup}}
+\index{backup@{backup}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{backup()}{backup()}}
+{\footnotesize\ttfamily \label{class_d_b_a77b75d1503952d07fe4cc1844b4dfb29} 
+static backup (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creat database backup file
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a2f1c4369e049d229af410e3bc59f2bba}\index{DB@{DB}!buildSearch@{buildSearch}}
+\index{buildSearch@{buildSearch}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{buildSearch()}{buildSearch()}}
+{\footnotesize\ttfamily \label{class_d_b_a2f1c4369e049d229af410e3bc59f2bba} 
+static build\+Search (\begin{DoxyParamCaption}\item[{array}]{\$fields}{, }\item[{string}]{\$search}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Build WHERE part to perform basic search
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$fields} & \\
+\hline
+string & {\em \$search} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_acd9b59d261e9a851b187ec2932d50c78}\index{DB@{DB}!cell@{cell}}
+\index{cell@{cell}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{cell()}{cell()}}
+{\footnotesize\ttfamily \label{class_d_b_acd9b59d261e9a851b187ec2932d50c78} 
+static cell (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform a Query (alias of Easy\+DB-\/\texorpdfstring{$>$}{>}cell)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+ & {\em mixed} & ...\$params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a6508a649a5a18377d046a2dfda71b003}\index{DB@{DB}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_d_b_a6508a649a5a18377d046a2dfda71b003} 
+static get\+Instance (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get class instance
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \doxylink{class_d_b}{DB} connection parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+DB\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_ac5aa2e01c11a5de4f8991f5c54412b93}\index{DB@{DB}!getSize@{getSize}}
+\index{getSize@{getSize}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \label{class_d_b_ac5aa2e01c11a5de4f8991f5c54412b93} 
+static get\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get size of database
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a9f0629b783c0c63d3c49be0a3df52147}\index{DB@{DB}!init@{init}}
+\index{init@{init}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_d_b_a9f0629b783c0c63d3c49be0a3df52147} 
+static init (\begin{DoxyParamCaption}\item[{array}]{\$config}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$config} & \doxylink{class_d_b}{DB} connection parameters \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_d_b_acdb82ac44602cb123f1f1ccb7bf7bdc8}\index{DB@{DB}!placeholder@{placeholder}}
+\index{placeholder@{placeholder}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{placeholder()}{placeholder()}}
+{\footnotesize\ttfamily \label{class_d_b_acdb82ac44602cb123f1f1ccb7bf7bdc8} 
+static placeholder (\begin{DoxyParamCaption}\item[{string}]{\$mask}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates query placeholder
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mask} & \\
+\hline
+ & {\em ...\$values} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder}{Easy\+Placeholder} 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a1839f83d2dbf39efd4f04a86c69673b7}\index{DB@{DB}!query@{query}}
+\index{query@{query}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{query()}{query()}}
+{\footnotesize\ttfamily \label{class_d_b_a1839f83d2dbf39efd4f04a86c69673b7} 
+static query (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform a Query (alias of Easy\+DB-\/\texorpdfstring{$>$}{>}run)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+ & {\em mixed} & ...\$params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a5f0a7eaaeeeb2cb0128d51a2f1955652}\index{DB@{DB}!restore@{restore}}
+\index{restore@{restore}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{restore()}{restore()}}
+{\footnotesize\ttfamily \label{class_d_b_a5f0a7eaaeeeb2cb0128d51a2f1955652} 
+static restore (\begin{DoxyParamCaption}\item[{string}]{\$file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Restore database from backup file
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a7a72c6a252c3c3935422dc94f9481df8}\index{DB@{DB}!row@{row}}
+\index{row@{row}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{row()}{row()}}
+{\footnotesize\ttfamily \label{class_d_b_a7a72c6a252c3c3935422dc94f9481df8} 
+static row (\begin{DoxyParamCaption}\item[{string}]{\$statement}{, }\item[{}]{...}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform a Query (alias of Easy\+DB-\/\texorpdfstring{$>$}{>}row)
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$statement} & \\
+\hline
+ & {\em mixed} & ...\$params \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_d_b_a53e030781f00f3e9531dac956a4e422e}\index{DB@{DB}!shutDown@{shutDown}}
+\index{shutDown@{shutDown}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{shutDown()}{shutDown()}}
+{\footnotesize\ttfamily \label{class_d_b_a53e030781f00f3e9531dac956a4e422e} 
+static shut\+Down (\begin{DoxyParamCaption}\item[{string}]{\$error}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Shut down and display message if there is an error connecting to the database
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$error} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_d_b_a68fee789ddce4c269b2820c733acdd93}\index{DB@{DB}!statement@{statement}}
+\index{statement@{statement}!DB@{DB}}
+\doxysubsubsection{\texorpdfstring{statement()}{statement()}}
+{\footnotesize\ttfamily \label{class_d_b_a68fee789ddce4c269b2820c733acdd93} 
+static statement (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Creates \doxylink{class_d_b}{DB} statement
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_statement}{Easy\+Statement} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/drivers/db/DB.\+php\end{DoxyCompactItemize}

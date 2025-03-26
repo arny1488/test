@@ -1,0 +1,105 @@
+\doxysection{Prefix\+Time\+Zones\+Map Class Reference}
+\hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map}{}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map}\index{PrefixTimeZonesMap@{PrefixTimeZonesMap}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_ad841c31f76316ed60b2a31f782e04f7f}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_ad841c31f76316ed60b2a31f782e04f7f} 
+{\bfseries \+\_\+\+\_\+construct} (\$map)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a72457060156dfde8385f62b7c9c0b6bb}{lookup\+Time\+Zones\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a5d6656153755d84cdf85d2644d6c254f}{lookup\+Country\+Level\+Time\+Zones\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a8f4002b07deb062eab0e9faeb32e1ba4}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a8f4002b07deb062eab0e9faeb32e1ba4} 
+const {\bfseries RAW\+\_\+\+STRING\+\_\+\+TIMEZONES\+\_\+\+SEPARATOR} = \textquotesingle{}\&\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_ab204dda9ac564b78ae2de4d2b4561355}{lookup\+Time\+Zones\+For\+Number\+Key}} (\$key)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a9b12c804d0798af009322098a32baa3b}{tokenize\+Raw\+Output\+String}} (\$timezones\+String)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a1dcf2477f500df39337bed2688ebf724}\label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a1dcf2477f500df39337bed2688ebf724} 
+{\bfseries \$phone\+Prefix\+Map}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a5d6656153755d84cdf85d2644d6c254f}\index{PrefixTimeZonesMap@{PrefixTimeZonesMap}!lookupCountryLevelTimeZonesForNumber@{lookupCountryLevelTimeZonesForNumber}}
+\index{lookupCountryLevelTimeZonesForNumber@{lookupCountryLevelTimeZonesForNumber}!PrefixTimeZonesMap@{PrefixTimeZonesMap}}
+\doxysubsubsection{\texorpdfstring{lookupCountryLevelTimeZonesForNumber()}{lookupCountryLevelTimeZonesForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a5d6656153755d84cdf85d2644d6c254f} 
+lookup\+Country\+Level\+Time\+Zones\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Returns the list of time zones {\ttfamily number}\textquotesingle{}s calling country code corresponds to.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & Phone\+Number the phone number to look up \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the list of corresponding time zones 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a72457060156dfde8385f62b7c9c0b6bb}\index{PrefixTimeZonesMap@{PrefixTimeZonesMap}!lookupTimeZonesForNumber@{lookupTimeZonesForNumber}}
+\index{lookupTimeZonesForNumber@{lookupTimeZonesForNumber}!PrefixTimeZonesMap@{PrefixTimeZonesMap}}
+\doxysubsubsection{\texorpdfstring{lookupTimeZonesForNumber()}{lookupTimeZonesForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a72457060156dfde8385f62b7c9c0b6bb} 
+lookup\+Time\+Zones\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+As per {\ttfamily \doxylink{}{lookup\+Time\+Zones\+For\+Number(long)}}, but receives the number as a Phone\+Number instead of a long.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & Phone\+Number the phone number to look up \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the list of corresponding time zones 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_ab204dda9ac564b78ae2de4d2b4561355}\index{PrefixTimeZonesMap@{PrefixTimeZonesMap}!lookupTimeZonesForNumberKey@{lookupTimeZonesForNumberKey}}
+\index{lookupTimeZonesForNumberKey@{lookupTimeZonesForNumberKey}!PrefixTimeZonesMap@{PrefixTimeZonesMap}}
+\doxysubsubsection{\texorpdfstring{lookupTimeZonesForNumberKey()}{lookupTimeZonesForNumberKey()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_ab204dda9ac564b78ae2de4d2b4561355} 
+lookup\+Time\+Zones\+For\+Number\+Key (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the list of time zones {\ttfamily key} corresponds to.
+
+{\ttfamily key} could be the calling country code and the full significant number of a certain number, or it could be just a phone-\/number prefix. For example, the full number 16502530000 (from the phone-\/number +1 650 253 0000) is a valid input. Also, any of its prefixes, such as 16502, is also valid.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$key} & int the key to look up \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array the list of corresponding time zones 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a9b12c804d0798af009322098a32baa3b}\index{PrefixTimeZonesMap@{PrefixTimeZonesMap}!tokenizeRawOutputString@{tokenizeRawOutputString}}
+\index{tokenizeRawOutputString@{tokenizeRawOutputString}!PrefixTimeZonesMap@{PrefixTimeZonesMap}}
+\doxysubsubsection{\texorpdfstring{tokenizeRawOutputString()}{tokenizeRawOutputString()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_prefix_time_zones_map_a9b12c804d0798af009322098a32baa3b} 
+tokenize\+Raw\+Output\+String (\begin{DoxyParamCaption}\item[{}]{\$timezones\+String}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Split {\ttfamily timezones\+String} into all the time zones that are part of it.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$timezones\+String} & String \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/prefixmapper/Prefix\+Time\+Zones\+Map.\+php\end{DoxyCompactItemize}

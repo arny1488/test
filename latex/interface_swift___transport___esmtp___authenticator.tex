@@ -1,0 +1,73 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator Interface Reference}
+\hypertarget{interface_swift___transport___esmtp___authenticator}{}\label{interface_swift___transport___esmtp___authenticator}\index{Swift\_Transport\_Esmtp\_Authenticator@{Swift\_Transport\_Esmtp\_Authenticator}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.704403cm]{interface_swift___transport___esmtp___authenticator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806}{get\+Auth\+Keyword}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61}{authenticate}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$username, \$password)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An Authentication mechanism.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61}\index{Swift\_Transport\_Esmtp\_Authenticator@{Swift\_Transport\_Esmtp\_Authenticator}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Swift\_Transport\_Esmtp\_Authenticator@{Swift\_Transport\_Esmtp\_Authenticator}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61} 
+authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$username}{, }\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+Try to authenticate the user with \$username and \$password.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if authentication worked (returning false is deprecated, throw a \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception} instead)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} & Allows the message to bubble up when authentication was not successful \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{class_swift___transport___esmtp___auth___cram_md5_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Cram\+Md5\+Authenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___login_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Login\+Authenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+NTLMAuthenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___plain_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Plain\+Authenticator}}, and \mbox{\hyperlink{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a7e1ecd85f2649983f3d5cf5807d11b20}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+XOAuth2\+Authenticator}}.
+
+\Hypertarget{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806}\index{Swift\_Transport\_Esmtp\_Authenticator@{Swift\_Transport\_Esmtp\_Authenticator}!getAuthKeyword@{getAuthKeyword}}
+\index{getAuthKeyword@{getAuthKeyword}!Swift\_Transport\_Esmtp\_Authenticator@{Swift\_Transport\_Esmtp\_Authenticator}}
+\doxysubsubsection{\texorpdfstring{getAuthKeyword()}{getAuthKeyword()}}
+{\footnotesize\ttfamily \label{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806} 
+get\+Auth\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the AUTH mechanism this Authenticator handles.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___transport___esmtp___auth___cram_md5_authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Cram\+Md5\+Authenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___login_authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Login\+Authenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___n_t_l_m_authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+NTLMAuthenticator}}, \mbox{\hyperlink{class_swift___transport___esmtp___auth___plain_authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Plain\+Authenticator}}, and \mbox{\hyperlink{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+XOAuth2\+Authenticator}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/\+Esmtp/Authenticator.\+php\end{DoxyCompactItemize}

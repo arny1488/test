@@ -1,0 +1,361 @@
+\doxysection{Swift\+\_\+\+Signers\+\_\+\+SMime\+Signer Class Reference}
+\hypertarget{class_swift___signers___s_mime_signer}{}\label{class_swift___signers___s_mime_signer}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+Inheritance diagram for Swift\+\_\+\+Signers\+\_\+\+SMime\+Signer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___signers___s_mime_signer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_af8ff4a0fba8ab6cd2f8af330a8fc8578}{\+\_\+\+\_\+construct}} (\$sign\+Certificate=null, \$sign\+Private\+Key=null, \$encrypt\+Certificate=null)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_aec1d2da6749d7625a2c9e26ea0042849}{set\+Sign\+Certificate}} (\$certificate, \$private\+Key=null, \$sign\+Options=PKCS7\+\_\+\+DETACHED, \$extra\+Certs=null)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a2ad5693344f3198e7c73ed02408dfa5f}{set\+Encrypt\+Certificate}} (\$recipient\+Certs, \$cipher=null)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_ad5cde80fe17944c916757467db317030}{get\+Sign\+Certificate}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_ae507cd2a02deaeb5aa402df6f024a2c0}{get\+Sign\+Private\+Key}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_abddc6af83939a7a1975c812adae52c5d}{set\+Sign\+Then\+Encrypt}} (\$sign\+Then\+Encrypt=true)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_aead4cf1ce4770f8766ce85b36441995a}{is\+Sign\+Then\+Encrypt}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_aa7d89ec98bdcacbc87262ff1a21c0e1e}{set\+Wrap\+Full\+Message}} (\$wrap)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}{sign\+Message}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a71caed0ba27d07123f847a157cb9139f}{get\+Altered\+Headers}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a1b67e3d349cbbd2acd8744b959d08b63}{smime\+Sign\+Message}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a8b6a0597e018c07ebfb9e3d5f70cda03}{smime\+Encrypt\+Message}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a302d8946ec54dfcebc0caea65699e7da}{copy\+Headers}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$from\+Message, \mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$to\+Message, array \$headers=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a4b5d5ad55b73cb818fd1a50ef6b1c4e4}{copy\+Header}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$from\+Message, \mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$to\+Message, \$header\+Name)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_ab9972f6b0e412fb5117acb2530108605}{clear\+All\+Headers}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_ae18712d33f31e1a91322f34a88046dad}{wrap\+Mime\+Message}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_aef7197151f725f962158507684f9678e}\label{class_swift___signers___s_mime_signer_aef7197151f725f962158507684f9678e} 
+{\bfseries parse\+SSLOutput} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$input\+Stream, \mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a3c41b4afac309652ddd1f2ce307faf4a}{stream\+To\+Mime}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$from\+Stream, \mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___signers___s_mime_signer_a8ab9fd43f21051bb9aa4f764445f843c}{parse\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$email\+Stream)
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_aa905e6d8266f05a8258f6453ea845582}\label{class_swift___signers___s_mime_signer_aa905e6d8266f05a8258f6453ea845582} 
+{\bfseries copy\+From\+Open\+SSLOutput} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$from\+Stream, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$to\+Stream)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a34a35a478ad557ff41697ef1813de9be}\label{class_swift___signers___s_mime_signer_a34a35a478ad557ff41697ef1813de9be} 
+{\bfseries \$sign\+Certificate}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a014b88795d21680654a4f8cf40926fc9}\label{class_swift___signers___s_mime_signer_a014b88795d21680654a4f8cf40926fc9} 
+{\bfseries \$sign\+Private\+Key}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a52903c63f80cd194643c15a90e6b3923}\label{class_swift___signers___s_mime_signer_a52903c63f80cd194643c15a90e6b3923} 
+{\bfseries \$encrypt\+Cert}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a085b4513ffb9fc9a5a8e81586e2703b9}\label{class_swift___signers___s_mime_signer_a085b4513ffb9fc9a5a8e81586e2703b9} 
+{\bfseries \$sign\+Then\+Encrypt} = true
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_ac56b4606ffd94f61ec44dd767132eaaf}\label{class_swift___signers___s_mime_signer_ac56b4606ffd94f61ec44dd767132eaaf} 
+{\bfseries \$sign\+Level}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_ad135fda5fd5ad708bcd58c1580cbdf16}\label{class_swift___signers___s_mime_signer_ad135fda5fd5ad708bcd58c1580cbdf16} 
+{\bfseries \$encrypt\+Level}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_aa4f1c43f21679d5486e050a1674b3b4c}\label{class_swift___signers___s_mime_signer_aa4f1c43f21679d5486e050a1674b3b4c} 
+{\bfseries \$sign\+Options}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a07a4361acf05b8e1d36812a6f61d4877}\label{class_swift___signers___s_mime_signer_a07a4361acf05b8e1d36812a6f61d4877} 
+{\bfseries \$encrypt\+Options}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a2614b01385e13cb88b97f60ddf457566}\label{class_swift___signers___s_mime_signer_a2614b01385e13cb88b97f60ddf457566} 
+{\bfseries \$encrypt\+Cipher}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a0a2cc79039ec1a0e6947e9f6b4230723}\label{class_swift___signers___s_mime_signer_a0a2cc79039ec1a0e6947e9f6b4230723} 
+{\bfseries \$extra\+Certs} = null
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_af69aa398df2da63a53763f2f2d4b00ba}\label{class_swift___signers___s_mime_signer_af69aa398df2da63a53763f2f2d4b00ba} 
+{\bfseries \$wrap\+Full\+Message} = false
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_ab677709b72425a4fdcb758bb96fe956a}\label{class_swift___signers___s_mime_signer_ab677709b72425a4fdcb758bb96fe956a} 
+{\bfseries \$replacement\+Factory}
+\item 
+\Hypertarget{class_swift___signers___s_mime_signer_a377db22ce3349296a5c47ff856498daf}\label{class_swift___signers___s_mime_signer_a377db22ce3349296a5c47ff856498daf} 
+{\bfseries \$header\+Factory}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+MIME Message Signer used to apply S/\+MIME Signature/\+Encryption to a message.
+
+\begin{DoxyAuthor}{Author}
+Romain-\/\+Geissler 
+
+Sebastiaan Stok \href{mailto:s.stok@rollerscapes.net}{\texttt{ s.\+stok@rollerscapes.\+net}} 
+
+Jan Flora \href{mailto:jf@penneo.com}{\texttt{ jf@penneo.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___signers___s_mime_signer_af8ff4a0fba8ab6cd2f8af330a8fc8578}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_af8ff4a0fba8ab6cd2f8af330a8fc8578} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$sign\+Certificate}{ = {\ttfamily null}, }\item[{}]{\$sign\+Private\+Key}{ = {\ttfamily null}, }\item[{}]{\$encrypt\+Certificate}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$sign\+Certificate} & \\
+\hline
+string | null & {\em \$sign\+Private\+Key} & \\
+\hline
+string | null & {\em \$encrypt\+Certificate} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___signers___s_mime_signer_ab9972f6b0e412fb5117acb2530108605}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!clearAllHeaders@{clearAllHeaders}}
+\index{clearAllHeaders@{clearAllHeaders}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{clearAllHeaders()}{clearAllHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_ab9972f6b0e412fb5117acb2530108605} 
+clear\+All\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove all headers from a \doxylink{class_swift}{Swift} message. \Hypertarget{class_swift___signers___s_mime_signer_a4b5d5ad55b73cb818fd1a50ef6b1c4e4}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!copyHeader@{copyHeader}}
+\index{copyHeader@{copyHeader}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{copyHeader()}{copyHeader()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a4b5d5ad55b73cb818fd1a50ef6b1c4e4} 
+copy\+Header (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$from\+Message}{, }\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$to\+Message}{, }\item[{}]{\$header\+Name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copy a single header from one \doxylink{class_swift}{Swift} message to another.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header\+Name} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___signers___s_mime_signer_a302d8946ec54dfcebc0caea65699e7da}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!copyHeaders@{copyHeaders}}
+\index{copyHeaders@{copyHeaders}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{copyHeaders()}{copyHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a302d8946ec54dfcebc0caea65699e7da} 
+copy\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$from\+Message}{, }\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$to\+Message}{, }\item[{array}]{\$headers}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Copy named headers from one \doxylink{class_swift}{Swift} message to another. \Hypertarget{class_swift___signers___s_mime_signer_a71caed0ba27d07123f847a157cb9139f}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!getAlteredHeaders@{getAlteredHeaders}}
+\index{getAlteredHeaders@{getAlteredHeaders}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{getAlteredHeaders()}{getAlteredHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a71caed0ba27d07123f847a157cb9139f} 
+get\+Altered\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the list of header a signer might tamper.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___body_signer_a71caed0ba27d07123f847a157cb9139f}{Swift\+\_\+\+Signers\+\_\+\+Body\+Signer}}.
+
+\Hypertarget{class_swift___signers___s_mime_signer_ad5cde80fe17944c916757467db317030}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!getSignCertificate@{getSignCertificate}}
+\index{getSignCertificate@{getSignCertificate}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{getSignCertificate()}{getSignCertificate()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_ad5cde80fe17944c916757467db317030} 
+get\+Sign\+Certificate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_ae507cd2a02deaeb5aa402df6f024a2c0}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!getSignPrivateKey@{getSignPrivateKey}}
+\index{getSignPrivateKey@{getSignPrivateKey}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{getSignPrivateKey()}{getSignPrivateKey()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_ae507cd2a02deaeb5aa402df6f024a2c0} 
+get\+Sign\+Private\+Key (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_aead4cf1ce4770f8766ce85b36441995a}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!isSignThenEncrypt@{isSignThenEncrypt}}
+\index{isSignThenEncrypt@{isSignThenEncrypt}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{isSignThenEncrypt()}{isSignThenEncrypt()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_aead4cf1ce4770f8766ce85b36441995a} 
+is\+Sign\+Then\+Encrypt (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_a8ab9fd43f21051bb9aa4f764445f843c}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!parseStream@{parseStream}}
+\index{parseStream@{parseStream}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{parseStream()}{parseStream()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a8ab9fd43f21051bb9aa4f764445f843c} 
+parse\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$email\+Stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This message will parse the headers of a MIME email byte stream and return an array that contains the headers as an associative array and the email body as a string.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_a4a20559544fdf4dcb457e258dc976cf8}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!reset@{reset}}
+\index{reset@{reset}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Resets internal states.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signer}{Swift\+\_\+\+Signer}}.
+
+\Hypertarget{class_swift___signers___s_mime_signer_a2ad5693344f3198e7c73ed02408dfa5f}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!setEncryptCertificate@{setEncryptCertificate}}
+\index{setEncryptCertificate@{setEncryptCertificate}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{setEncryptCertificate()}{setEncryptCertificate()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a2ad5693344f3198e7c73ed02408dfa5f} 
+set\+Encrypt\+Certificate (\begin{DoxyParamCaption}\item[{}]{\$recipient\+Certs}{, }\item[{}]{\$cipher}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the certificate location to use for encryption.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/openssl.pkcs7.flags.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/openssl.\+pkcs7.\+flags.\+php}} 
+
+\href{https://secure.php.net/manual/en/openssl.ciphers.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/openssl.\+ciphers.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$recipient\+Certs} & Either an single X.\+509 certificate, or an assoc array of X.\+509 certificates. \\
+\hline
+int & {\em \$cipher} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_aec1d2da6749d7625a2c9e26ea0042849}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!setSignCertificate@{setSignCertificate}}
+\index{setSignCertificate@{setSignCertificate}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{setSignCertificate()}{setSignCertificate()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_aec1d2da6749d7625a2c9e26ea0042849} 
+set\+Sign\+Certificate (\begin{DoxyParamCaption}\item[{}]{\$certificate}{, }\item[{}]{\$private\+Key}{ = {\ttfamily null}, }\item[{}]{\$sign\+Options}{ = {\ttfamily PKCS7\+\_\+DETACHED}, }\item[{}]{\$extra\+Certs}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Set the certificate location to use for signing.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://secure.php.net/manual/en/openssl.pkcs7.flags.php}{\texttt{ https\+://secure.\+php.\+net/manual/en/openssl.\+pkcs7.\+flags.\+php}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$certificate} & \\
+\hline
+string | array & {\em \$private\+Key} & If the key needs an passphrase use array(\textquotesingle{}file-\/location\textquotesingle{}, \textquotesingle{}passphrase\textquotesingle{}) instead \\
+\hline
+int & {\em \$sign\+Options} & Bitwise operator options for openssl\+\_\+pkcs7\+\_\+sign() \\
+\hline
+string & {\em \$extra\+Certs} & A file containing intermediate certificates needed by the signing certificate\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_abddc6af83939a7a1975c812adae52c5d}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!setSignThenEncrypt@{setSignThenEncrypt}}
+\index{setSignThenEncrypt@{setSignThenEncrypt}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{setSignThenEncrypt()}{setSignThenEncrypt()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_abddc6af83939a7a1975c812adae52c5d} 
+set\+Sign\+Then\+Encrypt (\begin{DoxyParamCaption}\item[{}]{\$sign\+Then\+Encrypt}{ = {\ttfamily true}}\end{DoxyParamCaption})}
+
+Set perform signing before encryption.
+
+The default is to first sign the message and then encrypt. But some older mail clients, namely Microsoft Outlook 2000 will work when the message first encrypted. As this goes against the official specs, its recommended to only use \textquotesingle{}encryption -\/\texorpdfstring{$>$}{>} signing\textquotesingle{} when specifically targeting these \textquotesingle{}broken\textquotesingle{} clients.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$sign\+Then\+Encrypt} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_aa7d89ec98bdcacbc87262ff1a21c0e1e}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!setWrapFullMessage@{setWrapFullMessage}}
+\index{setWrapFullMessage@{setWrapFullMessage}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{setWrapFullMessage()}{setWrapFullMessage()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_aa7d89ec98bdcacbc87262ff1a21c0e1e} 
+set\+Wrap\+Full\+Message (\begin{DoxyParamCaption}\item[{}]{\$wrap}{}\end{DoxyParamCaption})}
+
+Specify whether to wrap the entire MIME message in the S/\+MIME message.
+
+According to RFC5751 section 3.\+1\+: In order to protect outer, non-\/content-\/related message header fields (for instance, the "{}\+Subject"{}, "{}\+To"{}, "{}\+From"{}, and "{}\+Cc"{} fields), the sending client MAY wrap a full MIME message in a message/rfc822 wrapper in order to apply S/\+MIME security services to these header fields. It is up to the receiving client to decide how to present this "{}inner"{} header along with the unprotected "{}outer"{} header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$wrap} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___s_mime_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!signMessage@{signMessage}}
+\index{signMessage@{signMessage}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{signMessage()}{signMessage()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a9fd50b14a2346d4f0bfa34a907aa04a6} 
+sign\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Change the \doxylink{class_swift___message}{Swift\+\_\+\+Message} to apply the signing.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___body_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}{Swift\+\_\+\+Signers\+\_\+\+Body\+Signer}}.
+
+\Hypertarget{class_swift___signers___s_mime_signer_a8b6a0597e018c07ebfb9e3d5f70cda03}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!smimeEncryptMessage@{smimeEncryptMessage}}
+\index{smimeEncryptMessage@{smimeEncryptMessage}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{smimeEncryptMessage()}{smimeEncryptMessage()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a8b6a0597e018c07ebfb9e3d5f70cda03} 
+smime\+Encrypt\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Encrypt a \doxylink{class_swift}{Swift} message. \Hypertarget{class_swift___signers___s_mime_signer_a1b67e3d349cbbd2acd8744b959d08b63}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!smimeSignMessage@{smimeSignMessage}}
+\index{smimeSignMessage@{smimeSignMessage}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{smimeSignMessage()}{smimeSignMessage()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a1b67e3d349cbbd2acd8744b959d08b63} 
+smime\+Sign\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sign a \doxylink{class_swift}{Swift} message. \Hypertarget{class_swift___signers___s_mime_signer_a3c41b4afac309652ddd1f2ce307faf4a}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!streamToMime@{streamToMime}}
+\index{streamToMime@{streamToMime}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{streamToMime()}{streamToMime()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_a3c41b4afac309652ddd1f2ce307faf4a} 
+stream\+To\+Mime (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$from\+Stream}{, }\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Merges an Output\+Byte\+Stream from Open\+SSL to a \doxylink{class_swift___message}{Swift\+\_\+\+Message}. \Hypertarget{class_swift___signers___s_mime_signer_ae18712d33f31e1a91322f34a88046dad}\index{Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}!wrapMimeMessage@{wrapMimeMessage}}
+\index{wrapMimeMessage@{wrapMimeMessage}!Swift\_Signers\_SMimeSigner@{Swift\_Signers\_SMimeSigner}}
+\doxysubsubsection{\texorpdfstring{wrapMimeMessage()}{wrapMimeMessage()}}
+{\footnotesize\ttfamily \label{class_swift___signers___s_mime_signer_ae18712d33f31e1a91322f34a88046dad} 
+wrap\+Mime\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Wraps a \doxylink{class_swift___message}{Swift\+\_\+\+Message} in a message/rfc822 MIME part.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___mime_part}{Swift\+\_\+\+Mime\+Part} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Signers/SMime\+Signer.\+php\end{DoxyCompactItemize}

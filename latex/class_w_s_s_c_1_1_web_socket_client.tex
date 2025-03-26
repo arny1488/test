@@ -1,0 +1,128 @@
+\doxysection{Web\+Socket\+Client Class Reference}
+\hypertarget{class_w_s_s_c_1_1_web_socket_client}{}\label{class_w_s_s_c_1_1_web_socket_client}\index{WebSocketClient@{WebSocketClient}}
+Inheritance diagram for Web\+Socket\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_w_s_s_c_1_1_web_socket_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_web_socket_client_a0a851c9d65bc3c17ce69bfc97d87576f}{\+\_\+\+\_\+construct}} (string \$url, \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_client_config}{Client\+Config}} \$config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main}{Wsc\+Main}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a9eaf889034da3c0ff42bb51aaf0a9fef}{get\+Last\+Opcode}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a7441a92b5227ff4e4f896d51ffed3817}{get\+Close\+Status}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_af160f7fbbf281d018ae3162521b8267d}{is\+Connected}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_ad379d49e3ca7e231be0ba8ef3b61baf4}{set\+Timeout}} (int \$timeout, \$micro\+Secs=null)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a05ebb0681ac04807cde47a6c1bd9c85a}{send}} (\$payload, \$opcode=Commons\+Contract\+::\+EVENT\+\_\+\+TYPE\+\_\+\+TEXT)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_ac805eb3a4eb25b19c1ab093023da4d35}{receive}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_aa1dc550f6e2387fdc692479ba6ed0f0f}{close}} (int \$status=1000, string \$message=\textquotesingle{}ttfn\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_wsc_commons_contract}{Wsc\+Commons\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries TCP\+\_\+\+SCHEME} = \textquotesingle{}tcp\+://\textquotesingle{}
+\item 
+const {\bfseries MAX\+\_\+\+BYTES\+\_\+\+READ} = 65535
+\item 
+const {\bfseries DEFAULT\+\_\+\+TIMEOUT} = 5
+\item 
+const {\bfseries DEFAULT\+\_\+\+FRAGMENT\+\_\+\+SIZE} = 4096
+\item 
+const {\bfseries DEFAULT\+\_\+\+RESPONSE\+\_\+\+HEADER} = 8192
+\item 
+const {\bfseries SEC\+\_\+\+WEBSOCKET\+\_\+\+ACCEPT\+\_\+\+PTTRN} = \textquotesingle{}/Sec-\/\mbox{\hyperlink{class_w_s_s_c_1_1_contracts_1_1_web_socket}{Web\+Socket}}-\/Accept\+:\textbackslash{}s(.\texorpdfstring{$\ast$}{*})\$/m\+Ui\textquotesingle{}
+\item 
+const {\bfseries SERVER\+\_\+\+KEY\+\_\+\+ACCEPT} = \textquotesingle{}258EAFA5-\/E914-\/47DA-\/95CA-\/C5\+AB0\+DC85\+B11\textquotesingle{}
+\item 
+const {\bfseries PROXY\+\_\+\+MATCH\+\_\+\+RESP} = \textquotesingle{}/\texorpdfstring{$^\wedge$}{\string^}HTTP\textbackslash{}/\textbackslash{}d\textbackslash{}.\textbackslash{}d 200/\textquotesingle{}
+\item 
+const {\bfseries MASK\+\_\+125} = 125
+\item 
+const {\bfseries MASK\+\_\+126} = 126
+\item 
+const {\bfseries MASK\+\_\+127} = 127
+\item 
+const {\bfseries MASK\+\_\+128} = 128
+\item 
+const {\bfseries MASK\+\_\+254} = 254
+\item 
+const {\bfseries MASK\+\_\+255} = 255
+\item 
+const {\bfseries KEY\+\_\+\+GEN\+\_\+\+LENGTH} = 16
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main}{Wsc\+Main}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a3f07be8129d2f8b0456c78feae705384}{connect}} (\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_client_config}{Client\+Config}} \$config)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a8c29af408105ba75bc2b973aa4bc1bf7}{write}} (string \$data)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a0e356a4e96bb868d304b01d1a298e450}{read}} (int \$len)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Member Functions inherited from \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main}{Wsc\+Main}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main_a6d35a01201c93fc5a5c806724c26b523}{sprintB}} (string \$string)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_wsc_main}{Wsc\+Main}}}
+\begin{DoxyCompactItemize}
+\item 
+string {\bfseries \$socket\+Url} = \textquotesingle{}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_client_config}{Client\+Config}} {\bfseries \$config}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_w_s_s_c_1_1_web_socket_client_a0a851c9d65bc3c17ce69bfc97d87576f}\index{WebSocketClient@{WebSocketClient}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!WebSocketClient@{WebSocketClient}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_web_socket_client_a0a851c9d65bc3c17ce69bfc97d87576f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_client_config}{Client\+Config}}}]{\$config}{}\end{DoxyParamCaption})}
+
+Sets parameters for Web Socket Client intercommunication
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & string representation of a socket utf, ex.\+: tcp\+://www.example.\+com\+:8000 or udp\+://example.com\+:13 \\
+\hline
+Client\+Config & {\em \$config} & Client configuration settings e.\+g.\+: connection -\/ timeout, ssl options, fragment message size to send etc. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{namespace_exceptions}{Exceptions}} & \\
+\hline
+\end{DoxyExceptions}
+Bad\+Uri\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{namespace_exceptions}{Exceptions}} & \\
+\hline
+\end{DoxyExceptions}
+Connection\+Exception 
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Web\+Socket/\+WSSC/Web\+Socket\+Client.\+php\end{DoxyCompactItemize}

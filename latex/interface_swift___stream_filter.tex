@@ -1,0 +1,71 @@
+\doxysection{Swift\+\_\+\+Stream\+Filter Interface Reference}
+\hypertarget{interface_swift___stream_filter}{}\label{interface_swift___stream_filter}\index{Swift\_StreamFilter@{Swift\_StreamFilter}}
+Inheritance diagram for Swift\+\_\+\+Stream\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.904762cm]{interface_swift___stream_filter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___stream_filter_a718c299beb54ce75303c989b811dd597}{should\+Buffer}} (\$buffer)
+\item 
+\mbox{\hyperlink{interface_swift___stream_filter_a6d100585332705f8efd7e891e74004d6}{filter}} (\$buffer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Processes bytes as they pass through a stream and performs filtering.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___stream_filter_a6d100585332705f8efd7e891e74004d6}\index{Swift\_StreamFilter@{Swift\_StreamFilter}!filter@{filter}}
+\index{filter@{filter}!Swift\_StreamFilter@{Swift\_StreamFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{interface_swift___stream_filter_a6d100585332705f8efd7e891e74004d6} 
+filter (\begin{DoxyParamCaption}\item[{}]{\$buffer}{}\end{DoxyParamCaption})}
+
+Filters \$buffer and returns the changes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___stream_filters___string_replacement_filter_a6d100585332705f8efd7e891e74004d6}{Swift\+\_\+\+Stream\+Filters\+\_\+\+String\+Replacement\+Filter}}.
+
+\Hypertarget{interface_swift___stream_filter_a718c299beb54ce75303c989b811dd597}\index{Swift\_StreamFilter@{Swift\_StreamFilter}!shouldBuffer@{shouldBuffer}}
+\index{shouldBuffer@{shouldBuffer}!Swift\_StreamFilter@{Swift\_StreamFilter}}
+\doxysubsubsection{\texorpdfstring{shouldBuffer()}{shouldBuffer()}}
+{\footnotesize\ttfamily \label{interface_swift___stream_filter_a718c299beb54ce75303c989b811dd597} 
+should\+Buffer (\begin{DoxyParamCaption}\item[{}]{\$buffer}{}\end{DoxyParamCaption})}
+
+Based on the buffer given, this returns true if more buffering is needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___stream_filters___byte_array_replacement_filter_a718c299beb54ce75303c989b811dd597}{Swift\+\_\+\+Stream\+Filters\+\_\+\+Byte\+Array\+Replacement\+Filter}}, and \mbox{\hyperlink{class_swift___stream_filters___string_replacement_filter_a718c299beb54ce75303c989b811dd597}{Swift\+\_\+\+Stream\+Filters\+\_\+\+String\+Replacement\+Filter}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Stream\+Filter.\+php\end{DoxyCompactItemize}

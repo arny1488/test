@@ -1,0 +1,91 @@
+\doxysection{Swift\+\_\+\+Encoder\+\_\+\+Rfc2231\+Encoder Class Reference}
+\hypertarget{class_swift___encoder___rfc2231_encoder}{}\label{class_swift___encoder___rfc2231_encoder}\index{Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}}
+Inheritance diagram for Swift\+\_\+\+Encoder\+\_\+\+Rfc2231\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___encoder___rfc2231_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___encoder___rfc2231_encoder_a0b77c7b3ec1b6c8593afac6a61295960}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream}} \$char\+Stream)
+\item 
+\mbox{\hyperlink{class_swift___encoder___rfc2231_encoder_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___encoder___rfc2231_encoder_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___encoder___rfc2231_encoder_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles RFC 2231 specified Encoding in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___encoder___rfc2231_encoder_a0b77c7b3ec1b6c8593afac6a61295960}\index{Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___encoder___rfc2231_encoder_a0b77c7b3ec1b6c8593afac6a61295960} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream}}}]{\$char\+Stream}{}\end{DoxyParamCaption})}
+
+Creates a new Rfc2231\+Encoder using the given character stream instance. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___encoder___rfc2231_encoder_ad0cb87b388bc74d63dc884accdca8713}\index{Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{class_swift___encoder___rfc2231_encoder_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Make a deep copy of object. \Hypertarget{class_swift___encoder___rfc2231_encoder_a642c64487e34084ca8fa4ea115ebdb5f}\index{Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}!charsetChanged@{charsetChanged}}
+\index{charsetChanged@{charsetChanged}!Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}}
+\doxysubsubsection{\texorpdfstring{charsetChanged()}{charsetChanged()}}
+{\footnotesize\ttfamily \label{class_swift___encoder___rfc2231_encoder_a642c64487e34084ca8fa4ea115ebdb5f} 
+charset\+Changed (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Updates the charset used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___charset_observer_a642c64487e34084ca8fa4ea115ebdb5f}{Swift\+\_\+\+Mime\+\_\+\+Charset\+Observer}}.
+
+\Hypertarget{class_swift___encoder___rfc2231_encoder_a4a83bd3d529ef683d32e98e490e61a65}\index{Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_Encoder\_Rfc2231Encoder@{Swift\_Encoder\_Rfc2231Encoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___encoder___rfc2231_encoder_a4a83bd3d529ef683d32e98e490e61a65} 
+encode\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Takes an unencoded string and produces a string encoded according to RFC 2231 from it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+int & {\em \$first\+Line\+Offset} & \\
+\hline
+int & {\em \$max\+Line\+Length} & optional, 0 indicates the default of 75 bytes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___encoder_a4a83bd3d529ef683d32e98e490e61a65}{Swift\+\_\+\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Encoder/Rfc2231\+Encoder.\+php\end{DoxyCompactItemize}

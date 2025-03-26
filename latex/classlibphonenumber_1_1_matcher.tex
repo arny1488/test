@@ -1,0 +1,181 @@
+\doxysection{Matcher Class Reference}
+\hypertarget{classlibphonenumber_1_1_matcher}{}\label{classlibphonenumber_1_1_matcher}\index{Matcher@{Matcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_ab86a93a420019d555fb80c3e45f5da18}{\+\_\+\+\_\+construct}} (\$pattern, \$subject)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a88b4ab12831009b0501a2a87bdcdf7f6}{matches}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a0a7ed5b2edde5c47188db06c6fe03eb1}{looking\+At}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a953faee576bbc2654c069916a15dfc0d}{find}} (\$offset=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a841a49a612319db16e628f2df564bb19}{group\+Count}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_ae416a1224e7667541f72cf527b2f9df8}{group}} (\$group=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_adfba2ed2863e095f92f2e4d6ba7f5c35}{end}} (\$\mbox{\hyperlink{classlibphonenumber_1_1_matcher_ae416a1224e7667541f72cf527b2f9df8}{group}}=null)
+\item 
+\Hypertarget{classlibphonenumber_1_1_matcher_a87a63b31f300fcc3a3e71524371e3380}\label{classlibphonenumber_1_1_matcher_a87a63b31f300fcc3a3e71524371e3380} 
+{\bfseries start} (\$\mbox{\hyperlink{classlibphonenumber_1_1_matcher_ae416a1224e7667541f72cf527b2f9df8}{group}}=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a18ec3206109fe095309e9dfe8af7c90e}{replace\+First}} (\$replacement)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a150efedf1f88dc3fb92580db7ee54999}{replace\+All}} (\$replacement)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_matcher_aa9f4d19a2fb77eff0359991f20472d16}{reset}} (\$input=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_matcher_aceff1117f61e736a41c889bce33e1bf4}\label{classlibphonenumber_1_1_matcher_aceff1117f61e736a41c889bce33e1bf4} 
+{\bfseries do\+Match} (\$type=\textquotesingle{}\mbox{\hyperlink{classlibphonenumber_1_1_matcher_a953faee576bbc2654c069916a15dfc0d}{find}}\textquotesingle{}, \$offset=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_matcher_af6fbb70c99c1f5a92778615a2a9861e6}\label{classlibphonenumber_1_1_matcher_af6fbb70c99c1f5a92778615a2a9861e6} 
+{\bfseries \$pattern}
+\item 
+\Hypertarget{classlibphonenumber_1_1_matcher_afea90503726cd5ad2eb80baf0b6d217d}\label{classlibphonenumber_1_1_matcher_afea90503726cd5ad2eb80baf0b6d217d} 
+{\bfseries \$subject}
+\item 
+\Hypertarget{classlibphonenumber_1_1_matcher_a1af3c911abb4f6414a86954705266327}\label{classlibphonenumber_1_1_matcher_a1af3c911abb4f6414a86954705266327} 
+{\bfseries \$groups} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Matcher for various regex matching
+
+Note that this is NOT the same as google\textquotesingle{}s java Phone\+Number\+Matcher class. This class is a minimal port of java\textquotesingle{}s built-\/in matcher class, whereas Phone\+Number\+Matcher is designed to recognize phone numbers embedded in any text. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlibphonenumber_1_1_matcher_ab86a93a420019d555fb80c3e45f5da18}\index{Matcher@{Matcher}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_ab86a93a420019d555fb80c3e45f5da18} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$pattern}{, }\item[{}]{\$subject}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$pattern} & \\
+\hline
+string & {\em \$subject} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1_matcher_adfba2ed2863e095f92f2e4d6ba7f5c35}\index{Matcher@{Matcher}!end@{end}}
+\index{end@{end}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_adfba2ed2863e095f92f2e4d6ba7f5c35} 
+end (\begin{DoxyParamCaption}\item[{}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int | null & {\em \$group} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a953faee576bbc2654c069916a15dfc0d}\index{Matcher@{Matcher}!find@{find}}
+\index{find@{find}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a953faee576bbc2654c069916a15dfc0d} 
+find (\begin{DoxyParamCaption}\item[{}]{\$offset}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_ae416a1224e7667541f72cf527b2f9df8}\index{Matcher@{Matcher}!group@{group}}
+\index{group@{group}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{group()}{group()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_ae416a1224e7667541f72cf527b2f9df8} 
+group (\begin{DoxyParamCaption}\item[{}]{\$group}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$group} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a841a49a612319db16e628f2df564bb19}\index{Matcher@{Matcher}!groupCount@{groupCount}}
+\index{groupCount@{groupCount}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{groupCount()}{groupCount()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a841a49a612319db16e628f2df564bb19} 
+group\+Count (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a0a7ed5b2edde5c47188db06c6fe03eb1}\index{Matcher@{Matcher}!lookingAt@{lookingAt}}
+\index{lookingAt@{lookingAt}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{lookingAt()}{lookingAt()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a0a7ed5b2edde5c47188db06c6fe03eb1} 
+looking\+At (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a88b4ab12831009b0501a2a87bdcdf7f6}\index{Matcher@{Matcher}!matches@{matches}}
+\index{matches@{matches}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a88b4ab12831009b0501a2a87bdcdf7f6} 
+matches (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a150efedf1f88dc3fb92580db7ee54999}\index{Matcher@{Matcher}!replaceAll@{replaceAll}}
+\index{replaceAll@{replaceAll}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{replaceAll()}{replaceAll()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a150efedf1f88dc3fb92580db7ee54999} 
+replace\+All (\begin{DoxyParamCaption}\item[{}]{\$replacement}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$replacement} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_a18ec3206109fe095309e9dfe8af7c90e}\index{Matcher@{Matcher}!replaceFirst@{replaceFirst}}
+\index{replaceFirst@{replaceFirst}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{replaceFirst()}{replaceFirst()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_a18ec3206109fe095309e9dfe8af7c90e} 
+replace\+First (\begin{DoxyParamCaption}\item[{}]{\$replacement}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$replacement} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_matcher_aa9f4d19a2fb77eff0359991f20472d16}\index{Matcher@{Matcher}!reset@{reset}}
+\index{reset@{reset}!Matcher@{Matcher}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_matcher_aa9f4d19a2fb77eff0359991f20472d16} 
+reset (\begin{DoxyParamCaption}\item[{}]{\$input}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Matcher 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Matcher.\+php\end{DoxyCompactItemize}

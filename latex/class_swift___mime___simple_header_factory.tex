@@ -1,0 +1,192 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Factory Class Reference}
+\hypertarget{class_swift___mime___simple_header_factory}{}\label{class_swift___mime___simple_header_factory}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Factory\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___mime___simple_header_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a32397d58a7bd49358606343cf838db84}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}} \$encoder, \mbox{\hyperlink{interface_swift___encoder}{Swift\+\_\+\+Encoder}} \$param\+Encoder, \mbox{\hyperlink{class_egulias_1_1_email_validator_1_1_email_validator}{Email\+Validator}} \$email\+Validator, \$charset=null, \mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_af3a5798b67820fff76eea66b593cd837}{create\+Mailbox\+Header}} (\$name, \$addresses=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_ab26096f5ff70b535e8b0827c9e386909}{create\+Date\+Header}} (\$name, Date\+Time\+Interface \$date\+Time=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a6c7bd2e63a79c11e3ceaf7191c452294}{create\+Text\+Header}} (\$name, \$value=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a67e314c32971ff82d49563a40f7c4f29}{create\+Parameterized\+Header}} (\$name, \$value=null, \$params=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a609a41909c9c7125012d9c24afebab08}{create\+Id\+Header}} (\$name, \$ids=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a653ba44edfdfa4d292168de70737d709}{create\+Path\+Header}} (\$name, \$path=null)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___mime___simple_header_factory_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Creates MIME headers.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mime___simple_header_factory_a32397d58a7bd49358606343cf838db84}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a32397d58a7bd49358606343cf838db84} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}}}]{\$encoder}{, }\item[{\mbox{\hyperlink{interface_swift___encoder}{Swift\+\_\+\+Encoder}}}]{\$param\+Encoder}{, }\item[{\mbox{\hyperlink{class_egulias_1_1_email_validator_1_1_email_validator}{Email\+Validator}}}]{\$email\+Validator}{, }\item[{}]{\$charset}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}}}]{\$address\+Encoder}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a new Simple\+Header\+Factory using \$encoder and \$param\+Encoder.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___simple_header_factory_ad0cb87b388bc74d63dc884accdca8713}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Make a deep copy of object. \Hypertarget{class_swift___mime___simple_header_factory_a642c64487e34084ca8fa4ea115ebdb5f}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!charsetChanged@{charsetChanged}}
+\index{charsetChanged@{charsetChanged}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{charsetChanged()}{charsetChanged()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a642c64487e34084ca8fa4ea115ebdb5f} 
+charset\+Changed (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Notify this observer that the entity\textquotesingle{}s charset has changed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___charset_observer_a642c64487e34084ca8fa4ea115ebdb5f}{Swift\+\_\+\+Mime\+\_\+\+Charset\+Observer}}.
+
+\Hypertarget{class_swift___mime___simple_header_factory_ab26096f5ff70b535e8b0827c9e386909}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createDateHeader@{createDateHeader}}
+\index{createDateHeader@{createDateHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createDateHeader()}{createDateHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_ab26096f5ff70b535e8b0827c9e386909} 
+create\+Date\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{Date\+Time\+Interface}]{\$date\+Time}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Date header using \$date\+Time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___simple_header_factory_a609a41909c9c7125012d9c24afebab08}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createIdHeader@{createIdHeader}}
+\index{createIdHeader@{createIdHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createIdHeader()}{createIdHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a609a41909c9c7125012d9c24afebab08} 
+create\+Id\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$ids}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new ID header for Message-\/\+ID or Content-\/\+ID.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string | array & {\em \$ids} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___simple_header_factory_af3a5798b67820fff76eea66b593cd837}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createMailboxHeader@{createMailboxHeader}}
+\index{createMailboxHeader@{createMailboxHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createMailboxHeader()}{createMailboxHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_af3a5798b67820fff76eea66b593cd837} 
+create\+Mailbox\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$addresses}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Mailbox Header with a list of \$addresses.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+array | string | null & {\em \$addresses} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___simple_header_factory_a67e314c32971ff82d49563a40f7c4f29}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createParameterizedHeader@{createParameterizedHeader}}
+\index{createParameterizedHeader@{createParameterizedHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createParameterizedHeader()}{createParameterizedHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a67e314c32971ff82d49563a40f7c4f29} 
+create\+Parameterized\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{ = {\ttfamily null}, }\item[{}]{\$params}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new Parameterized\+Header with \$name, \$value and \$params.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+array & {\em \$params} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___mime___headers___parameterized_header}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Parameterized\+Header} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___simple_header_factory_a653ba44edfdfa4d292168de70737d709}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createPathHeader@{createPathHeader}}
+\index{createPathHeader@{createPathHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createPathHeader()}{createPathHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a653ba44edfdfa4d292168de70737d709} 
+create\+Path\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$path}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Path header with an address (path) in it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___simple_header_factory_a6c7bd2e63a79c11e3ceaf7191c452294}\index{Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}!createTextHeader@{createTextHeader}}
+\index{createTextHeader@{createTextHeader}!Swift\_Mime\_SimpleHeaderFactory@{Swift\_Mime\_SimpleHeaderFactory}}
+\doxysubsubsection{\texorpdfstring{createTextHeader()}{createTextHeader()}}
+{\footnotesize\ttfamily \label{class_swift___mime___simple_header_factory_a6c7bd2e63a79c11e3ceaf7191c452294} 
+create\+Text\+Header (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$value}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new basic text header with \$name and \$value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/Simple\+Header\+Factory.\+php\end{DoxyCompactItemize}

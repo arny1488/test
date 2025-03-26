@@ -1,0 +1,240 @@
+\doxysection{Connection Class Reference}
+\hypertarget{class_w_s_s_c_1_1_components_1_1_connection}{}\label{class_w_s_s_c_1_1_components_1_1_connection}\index{Connection@{Connection}}
+Inheritance diagram for Connection\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_w_s_s_c_1_1_components_1_1_connection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_a90d91bba9666fea508c166ab9cb4121b}{\+\_\+\+\_\+construct}} (\$sock\+Conn, array \$clients=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_a9c780dcbcbb669861fdbd22041615c99}{send}} (string \$data)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_a32171b4f48509c2d1d39756099c17fdf}{broad\+Cast}} (string \$data)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_ac2422b6d5cab339a84d8308448b38ce7}{broad\+Cast\+Many}} (array \$data, int \$delay=0)
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_acf92625fe660838e8d80db9fbfbfb59b}{get\+Unique\+Socket\+Id}} ()
+\item 
+\mbox{\hyperlink{class_w_s_s_c_1_1_components_1_1_connection_ade37d32211ace58f2659e37f9a5487b8}{get\+Peer\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract}{Commons\+Contract}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PING} = \textquotesingle{}ping\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+PONG} = \textquotesingle{}pong\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+TEXT} = \textquotesingle{}text\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CLOSE} = \textquotesingle{}close\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+BINARY} = \textquotesingle{}binary\textquotesingle{}
+\item 
+const {\bfseries EVENT\+\_\+\+TYPE\+\_\+\+CONTINUATION} = \textquotesingle{}continuation\textquotesingle{}
+\item 
+const \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_commons_contract_a45c53e70c31f6f5aaf83fc0148c61e98}{MAP\+\_\+\+EVENT\+\_\+\+TYPE\+\_\+\+TO\+\_\+\+METHODS}}
+\item 
+const {\bfseries DECODE\+\_\+\+TEXT} = 1
+\item 
+const {\bfseries DECODE\+\_\+\+BINARY} = 2
+\item 
+const {\bfseries DECODE\+\_\+\+CLOSE} = 8
+\item 
+const {\bfseries DECODE\+\_\+\+PING} = 9
+\item 
+const {\bfseries DECODE\+\_\+\+PONG} = 10
+\item 
+const {\bfseries ENCODE\+\_\+\+TEXT} = 129
+\item 
+const {\bfseries ENCODE\+\_\+\+CLOSE} = 136
+\item 
+const {\bfseries ENCODE\+\_\+\+PING} = 137
+\item 
+const {\bfseries ENCODE\+\_\+\+PONG} = 138
+\item 
+const {\bfseries MASK\+\_\+125} = 125
+\item 
+const {\bfseries MASK\+\_\+126} = 126
+\item 
+const {\bfseries MASK\+\_\+127} = 127
+\item 
+const {\bfseries MASK\+\_\+128} = 128
+\item 
+const {\bfseries MASK\+\_\+254} = 254
+\item 
+const {\bfseries MASK\+\_\+255} = 255
+\item 
+const {\bfseries PAYLOAD\+\_\+\+CHUNK} = 8
+\item 
+const {\bfseries PAYLOAD\+\_\+\+MAX\+\_\+\+BITS} = 65535
+\item 
+const {\bfseries SERVER\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+BIND\+\_\+\+TO\+\_\+\+SOCKET} = 101
+\item 
+const {\bfseries SERVER\+\_\+\+SELECT\+\_\+\+ERROR} = 102
+\item 
+const {\bfseries SERVER\+\_\+\+HEADERS\+\_\+\+NOT\+\_\+\+SET} = 103
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+NOT\+\_\+\+OPEN\+\_\+\+SOCKET} = 104
+\item 
+const {\bfseries CLIENT\+\_\+\+INCORRECT\+\_\+\+SCHEME} = 105
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+UPGRADE\+\_\+\+RESPONSE} = 106
+\item 
+const {\bfseries CLIENT\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 107
+\item 
+const {\bfseries CLIENT\+\_\+\+BAD\+\_\+\+OPCODE} = 108
+\item 
+const {\bfseries CLIENT\+\_\+\+COULD\+\_\+\+ONLY\+\_\+\+WRITE\+\_\+\+LESS} = 109
+\item 
+const {\bfseries CLIENT\+\_\+\+BROKEN\+\_\+\+FRAME} = 110
+\item 
+const {\bfseries CLIENT\+\_\+\+EMPTY\+\_\+\+READ} = 111
+\item 
+const {\bfseries SERVER\+\_\+\+INVALID\+\_\+\+STREAM\+\_\+\+CONTEXT} = 112
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_a90d91bba9666fea508c166ab9cb4121b}\index{Connection@{Connection}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_a90d91bba9666fea508c166ab9cb4121b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$sock\+Conn}{, }\item[{array}]{\$clients}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Connection constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em \$sock\+Conn} & \\
+\hline
+array & {\em \$clients} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_a32171b4f48509c2d1d39756099c17fdf}\index{Connection@{Connection}!broadCast@{broadCast}}
+\index{broadCast@{broadCast}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{broadCast()}{broadCast()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_a32171b4f48509c2d1d39756099c17fdf} 
+broad\+Cast (\begin{DoxyParamCaption}\item[{string}]{\$data}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & data to send to clients \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_ac2422b6d5cab339a84d8308448b38ce7}\index{Connection@{Connection}!broadCastMany@{broadCastMany}}
+\index{broadCastMany@{broadCastMany}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{broadCastMany()}{broadCastMany()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_ac2422b6d5cab339a84d8308448b38ce7} 
+broad\+Cast\+Many (\begin{DoxyParamCaption}\item[{array}]{\$data}{, }\item[{int}]{\$delay}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Broadcasting many messages with delay
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$data} & An array of messages (strings) sent to many clients \\
+\hline
+int & {\em \$delay} & Time in seconds to delay between messages \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_aa69c8bf1f1dcf4e72552efff1fe3e87e}\index{Connection@{Connection}!close@{close}}
+\index{close@{close}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_aa69c8bf1f1dcf4e72552efff1fe3e87e} 
+close (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Closes clients socket stream
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_ade37d32211ace58f2659e37f9a5487b8}\index{Connection@{Connection}!getPeerName@{getPeerName}}
+\index{getPeerName@{getPeerName}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{getPeerName()}{getPeerName()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_ade37d32211ace58f2659e37f9a5487b8} 
+get\+Peer\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets client socket address host/port or UNIX path
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_acf92625fe660838e8d80db9fbfbfb59b}\index{Connection@{Connection}!getUniqueSocketId@{getUniqueSocketId}}
+\index{getUniqueSocketId@{getUniqueSocketId}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{getUniqueSocketId()}{getUniqueSocketId()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_acf92625fe660838e8d80db9fbfbfb59b} 
+get\+Unique\+Socket\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets unique socket id from resource
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+\Hypertarget{class_w_s_s_c_1_1_components_1_1_connection_a9c780dcbcbb669861fdbd22041615c99}\index{Connection@{Connection}!send@{send}}
+\index{send@{send}!Connection@{Connection}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_w_s_s_c_1_1_components_1_1_connection_a9c780dcbcbb669861fdbd22041615c99} 
+send (\begin{DoxyParamCaption}\item[{string}]{\$data}{}\end{DoxyParamCaption})}
+
+This method is invoked when user implementation call \$conn-\/\texorpdfstring{$>$}{>}send(\$data) writes data to the clients stream socket
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$data} & pure decoded data from server \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Exception 
+
+Implements \mbox{\hyperlink{interface_w_s_s_c_1_1_contracts_1_1_connection_contract}{Connection\+Contract}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Web\+Socket/\+WSSC/\+Components/Connection.\+php\end{DoxyCompactItemize}

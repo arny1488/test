@@ -1,0 +1,77 @@
+\doxysection{Number Class Reference}
+\hypertarget{class_number}{}\label{class_number}\index{Number@{Number}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_number_a899fa6b6e62c4a8aa160f2c72664593b}{format\+Size}} (int \$size, int \$precision=2)
+\item 
+static \mbox{\hyperlink{class_number_a5ab8eb16e79161946cdb3a22534dd71c}{num\+Format}} (float \$number, int \$decimal=0, string \$after=\textquotesingle{}.\textquotesingle{}, string \$thousand=\textquotesingle{} \textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_number_adf538870fb283f228dd4e8886795f3a2}{micro\+Time\+Diff}} (string \$a, string \$b)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_number_a899fa6b6e62c4a8aa160f2c72664593b}\index{Number@{Number}!formatSize@{formatSize}}
+\index{formatSize@{formatSize}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{formatSize()}{formatSize()}}
+{\footnotesize\ttfamily \label{class_number_a899fa6b6e62c4a8aa160f2c72664593b} 
+static format\+Size (\begin{DoxyParamCaption}\item[{int}]{\$size}{, }\item[{int}]{\$precision}{ = {\ttfamily 2}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Format size in bytes
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$size} & \\
+\hline
+int & {\em \$precision} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_number_adf538870fb283f228dd4e8886795f3a2}\index{Number@{Number}!microTimeDiff@{microTimeDiff}}
+\index{microTimeDiff@{microTimeDiff}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{microTimeDiff()}{microTimeDiff()}}
+{\footnotesize\ttfamily \label{class_number_adf538870fb283f228dd4e8886795f3a2} 
+static micro\+Time\+Diff (\begin{DoxyParamCaption}\item[{string}]{\$a}{, }\item[{string}]{\$b}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get micro time difference
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$a} & start time in {\ttfamily msec sec} format \\
+\hline
+string & {\em \$b} & end time in {\ttfamily msec sec} format \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\Hypertarget{class_number_a5ab8eb16e79161946cdb3a22534dd71c}\index{Number@{Number}!numFormat@{numFormat}}
+\index{numFormat@{numFormat}!Number@{Number}}
+\doxysubsubsection{\texorpdfstring{numFormat()}{numFormat()}}
+{\footnotesize\ttfamily \label{class_number_a5ab8eb16e79161946cdb3a22534dd71c} 
+static num\+Format (\begin{DoxyParamCaption}\item[{float}]{\$number}{, }\item[{int}]{\$decimal}{ = {\ttfamily 0}, }\item[{string}]{\$after}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}, }\item[{string}]{\$thousand}{ = {\ttfamily \textquotesingle{}~\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Format number
+
+
+\begin{DoxyParams}[1]{Parameters}
+float & {\em \$number} & число \\
+\hline
+int & {\em \$decimal} & количество знаков дробной части \\
+\hline
+string & {\em \$after} & разделитель дробной части \\
+\hline
+string & {\em \$thousand} & разделитель тысяч \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Number.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,2079 @@
+\doxysection{Phone\+Number\+Util Class Reference}
+\hypertarget{classlibphonenumber_1_1_phone_number_util}{}\label{classlibphonenumber_1_1_phone_number_util}\index{PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a69da835c52fb2f28441b745bc19c603e}{get\+Supported\+Regions}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a372958f903e5b352de161afa9cf91fa9}{get\+Supported\+Global\+Network\+Calling\+Codes}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_acb2009ebcf730530b8f133ccbc3c65fd}{get\+Supported\+Calling\+Codes}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ac4ce86a817e309315b084f5d7dde8795}{get\+Supported\+Types\+For\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a191f84712816a0b3338d3afd6ab72584}{get\+Supported\+Types\+For\+Non\+Geo\+Entity}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a82f405b1e035de5d14e69bab120241c2}{get\+Length\+Of\+Geographical\+Area\+Code}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aa2f2e2f3689d18f24f652bf54145ad7b}{get\+Metadata\+For\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a99794a5d4bbb1cbe2ca6c182621c2b48}{get\+Region\+Code\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_abb148f7b45c36ee62f3866b6a564608b}{get\+National\+Significant\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ad767b47705c1608bc9a2d3642e8a71cc}{is\+Number\+Matching\+Desc}} (\$national\+Number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}} \$number\+Desc)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aa3ba99c6354af4c7975ad35a61b46ebb}{is\+Number\+Geographical}} (\$phone\+Number\+Obj\+Or\+Type, \$country\+Calling\+Code=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aa6234b4fcdbd37c8c11efc9e9a8eb470}{get\+Number\+Type}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a799480660f16d774a1c7acff62f307f8}{get\+Metadata\+For\+Non\+Geographical\+Region}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a5996c696d20befdac5ec767fe36f1215}{get\+Length\+Of\+National\+Destination\+Code}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a1a3aef84b40dd4edde7cf212d03f1e66}{format}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$number\+Format)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a2186d90e6f251a5191328f36c7d06f84}{get\+Region\+Code\+For\+Country\+Code}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a0b425c8f5829bfb6918bf759437477b9}{choose\+Formatting\+Pattern\+For\+Number}} (array \$available\+Formats, \$national\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_adb6551240de16915dc903c502f3f546d}{format\+Nsn\+Using\+Pattern}} ( \$national\+Number, \mbox{\hyperlink{classlibphonenumber_1_1_number_format}{Number\+Format}} \$formatting\+Pattern, \$number\+Format, \$carrier\+Code=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ac4137af6f7e7c188014427df24dd8bd2}{is\+Alpha\+Number}} (\$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ae9b5218cd63e3007b9dcfea72f723b85}{parse\+And\+Keep\+Raw\+Input}} (\$number\+To\+Parse, \$default\+Region, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a34bdc31c5cfb3c482b12b2fb9ab520c4}{find\+Numbers}} (\$text, \$default\+Region, \mbox{\hyperlink{classlibphonenumber_1_1_leniency_1_1_abstract_leniency}{Abstract\+Leniency}} \$leniency=null, \$max\+Tries=PHP\+\_\+\+INT\+\_\+\+MAX)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a8f1e428bf14788af2c8b9d2a5f81424c}{get\+As\+You\+Type\+Formatter}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a9615d9f4a72c57390f3a27bc7370dc5c}{maybe\+Extract\+Country\+Code}} ( \$number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$default\+Region\+Metadata=null, \&\$national\+Number, \$keep\+Raw\+Input, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a2381348cd54dc74b57c8e819c0dd5406}{maybe\+Strip\+International\+Prefix\+And\+Normalize}} (\&\$number, \$possible\+Idd\+Prefix)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a955153673a4521a66197cd7cb7a3694a}{extract\+Country\+Code}} (\$full\+Number, \&\$national\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ad65fd62ad3f8113652a019917f875762}{maybe\+Strip\+National\+Prefix\+And\+Carrier\+Code}} (\&\$number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$metadata, \&\$carrier\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aa646a1607286fd77fb5a0006dae6490c}{is\+Possible\+Number\+For\+Type}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$type)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aa94a95c239c804b0812143eb1490794a}{get\+Region\+Codes\+For\+Country\+Code}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a0fcf27bb4d89ebd514b754c89a89d12e}{get\+Country\+Code\+For\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a00454b1ba2193a0c02c27fe87fa412c5}{format\+Number\+For\+Mobile\+Dialing}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$region\+Calling\+From, \$with\+Formatting)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a85e50e6398bd1c729294836d63f451eb}{format\+National\+Number\+With\+Carrier\+Code}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$carrier\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a3b8b970077bae1c0536cd429ab845ca6}{format\+National\+Number\+With\+Preferred\+Carrier\+Code}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$fallback\+Carrier\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a574122acdd6558251ba5365a5ee74442}{can\+Be\+Internationally\+Dialled}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aea3478e4acc0a18b1e2d45564be1d230}{format\+Out\+Of\+Country\+Keeping\+Alpha\+Chars}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$region\+Calling\+From)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a04c675159a09a3bfeadd5d567062e23b}{is\+NANPACountry}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a0c4c41c0d44fb636a88bb333ed481e5b}{format\+In\+Original\+Format}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$region\+Calling\+From)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a55d730ecb4fcd4b6f90943cf0cba6c1a}{get\+Ndd\+Prefix\+For\+Region}} (\$region\+Code, \$strip\+Non\+Digits)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ad883a41e763efd56d13f4c98e14f482f}{is\+Valid\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a025a014a0a27330693776106a221e78e}{is\+Valid\+Number\+For\+Region}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a385bcee8d052f8bbfc0a1033fd99db2b}{parse}} (\$number\+To\+Parse, \$default\+Region=null, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number=null, \$keep\+Raw\+Input=false)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aeb01ff0ccfc2d749a9347f5d8b4e9923}{format\+By\+Pattern}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$number\+Format, array \$user\+Defined\+Formats)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a6cdd4e0be5e393f3d77c84380f76f26f}{get\+Example\+Number}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a76b8fcdd649bb1ca163134c2455b9b3f}{get\+Invalid\+Example\+Number}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a2a636c4af3358e6e2e02dca8fc55e208}{get\+Example\+Number\+For\+Type}} (\$region\+Code\+Or\+Type, \$type=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a4f000a6adbebd9b91e45daaaf6f85887}{is\+Number\+Match}} (\$first\+Number\+In, \$second\+Number\+In)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a5e83c87c9015c431c68daf5c84d34b3d}{is\+Mobile\+Number\+Portable\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a348ab1d9f5e23c728f1e182ccdbccd63}{is\+Possible\+Number}} (\$number, \$region\+Dialing\+From=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ae666aabd37421444495214d37c84110a}{is\+Possible\+Number\+With\+Reason}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a672b130c4d94ba4784dea20a0798a5db}{is\+Possible\+Number\+For\+Type\+With\+Reason}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$type)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ab6a91ae46cf43c84db2bbfce373cdf92}{truncate\+Too\+Long\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a22ec3342ebc53c8decd275ea6f0aa6d3}{get\+Instance}} (\$base\+File\+Location=self\+::\+META\+\_\+\+DATA\+\_\+\+FILE\+\_\+\+PREFIX, array \$country\+Calling\+Code\+To\+Region\+Code\+Map=null, \mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}} \$metadata\+Loader=null, \mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface}{Metadata\+Source\+Interface}} \$metadata\+Source=null)
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a8100982612f31537f7b422c94abd3ddf}\label{classlibphonenumber_1_1_phone_number_util_a8100982612f31537f7b422c94abd3ddf} 
+static {\bfseries init\+Extn\+Patterns} ()
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a23bb62be5a2fa0b27abb85c36213d66a}{reset\+Instance}} ()
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ac7c84e046302358342965511931da26e}{convert\+Alpha\+Characters\+In\+Number}} (\$number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ab6083f1fb37f6edadd1f514d0505964e}{formatting\+Rule\+Has\+First\+Group\+Only}} (\$national\+Prefix\+Formatting\+Rule)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ae475a6eccdf50d601af0644e29e175f9}{get\+Country\+Mobile\+Token}} (\$country\+Calling\+Code)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a89e64b268cbec3c4e03b76cfa69065fd}{is\+Viable\+Phone\+Number}} (\$number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_af076e1f50391e011013ea1aa6da0f729}{set\+Italian\+Leading\+Zeros\+For\+Phone\+Number}} (\$national\+Number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a18278305ac80d089a6af9722f33535c7}{extract\+Possible\+Number}} (\$number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a3564efa12204fc95c7e1838e9d0d9ccd}{normalize}} (\&\$number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a9970b37d0cd02a8aa58c66efedf8f253}{normalize\+Digits\+Only}} (\$number)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a6589e1606d17ba5cfd39ffeeb963f395}{normalize\+Digits}} (\$number, \$keep\+Non\+Digits)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a9e3b0a7fb0dd5ea541c0bbb97872882e}{normalize\+Diallable\+Chars\+Only}} (\$number)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a6191df0f00170d8bce9036e9c2671593}{REGEX\+\_\+\+FLAGS}} = \textquotesingle{}ui\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad40ec068b5039468f5e0f2dfb515f15f}\label{classlibphonenumber_1_1_phone_number_util_ad40ec068b5039468f5e0f2dfb515f15f} 
+const {\bfseries MIN\+\_\+\+LENGTH\+\_\+\+FOR\+\_\+\+NSN} = 2
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a7ad63890b2a80a93189c1b582751b2fa}\label{classlibphonenumber_1_1_phone_number_util_a7ad63890b2a80a93189c1b582751b2fa} 
+const {\bfseries MAX\+\_\+\+LENGTH\+\_\+\+FOR\+\_\+\+NSN} = 17
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6c5a09fcd29c3cb6394c1cd04df98d66}\label{classlibphonenumber_1_1_phone_number_util_a6c5a09fcd29c3cb6394c1cd04df98d66} 
+const {\bfseries MAX\+\_\+\+INPUT\+\_\+\+STRING\+\_\+\+LENGTH} = 250
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af5913ebec30deea8e2955ae345bcf122}\label{classlibphonenumber_1_1_phone_number_util_af5913ebec30deea8e2955ae345bcf122} 
+const {\bfseries MAX\+\_\+\+LENGTH\+\_\+\+COUNTRY\+\_\+\+CODE} = 3
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_afe3ccf9826970c256fb881ccf5bc3c4e}\label{classlibphonenumber_1_1_phone_number_util_afe3ccf9826970c256fb881ccf5bc3c4e} 
+const {\bfseries REGION\+\_\+\+CODE\+\_\+\+FOR\+\_\+\+NON\+\_\+\+GEO\+\_\+\+ENTITY} = \textquotesingle{}001\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a1be2fa03262db8d4ae684b86e8d952f9}\label{classlibphonenumber_1_1_phone_number_util_a1be2fa03262db8d4ae684b86e8d952f9} 
+const {\bfseries META\+\_\+\+DATA\+\_\+\+FILE\+\_\+\+PREFIX} = \textquotesingle{}Phone\+Number\+Metadata\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a5f0571343acacb7dc8b5e5b146d033e0}\label{classlibphonenumber_1_1_phone_number_util_a5f0571343acacb7dc8b5e5b146d033e0} 
+const {\bfseries TEST\+\_\+\+META\+\_\+\+DATA\+\_\+\+FILE\+\_\+\+PREFIX} = \textquotesingle{}Phone\+Number\+Metadata\+For\+Testing\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a94af636bd5e5c56444b22daf1fea00b8}\label{classlibphonenumber_1_1_phone_number_util_a94af636bd5e5c56444b22daf1fea00b8} 
+const {\bfseries UNKNOWN\+\_\+\+REGION} = \textquotesingle{}ZZ\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a5570a14916ce380ef341b97805845124}\label{classlibphonenumber_1_1_phone_number_util_a5570a14916ce380ef341b97805845124} 
+const {\bfseries NANPA\+\_\+\+COUNTRY\+\_\+\+CODE} = 1
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ab23772c0b6be24c6da9613645d29d28a}\label{classlibphonenumber_1_1_phone_number_util_ab23772c0b6be24c6da9613645d29d28a} 
+const {\bfseries COLOMBIA\+\_\+\+MOBILE\+\_\+\+TO\+\_\+\+FIXED\+\_\+\+LINE\+\_\+\+PREFIX} = \textquotesingle{}3\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_adf6c50de14b909be97025f68a88e1941}\label{classlibphonenumber_1_1_phone_number_util_adf6c50de14b909be97025f68a88e1941} 
+const {\bfseries PLUS\+\_\+\+SIGN} = \textquotesingle{}+\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0f479cdbfefd60950ed842e44d37a01e}\label{classlibphonenumber_1_1_phone_number_util_a0f479cdbfefd60950ed842e44d37a01e} 
+const {\bfseries PLUS\+\_\+\+CHARS} = \textquotesingle{}+＋\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0c834aac74369d349e4babc77ba13460}\label{classlibphonenumber_1_1_phone_number_util_a0c834aac74369d349e4babc77ba13460} 
+const {\bfseries STAR\+\_\+\+SIGN} = \textquotesingle{}\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a61108a064d2ad3de8fb2f00b722f88e1}\label{classlibphonenumber_1_1_phone_number_util_a61108a064d2ad3de8fb2f00b722f88e1} 
+const {\bfseries RFC3966\+\_\+\+EXTN\+\_\+\+PREFIX} = \textquotesingle{};ext=\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af50c320ed11ae10d7dccb5cc234f8f2f}\label{classlibphonenumber_1_1_phone_number_util_af50c320ed11ae10d7dccb5cc234f8f2f} 
+const {\bfseries RFC3966\+\_\+\+PREFIX} = \textquotesingle{}tel\+:\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a71d58010dbdb4ebc5518c1b740b0efae}\label{classlibphonenumber_1_1_phone_number_util_a71d58010dbdb4ebc5518c1b740b0efae} 
+const {\bfseries RFC3966\+\_\+\+PHONE\+\_\+\+CONTEXT} = \textquotesingle{};phone-\/context=\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_abdb803b1fb27c7ff152491b965aa33f0}\label{classlibphonenumber_1_1_phone_number_util_abdb803b1fb27c7ff152491b965aa33f0} 
+const {\bfseries RFC3966\+\_\+\+ISDN\+\_\+\+SUBADDRESS} = \textquotesingle{};isub=\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0370aaca997abe983773d0005070b8f6}\label{classlibphonenumber_1_1_phone_number_util_a0370aaca997abe983773d0005070b8f6} 
+const {\bfseries VALID\+\_\+\+ALPHA\+\_\+\+PHONE\+\_\+\+PATTERN} = \textquotesingle{}(?\+:.\texorpdfstring{$\ast$}{*}?\mbox{[}A-\/Za-\/z\mbox{]})\{3\}.\texorpdfstring{$\ast$}{*}\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_adcd00278997ed6e3fe7f98cbab7f7609}\label{classlibphonenumber_1_1_phone_number_util_adcd00278997ed6e3fe7f98cbab7f7609} 
+const {\bfseries VALID\+\_\+\+ALPHA} = \textquotesingle{}A-\/Za-\/z\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a5d4d7627992d218a816563b0932f64f2}\label{classlibphonenumber_1_1_phone_number_util_a5d4d7627992d218a816563b0932f64f2} 
+const {\bfseries DEFAULT\+\_\+\+EXTN\+\_\+\+PREFIX} = \textquotesingle{} ext. \textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af7e67f6a1d50a8b44af0fabfaf05855c}\label{classlibphonenumber_1_1_phone_number_util_af7e67f6a1d50a8b44af0fabfaf05855c} 
+const {\bfseries VALID\+\_\+\+PUNCTUATION} = "{}-\/x\textbackslash{}x\+E2\textbackslash{}x80\textbackslash{}x90-\/\textbackslash{}x\+E2\textbackslash{}x80\textbackslash{}x95\textbackslash{}x\+E2\textbackslash{}x88\textbackslash{}x92\textbackslash{}x\+E3\textbackslash{}x83\textbackslash{}x\+BC\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x8D-\/\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x8F \textbackslash{}x\+C2\textbackslash{}x\+A0\textbackslash{}x\+C2\textbackslash{}x\+AD\textbackslash{}x\+E2\textbackslash{}x80\textbackslash{}x8\+B\textbackslash{}x\+E2\textbackslash{}x81\textbackslash{}x\+A0\textbackslash{}x\+E3\textbackslash{}x80\textbackslash{}x80()\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x88\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x89\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x\+BB\textbackslash{}x\+EF\textbackslash{}x\+BC\textbackslash{}x\+BD.\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}\textbackslash{}\mbox{]}/\texorpdfstring{$\sim$}{\string~}\textbackslash{}x\+E2\textbackslash{}x81\textbackslash{}x93\textbackslash{}x\+E2\textbackslash{}x88\textbackslash{}x\+BC"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a278f0850cb587181fac3e5df899778f7}\label{classlibphonenumber_1_1_phone_number_util_a278f0850cb587181fac3e5df899778f7} 
+const {\bfseries DIGITS} = "{}\textbackslash{}\textbackslash{}p\{Nd\}"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a66a1b959eda4207bc4ee248021e585e0}\label{classlibphonenumber_1_1_phone_number_util_a66a1b959eda4207bc4ee248021e585e0} 
+const {\bfseries SINGLE\+\_\+\+INTERNATIONAL\+\_\+\+PREFIX} = "{}\mbox{[}\textbackslash{}\textbackslash{}d\mbox{]}+(?\+:\mbox{[}\texorpdfstring{$\sim$}{\string~}\textbackslash{}x\+E2\textbackslash{}x81\textbackslash{}x93\textbackslash{}x\+E2\textbackslash{}x88\textbackslash{}x\+BC\textbackslash{}x\+EF\textbackslash{}x\+BD\textbackslash{}x9E\mbox{]}\mbox{[}\textbackslash{}\textbackslash{}d\mbox{]}+)?"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6285a72bd82278dd973d490ed707c69e}\label{classlibphonenumber_1_1_phone_number_util_a6285a72bd82278dd973d490ed707c69e} 
+const {\bfseries NON\+\_\+\+DIGITS\+\_\+\+PATTERN} = "{}(\textbackslash{}\textbackslash{}D+)"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad79e49691a86af7f3acb28b078eaf825}\label{classlibphonenumber_1_1_phone_number_util_ad79e49691a86af7f3acb28b078eaf825} 
+const {\bfseries FIRST\+\_\+\+GROUP\+\_\+\+PATTERN} = "{}(\textbackslash{}\textbackslash{}\$\textbackslash{}\textbackslash{}d)"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a1f68dd9b0e21f81f5e360525d2d9499d}\label{classlibphonenumber_1_1_phone_number_util_a1f68dd9b0e21f81f5e360525d2d9499d} 
+const {\bfseries NP\+\_\+\+STRING} = \textquotesingle{}\$NP\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a3a28247d39870fa1d2938661dda3f3dc}\label{classlibphonenumber_1_1_phone_number_util_a3a28247d39870fa1d2938661dda3f3dc} 
+const {\bfseries FG\+\_\+\+STRING} = \textquotesingle{}\$FG\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a48ec93b92421513d2ab4a27b81c0c606}\label{classlibphonenumber_1_1_phone_number_util_a48ec93b92421513d2ab4a27b81c0c606} 
+const {\bfseries CC\+\_\+\+STRING} = \textquotesingle{}\$CC\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae7666bec8c534a3ed49f08f069d24f25}\label{classlibphonenumber_1_1_phone_number_util_ae7666bec8c534a3ed49f08f069d24f25} 
+const {\bfseries FIRST\+\_\+\+GROUP\+\_\+\+ONLY\+\_\+\+PREFIX\+\_\+\+PATTERN} = \textquotesingle{}\textbackslash{}\textbackslash{}(?\textbackslash{}\textbackslash{}\$1\textbackslash{}\textbackslash{})?\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a412f850f13b072146429ea2c298efb38}\label{classlibphonenumber_1_1_phone_number_util_a412f850f13b072146429ea2c298efb38} 
+static {\bfseries \$\+PLUS\+\_\+\+CHARS\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a1c8b7e09051a17ad20f403595dd5f6fb}\label{classlibphonenumber_1_1_phone_number_util_a1c8b7e09051a17ad20f403595dd5f6fb} 
+static {\bfseries \$\+SECOND\+\_\+\+NUMBER\+\_\+\+START\+\_\+\+PATTERN} = \textquotesingle{}\mbox{[}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}/\mbox{]} \texorpdfstring{$\ast$}{*}x\textquotesingle{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a11017b8a1a133e4f9761b86a9ee7d613}\label{classlibphonenumber_1_1_phone_number_util_a11017b8a1a133e4f9761b86a9ee7d613} 
+static {\bfseries \$\+UNWANTED\+\_\+\+END\+\_\+\+CHAR\+\_\+\+PATTERN} = "{}\mbox{[}\mbox{[}\textbackslash{}\textbackslash{}P\{N\}\&\&\textbackslash{}\textbackslash{}P\{L\}\mbox{]}\&\&\mbox{[}\texorpdfstring{$^\wedge$}{\string^}\#\mbox{]}\mbox{]}+\$"{}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0a2bb05d1e6e3cbcc923d33c740ed188}\label{classlibphonenumber_1_1_phone_number_util_a0a2bb05d1e6e3cbcc923d33c740ed188} 
+static {\bfseries \$\+EXTN\+\_\+\+PATTERNS\+\_\+\+FOR\+\_\+\+MATCHING}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a642e05316dbed69707d32d3ff45a6214}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface}{Metadata\+Source\+Interface}} \$metadata\+Source, \$country\+Calling\+Code\+To\+Region\+Code\+Map)
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4be4055f3361d4800e16bc2e2e38cda6}\label{classlibphonenumber_1_1_phone_number_util_a4be4055f3361d4800e16bc2e2e38cda6} 
+{\bfseries init} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a73a6f2ab18b89138ea3c0fd04090d4e6}{is\+Valid\+Region\+Code}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ac1a3f25425c7f8ede4099d2a384da81d}{get\+Region\+Code\+For\+Number\+From\+Region\+List}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, array \$region\+Codes)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a27c1aa2d6c06edcf5de5b575fad4ff5c}{get\+Number\+Type\+Helper}} (\$national\+Number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$metadata)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a6d41a5336ace2c1f0d0f51d037fa80e0}{get\+Metadata\+For\+Region\+Or\+Calling\+Code}} (\$country\+Calling\+Code, \$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_afcb6953b31af37d6b91ee2e1b89ee887}{prefix\+Number\+With\+Country\+Calling\+Code}} (\$country\+Calling\+Code, \$number\+Format, \&\$formatted\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_adc82a005be0c928e37b1d4ca30f1045a}{has\+Valid\+Country\+Calling\+Code}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a63b132f17032fab2fc02fc94a5aa9d4f}{format\+Nsn}} (\$number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$metadata, \$number\+Format, \$carrier\+Code=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_af288a92d64e0e7e05812a25b220ae669}{maybe\+Append\+Formatted\+Extension}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$metadata, \$number\+Format, \&\$formatted\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a6963a062e1f82ad6ca638093408d1a39}{maybe\+Strip\+Extension}} (\&\$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aef2f484fa1d2ab8eb881c790fa6f7c9d}{parse\+Helper}} (\$number\+To\+Parse, \$default\+Region, \$keep\+Raw\+Input, \$check\+Region, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a0036ba3881e793e0d2d9a8733d961cb2}{build\+National\+Number\+For\+Parsing}} (\$number\+To\+Parse, \&\$national\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a68087dee1894de8c1420aa89ef5d843b}{check\+Region\+For\+Parsing}} (\$number\+To\+Parse, \$default\+Region)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a01cf9c88c90cc6f05c3467b08a3cb3e3}{parse\+Prefix\+As\+Idd}} (\$idd\+Pattern, \&\$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a64c8622b7987c41d01b577dcea5a8eb5}{test\+Number\+Length}} (\$number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$metadata, \$type=Phone\+Number\+Type\+::\+UNKNOWN)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ae207b08a3ba5a735ea67cb2160554b2c}{get\+Country\+Code\+For\+Valid\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ad0a3e7f310ce58e0f6149e6ac2f10719}{has\+Formatting\+Pattern\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a3694e61327e75265fbf1b117775dbb68}{raw\+Input\+Contains\+National\+Prefix}} (\$raw\+Input, \$national\+Prefix, \$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a3fccf3ebc7bd37633c6842d130e146d1}{get\+Number\+Desc\+By\+Type}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}} \$metadata, \$type)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_af6ad02bbc4f6e9584ddd164faec8b6fd}{is\+National\+Number\+Suffix\+Of\+The\+Other}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$first\+Number, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$second\+Number)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_af7381860bdedb89e1900b25b3d7d250a}{string\+Ends\+With\+String}} (\$hay\+Stack, \$needle)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ae1a18a6400ecaa04d9e65f9f8a5575ba}{create\+Extn\+Pattern}} (\$for\+Parsing)
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a91df77147292f06adf54b85a83f88e08}\label{classlibphonenumber_1_1_phone_number_util_a91df77147292f06adf54b85a83f88e08} 
+static {\bfseries init\+Extn\+Pattern} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a95d4bc1cce1fca02a904b12d7d4e4114}\label{classlibphonenumber_1_1_phone_number_util_a95d4bc1cce1fca02a904b12d7d4e4114} 
+static {\bfseries init\+Valid\+Phone\+Number\+Patterns} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a449dc57b71c19b027fdafec35d98be26}\label{classlibphonenumber_1_1_phone_number_util_a449dc57b71c19b027fdafec35d98be26} 
+static {\bfseries init\+Alpha\+Phone\+Mappings} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0d33540e16d0246e1fe525c8e4a97919}\label{classlibphonenumber_1_1_phone_number_util_a0d33540e16d0246e1fe525c8e4a97919} 
+static {\bfseries init\+Valid\+Start\+Char\+Pattern} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4502f015b20efe94d9301fd56318391c}\label{classlibphonenumber_1_1_phone_number_util_a4502f015b20efe94d9301fd56318391c} 
+static {\bfseries init\+Mobile\+Token\+Mappings} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6554366e0852d1343d30d008da9ed367}\label{classlibphonenumber_1_1_phone_number_util_a6554366e0852d1343d30d008da9ed367} 
+static {\bfseries init\+Diallable\+Char\+Mappings} ()
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_acac5f701f7d8529d12d62d412bdcd77f}{normalize\+Helper}} (\$number, array \$normalization\+Replacements, \$remove\+Non\+Matches)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_ad410df0068f113d48cab7468eee55739}{desc\+Has\+Possible\+Number\+Data}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}} \$desc)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_aab347e07b8b4d34afeee5e18a360b29d}{desc\+Has\+Data}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}} \$desc)
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a46977d814f9d615aa3f4b19ae9545d22}{get\+Valid\+Phone\+Number\+Pattern}} ()
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_a7b4ed3433d99cf110d4673069cf9781f}{copy\+Core\+Fields\+Only}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$phone\+Number\+In)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_abc2e6f0905c95adc76f3707eb3d0a1ab}\label{classlibphonenumber_1_1_phone_number_util_abc2e6f0905c95adc76f3707eb3d0a1ab} 
+{\bfseries \$country\+Codes\+For\+Non\+Geographical\+Region} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af2336705d1551c62397ec0c19126551a}\label{classlibphonenumber_1_1_phone_number_util_af2336705d1551c62397ec0c19126551a} 
+{\bfseries \$supported\+Regions} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4c8edce834cc394d58ca21d0bcff49e4}\label{classlibphonenumber_1_1_phone_number_util_a4c8edce834cc394d58ca21d0bcff49e4} 
+{\bfseries \$country\+Calling\+Code\+To\+Region\+Code\+Map} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a73e99b404e30522ef20349c47bb0132e}\label{classlibphonenumber_1_1_phone_number_util_a73e99b404e30522ef20349c47bb0132e} 
+{\bfseries \$nanpa\+Regions} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a870b325a3591982c34146c29a63e1f1a}\label{classlibphonenumber_1_1_phone_number_util_a870b325a3591982c34146c29a63e1f1a} 
+{\bfseries \$metadata\+Source}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a9c8809262d4709e90dc72fb9dff8f5de}\label{classlibphonenumber_1_1_phone_number_util_a9c8809262d4709e90dc72fb9dff8f5de} 
+{\bfseries \$matcher\+API}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6ea1c1999f3d47ac20dfad4316653de8}\label{classlibphonenumber_1_1_phone_number_util_a6ea1c1999f3d47ac20dfad4316653de8} 
+static {\bfseries \$\+SEPARATOR\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af100cafd2ce6adc4408c024b46a4a0c9}\label{classlibphonenumber_1_1_phone_number_util_af100cafd2ce6adc4408c024b46a4a0c9} 
+static {\bfseries \$\+CAPTURING\+\_\+\+DIGIT\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a591cbc60c33b783d734ebb9ee76b1099}\label{classlibphonenumber_1_1_phone_number_util_a591cbc60c33b783d734ebb9ee76b1099} 
+static {\bfseries \$\+VALID\+\_\+\+START\+\_\+\+CHAR\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a26742c2fa0024d755be823a8d2296b5d}\label{classlibphonenumber_1_1_phone_number_util_a26742c2fa0024d755be823a8d2296b5d} 
+static {\bfseries \$\+DIALLABLE\+\_\+\+CHAR\+\_\+\+MAPPINGS} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a38b1d2be7b446865559078d137650fee}\label{classlibphonenumber_1_1_phone_number_util_a38b1d2be7b446865559078d137650fee} 
+static {\bfseries \$\+CAPTURING\+\_\+\+EXTN\+\_\+\+DIGITS}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad9d7ce33ebb142b70e58b68052ca0ea8}\label{classlibphonenumber_1_1_phone_number_util_ad9d7ce33ebb142b70e58b68052ca0ea8} 
+static {\bfseries \$instance}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_acdd7e2badfce8d3b317567fc62e99150}{\$\+ALPHA\+\_\+\+MAPPINGS}}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_adf2592b712c01b9efe5391b10b915c0e}\label{classlibphonenumber_1_1_phone_number_util_adf2592b712c01b9efe5391b10b915c0e} 
+static {\bfseries \$\+MOBILE\+\_\+\+TOKEN\+\_\+\+MAPPINGS} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4d8b62d03012153e3712471e95c7dac7}\label{classlibphonenumber_1_1_phone_number_util_a4d8b62d03012153e3712471e95c7dac7} 
+static {\bfseries \$\+GEO\+\_\+\+MOBILE\+\_\+\+COUNTRIES\+\_\+\+WITHOUT\+\_\+\+MOBILE\+\_\+\+AREA\+\_\+\+CODES}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa9aac8cb5a08166c352b751ab993aa73}\label{classlibphonenumber_1_1_phone_number_util_aa9aac8cb5a08166c352b751ab993aa73} 
+static {\bfseries \$\+GEO\+\_\+\+MOBILE\+\_\+\+COUNTRIES}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a750b33e7311dbf2c81aebe75196d311c}\label{classlibphonenumber_1_1_phone_number_util_a750b33e7311dbf2c81aebe75196d311c} 
+static {\bfseries \$\+ALPHA\+\_\+\+PHONE\+\_\+\+MAPPINGS}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a8dee88087409a58d2672a80e05936c9d}\label{classlibphonenumber_1_1_phone_number_util_a8dee88087409a58d2672a80e05936c9d} 
+static {\bfseries \$\+ALL\+\_\+\+PLUS\+\_\+\+NUMBER\+\_\+\+GROUPING\+\_\+\+SYMBOLS}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1_phone_number_util_af26dd631c41b404c489a00727262edc7}{\$ascii\+Digit\+Mappings}}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa109a9b5dadee59afcffa4ab5f634c72}\label{classlibphonenumber_1_1_phone_number_util_aa109a9b5dadee59afcffa4ab5f634c72} 
+static {\bfseries \$\+EXTN\+\_\+\+PATTERNS\+\_\+\+FOR\+\_\+\+PARSING}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0bf3885bd0f7a3a16f9d16185f58af46}\label{classlibphonenumber_1_1_phone_number_util_a0bf3885bd0f7a3a16f9d16185f58af46} 
+static {\bfseries \$\+EXTN\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae6a423f4801e18bf55a4f2004558a175}\label{classlibphonenumber_1_1_phone_number_util_ae6a423f4801e18bf55a4f2004558a175} 
+static {\bfseries \$\+VALID\+\_\+\+PHONE\+\_\+\+NUMBER\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa0b9785c90e22ef47c75117f917e876d}\label{classlibphonenumber_1_1_phone_number_util_aa0b9785c90e22ef47c75117f917e876d} 
+static {\bfseries \$\+MIN\+\_\+\+LENGTH\+\_\+\+PHONE\+\_\+\+NUMBER\+\_\+\+PATTERN}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ab8f36969a93743d37b46e75c38a952b1}\label{classlibphonenumber_1_1_phone_number_util_ab8f36969a93743d37b46e75c38a952b1} 
+static {\bfseries \$\+VALID\+\_\+\+PHONE\+\_\+\+NUMBER}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4a68126cdef21a45daa58355a3cf602f}\label{classlibphonenumber_1_1_phone_number_util_a4a68126cdef21a45daa58355a3cf602f} 
+static {\bfseries \$numeric\+Characters}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility for international phone numbers. Functionality includes formatting, parsing and validation.
+
+If you use this library, and want to be notified about important changes, please sign up to our \href{http://groups.google.com/group/libphonenumber-discuss/about}{\texttt{ mailing list}}.
+
+NOTE\+: A lot of methods in this class require Region Code strings. These must be provided using CLDR two-\/letter region-\/code format. These should be in upper-\/case. The list of the codes can be found here\+: \href{http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html}{\texttt{ http\+://www.\+unicode.\+org/cldr/charts/30/supplemental/territory\+\_\+information.\+html}}
+
+\begin{DoxyAuthor}{Author}
+Shaopeng Jia 
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://github.com/google/libphonenumber}{\texttt{ https\+://github.\+com/google/libphonenumber}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a642e05316dbed69707d32d3ff45a6214}\index{PhoneNumberUtil@{PhoneNumberUtil}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a642e05316dbed69707d32d3ff45a6214} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface}{Metadata\+Source\+Interface}}}]{\$metadata\+Source}{, }\item[{}]{\$country\+Calling\+Code\+To\+Region\+Code\+Map}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This class implements a singleton, so the only constructor is protected. 
+\begin{DoxyParams}[1]{Parameters}
+Metadata\+Source\+Interface & {\em \$metadata\+Source} & \\
+\hline
+ & {\em \$country\+Calling\+Code\+To\+Region\+Code\+Map} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0036ba3881e793e0d2d9a8733d961cb2}\index{PhoneNumberUtil@{PhoneNumberUtil}!buildNationalNumberForParsing@{buildNationalNumberForParsing}}
+\index{buildNationalNumberForParsing@{buildNationalNumberForParsing}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{buildNationalNumberForParsing()}{buildNationalNumberForParsing()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a0036ba3881e793e0d2d9a8733d961cb2} 
+build\+National\+Number\+For\+Parsing (\begin{DoxyParamCaption}\item[{}]{\$number\+To\+Parse}{, }\item[{\&}]{\$national\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Converts number\+To\+Parse to a form that we can parse and write it to national\+Number if it is written in RFC3966; otherwise extract a possible number out of it and write to national\+Number. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number\+To\+Parse} & \\
+\hline
+string & {\em \$national\+Number} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a574122acdd6558251ba5365a5ee74442}\index{PhoneNumberUtil@{PhoneNumberUtil}!canBeInternationallyDialled@{canBeInternationallyDialled}}
+\index{canBeInternationallyDialled@{canBeInternationallyDialled}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{canBeInternationallyDialled()}{canBeInternationallyDialled()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a574122acdd6558251ba5365a5ee74442} 
+can\+Be\+Internationally\+Dialled (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Returns true if the number can be dialled from outside the region, or unknown. If the number can only be dialled from within the region, returns false. Does not check the number is a valid number. Note that, at the moment, this method does not handle short numbers (which are currently all presumed to not be diallable from outside their country).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone-\/number for which we want to know whether it is diallable from outside the region \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a68087dee1894de8c1420aa89ef5d843b}\index{PhoneNumberUtil@{PhoneNumberUtil}!checkRegionForParsing@{checkRegionForParsing}}
+\index{checkRegionForParsing@{checkRegionForParsing}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{checkRegionForParsing()}{checkRegionForParsing()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a68087dee1894de8c1420aa89ef5d843b} 
+check\+Region\+For\+Parsing (\begin{DoxyParamCaption}\item[{}]{\$number\+To\+Parse}{, }\item[{}]{\$default\+Region}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Checks to see that the region code used is valid, or if it is not valid, that the number to parse starts with a + symbol so that we can attempt to infer the region from the number. Returns false if it cannot use the region provided and the region cannot be inferred. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number\+To\+Parse} & \\
+\hline
+string & {\em \$default\+Region} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0b425c8f5829bfb6918bf759437477b9}\index{PhoneNumberUtil@{PhoneNumberUtil}!chooseFormattingPatternForNumber@{chooseFormattingPatternForNumber}}
+\index{chooseFormattingPatternForNumber@{chooseFormattingPatternForNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{chooseFormattingPatternForNumber()}{chooseFormattingPatternForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a0b425c8f5829bfb6918bf759437477b9} 
+choose\+Formatting\+Pattern\+For\+Number (\begin{DoxyParamCaption}\item[{array}]{\$available\+Formats}{, }\item[{}]{\$national\+Number}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Number\+Format\mbox{[}$\,$\mbox{]} & {\em \$available\+Formats} & \\
+\hline
+string & {\em \$national\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number\+Format\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ac7c84e046302358342965511931da26e}\index{PhoneNumberUtil@{PhoneNumberUtil}!convertAlphaCharactersInNumber@{convertAlphaCharactersInNumber}}
+\index{convertAlphaCharactersInNumber@{convertAlphaCharactersInNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{convertAlphaCharactersInNumber()}{convertAlphaCharactersInNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ac7c84e046302358342965511931da26e} 
+static convert\+Alpha\+Characters\+In\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Converts all alpha characters in a number to their respective digits on a keypad, but retains existing formatting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a7b4ed3433d99cf110d4673069cf9781f}\index{PhoneNumberUtil@{PhoneNumberUtil}!copyCoreFieldsOnly@{copyCoreFieldsOnly}}
+\index{copyCoreFieldsOnly@{copyCoreFieldsOnly}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{copyCoreFieldsOnly()}{copyCoreFieldsOnly()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a7b4ed3433d99cf110d4673069cf9781f} 
+static copy\+Core\+Fields\+Only (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number\+In}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns a new phone number containing only the fields needed to uniquely identify a phone number, rather than any fields that capture the context in which the phone number was created. These fields correspond to those set in parse() rather than parse\+And\+Keep\+Raw\+Input()
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$phone\+Number\+In} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae1a18a6400ecaa04d9e65f9f8a5575ba}\index{PhoneNumberUtil@{PhoneNumberUtil}!createExtnPattern@{createExtnPattern}}
+\index{createExtnPattern@{createExtnPattern}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{createExtnPattern()}{createExtnPattern()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ae1a18a6400ecaa04d9e65f9f8a5575ba} 
+static create\+Extn\+Pattern (\begin{DoxyParamCaption}\item[{}]{\$for\+Parsing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Helper initialiser method to create the regular-\/expression pattern to match extensions. Note that there are currently six capturing groups for the extension itself. If this number is changed, Maybe\+Strip\+Extension needs to be updated.
+
+
+\begin{DoxyParams}[1]{Parameters}
+boolean & {\em \$for\+Parsing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aab347e07b8b4d34afeee5e18a360b29d}\index{PhoneNumberUtil@{PhoneNumberUtil}!descHasData@{descHasData}}
+\index{descHasData@{descHasData}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{descHasData()}{descHasData()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aab347e07b8b4d34afeee5e18a360b29d} 
+static desc\+Has\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}}}]{\$desc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns true if there is any data set for a particular Phone\+Number\+Desc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number\+Desc & {\em \$desc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad410df0068f113d48cab7468eee55739}\index{PhoneNumberUtil@{PhoneNumberUtil}!descHasPossibleNumberData@{descHasPossibleNumberData}}
+\index{descHasPossibleNumberData@{descHasPossibleNumberData}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{descHasPossibleNumberData()}{descHasPossibleNumberData()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ad410df0068f113d48cab7468eee55739} 
+static desc\+Has\+Possible\+Number\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}}}]{\$desc}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Returns true if there is any possible number data set for a particular Phone\+Number\+Desc.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number\+Desc & {\em \$desc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a955153673a4521a66197cd7cb7a3694a}\index{PhoneNumberUtil@{PhoneNumberUtil}!extractCountryCode@{extractCountryCode}}
+\index{extractCountryCode@{extractCountryCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{extractCountryCode()}{extractCountryCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a955153673a4521a66197cd7cb7a3694a} 
+extract\+Country\+Code (\begin{DoxyParamCaption}\item[{}]{\$full\+Number}{, }\item[{\&}]{\$national\+Number}{}\end{DoxyParamCaption})}
+
+Extracts country calling code from full\+Number, returns it and places the remaining number in national\+Number. It assumes that the leading plus sign or IDD has already been removed. Returns 0 if full\+Number doesn\textquotesingle{}t start with a valid country calling code, and leaves national\+Number unmodified. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$full\+Number} & \\
+\hline
+string & {\em \$national\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a18278305ac80d089a6af9722f33535c7}\index{PhoneNumberUtil@{PhoneNumberUtil}!extractPossibleNumber@{extractPossibleNumber}}
+\index{extractPossibleNumber@{extractPossibleNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{extractPossibleNumber()}{extractPossibleNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a18278305ac80d089a6af9722f33535c7} 
+static extract\+Possible\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Attempts to extract a possible number from the string passed in. This currently strips all leading characters that cannot be used to start a phone number. Characters that can be used to start a phone number are defined in the VALID\+\_\+\+START\+\_\+\+CHAR\+\_\+\+PATTERN. If none of these characters are found in the number passed in, an empty string is returned. This function also attempts to strip off any alternative extensions or endings if two or more are present, such as in the case of\+: (530) 583-\/6985 x302/x2303. The second extension here makes this actually two phone numbers, (530) 583-\/6985 x302 and (530) 583-\/6985 x2303. We remove the second extension so that the first number is parsed correctly.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$number} & the string that might contain a phone number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the number, stripped of any non-\/phone-\/number prefix (such as "{}\+Tel\+:"{}) or an empty string if no character used to start phone numbers (such as + or any digit) is found in the number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a34bdc31c5cfb3c482b12b2fb9ab520c4}\index{PhoneNumberUtil@{PhoneNumberUtil}!findNumbers@{findNumbers}}
+\index{findNumbers@{findNumbers}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{findNumbers()}{findNumbers()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a34bdc31c5cfb3c482b12b2fb9ab520c4} 
+find\+Numbers (\begin{DoxyParamCaption}\item[{}]{\$text}{, }\item[{}]{\$default\+Region}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_leniency_1_1_abstract_leniency}{Abstract\+Leniency}}}]{\$leniency}{ = {\ttfamily null}, }\item[{}]{\$max\+Tries}{ = {\ttfamily PHP\+\_\+INT\+\_\+MAX}}\end{DoxyParamCaption})}
+
+Returns an iterable over all Phone\+Number\+Matches in \$text
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$text} & \\
+\hline
+string & {\em \$default\+Region} & \\
+\hline
+Abstract\+Leniency & {\em \$leniency} & Defaults to Leniency\+::\+VALID() \\
+\hline
+int & {\em \$max\+Tries} & Defaults to PHP\+\_\+\+INT\+\_\+\+MAX \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\+Matcher 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a1a3aef84b40dd4edde7cf212d03f1e66}\index{PhoneNumberUtil@{PhoneNumberUtil}!format@{format}}
+\index{format@{format}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a1a3aef84b40dd4edde7cf212d03f1e66} 
+format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$number\+Format}{}\end{DoxyParamCaption})}
+
+Formats a phone number in the specified format using default rules. Note that this does not promise to produce a phone number that the user can dial from where they are -\/ although we do format in either \textquotesingle{}national\textquotesingle{} or \textquotesingle{}international\textquotesingle{} format depending on what the client asks for, we do not currently support a more abbreviated format, such as for users in the same "{}area"{} who could potentially dial the number without area code. Note that if the phone number has a country calling code of 0 or an otherwise invalid country calling code, we cannot work out which formatting rules to apply so we return the national significant number with no formatting applied.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number to be formatted \\
+\hline
+int & {\em \$number\+Format} & the Phone\+Number\+Format the phone number should be formatted into \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the formatted phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aeb01ff0ccfc2d749a9347f5d8b4e9923}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatByPattern@{formatByPattern}}
+\index{formatByPattern@{formatByPattern}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatByPattern()}{formatByPattern()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aeb01ff0ccfc2d749a9347f5d8b4e9923} 
+format\+By\+Pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$number\+Format}{, }\item[{array}]{\$user\+Defined\+Formats}{}\end{DoxyParamCaption})}
+
+Formats a phone number in the specified format using client-\/defined formatting rules. Note that if the phone number has a country calling code of zero or an otherwise invalid country calling code, we cannot work out things like whether there should be a national prefix applied, or how to format extensions, so we return the national significant number with no formatting applied.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number to be formatted \\
+\hline
+int & {\em \$number\+Format} & the format the phone number should be formatted into \\
+\hline
+array & {\em \$user\+Defined\+Formats} & formatting rules specified by clients \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String the formatted phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0c4c41c0d44fb636a88bb333ed481e5b}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatInOriginalFormat@{formatInOriginalFormat}}
+\index{formatInOriginalFormat@{formatInOriginalFormat}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatInOriginalFormat()}{formatInOriginalFormat()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a0c4c41c0d44fb636a88bb333ed481e5b} 
+format\+In\+Original\+Format (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$region\+Calling\+From}{}\end{DoxyParamCaption})}
+
+Formats a phone number using the original phone number format that the number is parsed from. The original format is embedded in the country\+\_\+code\+\_\+source field of the Phone\+Number object passed in. If such information is missing, the number will be formatted into the NATIONAL format by default. When we don\textquotesingle{}t have a formatting pattern for the number, the method returns the raw input when it is available.
+
+Note this method guarantees no digit will be inserted, removed or modified as a result of formatting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number that needs to be formatted in its original number format \\
+\hline
+string & {\em \$region\+Calling\+From} & the region whose IDD needs to be prefixed if the original number has one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the formatted phone number in its original number format 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a85e50e6398bd1c729294836d63f451eb}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatNationalNumberWithCarrierCode@{formatNationalNumberWithCarrierCode}}
+\index{formatNationalNumberWithCarrierCode@{formatNationalNumberWithCarrierCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatNationalNumberWithCarrierCode()}{formatNationalNumberWithCarrierCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a85e50e6398bd1c729294836d63f451eb} 
+format\+National\+Number\+With\+Carrier\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$carrier\+Code}{}\end{DoxyParamCaption})}
+
+Formats a phone number in national format for dialing using the carrier as specified in the {\ttfamily carrier\+Code}. The {\ttfamily carrier\+Code} will always be used regardless of whether the phone number already has a preferred domestic carrier code stored. If {\ttfamily carrier\+Code} contains an empty string, returns the number in national format without any carrier code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number to be formatted \\
+\hline
+string & {\em \$carrier\+Code} & the carrier selection code to be used \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the formatted phone number in national format for dialing using the carrier as specified in the {\ttfamily carrier\+Code} 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a3b8b970077bae1c0536cd429ab845ca6}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatNationalNumberWithPreferredCarrierCode@{formatNationalNumberWithPreferredCarrierCode}}
+\index{formatNationalNumberWithPreferredCarrierCode@{formatNationalNumberWithPreferredCarrierCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatNationalNumberWithPreferredCarrierCode()}{formatNationalNumberWithPreferredCarrierCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a3b8b970077bae1c0536cd429ab845ca6} 
+format\+National\+Number\+With\+Preferred\+Carrier\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$fallback\+Carrier\+Code}{}\end{DoxyParamCaption})}
+
+Formats a phone number in national format for dialing using the carrier as specified in the preferred\+Domestic\+Carrier\+Code field of the Phone\+Number object passed in. If that is missing, use the {\ttfamily fallback\+Carrier\+Code} passed in instead. If there is no {\ttfamily preferred\+Domestic\+Carrier\+Code}, and the {\ttfamily fallback\+Carrier\+Code} contains an empty string, return the number in national format without any carrier code.
+
+Use {\ttfamily \doxylink{}{format\+National\+Number\+With\+Carrier\+Code}} instead if the carrier code passed in should take precedence over the number\textquotesingle{}s {\ttfamily preferred\+Domestic\+Carrier\+Code} when formatting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number to be formatted \\
+\hline
+string & {\em \$fallback\+Carrier\+Code} & the carrier selection code to be used, if none is found in the phone number itself \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the formatted phone number in national format for dialing using the number\textquotesingle{}s {\ttfamily preferred\+Domestic\+Carrier\+Code}, or the {\ttfamily fallback\+Carrier\+Code} passed in if none is found 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a63b132f17032fab2fc02fc94a5aa9d4f}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatNsn@{formatNsn}}
+\index{formatNsn@{formatNsn}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatNsn()}{formatNsn()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a63b132f17032fab2fc02fc94a5aa9d4f} 
+format\+Nsn (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$metadata}{, }\item[{}]{\$number\+Format}{, }\item[{}]{\$carrier\+Code}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Note in some regions, the national number can be written in two completely different ways depending on whether it forms part of the NATIONAL format or INTERNATIONAL format. The number\+Format parameter here is used to specify which format to use for those cases. If a carrier\+Code is specified, this will be inserted into the formatted string to replace \$\+CC. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & \\
+\hline
+Phone\+Metadata & {\em \$metadata} & \\
+\hline
+int & {\em \$number\+Format} & Phone\+Number\+Format \\
+\hline
+null | string & {\em \$carrier\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_adb6551240de16915dc903c502f3f546d}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatNsnUsingPattern@{formatNsnUsingPattern}}
+\index{formatNsnUsingPattern@{formatNsnUsingPattern}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatNsnUsingPattern()}{formatNsnUsingPattern()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_adb6551240de16915dc903c502f3f546d} 
+format\+Nsn\+Using\+Pattern (\begin{DoxyParamCaption}\item[{}]{\$national\+Number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_number_format}{Number\+Format}}}]{\$formatting\+Pattern}{, }\item[{}]{\$number\+Format}{, }\item[{}]{\$carrier\+Code}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Note that carrier\+Code is optional -\/ if null or an empty string, no carrier code replacement will take place. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$national\+Number} & \\
+\hline
+Number\+Format & {\em \$formatting\+Pattern} & \\
+\hline
+int & {\em \$number\+Format} & Phone\+Number\+Format \\
+\hline
+null | string & {\em \$carrier\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a00454b1ba2193a0c02c27fe87fa412c5}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatNumberForMobileDialing@{formatNumberForMobileDialing}}
+\index{formatNumberForMobileDialing@{formatNumberForMobileDialing}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatNumberForMobileDialing()}{formatNumberForMobileDialing()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a00454b1ba2193a0c02c27fe87fa412c5} 
+format\+Number\+For\+Mobile\+Dialing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$region\+Calling\+From}{, }\item[{}]{\$with\+Formatting}{}\end{DoxyParamCaption})}
+
+Returns a number formatted in such a way that it can be dialed from a mobile phone in a specific region. If the number cannot be reached from the region (e.\+g. some countries block toll-\/free numbers from being called outside of the country), the method returns an empty string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number to be formatted \\
+\hline
+string & {\em \$region\+Calling\+From} & the region where the call is being placed \\
+\hline
+boolean & {\em \$with\+Formatting} & whether the number should be returned with formatting symbols, such as spaces and dashes. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the formatted phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aea3478e4acc0a18b1e2d45564be1d230}\index{PhoneNumberUtil@{PhoneNumberUtil}!formatOutOfCountryKeepingAlphaChars@{formatOutOfCountryKeepingAlphaChars}}
+\index{formatOutOfCountryKeepingAlphaChars@{formatOutOfCountryKeepingAlphaChars}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formatOutOfCountryKeepingAlphaChars()}{formatOutOfCountryKeepingAlphaChars()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aea3478e4acc0a18b1e2d45564be1d230} 
+format\+Out\+Of\+Country\+Keeping\+Alpha\+Chars (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$region\+Calling\+From}{}\end{DoxyParamCaption})}
+
+Formats a phone number for out-\/of-\/country dialing purposes.
+
+Note that in this version, if the number was entered originally using alpha characters and this version of the number is stored in raw\+\_\+input, this representation of the number will be used rather than the digit representation. Grouping information, as specified by characters such as "{}-\/"{} and "{} "{}, will be retained.
+
+{\bfseries{Caveats\+:}}
+
+
+\begin{DoxyItemize}
+\item This will not produce good results if the country calling code is both present in the raw input {\itshape and} is the start of the national number. This is not a problem in the regions which typically use alpha numbers. 
+\item This will also not produce good results if the raw input has any grouping information within the first three digits of the national number, and if the function needs to strip preceding digits/words in the raw input before these digits. Normally people group the first three digits together so this is not a huge problem -\/ and will be fixed if it proves to be so. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number that needs to be formatted \\
+\hline
+String & {\em \$region\+Calling\+From} & the region where the call is being placed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String the formatted phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ab6083f1fb37f6edadd1f514d0505964e}\index{PhoneNumberUtil@{PhoneNumberUtil}!formattingRuleHasFirstGroupOnly@{formattingRuleHasFirstGroupOnly}}
+\index{formattingRuleHasFirstGroupOnly@{formattingRuleHasFirstGroupOnly}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{formattingRuleHasFirstGroupOnly()}{formattingRuleHasFirstGroupOnly()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ab6083f1fb37f6edadd1f514d0505964e} 
+static formatting\+Rule\+Has\+First\+Group\+Only (\begin{DoxyParamCaption}\item[{}]{\$national\+Prefix\+Formatting\+Rule}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Helper function to check if the national prefix formatting rule has the first group only, i.\+e., does not start with the national prefix.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$national\+Prefix\+Formatting\+Rule} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a8f1e428bf14788af2c8b9d2a5f81424c}\index{PhoneNumberUtil@{PhoneNumberUtil}!getAsYouTypeFormatter@{getAsYouTypeFormatter}}
+\index{getAsYouTypeFormatter@{getAsYouTypeFormatter}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getAsYouTypeFormatter()}{getAsYouTypeFormatter()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a8f1e428bf14788af2c8b9d2a5f81424c} 
+get\+As\+You\+Type\+Formatter (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Gets an As\+You\+Type\+Formatter for the specific region.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & The region where the phone number is being entered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+As\+You\+Type\+Formatter 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a0fcf27bb4d89ebd514b754c89a89d12e}\index{PhoneNumberUtil@{PhoneNumberUtil}!getCountryCodeForRegion@{getCountryCodeForRegion}}
+\index{getCountryCodeForRegion@{getCountryCodeForRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getCountryCodeForRegion()}{getCountryCodeForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a0fcf27bb4d89ebd514b754c89a89d12e} 
+get\+Country\+Code\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Returns the country calling code for a specific region. For example, this would be 1 for the United States, and 64 for New Zealand. Assumes the region is already valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region that we want to get the country calling code for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the country calling code for the region denoted by region\+Code 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae207b08a3ba5a735ea67cb2160554b2c}\index{PhoneNumberUtil@{PhoneNumberUtil}!getCountryCodeForValidRegion@{getCountryCodeForValidRegion}}
+\index{getCountryCodeForValidRegion@{getCountryCodeForValidRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getCountryCodeForValidRegion()}{getCountryCodeForValidRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ae207b08a3ba5a735ea67cb2160554b2c} 
+get\+Country\+Code\+For\+Valid\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the country calling code for a specific region. For example, this would be 1 for the United States, and 64 for New Zealand. Assumes the region is already valid.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region that we want to get the country calling code for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the country calling code for the region denoted by region\+Code 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception if the region is invalid \Hypertarget{classlibphonenumber_1_1_phone_number_util_ae475a6eccdf50d601af0644e29e175f9}\index{PhoneNumberUtil@{PhoneNumberUtil}!getCountryMobileToken@{getCountryMobileToken}}
+\index{getCountryMobileToken@{getCountryMobileToken}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getCountryMobileToken()}{getCountryMobileToken()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ae475a6eccdf50d601af0644e29e175f9} 
+static get\+Country\+Mobile\+Token (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns the mobile token for the provided country calling code if it has one, otherwise returns an empty string. A mobile token is a number inserted before the area code when dialing a mobile number from that country from abroad.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & the country calling code for which we want the mobile token \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the mobile token, as a string, for the given country calling code 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6cdd4e0be5e393f3d77c84380f76f26f}\index{PhoneNumberUtil@{PhoneNumberUtil}!getExampleNumber@{getExampleNumber}}
+\index{getExampleNumber@{getExampleNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getExampleNumber()}{getExampleNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a6cdd4e0be5e393f3d77c84380f76f26f} 
+get\+Example\+Number (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Gets a valid number for the specified region.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & region\+Code the region for which an example number is needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number a valid fixed-\/line number for the specified region. Returns null when the metadata does not contain such information, or the region 001 is passed in. For 001 (representing non-\/geographical numbers), call {\ttfamily \doxylink{}{get\+Example\+Number\+For\+Non\+Geo\+Entity}} instead. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a2a636c4af3358e6e2e02dca8fc55e208}\index{PhoneNumberUtil@{PhoneNumberUtil}!getExampleNumberForType@{getExampleNumberForType}}
+\index{getExampleNumberForType@{getExampleNumberForType}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getExampleNumberForType()}{getExampleNumberForType()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a2a636c4af3358e6e2e02dca8fc55e208} 
+get\+Example\+Number\+For\+Type (\begin{DoxyParamCaption}\item[{}]{\$region\+Code\+Or\+Type}{, }\item[{}]{\$type}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Gets a valid number for the specified region and number type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | int & {\em \$region\+Code\+Or\+Type} & the region for which an example number is needed \\
+\hline
+int & {\em \$type} & the Phone\+Number\+Type of number that is needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\texorpdfstring{$\vert$}{|}null a valid number for the specified region and type. Returns null when the metadata does not contain such information or if an invalid region or region 001 was entered. For 001 (representing non-\/geographical numbers), call {\ttfamily \doxylink{}{get\+Example\+Number\+For\+Non\+Geo\+Entity}} instead.
+\end{DoxyReturn}
+If \$region\+Code\+Or\+Type is the only parameter supplied, then a valid number for the specified number type will be returned that may belong to any country. \Hypertarget{classlibphonenumber_1_1_phone_number_util_a22ec3342ebc53c8decd275ea6f0aa6d3}\index{PhoneNumberUtil@{PhoneNumberUtil}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a22ec3342ebc53c8decd275ea6f0aa6d3} 
+static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$base\+File\+Location}{ = {\ttfamily self\+:\+:META\+\_\+DATA\+\_\+FILE\+\_\+PREFIX}, }\item[{array}]{\$country\+Calling\+Code\+To\+Region\+Code\+Map}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}}}]{\$metadata\+Loader}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface}{Metadata\+Source\+Interface}}}]{\$metadata\+Source}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets a {\ttfamily \doxylink{}{Phone\+Number\+Util}} instance to carry out international phone number formatting, parsing or validation. The instance is loaded with phone number metadata for a number of most commonly used regions.
+
+The {\ttfamily \doxylink{}{Phone\+Number\+Util}} is implemented as a singleton. Therefore calling get\+Instance multiple times will only result in one instance being created.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$base\+File\+Location} & \\
+\hline
+array | null & {\em \$country\+Calling\+Code\+To\+Region\+Code\+Map} & \\
+\hline
+Metadata\+Loader\+Interface | null & {\em \$metadata\+Loader} & \\
+\hline
+Metadata\+Source\+Interface | null & {\em \$metadata\+Source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\+Util instance 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a76b8fcdd649bb1ca163134c2455b9b3f}\index{PhoneNumberUtil@{PhoneNumberUtil}!getInvalidExampleNumber@{getInvalidExampleNumber}}
+\index{getInvalidExampleNumber@{getInvalidExampleNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getInvalidExampleNumber()}{getInvalidExampleNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a76b8fcdd649bb1ca163134c2455b9b3f} 
+get\+Invalid\+Example\+Number (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Gets an invalid number for the specified region. This is useful for unit-\/testing purposes, where you want to test what will happen with an invalid number. Note that the number that is returned will always be able to be parsed and will have the correct country code. It may also be a valid {\itshape short} number/code for this region. Validity checking such numbers is handled with {\ttfamily \doxylink{}{Short\+Number\+Info}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & The region for which an example number is needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\texorpdfstring{$\vert$}{|}null An invalid number for the specified region. Returns null when an unsupported region or the region 001 (Earth) is passed in. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a82f405b1e035de5d14e69bab120241c2}\index{PhoneNumberUtil@{PhoneNumberUtil}!getLengthOfGeographicalAreaCode@{getLengthOfGeographicalAreaCode}}
+\index{getLengthOfGeographicalAreaCode@{getLengthOfGeographicalAreaCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getLengthOfGeographicalAreaCode()}{getLengthOfGeographicalAreaCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a82f405b1e035de5d14e69bab120241c2} 
+get\+Length\+Of\+Geographical\+Area\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Gets the length of the geographical area code from the {\ttfamily national\+Number} field of the Phone\+Number object passed in, so that clients could use it to split a national significant number into geographical area code and subscriber number. It works in such a way that the resultant subscriber number should be diallable, at least on some devices. An example of how this could be used\+:
+
+{\ttfamily  \$phone\+Util = Phone\+Number\+Util\+::get\+Instance(); \$number = \$phone\+Util-\/\texorpdfstring{$>$}{>}parse("{}16502530000"{}, "{}\+US"{}); \$national\+Significant\+Number = \$phone\+Util-\/\texorpdfstring{$>$}{>}get\+National\+Significant\+Number(\$number);}
+
+{\ttfamily \$area\+Code\+Length = \$phone\+Util-\/\texorpdfstring{$>$}{>}get\+Length\+Of\+Geographical\+Area\+Code(\$number); if (\$area\+Code\+Length \texorpdfstring{$>$}{>} 0) \{ \$area\+Code = substr(\$national\+Significant\+Number, 0,\$area\+Code\+Length); \$subscriber\+Number = substr(\$national\+Significant\+Number, \$area\+Code\+Length); \} else \{ \$area\+Code = "{}"{}; \$subscriber\+Number = \$national\+Significant\+Number; \} }
+
+N.\+B.\+: area code is a very ambiguous concept, so the I18N team generally recommends against using it for most purposes, but recommends using the more general {\ttfamily national\+Number} instead. Read the following carefully before deciding to use this method\+: 
+\begin{DoxyItemize}
+\item geographical area codes change over time, and this method honors those changes; therefore, it doesn\textquotesingle{}t guarantee the stability of the result it produces. 
+\item subscriber numbers may not be diallable from all devices (notably mobile devices, which typically requires the full national\+\_\+number to be dialled in most regions). 
+\item most non-\/geographical numbers have no area codes, including numbers from non-\/geographical entities 
+\item some geographical numbers have no area codes. 
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & Phone\+Number object for which clients want to know the length of the area code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the length of area code of the Phone\+Number object passed in. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a5996c696d20befdac5ec767fe36f1215}\index{PhoneNumberUtil@{PhoneNumberUtil}!getLengthOfNationalDestinationCode@{getLengthOfNationalDestinationCode}}
+\index{getLengthOfNationalDestinationCode@{getLengthOfNationalDestinationCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getLengthOfNationalDestinationCode()}{getLengthOfNationalDestinationCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a5996c696d20befdac5ec767fe36f1215} 
+get\+Length\+Of\+National\+Destination\+Code (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Gets the length of the national destination code (NDC) from the Phone\+Number object passed in, so that clients could use it to split a national significant number into NDC and subscriber number. The NDC of a phone number is normally the first group of digit(s) right after the country calling code when the number is formatted in the international format, if there is a subscriber number part that follows.
+
+follows.
+
+N.\+B.\+: similar to an area code, not all numbers have an NDC!
+
+An example of how this could be used\+:
+
+{\ttfamily  \$phone\+Util = Phone\+Number\+Util\+::get\+Instance(); \$number = \$phone\+Util-\/\texorpdfstring{$>$}{>}parse("{}18002530000"{}, "{}\+US"{}); \$national\+Significant\+Number = \$phone\+Util-\/\texorpdfstring{$>$}{>}get\+National\+Significant\+Number(\$number);}
+
+{\ttfamily \$national\+Destination\+Code\+Length = \$phone\+Util-\/\texorpdfstring{$>$}{>}get\+Length\+Of\+National\+Destination\+Code(\$number); if (\$national\+Destination\+Code\+Length \texorpdfstring{$>$}{>} 0) \{ \$national\+Destination\+Code = substr(\$national\+Significant\+Number, 0, \$national\+Destination\+Code\+Length); \$subscriber\+Number = substr(\$national\+Significant\+Number, \$national\+Destination\+Code\+Length); \} else \{ \$national\+Destination\+Code = "{}"{}; \$subscriber\+Number = \$national\+Significant\+Number; \} }
+
+Refer to the unit tests to see the difference between this function and {\ttfamily \doxylink{}{get\+Length\+Of\+Geographical\+Area\+Code}}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the Phone\+Number object for which clients want to know the length of the NDC. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the length of NDC of the Phone\+Number object passed in, which could be zero 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a799480660f16d774a1c7acff62f307f8}\index{PhoneNumberUtil@{PhoneNumberUtil}!getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}}
+\index{getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getMetadataForNonGeographicalRegion()}{getMetadataForNonGeographicalRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a799480660f16d774a1c7acff62f307f8} 
+get\+Metadata\+For\+Non\+Geographical\+Region (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Phone\+Metadata 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa2f2e2f3689d18f24f652bf54145ad7b}\index{PhoneNumberUtil@{PhoneNumberUtil}!getMetadataForRegion@{getMetadataForRegion}}
+\index{getMetadataForRegion@{getMetadataForRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getMetadataForRegion()}{getMetadataForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aa2f2e2f3689d18f24f652bf54145ad7b} 
+get\+Metadata\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Returns the metadata for the given region code or {\ttfamily null} if the region code is invalid or unknown.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Phone\+Metadata 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6d41a5336ace2c1f0d0f51d037fa80e0}\index{PhoneNumberUtil@{PhoneNumberUtil}!getMetadataForRegionOrCallingCode@{getMetadataForRegionOrCallingCode}}
+\index{getMetadataForRegionOrCallingCode@{getMetadataForRegionOrCallingCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getMetadataForRegionOrCallingCode()}{getMetadataForRegionOrCallingCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a6d41a5336ace2c1f0d0f51d037fa80e0} 
+get\+Metadata\+For\+Region\+Or\+Calling\+Code (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{, }\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}\+Phone\+Metadata 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_abb148f7b45c36ee62f3866b6a564608b}\index{PhoneNumberUtil@{PhoneNumberUtil}!getNationalSignificantNumber@{getNationalSignificantNumber}}
+\index{getNationalSignificantNumber@{getNationalSignificantNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getNationalSignificantNumber()}{getNationalSignificantNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_abb148f7b45c36ee62f3866b6a564608b} 
+get\+National\+Significant\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Gets the national significant number of the a phone number. Note a national significant number doesn\textquotesingle{}t contain a national prefix or any formatting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number for which the national significant number is needed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the national significant number of the Phone\+Number object passed in 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a55d730ecb4fcd4b6f90943cf0cba6c1a}\index{PhoneNumberUtil@{PhoneNumberUtil}!getNddPrefixForRegion@{getNddPrefixForRegion}}
+\index{getNddPrefixForRegion@{getNddPrefixForRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getNddPrefixForRegion()}{getNddPrefixForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a55d730ecb4fcd4b6f90943cf0cba6c1a} 
+get\+Ndd\+Prefix\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{, }\item[{}]{\$strip\+Non\+Digits}{}\end{DoxyParamCaption})}
+
+Returns the national dialling prefix for a specific region. For example, this would be 1 for the United States, and 0 for New Zealand. Set strip\+Non\+Digits to true to strip symbols like "{}\texorpdfstring{$\sim$}{\string~}"{} (which indicates a wait for a dialling tone) from the prefix returned. If no national prefix is present, we return null.
+
+Warning\+: Do not use this method for do-\/your-\/own formatting -\/ for some regions, the national dialling prefix is used only for certain types of numbers. Use the library\textquotesingle{}s formatting functions to prefix the national prefix when required.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region that we want to get the dialling prefix for \\
+\hline
+boolean & {\em \$strip\+Non\+Digits} & true to strip non-\/digits from the national dialling prefix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the dialling prefix for the region denoted by region\+Code 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a3fccf3ebc7bd37633c6842d130e146d1}\index{PhoneNumberUtil@{PhoneNumberUtil}!getNumberDescByType@{getNumberDescByType}}
+\index{getNumberDescByType@{getNumberDescByType}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getNumberDescByType()}{getNumberDescByType()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a3fccf3ebc7bd37633c6842d130e146d1} 
+get\+Number\+Desc\+By\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$metadata}{, }\item[{}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Metadata & {\em \$metadata} & \\
+\hline
+int & {\em \$type} & Phone\+Number\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\+Desc 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa6234b4fcdbd37c8c11efc9e9a8eb470}\index{PhoneNumberUtil@{PhoneNumberUtil}!getNumberType@{getNumberType}}
+\index{getNumberType@{getNumberType}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getNumberType()}{getNumberType()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aa6234b4fcdbd37c8c11efc9e9a8eb470} 
+get\+Number\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Gets the type of a valid phone number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the number the phone number that we want to know the type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Phone\+Number\+Type the type of the phone number, or UNKNOWN if it is invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a27c1aa2d6c06edcf5de5b575fad4ff5c}\index{PhoneNumberUtil@{PhoneNumberUtil}!getNumberTypeHelper@{getNumberTypeHelper}}
+\index{getNumberTypeHelper@{getNumberTypeHelper}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getNumberTypeHelper()}{getNumberTypeHelper()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a27c1aa2d6c06edcf5de5b575fad4ff5c} 
+get\+Number\+Type\+Helper (\begin{DoxyParamCaption}\item[{}]{\$national\+Number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$metadata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the type of number passed in i.\+e Toll free, premium.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$national\+Number} & \\
+\hline
+Phone\+Metadata & {\em \$metadata} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Phone\+Number\+Type constant 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a2186d90e6f251a5191328f36c7d06f84}\index{PhoneNumberUtil@{PhoneNumberUtil}!getRegionCodeForCountryCode@{getRegionCodeForCountryCode}}
+\index{getRegionCodeForCountryCode@{getRegionCodeForCountryCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getRegionCodeForCountryCode()}{getRegionCodeForCountryCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a2186d90e6f251a5191328f36c7d06f84} 
+get\+Region\+Code\+For\+Country\+Code (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+Returns the region code that matches the specific country calling code. In the case of no region code being found, ZZ will be returned. In the case of multiple regions, the one designated in the metadata as the "{}main"{} region for this calling code will be returned. If the country\+Calling\+Code entered is valid but doesn\textquotesingle{}t match a specific region (such as in the case of non-\/geographical calling codes like 800) the value "{}001"{} will be returned (corresponding to the value for World in the UN M.\+49 schema).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a99794a5d4bbb1cbe2ca6c182621c2b48}\index{PhoneNumberUtil@{PhoneNumberUtil}!getRegionCodeForNumber@{getRegionCodeForNumber}}
+\index{getRegionCodeForNumber@{getRegionCodeForNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getRegionCodeForNumber()}{getRegionCodeForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a99794a5d4bbb1cbe2ca6c182621c2b48} 
+get\+Region\+Code\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Returns the region where a phone number is from. This could be used for geocoding at the region level. Only guarantees correct results for valid, full numbers (not short-\/codes, or invalid numbers).
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number whose origin we want to know \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string the region where the phone number is from, or null if no region matches this calling code 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ac1a3f25425c7f8ede4099d2a384da81d}\index{PhoneNumberUtil@{PhoneNumberUtil}!getRegionCodeForNumberFromRegionList@{getRegionCodeForNumberFromRegionList}}
+\index{getRegionCodeForNumberFromRegionList@{getRegionCodeForNumberFromRegionList}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getRegionCodeForNumberFromRegionList()}{getRegionCodeForNumberFromRegionList()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ac1a3f25425c7f8ede4099d2a384da81d} 
+get\+Region\+Code\+For\+Number\+From\+Region\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{array}]{\$region\+Codes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the region code for a number from the list of region codes passing in.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & \\
+\hline
+array & {\em \$region\+Codes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa94a95c239c804b0812143eb1490794a}\index{PhoneNumberUtil@{PhoneNumberUtil}!getRegionCodesForCountryCode@{getRegionCodesForCountryCode}}
+\index{getRegionCodesForCountryCode@{getRegionCodesForCountryCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getRegionCodesForCountryCode()}{getRegionCodesForCountryCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aa94a95c239c804b0812143eb1490794a} 
+get\+Region\+Codes\+For\+Country\+Code (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+Returns a list with the region codes that match the specific country calling code. For non-\/geographical country calling codes, the region code 001 is returned. Also, in the case of no region code being found, an empty list is returned. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_acb2009ebcf730530b8f133ccbc3c65fd}\index{PhoneNumberUtil@{PhoneNumberUtil}!getSupportedCallingCodes@{getSupportedCallingCodes}}
+\index{getSupportedCallingCodes@{getSupportedCallingCodes}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getSupportedCallingCodes()}{getSupportedCallingCodes()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_acb2009ebcf730530b8f133ccbc3c65fd} 
+get\+Supported\+Calling\+Codes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all country calling codes the library has metadata for, covering both non-\/geographical entities (global network calling codes) and those used for geographical entities. The could be used to populate a drop-\/down box of country calling codes for a phone-\/number widget, for instance.
+
+\begin{DoxyReturn}{Returns}
+array An unordered array of the country calling codes for every geographical and non-\/geographical entity the library supports 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a372958f903e5b352de161afa9cf91fa9}\index{PhoneNumberUtil@{PhoneNumberUtil}!getSupportedGlobalNetworkCallingCodes@{getSupportedGlobalNetworkCallingCodes}}
+\index{getSupportedGlobalNetworkCallingCodes@{getSupportedGlobalNetworkCallingCodes}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getSupportedGlobalNetworkCallingCodes()}{getSupportedGlobalNetworkCallingCodes()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a372958f903e5b352de161afa9cf91fa9} 
+get\+Supported\+Global\+Network\+Calling\+Codes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all global network calling codes the library has metadata for.
+
+\begin{DoxyReturn}{Returns}
+array An unordered array of the country calling codes for every non-\/geographical entity the library supports 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a69da835c52fb2f28441b745bc19c603e}\index{PhoneNumberUtil@{PhoneNumberUtil}!getSupportedRegions@{getSupportedRegions}}
+\index{getSupportedRegions@{getSupportedRegions}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getSupportedRegions()}{getSupportedRegions()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a69da835c52fb2f28441b745bc19c603e} 
+get\+Supported\+Regions (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns all regions the library has metadata for.
+
+\begin{DoxyReturn}{Returns}
+array An unordered array of the two-\/letter region codes for every geographical region the library supports 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a191f84712816a0b3338d3afd6ab72584}\index{PhoneNumberUtil@{PhoneNumberUtil}!getSupportedTypesForNonGeoEntity@{getSupportedTypesForNonGeoEntity}}
+\index{getSupportedTypesForNonGeoEntity@{getSupportedTypesForNonGeoEntity}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getSupportedTypesForNonGeoEntity()}{getSupportedTypesForNonGeoEntity()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a191f84712816a0b3338d3afd6ab72584} 
+get\+Supported\+Types\+For\+Non\+Geo\+Entity (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+Returns the types for a country-\/code belonging to a non-\/geographical entity which the library has metadata for. Will not include FIXED\+\_\+\+LINE\+\_\+\+OR\+\_\+\+MOBILE (if numbers for this non-\/geographical entity could be classified as FIXED\+\_\+\+LINE\+\_\+\+OR\+\_\+\+MOBILE, both FIXED\+\_\+\+LINE and MOBILE would be present) and UNKNOWN.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ac4ce86a817e309315b084f5d7dde8795}\index{PhoneNumberUtil@{PhoneNumberUtil}!getSupportedTypesForRegion@{getSupportedTypesForRegion}}
+\index{getSupportedTypesForRegion@{getSupportedTypesForRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getSupportedTypesForRegion()}{getSupportedTypesForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ac4ce86a817e309315b084f5d7dde8795} 
+get\+Supported\+Types\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Returns the types for a given region which the library has metadata for. Will not include FIXED\+\_\+\+LINE\+\_\+\+OR\+\_\+\+MOBILE (if the numbers in this region could be classified as FIXED\+\_\+\+LINE\+\_\+\+OR\+\_\+\+MOBILE, both FIXED\+\_\+\+LINE and MOBILE would be present) and UNKNOWN.
+
+No types will be returned for invalid or unknown region codes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a46977d814f9d615aa3f4b19ae9545d22}\index{PhoneNumberUtil@{PhoneNumberUtil}!getValidPhoneNumberPattern@{getValidPhoneNumberPattern}}
+\index{getValidPhoneNumberPattern@{getValidPhoneNumberPattern}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{getValidPhoneNumberPattern()}{getValidPhoneNumberPattern()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a46977d814f9d615aa3f4b19ae9545d22} 
+static get\+Valid\+Phone\+Number\+Pattern (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+We append optionally the extension pattern to the end here, as a valid phone number may have an extension prefix appended, followed by 1 or more digits. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad0a3e7f310ce58e0f6149e6ac2f10719}\index{PhoneNumberUtil@{PhoneNumberUtil}!hasFormattingPatternForNumber@{hasFormattingPatternForNumber}}
+\index{hasFormattingPatternForNumber@{hasFormattingPatternForNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{hasFormattingPatternForNumber()}{hasFormattingPatternForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ad0a3e7f310ce58e0f6149e6ac2f10719} 
+has\+Formatting\+Pattern\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_adc82a005be0c928e37b1d4ca30f1045a}\index{PhoneNumberUtil@{PhoneNumberUtil}!hasValidCountryCallingCode@{hasValidCountryCallingCode}}
+\index{hasValidCountryCallingCode@{hasValidCountryCallingCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{hasValidCountryCallingCode()}{hasValidCountryCallingCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_adc82a005be0c928e37b1d4ca30f1045a} 
+has\+Valid\+Country\+Calling\+Code (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Helper function to check the country calling code is valid. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ac4137af6f7e7c188014427df24dd8bd2}\index{PhoneNumberUtil@{PhoneNumberUtil}!isAlphaNumber@{isAlphaNumber}}
+\index{isAlphaNumber@{isAlphaNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isAlphaNumber()}{isAlphaNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ac4137af6f7e7c188014427df24dd8bd2} 
+is\+Alpha\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})}
+
+Checks if the number is a valid vanity (alpha) number such as 800 MICROSOFT. A valid vanity number will start with at least 3 digits and will have three or more alpha characters. This does not do region-\/specific checks -\/ to work out if this number is actually valid for a region, it should be parsed and methods such as {\ttfamily \doxylink{}{is\+Possible\+Number\+With\+Reason}} and {\ttfamily \doxylink{}{is\+Valid\+Number}} should be used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & the number that needs to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the number is a valid vanity number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a5e83c87c9015c431c68daf5c84d34b3d}\index{PhoneNumberUtil@{PhoneNumberUtil}!isMobileNumberPortableRegion@{isMobileNumberPortableRegion}}
+\index{isMobileNumberPortableRegion@{isMobileNumberPortableRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isMobileNumberPortableRegion()}{isMobileNumberPortableRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a5e83c87c9015c431c68daf5c84d34b3d} 
+is\+Mobile\+Number\+Portable\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Returns true if the supplied region supports mobile number portability. Returns false for invalid, unknown or regions that don\textquotesingle{}t support mobile number portability.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region for which we want to know whether it supports mobile number portability or not. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a04c675159a09a3bfeadd5d567062e23b}\index{PhoneNumberUtil@{PhoneNumberUtil}!isNANPACountry@{isNANPACountry}}
+\index{isNANPACountry@{isNANPACountry}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isNANPACountry()}{isNANPACountry()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a04c675159a09a3bfeadd5d567062e23b} 
+is\+NANPACountry (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Checks if this is a region under the North American Numbering Plan Administration (NANPA). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if region\+Code is one of the regions under NANPA 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af6ad02bbc4f6e9584ddd164faec8b6fd}\index{PhoneNumberUtil@{PhoneNumberUtil}!isNationalNumberSuffixOfTheOther@{isNationalNumberSuffixOfTheOther}}
+\index{isNationalNumberSuffixOfTheOther@{isNationalNumberSuffixOfTheOther}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isNationalNumberSuffixOfTheOther()}{isNationalNumberSuffixOfTheOther()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_af6ad02bbc4f6e9584ddd164faec8b6fd} 
+is\+National\+Number\+Suffix\+Of\+The\+Other (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$first\+Number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$second\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true when one national number is the suffix of the other or both are the same. 
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$first\+Number} & \\
+\hline
+Phone\+Number & {\em \$second\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa3ba99c6354af4c7975ad35a61b46ebb}\index{PhoneNumberUtil@{PhoneNumberUtil}!isNumberGeographical@{isNumberGeographical}}
+\index{isNumberGeographical@{isNumberGeographical}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isNumberGeographical()}{isNumberGeographical()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aa3ba99c6354af4c7975ad35a61b46ebb} 
+is\+Number\+Geographical (\begin{DoxyParamCaption}\item[{}]{\$phone\+Number\+Obj\+Or\+Type}{, }\item[{}]{\$country\+Calling\+Code}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+is\+Number\+Geographical(\+Phone\+Number)
+
+Tests whether a phone number has a geographical association. It checks if the number is associated with a certain region in the country to which it belongs. Note that this doesn\textquotesingle{}t verify if the number is actually in use.
+
+is\+Number\+Geographical(Phone\+Number\+Type, \$country\+Calling\+Code)
+
+Tests whether a phone number has a geographical association, as represented by its type and the country it belongs to.
+
+This version exists since calculating the phone number type is expensive; if we have already done this, we don\textquotesingle{}t want to do it again.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number | int & {\em \$phone\+Number\+Obj\+Or\+Type} & A Phone\+Number object, or a Phone\+Number\+Type integer \\
+\hline
+int | null & {\em \$country\+Calling\+Code} & Used when passing a Phone\+Number\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a4f000a6adbebd9b91e45daaaf6f85887}\index{PhoneNumberUtil@{PhoneNumberUtil}!isNumberMatch@{isNumberMatch}}
+\index{isNumberMatch@{isNumberMatch}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isNumberMatch()}{isNumberMatch()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a4f000a6adbebd9b91e45daaaf6f85887} 
+is\+Number\+Match (\begin{DoxyParamCaption}\item[{}]{\$first\+Number\+In}{, }\item[{}]{\$second\+Number\+In}{}\end{DoxyParamCaption})}
+
+Takes two phone numbers and compares them for equality.
+
+Returns EXACT\+\_\+\+MATCH if the country\+\_\+code, NSN, presence of a leading zero for Italian numbers and any extension present are the same. Returns NSN\+\_\+\+MATCH if either or both has no region specified, and the NSNs and extensions are the same. Returns SHORT\+\_\+\+NSN\+\_\+\+MATCH if either or both has no region specified, or the region specified is the same, and one NSN could be a shorter version of the other number. This includes the case where one has an extension specified, and the other does not. Returns NO\+\_\+\+MATCH otherwise. For example, the numbers +1 345 657 1234 and 657 1234 are a SHORT\+\_\+\+NSN\+\_\+\+MATCH. The numbers +1 345 657 1234 and 345 657 are a NO\+\_\+\+MATCH.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$first\+Number\+In} & Phone\+Number\texorpdfstring{$\vert$}{|}string First number to compare. If it is a string it can contain formatting, and can have country calling code specified with + at the start. \\
+\hline
+{\em \$second\+Number\+In} & Phone\+Number\texorpdfstring{$\vert$}{|}string Second number to compare. If it is a string it can contain formatting, and can have country calling code specified with + at the start. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Invalid\+Argument\+Exception \begin{DoxyReturn}{Returns}
+int \{Match\+Type\} NOT\+\_\+\+A\+\_\+\+NUMBER, NO\+\_\+\+MATCH, 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad767b47705c1608bc9a2d3642e8a71cc}\index{PhoneNumberUtil@{PhoneNumberUtil}!isNumberMatchingDesc@{isNumberMatchingDesc}}
+\index{isNumberMatchingDesc@{isNumberMatchingDesc}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isNumberMatchingDesc()}{isNumberMatchingDesc()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ad767b47705c1608bc9a2d3642e8a71cc} 
+is\+Number\+Matching\+Desc (\begin{DoxyParamCaption}\item[{}]{\$national\+Number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_desc}{Phone\+Number\+Desc}}}]{\$number\+Desc}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$national\+Number} & \\
+\hline
+Phone\+Number\+Desc & {\em \$number\+Desc} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a348ab1d9f5e23c728f1e182ccdbccd63}\index{PhoneNumberUtil@{PhoneNumberUtil}!isPossibleNumber@{isPossibleNumber}}
+\index{isPossibleNumber@{isPossibleNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isPossibleNumber()}{isPossibleNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a348ab1d9f5e23c728f1e182ccdbccd63} 
+is\+Possible\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{}]{\$region\+Dialing\+From}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Check whether a phone number is a possible number given a number in the form of a string, and the region where the number could be dialed from. It provides a more lenient check than {\ttfamily \doxylink{}{is\+Valid\+Number}}. See {\ttfamily \doxylink{}{is\+Possible\+Number(\+Phone\+Number)}} for details.
+
+Convenience wrapper around {\ttfamily \doxylink{}{is\+Possible\+Number\+With\+Reason}}. Instead of returning the reason for failure, this method returns a boolean value. For failure, this method returns true if the number is either a possible fully-\/qualified number (containing the area code and country code), or if the number could be a possible local number (with a country code, but missing an area code). Local numbers are considered possible if they could be possibly dialled in this format\+: if the area code is needed for a call to connect, the number is not considered possible without it.
+
+Note\+: There are two ways to call this method.
+
+is\+Possible\+Number(Phone\+Number \$number\+Object) is\+Possible\+Number(string \textquotesingle{}+441174960126\textquotesingle{}, string \textquotesingle{}GB\textquotesingle{})
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number | string & {\em \$number} & the number that needs to be checked, in the form of a string \\
+\hline
+string | null & {\em \$region\+Dialing\+From} & the region that we are expecting the number to be dialed from. Note this is different from the region where the number belongs. For example, the number +1 650 253 0000 is a number that belongs to US. When written in this form, it can be dialed from any region. When it is written as 00 1 650 253 0000, it can be dialed from any region which uses an international dialling prefix of 00. When it is written as 650 253 0000, it can only be dialed from within the US, and when written as 253 0000, it can only be dialed from within a smaller area in the US (Mountain View, CA, to be more specific). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if the number is possible 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aa646a1607286fd77fb5a0006dae6490c}\index{PhoneNumberUtil@{PhoneNumberUtil}!isPossibleNumberForType@{isPossibleNumberForType}}
+\index{isPossibleNumberForType@{isPossibleNumberForType}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isPossibleNumberForType()}{isPossibleNumberForType()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aa646a1607286fd77fb5a0006dae6490c} 
+is\+Possible\+Number\+For\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Convenience wrapper around is\+Possible\+Number\+For\+Type\+With\+Reason. Instead of returning the reason for failure, this method returns true if the number is either a possible fully-\/qualified number (containing the area code and country code), or if the number could be a possible local number (with a country code, but missing an area code). Local numbers are considered possible if they could be possibly dialled in this format\+: if the area code is needed for a call to connect, the number is not considered possible without it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & The number that needs to be checked \\
+\hline
+int & {\em \$type} & Phone\+Number\+Type The type we are interested in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the number is possible for this particular type 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a672b130c4d94ba4784dea20a0798a5db}\index{PhoneNumberUtil@{PhoneNumberUtil}!isPossibleNumberForTypeWithReason@{isPossibleNumberForTypeWithReason}}
+\index{isPossibleNumberForTypeWithReason@{isPossibleNumberForTypeWithReason}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isPossibleNumberForTypeWithReason()}{isPossibleNumberForTypeWithReason()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a672b130c4d94ba4784dea20a0798a5db} 
+is\+Possible\+Number\+For\+Type\+With\+Reason (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Check whether a phone number is a possible number of a particular type. For types that don\textquotesingle{}t exist in a particular region, this will return a result that isn\textquotesingle{}t so useful; it is recommended that you use {\ttfamily \doxylink{}{get\+Supported\+Types\+For\+Region}} or {\ttfamily \doxylink{}{get\+Supported\+Types\+For\+Non\+Geo\+Entity}} respectively before calling this method to determine whether you should call it for this number at all.
+
+This provides a more lenient check than {\ttfamily \doxylink{}{is\+Valid\+Number}} in the following sense\+:
+
+
+\begin{DoxyEnumerate}
+\item It only checks the length of phone numbers. In particular, it doesn\textquotesingle{}t check starting digits of the number. 
+\item For some numbers (particularly fixed-\/line), many regions have the concept of area code, which together with subscriber number constitute the national significant number. It is sometimes okay to dial only the subscriber number when dialing in the same area. This function will return IS\+\_\+\+POSSIBLE\+\_\+\+LOCAL\+\_\+\+ONLY if the subscriber-\/number-\/only version is passed in. On the other hand, because is\+Valid\+Number validates using information on both starting digits (for fixed line numbers, that would most likely be area codes) and length (obviously includes the length of area codes for fixed line numbers), it will return false for the subscriber-\/number-\/only version. 
+\end{DoxyEnumerate}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the number that needs to be checked \\
+\hline
+int & {\em \$type} & the Phone\+Number\+Type we are interested in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int a Validation\+Result object which indicates whether the number is possible 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae666aabd37421444495214d37c84110a}\index{PhoneNumberUtil@{PhoneNumberUtil}!isPossibleNumberWithReason@{isPossibleNumberWithReason}}
+\index{isPossibleNumberWithReason@{isPossibleNumberWithReason}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isPossibleNumberWithReason()}{isPossibleNumberWithReason()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ae666aabd37421444495214d37c84110a} 
+is\+Possible\+Number\+With\+Reason (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Check whether a phone number is a possible number. It provides a more lenient check than {\ttfamily \doxylink{}{is\+Valid\+Number}} in the following sense\+: 
+\begin{DoxyEnumerate}
+\item It only checks the length of phone numbers. In particular, it doesn\textquotesingle{}t check starting digits of the number. 
+\item It doesn\textquotesingle{}t attempt to figure out the type of the number, but uses general rules which applies to all types of phone numbers in a region. Therefore, it is much faster than is\+Valid\+Number. 
+\item For some numbers (particularly fixed-\/line), many regions have the concept of area code, which together with subscriber number constitute the national significant number. It is sometimes okay to dial only the subscriber number when dialing in the same area. This function will return IS\+\_\+\+POSSIBLE\+\_\+\+LOCAL\+\_\+\+ONLY if the subscriber-\/number-\/only version is passed in. On the other hand, because is\+Valid\+Number validates using information on both starting digits (for fixed line numbers, that would most likely be area codes) and length (obviously includes the length of area codes for fixed line numbers), it will return false for the subscriber-\/number-\/only version. 
+\end{DoxyEnumerate}
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the number that needs to be checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int a Validation\+Result object which indicates whether the number is possible 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad883a41e763efd56d13f4c98e14f482f}\index{PhoneNumberUtil@{PhoneNumberUtil}!isValidNumber@{isValidNumber}}
+\index{isValidNumber@{isValidNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isValidNumber()}{isValidNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ad883a41e763efd56d13f4c98e14f482f} 
+is\+Valid\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Tests whether a phone number matches a valid pattern. Note this doesn\textquotesingle{}t verify the number is actually in use, which is impossible to tell by just looking at a number itself. It only verifies whether the parsed, canonicalised number is valid\+: not whether a particular series of digits entered by the user is diallable from the region provided when parsing. For example, the number +41 (0) 78 927 2696 can be parsed into a number with country code "{}41"{} and national significant number "{}789272696"{}. This is valid, while the original string is not diallable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number that we want to validate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean that indicates whether the number is of a valid pattern 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a025a014a0a27330693776106a221e78e}\index{PhoneNumberUtil@{PhoneNumberUtil}!isValidNumberForRegion@{isValidNumberForRegion}}
+\index{isValidNumberForRegion@{isValidNumberForRegion}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isValidNumberForRegion()}{isValidNumberForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a025a014a0a27330693776106a221e78e} 
+is\+Valid\+Number\+For\+Region (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Tests whether a phone number is valid for a certain region. Note this doesn\textquotesingle{}t verify the number is actually in use, which is impossible to tell by just looking at a number itself. If the country calling code is not the same as the country calling code for the region, this immediately exits with false. After this, the specific number pattern rules for the region are examined. This is useful for determining for example whether a particular number is valid for Canada, rather than just a valid NANPA number. Warning\+: In most cases, you want to use {\ttfamily \doxylink{}{is\+Valid\+Number}} instead. For example, this method will mark numbers from British Crown dependencies such as the Isle of Man as invalid for the region "{}\+GB"{} (United Kingdom), since it has its own region code, "{}\+IM"{}, which may be undesirable.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & the phone number that we want to validate \\
+\hline
+string & {\em \$region\+Code} & the region that we want to validate the phone number for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean that indicates whether the number is of a valid pattern 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a73a6f2ab18b89138ea3c0fd04090d4e6}\index{PhoneNumberUtil@{PhoneNumberUtil}!isValidRegionCode@{isValidRegionCode}}
+\index{isValidRegionCode@{isValidRegionCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isValidRegionCode()}{isValidRegionCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a73a6f2ab18b89138ea3c0fd04090d4e6} 
+is\+Valid\+Region\+Code (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Helper function to check region code is not unknown or null.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a89e64b268cbec3c4e03b76cfa69065fd}\index{PhoneNumberUtil@{PhoneNumberUtil}!isViablePhoneNumber@{isViablePhoneNumber}}
+\index{isViablePhoneNumber@{isViablePhoneNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{isViablePhoneNumber()}{isViablePhoneNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a89e64b268cbec3c4e03b76cfa69065fd} 
+static is\+Viable\+Phone\+Number (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks to see if the string of characters could possibly be a phone number at all. At the moment, checks to see that the string begins with at least 2 digits, ignoring any punctuation commonly found in phone numbers. This method does not require the number to be normalized in advance -\/ but does assume that leading non-\/number symbols have been removed, such as by the method extract\+Possible\+Number.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & to be checked for viability as a phone number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if the number could be a phone number of some sort, otherwise false 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af288a92d64e0e7e05812a25b220ae669}\index{PhoneNumberUtil@{PhoneNumberUtil}!maybeAppendFormattedExtension@{maybeAppendFormattedExtension}}
+\index{maybeAppendFormattedExtension@{maybeAppendFormattedExtension}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{maybeAppendFormattedExtension()}{maybeAppendFormattedExtension()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_af288a92d64e0e7e05812a25b220ae669} 
+maybe\+Append\+Formatted\+Extension (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$metadata}{, }\item[{}]{\$number\+Format}{, }\item[{\&}]{\$formatted\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Appends the formatted extension of a phone number to formatted\+Number, if the phone number had an extension specified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & \\
+\hline
+Phone\+Metadata | null & {\em \$metadata} & \\
+\hline
+int & {\em \$number\+Format} & Phone\+Number\+Format \\
+\hline
+string & {\em \$formatted\+Number} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a9615d9f4a72c57390f3a27bc7370dc5c}\index{PhoneNumberUtil@{PhoneNumberUtil}!maybeExtractCountryCode@{maybeExtractCountryCode}}
+\index{maybeExtractCountryCode@{maybeExtractCountryCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{maybeExtractCountryCode()}{maybeExtractCountryCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a9615d9f4a72c57390f3a27bc7370dc5c} 
+maybe\+Extract\+Country\+Code (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$default\+Region\+Metadata}{ = {\ttfamily null}, }\item[{\&}]{\$national\+Number}{, }\item[{}]{\$keep\+Raw\+Input}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number}{}\end{DoxyParamCaption})}
+
+Tries to extract a country calling code from a number. This method will return zero if no country calling code is considered to be present. Country calling codes are extracted in the following ways\+: 
+\begin{DoxyItemize}
+\item by stripping the international dialing prefix of the region the person is dialing from, if this is present in the number, and looking at the next digits 
+\item by stripping the \textquotesingle{}+\textquotesingle{} sign if present and then looking at the next digits 
+\item by comparing the start of the number and the country calling code of the default region. If the number is not considered possible for the numbering plan of the default region initially, but starts with the country calling code of this region, validation will be reattempted after stripping this country calling code. If this number is considered a possible number, then the first digits will be considered the country calling code and removed as such. 
+\end{DoxyItemize}It will throw a Number\+Parse\+Exception if the number starts with a \textquotesingle{}+\textquotesingle{} but the country calling code supplied after this does not match that of any known region.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & non-\/normalized telephone number that we wish to extract a country calling code from -\/ may begin with \textquotesingle{}+\textquotesingle{} \\
+\hline
+Phone\+Metadata & {\em \$default\+Region\+Metadata} & metadata about the region this number may be from \\
+\hline
+string & {\em \$national\+Number} & a string buffer to store the national significant number in, in the case that a country calling code was extracted. The number is appended to any existing contents. If no country calling code was extracted, this will be left unchanged. \\
+\hline
+bool & {\em \$keep\+Raw\+Input} & true if the country\+\_\+code\+\_\+source and preferred\+\_\+carrier\+\_\+code fields of phone\+Number should be populated. \\
+\hline
+Phone\+Number & {\em \$phone\+Number} & the Phone\+Number object where the country\+\_\+code and country\+\_\+code\+\_\+source need to be populated. Note the country\+\_\+code is always populated, whereas country\+\_\+code\+\_\+source is only populated when keep\+Country\+Code\+Source is true. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the country calling code extracted or 0 if none could be extracted 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Number\+Parse\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6963a062e1f82ad6ca638093408d1a39}\index{PhoneNumberUtil@{PhoneNumberUtil}!maybeStripExtension@{maybeStripExtension}}
+\index{maybeStripExtension@{maybeStripExtension}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{maybeStripExtension()}{maybeStripExtension()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a6963a062e1f82ad6ca638093408d1a39} 
+maybe\+Strip\+Extension (\begin{DoxyParamCaption}\item[{\&}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Strips any extension (as in, the part of the number dialled after the call is connected, usually indicated with extn, ext, x or similar) from the end of the number, and returns it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & the non-\/normalized telephone number that we wish to strip the extension from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the phone extension 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a2381348cd54dc74b57c8e819c0dd5406}\index{PhoneNumberUtil@{PhoneNumberUtil}!maybeStripInternationalPrefixAndNormalize@{maybeStripInternationalPrefixAndNormalize}}
+\index{maybeStripInternationalPrefixAndNormalize@{maybeStripInternationalPrefixAndNormalize}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{maybeStripInternationalPrefixAndNormalize()}{maybeStripInternationalPrefixAndNormalize()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a2381348cd54dc74b57c8e819c0dd5406} 
+maybe\+Strip\+International\+Prefix\+And\+Normalize (\begin{DoxyParamCaption}\item[{\&}]{\$number}{, }\item[{}]{\$possible\+Idd\+Prefix}{}\end{DoxyParamCaption})}
+
+Strips any international prefix (such as +, 00, 011) present in the number provided, normalizes the resulting number, and indicates if an international prefix was present.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & the non-\/normalized telephone number that we wish to strip any international dialing prefix from. \\
+\hline
+string & {\em \$possible\+Idd\+Prefix} & string the international direct dialing prefix from the region we think this number may be dialed in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int the corresponding Country\+Code\+Source if an international dialing prefix could be removed from the number, otherwise Country\+Code\+Source.\+FROM\+\_\+\+DEFAULT\+\_\+\+COUNTRY if the number did not seem to be in international format. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ad65fd62ad3f8113652a019917f875762}\index{PhoneNumberUtil@{PhoneNumberUtil}!maybeStripNationalPrefixAndCarrierCode@{maybeStripNationalPrefixAndCarrierCode}}
+\index{maybeStripNationalPrefixAndCarrierCode@{maybeStripNationalPrefixAndCarrierCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{maybeStripNationalPrefixAndCarrierCode()}{maybeStripNationalPrefixAndCarrierCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ad65fd62ad3f8113652a019917f875762} 
+maybe\+Strip\+National\+Prefix\+And\+Carrier\+Code (\begin{DoxyParamCaption}\item[{\&}]{\$number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$metadata}{, }\item[{\&}]{\$carrier\+Code}{}\end{DoxyParamCaption})}
+
+Strips any national prefix (such as 0, 1) present in the number provided.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & the normalized telephone number that we wish to strip any national dialing prefix from \\
+\hline
+Phone\+Metadata & {\em \$metadata} & the metadata for the region that we think this number is from \\
+\hline
+string & {\em \$carrier\+Code} & a place to insert the carrier code if one is extracted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if a national prefix or carrier code (or both) could be extracted. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a3564efa12204fc95c7e1838e9d0d9ccd}\index{PhoneNumberUtil@{PhoneNumberUtil}!normalize@{normalize}}
+\index{normalize@{normalize}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a3564efa12204fc95c7e1838e9d0d9ccd} 
+static normalize (\begin{DoxyParamCaption}\item[{\&}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a string of characters representing a phone number. This performs the following conversions\+: Punctuation is stripped. For ALPHA/\+VANITY numbers\+: Letters are converted to their numeric representation on a telephone keypad. The keypad used here is the one defined in ITU Recommendation E.\+161. This is only done if there are 3 or more letters in the number, to lessen the risk that such letters are typos. For other numbers\+:
+\begin{DoxyItemize}
+\item Wide-\/ascii digits are converted to normal ASCII (European) digits.
+\item Arabic-\/\+Indic numerals are converted to European numerals.
+\item Spurious alpha characters are stripped.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & a string of characters representing a phone number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the normalized string version of the phone number. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a9e3b0a7fb0dd5ea541c0bbb97872882e}\index{PhoneNumberUtil@{PhoneNumberUtil}!normalizeDiallableCharsOnly@{normalizeDiallableCharsOnly}}
+\index{normalizeDiallableCharsOnly@{normalizeDiallableCharsOnly}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{normalizeDiallableCharsOnly()}{normalizeDiallableCharsOnly()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a9e3b0a7fb0dd5ea541c0bbb97872882e} 
+static normalize\+Diallable\+Chars\+Only (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a string of characters representing a phone number. This strips all characters which are not diallable on a mobile phone keypad (including all non-\/\+ASCII digits).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & a string of characters representing a phone number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the normalized string version of the phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6589e1606d17ba5cfd39ffeeb963f395}\index{PhoneNumberUtil@{PhoneNumberUtil}!normalizeDigits@{normalizeDigits}}
+\index{normalizeDigits@{normalizeDigits}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{normalizeDigits()}{normalizeDigits()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a6589e1606d17ba5cfd39ffeeb963f395} 
+static normalize\+Digits (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{}]{\$keep\+Non\+Digits}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & \\
+\hline
+bool & {\em \$keep\+Non\+Digits} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a9970b37d0cd02a8aa58c66efedf8f253}\index{PhoneNumberUtil@{PhoneNumberUtil}!normalizeDigitsOnly@{normalizeDigitsOnly}}
+\index{normalizeDigitsOnly@{normalizeDigitsOnly}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{normalizeDigitsOnly()}{normalizeDigitsOnly()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a9970b37d0cd02a8aa58c66efedf8f253} 
+static normalize\+Digits\+Only (\begin{DoxyParamCaption}\item[{}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Normalizes a string of characters representing a phone number. This converts wide-\/ascii and arabic-\/indic numerals to European numerals, and strips punctuation and alpha characters.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$number} & string a string of characters representing a phone number \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the normalized string version of the phone number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_acac5f701f7d8529d12d62d412bdcd77f}\index{PhoneNumberUtil@{PhoneNumberUtil}!normalizeHelper@{normalizeHelper}}
+\index{normalizeHelper@{normalizeHelper}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{normalizeHelper()}{normalizeHelper()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_acac5f701f7d8529d12d62d412bdcd77f} 
+static normalize\+Helper (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{array}]{\$normalization\+Replacements}{, }\item[{}]{\$remove\+Non\+Matches}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+Normalizes a string of characters representing a phone number by replacing all characters found in the accompanying map with the values therein, and stripping all other characters if remove\+Non\+Matches is true.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & a string of characters representing a phone number \\
+\hline
+array & {\em \$normalization\+Replacements} & a mapping of characters to what they should be replaced by in the normalized version of the phone number. \\
+\hline
+bool & {\em \$remove\+Non\+Matches} & indicates whether characters that are not able to be replaced. should be stripped from the number. If this is false, they will be left unchanged in the number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string the normalized string version of the phone number. 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a385bcee8d052f8bbfc0a1033fd99db2b}\index{PhoneNumberUtil@{PhoneNumberUtil}!parse@{parse}}
+\index{parse@{parse}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a385bcee8d052f8bbfc0a1033fd99db2b} 
+parse (\begin{DoxyParamCaption}\item[{}]{\$number\+To\+Parse}{, }\item[{}]{\$default\+Region}{ = {\ttfamily null}, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number}{ = {\ttfamily null}, }\item[{}]{\$keep\+Raw\+Input}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Parses a string and returns it as a phone number in proto buffer format. The method is quite lenient and looks for a number in the input text (raw input) and does not check whether the string is definitely only a phone number. To do this, it ignores punctuation and white-\/space, as well as any text before the number (e.\+g. a leading “\+Tel\+: ”) and trims the non-\/number bits. It will accept a number in any format (E164, national, international etc), assuming it can interpreted with the default\+Region supplied. It also attempts to convert any alpha characters into digits if it thinks this is a vanity number of the type "{}1800 MICROSOFT"{}.
+
+This method will throw a {\ttfamily \doxylink{}{Number\+Parse\+Exception}} if the number is not considered to be a possible number. Note that validation of whether the number is actually a valid number for a particular region is not performed. This can be done separately with {\ttfamily \doxylink{}{is\+Valid\+Number}}.
+
+Note this method canonicalizes the phone number such that different representations can be easily compared, no matter what form it was originally entered in (e.\+g. national, international). If you want to record context about the number being parsed, such as the raw input that was entered, how the country code was derived etc. then call {\ttfamily \doxylink{}{parse\+And\+Keep\+Raw\+Input}} instead.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number\+To\+Parse} & number that we are attempting to parse. This can contain formatting such as +, ( and -\/, as well as a phone number extension. \\
+\hline
+string | null & {\em \$default\+Region} & region that we are expecting the number to be from. This is only used if the number being parsed is not written in international format. The country\+\_\+code for the number in this case would be stored as that of the default region supplied. If the number is guaranteed to start with a \textquotesingle{}+\textquotesingle{} followed by the country calling code, then "{}\+ZZ"{} or null can be supplied. \\
+\hline
+Phone\+Number | null & {\em \$phone\+Number} & \\
+\hline
+bool & {\em \$keep\+Raw\+Input} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number a phone number proto buffer filled with the parsed number 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Number\+Parse\+Exception} & if the string is not considered to be a viable phone number (e.\+g. too few or too many digits) or if no default region was supplied and the number is not in international format (does not start with +) \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ae9b5218cd63e3007b9dcfea72f723b85}\index{PhoneNumberUtil@{PhoneNumberUtil}!parseAndKeepRawInput@{parseAndKeepRawInput}}
+\index{parseAndKeepRawInput@{parseAndKeepRawInput}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{parseAndKeepRawInput()}{parseAndKeepRawInput()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ae9b5218cd63e3007b9dcfea72f723b85} 
+parse\+And\+Keep\+Raw\+Input (\begin{DoxyParamCaption}\item[{}]{\$number\+To\+Parse}{, }\item[{}]{\$default\+Region}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Parses a string and returns it in proto buffer format. This method differs from {\ttfamily \doxylink{}{parse}} in that it always populates the raw\+\_\+input field of the protocol buffer with number\+To\+Parse as well as the country\+\_\+code\+\_\+source field.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number\+To\+Parse} & number that we are attempting to parse. This can contain formatting such as +, ( and -\/, as well as a phone number extension. It can also be provided in RFC3966 format. \\
+\hline
+string & {\em \$default\+Region} & region that we are expecting the number to be from. This is only used if the number being parsed is not written in international format. The country calling code for the number in this case would be stored as that of the default region supplied. \\
+\hline
+Phone\+Number & {\em \$phone\+Number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number a phone number proto buffer filled with the parsed number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_aef2f484fa1d2ab8eb881c790fa6f7c9d}\index{PhoneNumberUtil@{PhoneNumberUtil}!parseHelper@{parseHelper}}
+\index{parseHelper@{parseHelper}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{parseHelper()}{parseHelper()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_aef2f484fa1d2ab8eb881c790fa6f7c9d} 
+parse\+Helper (\begin{DoxyParamCaption}\item[{}]{\$number\+To\+Parse}{, }\item[{}]{\$default\+Region}{, }\item[{}]{\$keep\+Raw\+Input}{, }\item[{}]{\$check\+Region}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Parses a string and fills up the phone\+Number. This method is the same as the public parse() method, with the exception that it allows the default region to be null, for use by is\+Number\+Match(). check\+Region should be set to false if it is permitted for the default region to be null or unknown ("{}\+ZZ"{}). 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number\+To\+Parse} & \\
+\hline
+string & {\em \$default\+Region} & \\
+\hline
+bool & {\em \$keep\+Raw\+Input} & \\
+\hline
+bool & {\em \$check\+Region} & \\
+\hline
+Phone\+Number & {\em \$phone\+Number} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Number\+Parse\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a01cf9c88c90cc6f05c3467b08a3cb3e3}\index{PhoneNumberUtil@{PhoneNumberUtil}!parsePrefixAsIdd@{parsePrefixAsIdd}}
+\index{parsePrefixAsIdd@{parsePrefixAsIdd}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{parsePrefixAsIdd()}{parsePrefixAsIdd()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a01cf9c88c90cc6f05c3467b08a3cb3e3} 
+parse\+Prefix\+As\+Idd (\begin{DoxyParamCaption}\item[{}]{\$idd\+Pattern}{, }\item[{\&}]{\$number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Strips the IDD from the start of the number if present. Helper function used by maybe\+Strip\+International\+Prefix\+And\+Normalize. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$idd\+Pattern} & \\
+\hline
+string & {\em \$number} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_afcb6953b31af37d6b91ee2e1b89ee887}\index{PhoneNumberUtil@{PhoneNumberUtil}!prefixNumberWithCountryCallingCode@{prefixNumberWithCountryCallingCode}}
+\index{prefixNumberWithCountryCallingCode@{prefixNumberWithCountryCallingCode}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{prefixNumberWithCountryCallingCode()}{prefixNumberWithCountryCallingCode()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_afcb6953b31af37d6b91ee2e1b89ee887} 
+prefix\+Number\+With\+Country\+Calling\+Code (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{, }\item[{}]{\$number\+Format}{, }\item[{\&}]{\$formatted\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+A helper function that is used by format and format\+By\+Pattern. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+int & {\em \$number\+Format} & Phone\+Number\+Format \\
+\hline
+string & {\em \$formatted\+Number} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a3694e61327e75265fbf1b117775dbb68}\index{PhoneNumberUtil@{PhoneNumberUtil}!rawInputContainsNationalPrefix@{rawInputContainsNationalPrefix}}
+\index{rawInputContainsNationalPrefix@{rawInputContainsNationalPrefix}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{rawInputContainsNationalPrefix()}{rawInputContainsNationalPrefix()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a3694e61327e75265fbf1b117775dbb68} 
+raw\+Input\+Contains\+National\+Prefix (\begin{DoxyParamCaption}\item[{}]{\$raw\+Input}{, }\item[{}]{\$national\+Prefix}{, }\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Check if raw\+Input, which is assumed to be in the national format, has a national prefix. The national prefix is assumed to be in digits-\/only form. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$raw\+Input} & \\
+\hline
+string & {\em \$national\+Prefix} & \\
+\hline
+string & {\em \$region\+Code} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a23bb62be5a2fa0b27abb85c36213d66a}\index{PhoneNumberUtil@{PhoneNumberUtil}!resetInstance@{resetInstance}}
+\index{resetInstance@{resetInstance}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{resetInstance()}{resetInstance()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a23bb62be5a2fa0b27abb85c36213d66a} 
+static reset\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Used for testing purposes only to reset the Phone\+Number\+Util singleton to null. \Hypertarget{classlibphonenumber_1_1_phone_number_util_af076e1f50391e011013ea1aa6da0f729}\index{PhoneNumberUtil@{PhoneNumberUtil}!setItalianLeadingZerosForPhoneNumber@{setItalianLeadingZerosForPhoneNumber}}
+\index{setItalianLeadingZerosForPhoneNumber@{setItalianLeadingZerosForPhoneNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{setItalianLeadingZerosForPhoneNumber()}{setItalianLeadingZerosForPhoneNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_af076e1f50391e011013ea1aa6da0f729} 
+static set\+Italian\+Leading\+Zeros\+For\+Phone\+Number (\begin{DoxyParamCaption}\item[{}]{\$national\+Number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$phone\+Number}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A helper function to set the values related to leading zeros in a Phone\+Number. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$national\+Number} & \\
+\hline
+Phone\+Number & {\em \$phone\+Number} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af7381860bdedb89e1900b25b3d7d250a}\index{PhoneNumberUtil@{PhoneNumberUtil}!stringEndsWithString@{stringEndsWithString}}
+\index{stringEndsWithString@{stringEndsWithString}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{stringEndsWithString()}{stringEndsWithString()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_af7381860bdedb89e1900b25b3d7d250a} 
+string\+Ends\+With\+String (\begin{DoxyParamCaption}\item[{}]{\$hay\+Stack}{, }\item[{}]{\$needle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns true if a string ends with a given substring, false otherwise.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hay\+Stack} & \\
+\hline
+string & {\em \$needle} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a64c8622b7987c41d01b577dcea5a8eb5}\index{PhoneNumberUtil@{PhoneNumberUtil}!testNumberLength@{testNumberLength}}
+\index{testNumberLength@{testNumberLength}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{testNumberLength()}{testNumberLength()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a64c8622b7987c41d01b577dcea5a8eb5} 
+test\+Number\+Length (\begin{DoxyParamCaption}\item[{}]{\$number}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata}}}]{\$metadata}{, }\item[{}]{\$type}{ = {\ttfamily PhoneNumberType\+:\+:UNKNOWN}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Helper method to check a number against possible lengths for this number type, and determine whether it matches, or is too short or too long.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$number} & \\
+\hline
+Phone\+Metadata & {\em \$metadata} & \\
+\hline
+int & {\em \$type} & Phone\+Number\+Type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Validation\+Result 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_ab6a91ae46cf43c84db2bbfce373cdf92}\index{PhoneNumberUtil@{PhoneNumberUtil}!truncateTooLongNumber@{truncateTooLongNumber}}
+\index{truncateTooLongNumber@{truncateTooLongNumber}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{truncateTooLongNumber()}{truncateTooLongNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_ab6a91ae46cf43c84db2bbfce373cdf92} 
+truncate\+Too\+Long\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Attempts to extract a valid number from a phone number that is too long to be valid, and resets the Phone\+Number object passed in to that valid version. If no valid number could be extracted, the Phone\+Number object passed in will not be modified.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & a Phone\+Number object which contains a number that is too long to be valid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true if a valid phone number can be successfully extracted. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_acdd7e2badfce8d3b317567fc62e99150}\index{PhoneNumberUtil@{PhoneNumberUtil}!\$ALPHA\_MAPPINGS@{\$ALPHA\_MAPPINGS}}
+\index{\$ALPHA\_MAPPINGS@{\$ALPHA\_MAPPINGS}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{\$ALPHA\_MAPPINGS}{\$ALPHA\_MAPPINGS}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_acdd7e2badfce8d3b317567fc62e99150} 
+\$ALPHA\+\_\+\+MAPPINGS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'A'}\ =>\ \textcolor{charliteral}{'2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'B'}\ =>\ \textcolor{charliteral}{'2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'C'}\ =>\ \textcolor{charliteral}{'2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'D'}\ =>\ \textcolor{charliteral}{'3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'E'}\ =>\ \textcolor{charliteral}{'3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'F'}\ =>\ \textcolor{charliteral}{'3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'G'}\ =>\ \textcolor{charliteral}{'4'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'H'}\ =>\ \textcolor{charliteral}{'4'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'I'}\ =>\ \textcolor{charliteral}{'4'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'J'}\ =>\ \textcolor{charliteral}{'5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'K'}\ =>\ \textcolor{charliteral}{'5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'L'}\ =>\ \textcolor{charliteral}{'5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'M'}\ =>\ \textcolor{charliteral}{'6'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'N'}\ =>\ \textcolor{charliteral}{'6'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'O'}\ =>\ \textcolor{charliteral}{'6'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'P'}\ =>\ \textcolor{charliteral}{'7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'Q'}\ =>\ \textcolor{charliteral}{'7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'R'}\ =>\ \textcolor{charliteral}{'7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'S'}\ =>\ \textcolor{charliteral}{'7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'T'}\ =>\ \textcolor{charliteral}{'8'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'U'}\ =>\ \textcolor{charliteral}{'8'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'V'}\ =>\ \textcolor{charliteral}{'8'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'W'}\ =>\ \textcolor{charliteral}{'9'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'X'}\ =>\ \textcolor{charliteral}{'9'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'Y'}\ =>\ \textcolor{charliteral}{'9'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'Z'}\ =>\ \textcolor{charliteral}{'9'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_af26dd631c41b404c489a00727262edc7}\index{PhoneNumberUtil@{PhoneNumberUtil}!\$asciiDigitMappings@{\$asciiDigitMappings}}
+\index{\$asciiDigitMappings@{\$asciiDigitMappings}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{\$asciiDigitMappings}{\$asciiDigitMappings}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_af26dd631c41b404c489a00727262edc7} 
+\$ascii\+Digit\+Mappings\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ array(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'0'}\ =>\ \textcolor{charliteral}{'0'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'1'}\ =>\ \textcolor{charliteral}{'1'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'2'}\ =>\ \textcolor{charliteral}{'2'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'3'}\ =>\ \textcolor{charliteral}{'3'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'4'}\ =>\ \textcolor{charliteral}{'4'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'5'}\ =>\ \textcolor{charliteral}{'5'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'6'}\ =>\ \textcolor{charliteral}{'6'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'7'}\ =>\ \textcolor{charliteral}{'7'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'8'}\ =>\ \textcolor{charliteral}{'8'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{charliteral}{'9'}\ =>\ \textcolor{charliteral}{'9'},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classlibphonenumber_1_1_phone_number_util_a6191df0f00170d8bce9036e9c2671593}\index{PhoneNumberUtil@{PhoneNumberUtil}!REGEX\_FLAGS@{REGEX\_FLAGS}}
+\index{REGEX\_FLAGS@{REGEX\_FLAGS}!PhoneNumberUtil@{PhoneNumberUtil}}
+\doxysubsubsection{\texorpdfstring{REGEX\_FLAGS}{REGEX\_FLAGS}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_util_a6191df0f00170d8bce9036e9c2671593} 
+const REGEX\+\_\+\+FLAGS = \textquotesingle{}ui\textquotesingle{}}
+
+Flags to use when compiling regular expressions for phone numbers 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Phone\+Number\+Util.\+php\end{DoxyCompactItemize}

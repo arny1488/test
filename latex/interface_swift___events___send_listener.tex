@@ -1,0 +1,51 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Send\+Listener Interface Reference}
+\hypertarget{interface_swift___events___send_listener}{}\label{interface_swift___events___send_listener}\index{Swift\_Events\_SendListener@{Swift\_Events\_SendListener}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Send\+Listener\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.344538cm]{interface_swift___events___send_listener}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Listens for Messages being sent from within the Transport system.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Events\_SendListener@{Swift\_Events\_SendListener}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Events\_SendListener@{Swift\_Events\_SendListener}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implemented in \mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Anti\+Flood\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___bandwidth_monitor_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Bandwidth\+Monitor\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___decorator_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___impersonate_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Impersonate\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___message_logger_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Message\+Logger}}, \mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Redirecting\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___reporter_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Reporter\+Plugin}}, and \mbox{\hyperlink{class_swift___plugins___throttler_plugin_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Plugins\+\_\+\+Throttler\+Plugin}}.
+
+\Hypertarget{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Events\_SendListener@{Swift\_Events\_SendListener}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Events\_SendListener@{Swift\_Events\_SendListener}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implemented in \mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Anti\+Flood\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___bandwidth_monitor_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Bandwidth\+Monitor\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___decorator_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Decorator\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___impersonate_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Impersonate\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___message_logger_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Message\+Logger}}, \mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Redirecting\+Plugin}}, \mbox{\hyperlink{class_swift___plugins___reporter_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Reporter\+Plugin}}, and \mbox{\hyperlink{class_swift___plugins___throttler_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Plugins\+\_\+\+Throttler\+Plugin}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Send\+Listener.\+php\end{DoxyCompactItemize}

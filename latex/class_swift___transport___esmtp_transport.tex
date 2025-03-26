@@ -1,0 +1,479 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport Class Reference}
+\hypertarget{class_swift___transport___esmtp_transport}{}\label{class_swift___transport___esmtp_transport}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___transport___esmtp_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a55904fc93d77bc00b631f36cda3bf98d}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}} \$buf, array \$extension\+Handlers, \mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}} \$dispatcher, \$local\+Domain=\textquotesingle{}127.\+0.\+0.\+1\textquotesingle{}, \mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a3796cc8d08abefbb14f15fde02b883a9}{set\+Host}} (\$host)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a39895a44b52bdced039e698588aaf18e}{get\+Host}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a000ce1ff20433f6ac9297e01c31d0678}{set\+Port}} (\$port)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_afd4db46d3c12f47f0bee19cd2101be64}{get\+Port}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a3d80d4d51ec21d8237d6ed6808d70b8e}{set\+Timeout}} (\$timeout)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_abac5019c5daf3a27d739aa3a249fdb31}{get\+Timeout}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a8dd12512cd9e28def2c41e2e68d728b3}{set\+Encryption}} (\$encryption)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_abfb761bf347039614638dd671eec31a3}{get\+Encryption}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_ae53511167ff9af746d3dc2b4a45e9223}{set\+Stream\+Options}} (\$options)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a6c5065694a3fba67d5d6d85487d649f6}{get\+Stream\+Options}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a576fe979101ebb1791329a0aa2d87192}{set\+Source\+Ip}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_acd584a7846ea4a658b609500728ad5f1}{get\+Source\+Ip}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a111a9ab1f720371612fd8683fb609ad1}{set\+Pipelining}} (\$enabled)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a490046ada1c09a78a21a9612d3789e4d}{get\+Pipelining}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_ad4db6162314530f4afa6f739a6c9ce22}{set\+Extension\+Handlers}} (array \$handlers)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a4dbdc396206a0f07d830570cc24650b7}{get\+Extension\+Handlers}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_ae034560c3fa4247254560f4e082705f6}{execute\+Command}} (\$command, \$codes=\mbox{[}$\,$\mbox{]}, \&\$failures=null, \$pipeline=false, \$address=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a9f1179240d068c94a040021326032bed}{\+\_\+\+\_\+call}} (\$method, \$args)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a6181d2e7c40366ddd8b3639ace4258a4}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}} \$buf, \mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}} \$dispatcher, \$local\+Domain=\textquotesingle{}127.\+0.\+0.\+1\textquotesingle{}, \mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aca167d6eae84ad5946b0b982a46ed210}{set\+Local\+Domain}} (\$domain)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a1627a9f04f0c176a5581eaa08d01cf88}{get\+Local\+Domain}} ()
+\item 
+{\bfseries set\+Address\+Encoder} (\mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}} \$address\+Encoder)
+\item 
+{\bfseries get\+Address\+Encoder} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ae26c1e9de1a05d5b5dae90a079408ed0}{get\+Buffer}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct}} ()
+\item 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\item 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___transport___smtp_agent_ae26c1e9de1a05d5b5dae90a079408ed0}{get\+Buffer}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport___smtp_agent_ac512ee0aa0eb94043eb798cc991b842e}{execute\+Command}} (\$command, \$codes=\mbox{[}$\,$\mbox{]}, \&\$failures=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}{get\+Buffer\+Params}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a51df65d25c5384d5dc832c236a857355}{do\+Helo\+Command}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_aca41d865445be0a6a71484365c9890da}{do\+Mail\+From\+Command}} (\$address)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}{do\+Rcpt\+To\+Command}} (\$address)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a2f8ffd80780e4197f4d809495eda3e3c}{read\+Greeting}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_afcf9be955976a03fac855e020da31daf}{do\+Data\+Command}} (\&\$failed\+Recipients)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a2a6607a03863e786fc5183a8fb618b36}{stream\+Message}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ad6a09ec1eaabb551c4e46ddbcf0be2fb}{get\+Reverse\+Path}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a423361b4f57e9ef586f2b531f5e53492}{throw\+Exception}} (\mbox{\hyperlink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} \$e)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af3b318b14470cb61924788801622f2a9}{assert\+Response\+Code}} (\$response, \$wanted)
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a25b6254d51108bbc71b4d6b0a22ffe97}{get\+Full\+Response}} (\$seq)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af1862006a19e84e552f66189adc792ae}{\$buffer}}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a026c0305d62db3dbb5ad555bc077f018}{\$started}} = false
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aef9cf198312d2f89238a8e8e2f0f67f3}{\$domain}} = \textquotesingle{}\mbox{[}127.\+0.\+0.\+1\mbox{]}\textquotesingle{}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a9defbea70f3dcceef0b7b148a11e3e5e}{\$event\+Dispatcher}}
+\item 
+{\bfseries \$address\+Encoder}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a17ef6db592279caf905553fcc26fe1cc}{\$pipelining}} = null
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ab606d7bce1ab858b1d2cc40487872c57}{\$pipeline}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a7d4de34f9a0aa29ad82e892dc24ac757}{\$source\+Ip}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sends Messages over SMTP with ESMTP support.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___transport___esmtp_transport_a55904fc93d77bc00b631f36cda3bf98d}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a55904fc93d77bc00b631f36cda3bf98d} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}}]{\$buf}{, }\item[{array}]{\$extension\+Handlers}{, }\item[{\mbox{\hyperlink{interface_swift___events___event_dispatcher}{Swift\+\_\+\+Events\+\_\+\+Event\+Dispatcher}}}]{\$dispatcher}{, }\item[{}]{\$local\+Domain}{ = {\ttfamily \textquotesingle{}127.0.0.1\textquotesingle{}}, }\item[{\mbox{\hyperlink{interface_swift___address_encoder}{Swift\+\_\+\+Address\+Encoder}}}]{\$address\+Encoder}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Creates a new Esmtp\+Transport using the given I/O buffer.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport___esmtp_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}\mbox{[}$\,$\mbox{]} & {\em \$extension\+Handlers} & \\
+\hline
+string & {\em \$local\+Domain} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___esmtp_transport_a9f1179240d068c94a040021326032bed}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!\_\_call@{\_\_call}}
+\index{\_\_call@{\_\_call}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{\_\_call()}{\_\_call()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a9f1179240d068c94a040021326032bed} 
+\+\_\+\+\_\+call (\begin{DoxyParamCaption}\item[{}]{\$method}{, }\item[{}]{\$args}{}\end{DoxyParamCaption})}
+
+Mixin handling method for ESMTP handlers \Hypertarget{class_swift___transport___esmtp_transport_a51df65d25c5384d5dc832c236a857355}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!doHeloCommand@{doHeloCommand}}
+\index{doHeloCommand@{doHeloCommand}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doHeloCommand()}{doHeloCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a51df65d25c5384d5dc832c236a857355} 
+do\+Helo\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overridden to perform EHLO instead 
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a51df65d25c5384d5dc832c236a857355}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_aca41d865445be0a6a71484365c9890da}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!doMailFromCommand@{doMailFromCommand}}
+\index{doMailFromCommand@{doMailFromCommand}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doMailFromCommand()}{doMailFromCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_aca41d865445be0a6a71484365c9890da} 
+do\+Mail\+From\+Command (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overridden to add Extension support 
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_aca41d865445be0a6a71484365c9890da}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!doRcptToCommand@{doRcptToCommand}}
+\index{doRcptToCommand@{doRcptToCommand}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{doRcptToCommand()}{doRcptToCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72} 
+do\+Rcpt\+To\+Command (\begin{DoxyParamCaption}\item[{}]{\$address}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Overridden to add Extension support 
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a3ce244b373b45a0e8dd61f9ae765bf72}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_ae034560c3fa4247254560f4e082705f6}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_ae034560c3fa4247254560f4e082705f6} 
+execute\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$codes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\&}]{\$failures}{ = {\ttfamily null}, }\item[{}]{\$pipeline}{ = {\ttfamily false}, }\item[{}]{\$address}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run a command against the buffer, expecting the given response codes.
+
+If no response codes are given, the response will not be validated. If codes are given, an exception will be thrown on an invalid response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+int\mbox{[}$\,$\mbox{]} & {\em \$codes} & \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$failures} & An array of failures by-\/reference \\
+\hline
+bool & {\em \$pipeline} & Do not wait for response \\
+\hline
+string & {\em \$address} & the address, if command is RCPT TO\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null The server response, or null if pipelining is enabled 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ae034560c3fa4247254560f4e082705f6}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getBufferParams@{getBufferParams}}
+\index{getBufferParams@{getBufferParams}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getBufferParams()}{getBufferParams()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880} 
+get\+Buffer\+Params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get the params to initialize the buffer 
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a4a2a79fa1ee6f6e63812f014c2ae2880}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_abfb761bf347039614638dd671eec31a3}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getEncryption@{getEncryption}}
+\index{getEncryption@{getEncryption}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getEncryption()}{getEncryption()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_abfb761bf347039614638dd671eec31a3} 
+get\+Encryption (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the encryption type.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a4dbdc396206a0f07d830570cc24650b7}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getExtensionHandlers@{getExtensionHandlers}}
+\index{getExtensionHandlers@{getExtensionHandlers}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getExtensionHandlers()}{getExtensionHandlers()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a4dbdc396206a0f07d830570cc24650b7} 
+get\+Extension\+Handlers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get ESMTP extension handlers.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport___esmtp_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a39895a44b52bdced039e698588aaf18e}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getHost@{getHost}}
+\index{getHost@{getHost}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getHost()}{getHost()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a39895a44b52bdced039e698588aaf18e} 
+get\+Host (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the host to connect to.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a490046ada1c09a78a21a9612d3789e4d}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getPipelining@{getPipelining}}
+\index{getPipelining@{getPipelining}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getPipelining()}{getPipelining()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a490046ada1c09a78a21a9612d3789e4d} 
+get\+Pipelining (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns whether SMTP pipelining is enabled.
+
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}null a boolean if pipelining is explicitly enabled or disabled, or null if support is auto-\/detected 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_afd4db46d3c12f47f0bee19cd2101be64}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getPort@{getPort}}
+\index{getPort@{getPort}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getPort()}{getPort()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_afd4db46d3c12f47f0bee19cd2101be64} 
+get\+Port (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the port to connect to.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_acd584a7846ea4a658b609500728ad5f1}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getSourceIp@{getSourceIp}}
+\index{getSourceIp@{getSourceIp}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getSourceIp()}{getSourceIp()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_acd584a7846ea4a658b609500728ad5f1} 
+get\+Source\+Ip (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the \doxylink{class_i_p}{IP} used to connect to the destination.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_acd584a7846ea4a658b609500728ad5f1}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_a6c5065694a3fba67d5d6d85487d649f6}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getStreamOptions@{getStreamOptions}}
+\index{getStreamOptions@{getStreamOptions}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getStreamOptions()}{getStreamOptions()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a6c5065694a3fba67d5d6d85487d649f6} 
+get\+Stream\+Options (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the stream context options.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_abac5019c5daf3a27d739aa3a249fdb31}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!getTimeout@{getTimeout}}
+\index{getTimeout@{getTimeout}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{getTimeout()}{getTimeout()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_abac5019c5daf3a27d739aa3a249fdb31} 
+get\+Timeout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the connection timeout.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a8dd12512cd9e28def2c41e2e68d728b3}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setEncryption@{setEncryption}}
+\index{setEncryption@{setEncryption}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setEncryption()}{setEncryption()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a8dd12512cd9e28def2c41e2e68d728b3} 
+set\+Encryption (\begin{DoxyParamCaption}\item[{}]{\$encryption}{}\end{DoxyParamCaption})}
+
+Set the encryption type (tls or ssl).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$encryption} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_ad4db6162314530f4afa6f739a6c9ce22}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setExtensionHandlers@{setExtensionHandlers}}
+\index{setExtensionHandlers@{setExtensionHandlers}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setExtensionHandlers()}{setExtensionHandlers()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_ad4db6162314530f4afa6f739a6c9ce22} 
+set\+Extension\+Handlers (\begin{DoxyParamCaption}\item[{array}]{\$handlers}{}\end{DoxyParamCaption})}
+
+Set ESMTP extension handlers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport___esmtp_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}\mbox{[}$\,$\mbox{]} & {\em \$handlers} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a3796cc8d08abefbb14f15fde02b883a9}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setHost@{setHost}}
+\index{setHost@{setHost}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setHost()}{setHost()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a3796cc8d08abefbb14f15fde02b883a9} 
+set\+Host (\begin{DoxyParamCaption}\item[{}]{\$host}{}\end{DoxyParamCaption})}
+
+Set the host to connect to.
+
+Literal IPv6 addresses should be wrapped in square brackets.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a111a9ab1f720371612fd8683fb609ad1}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setPipelining@{setPipelining}}
+\index{setPipelining@{setPipelining}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setPipelining()}{setPipelining()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a111a9ab1f720371612fd8683fb609ad1} 
+set\+Pipelining (\begin{DoxyParamCaption}\item[{}]{\$enabled}{}\end{DoxyParamCaption})}
+
+Sets whether SMTP pipelining is enabled.
+
+By default, support is auto-\/detected using the PIPELINING SMTP extension. Use this function to override that in the unlikely event of compatibility issues.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$enabled} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a000ce1ff20433f6ac9297e01c31d0678}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setPort@{setPort}}
+\index{setPort@{setPort}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setPort()}{setPort()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a000ce1ff20433f6ac9297e01c31d0678} 
+set\+Port (\begin{DoxyParamCaption}\item[{}]{\$port}{}\end{DoxyParamCaption})}
+
+Set the port to connect to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$port} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a576fe979101ebb1791329a0aa2d87192}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setSourceIp@{setSourceIp}}
+\index{setSourceIp@{setSourceIp}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setSourceIp()}{setSourceIp()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a576fe979101ebb1791329a0aa2d87192} 
+set\+Source\+Ip (\begin{DoxyParamCaption}\item[{}]{\$source}{}\end{DoxyParamCaption})}
+
+Sets the source \doxylink{class_i_p}{IP}.
+
+IPv6 addresses should be wrapped in square brackets.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a576fe979101ebb1791329a0aa2d87192}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}.
+
+\Hypertarget{class_swift___transport___esmtp_transport_ae53511167ff9af746d3dc2b4a45e9223}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setStreamOptions@{setStreamOptions}}
+\index{setStreamOptions@{setStreamOptions}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setStreamOptions()}{setStreamOptions()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_ae53511167ff9af746d3dc2b4a45e9223} 
+set\+Stream\+Options (\begin{DoxyParamCaption}\item[{}]{\$options}{}\end{DoxyParamCaption})}
+
+Sets the stream context options.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$options} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___esmtp_transport_a3d80d4d51ec21d8237d6ed6808d70b8e}\index{Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Swift\_Transport\_EsmtpTransport@{Swift\_Transport\_EsmtpTransport}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp_transport_a3d80d4d51ec21d8237d6ed6808d70b8e} 
+set\+Timeout (\begin{DoxyParamCaption}\item[{}]{\$timeout}{}\end{DoxyParamCaption})}
+
+Set the connection timeout.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & seconds\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Esmtp\+Transport.\+php\end{DoxyCompactItemize}

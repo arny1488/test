@@ -1,0 +1,353 @@
+\doxysection{Swift\+\_\+\+Dependency\+Container Class Reference}
+\hypertarget{class_swift___dependency_container}{}\label{class_swift___dependency_container}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a7e892afad7f49c1528270c9ecd8516b9}{list\+Items}} ()
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_abe75b0b7747aa2987b725656f222f711}{has}} (\$item\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a69e873ebccc76dc54cd5d627468deb49}{lookup}} (\$item\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_ac8069b546c915eeec172cbc91decca7f}{create\+Dependencies\+For}} (\$item\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register}} (\$item\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a4415e06b2ddf142c90c351bcb29e2f01}{as\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a1daf81c2ff4e0a2e0fa7997d5e2d1ac2}{as\+Alias\+Of}} (\$\mbox{\hyperlink{class_swift___dependency_container_a69e873ebccc76dc54cd5d627468deb49}{lookup}})
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a3084f29be3f1dd4916e27e560a975d63}{as\+New\+Instance\+Of}} (\$class\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a40053f4f8af480e0e8c0c48da6316d25}{as\+Shared\+Instance\+Of}} (\$class\+Name)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a12b8efb717cb31322bfa4d1d75146979}{as\+Array}} ()
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}{with\+Dependencies}} (array \$lookups)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}{add\+Constructor\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}{add\+Constructor\+Lookup}} (\$\mbox{\hyperlink{class_swift___dependency_container_a69e873ebccc76dc54cd5d627468deb49}{lookup}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_swift___dependency_container_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_swift___dependency_container_a4be0c3daad8d44328da4f5e85195efd2}{TYPE\+\_\+\+VALUE}} = 0x00001
+\item 
+const \mbox{\hyperlink{class_swift___dependency_container_a1b5bcf4634ac9010ec2ab7de9dd386d7}{TYPE\+\_\+\+INSTANCE}} = 0x00010
+\item 
+const \mbox{\hyperlink{class_swift___dependency_container_a5aa4cbbde0cbaeda66961e32111792e7}{TYPE\+\_\+\+SHARED}} = 0x00100
+\item 
+const \mbox{\hyperlink{class_swift___dependency_container_a15c45aa96cedb91aa429cffd7b66a620}{TYPE\+\_\+\+ALIAS}} = 0x01000
+\item 
+const \mbox{\hyperlink{class_swift___dependency_container_a11563c517f16ce832ff4fed40928a12b}{TYPE\+\_\+\+ARRAY}} = 0x10000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Dependency Injection container.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___dependency_container_a095c5d389db211932136b53f25f39685}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor should not be used.
+
+Use {\ttfamily \doxylink{class_swift___dependency_container_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance()}} instead. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!addConstructorLookup@{addConstructorLookup}}
+\index{addConstructorLookup@{addConstructorLookup}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{addConstructorLookup()}{addConstructorLookup()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a412816202b6b9618153c855551cb5891} 
+add\+Constructor\+Lookup (\begin{DoxyParamCaption}\item[{}]{\$lookup}{}\end{DoxyParamCaption})}
+
+Specify a dependency lookup for the constructor of the previously registered item.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}{with\+Dependencies()}, \doxylink{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}{add\+Constructor\+Value()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$lookup} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!addConstructorValue@{addConstructorValue}}
+\index{addConstructorValue@{addConstructorValue}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{addConstructorValue()}{addConstructorValue()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312} 
+add\+Constructor\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Specify a literal (non looked up) value for the constructor of the previously registered item.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}{with\+Dependencies()}, \doxylink{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}{add\+Constructor\+Lookup()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a1daf81c2ff4e0a2e0fa7997d5e2d1ac2}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!asAliasOf@{asAliasOf}}
+\index{asAliasOf@{asAliasOf}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{asAliasOf()}{asAliasOf()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a1daf81c2ff4e0a2e0fa7997d5e2d1ac2} 
+as\+Alias\+Of (\begin{DoxyParamCaption}\item[{}]{\$lookup}{}\end{DoxyParamCaption})}
+
+Specify the previously registered item as an alias of another item.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$lookup} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a12b8efb717cb31322bfa4d1d75146979}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!asArray@{asArray}}
+\index{asArray@{asArray}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{asArray()}{asArray()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a12b8efb717cb31322bfa4d1d75146979} 
+as\+Array (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Specify the previously registered item as array of dependencies.
+
+{\ttfamily \doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}} must be called before this will work.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a3084f29be3f1dd4916e27e560a975d63}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!asNewInstanceOf@{asNewInstanceOf}}
+\index{asNewInstanceOf@{asNewInstanceOf}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{asNewInstanceOf()}{asNewInstanceOf()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a3084f29be3f1dd4916e27e560a975d63} 
+as\+New\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$class\+Name}{}\end{DoxyParamCaption})}
+
+Specify the previously registered item as a new instance of \$class\+Name.
+
+{\ttfamily \doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}} must be called before this will work. Any arguments can be set with {\ttfamily \doxylink{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}{with\+Dependencies()}}, {\ttfamily \doxylink{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}{add\+Constructor\+Value()}} or {\ttfamily \doxylink{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}{add\+Constructor\+Lookup()}}.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}{with\+Dependencies()}, \doxylink{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}{add\+Constructor\+Value()}, \doxylink{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}{add\+Constructor\+Lookup()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a40053f4f8af480e0e8c0c48da6316d25}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!asSharedInstanceOf@{asSharedInstanceOf}}
+\index{asSharedInstanceOf@{asSharedInstanceOf}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{asSharedInstanceOf()}{asSharedInstanceOf()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a40053f4f8af480e0e8c0c48da6316d25} 
+as\+Shared\+Instance\+Of (\begin{DoxyParamCaption}\item[{}]{\$class\+Name}{}\end{DoxyParamCaption})}
+
+Specify the previously registered item as a shared instance of \$class\+Name.
+
+{\ttfamily \doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}} must be called before this will work.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a4415e06b2ddf142c90c351bcb29e2f01}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!asValue@{asValue}}
+\index{asValue@{asValue}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{asValue()}{asValue()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a4415e06b2ddf142c90c351bcb29e2f01} 
+as\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Specify the previously registered item as a literal value.
+
+{\ttfamily \doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}} must be called before this will work.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_ac8069b546c915eeec172cbc91decca7f}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!createDependenciesFor@{createDependenciesFor}}
+\index{createDependenciesFor@{createDependenciesFor}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{createDependenciesFor()}{createDependenciesFor()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_ac8069b546c915eeec172cbc91decca7f} 
+create\+Dependencies\+For (\begin{DoxyParamCaption}\item[{}]{\$item\+Name}{}\end{DoxyParamCaption})}
+
+Create an array of arguments passed to the constructor of \$item\+Name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_ac93fbec81f07e5d15f80db907e63dc10}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_ac93fbec81f07e5d15f80db907e63dc10} 
+static get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a singleton of the Dependency\+Container.
+
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_abe75b0b7747aa2987b725656f222f711}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!has@{has}}
+\index{has@{has}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_abe75b0b7747aa2987b725656f222f711} 
+has (\begin{DoxyParamCaption}\item[{}]{\$item\+Name}{}\end{DoxyParamCaption})}
+
+Test if an item is registered in this container with the given name.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a7e892afad7f49c1528270c9ecd8516b9}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!listItems@{listItems}}
+\index{listItems@{listItems}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{listItems()}{listItems()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a7e892afad7f49c1528270c9ecd8516b9} 
+list\+Items (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+List the names of all items stored in the Container.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a69e873ebccc76dc54cd5d627468deb49}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!lookup@{lookup}}
+\index{lookup@{lookup}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a69e873ebccc76dc54cd5d627468deb49} 
+lookup (\begin{DoxyParamCaption}\item[{}]{\$item\+Name}{}\end{DoxyParamCaption})}
+
+Lookup the item with the given \$item\+Name.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}{register()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___dependency_exception}{Swift\+\_\+\+Dependency\+Exception}} & If the dependency is not found \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!register@{register}}
+\index{register@{register}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a748eaea53d702965324d81a7ba975b63} 
+register (\begin{DoxyParamCaption}\item[{}]{\$item\+Name}{}\end{DoxyParamCaption})}
+
+Register a new dependency with \$item\+Name.
+
+This method returns the current Dependency\+Container instance because it requires the use of the fluid interface to set the specific details for the dependency.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a3084f29be3f1dd4916e27e560a975d63}{as\+New\+Instance\+Of()}, \doxylink{class_swift___dependency_container_a40053f4f8af480e0e8c0c48da6316d25}{as\+Shared\+Instance\+Of()}, \doxylink{class_swift___dependency_container_a4415e06b2ddf142c90c351bcb29e2f01}{as\+Value()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item\+Name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!withDependencies@{withDependencies}}
+\index{withDependencies@{withDependencies}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{withDependencies()}{withDependencies()}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a4ef0295a5aa96ab3a664121a784eba1e} 
+with\+Dependencies (\begin{DoxyParamCaption}\item[{array}]{\$lookups}{}\end{DoxyParamCaption})}
+
+Specify a list of injected dependencies for the previously registered item.
+
+This method takes an array of lookup names.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___dependency_container_a9392c1672949c3efe4cb06280212d312}{add\+Constructor\+Value()}, \doxylink{class_swift___dependency_container_a412816202b6b9618153c855551cb5891}{add\+Constructor\+Lookup()}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_swift___dependency_container_a15c45aa96cedb91aa429cffd7b66a620}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!TYPE\_ALIAS@{TYPE\_ALIAS}}
+\index{TYPE\_ALIAS@{TYPE\_ALIAS}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_ALIAS}{TYPE\_ALIAS}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a15c45aa96cedb91aa429cffd7b66a620} 
+const TYPE\+\_\+\+ALIAS = 0x01000}
+
+Constant for aliases \Hypertarget{class_swift___dependency_container_a11563c517f16ce832ff4fed40928a12b}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!TYPE\_ARRAY@{TYPE\_ARRAY}}
+\index{TYPE\_ARRAY@{TYPE\_ARRAY}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_ARRAY}{TYPE\_ARRAY}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a11563c517f16ce832ff4fed40928a12b} 
+const TYPE\+\_\+\+ARRAY = 0x10000}
+
+Constant for arrays \Hypertarget{class_swift___dependency_container_a1b5bcf4634ac9010ec2ab7de9dd386d7}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!TYPE\_INSTANCE@{TYPE\_INSTANCE}}
+\index{TYPE\_INSTANCE@{TYPE\_INSTANCE}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_INSTANCE}{TYPE\_INSTANCE}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a1b5bcf4634ac9010ec2ab7de9dd386d7} 
+const TYPE\+\_\+\+INSTANCE = 0x00010}
+
+Constant for new instance types \Hypertarget{class_swift___dependency_container_a5aa4cbbde0cbaeda66961e32111792e7}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!TYPE\_SHARED@{TYPE\_SHARED}}
+\index{TYPE\_SHARED@{TYPE\_SHARED}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_SHARED}{TYPE\_SHARED}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a5aa4cbbde0cbaeda66961e32111792e7} 
+const TYPE\+\_\+\+SHARED = 0x00100}
+
+Constant for shared instance types \Hypertarget{class_swift___dependency_container_a4be0c3daad8d44328da4f5e85195efd2}\index{Swift\_DependencyContainer@{Swift\_DependencyContainer}!TYPE\_VALUE@{TYPE\_VALUE}}
+\index{TYPE\_VALUE@{TYPE\_VALUE}!Swift\_DependencyContainer@{Swift\_DependencyContainer}}
+\doxysubsubsection{\texorpdfstring{TYPE\_VALUE}{TYPE\_VALUE}}
+{\footnotesize\ttfamily \label{class_swift___dependency_container_a4be0c3daad8d44328da4f5e85195efd2} 
+const TYPE\+\_\+\+VALUE = 0x00001}
+
+Constant for literal value types 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Dependency\+Container.\+php\end{DoxyCompactItemize}

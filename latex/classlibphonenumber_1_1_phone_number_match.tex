@@ -1,0 +1,87 @@
+\doxysection{Phone\+Number\+Match Class Reference}
+\hypertarget{classlibphonenumber_1_1_phone_number_match}{}\label{classlibphonenumber_1_1_phone_number_match}\index{PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a6353c29b89817a8db541821a8002cc72}{\+\_\+\+\_\+construct}} (\$\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_af8fa59992209e36dccb3eefb0f75531f}{start}}, \$\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a9e710921c065cf36bb352dbc8024178e}{raw\+String}}, \mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a110a6c4930e94e04a3bc4bd71c647158}{number}})
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a110a6c4930e94e04a3bc4bd71c647158}{number}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a817082ace0e2589d27b22890290aa4a9}{end}} ()
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_phone_number_match_a9e710921c065cf36bb352dbc8024178e}{raw\+String}} ()
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_a7516ca30af0db3cdbf9a7739b48ce91d}\label{classlibphonenumber_1_1_phone_number_match_a7516ca30af0db3cdbf9a7739b48ce91d} 
+{\bfseries \+\_\+\+\_\+to\+String} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_a6353c29b89817a8db541821a8002cc72}\index{PhoneNumberMatch@{PhoneNumberMatch}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_match_a6353c29b89817a8db541821a8002cc72} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$start}{, }\item[{}]{\$raw\+String}{, }\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Creates a new match
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$start} & The start index into the target text \\
+\hline
+string & {\em \$raw\+String} & The matched substring of the target text \\
+\hline
+Phone\+Number & {\em \$number} & The matched phone number \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Null\+Pointer\+Exception 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_a817082ace0e2589d27b22890290aa4a9}\index{PhoneNumberMatch@{PhoneNumberMatch}!end@{end}}
+\index{end@{end}!PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_match_a817082ace0e2589d27b22890290aa4a9} 
+end (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the exclusive end index of the matched phone number within the searched text. \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_a110a6c4930e94e04a3bc4bd71c647158}\index{PhoneNumberMatch@{PhoneNumberMatch}!number@{number}}
+\index{number@{number}!PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection{\texorpdfstring{number()}{number()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_match_a110a6c4930e94e04a3bc4bd71c647158} 
+number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the phone number matched by the receiver. \begin{DoxyReturn}{Returns}
+Phone\+Number 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_a9e710921c065cf36bb352dbc8024178e}\index{PhoneNumberMatch@{PhoneNumberMatch}!rawString@{rawString}}
+\index{rawString@{rawString}!PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection{\texorpdfstring{rawString()}{rawString()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_match_a9e710921c065cf36bb352dbc8024178e} 
+raw\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the raw string matched as a phone number in the searched text. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1_phone_number_match_af8fa59992209e36dccb3eefb0f75531f}\index{PhoneNumberMatch@{PhoneNumberMatch}!start@{start}}
+\index{start@{start}!PhoneNumberMatch@{PhoneNumberMatch}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_phone_number_match_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the start index of the matched phone number within the searched text. \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Phone\+Number\+Match.\+php\end{DoxyCompactItemize}

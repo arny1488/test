@@ -1,0 +1,83 @@
+\doxysection{Mapper\+Factory Class Reference}
+\hypertarget{class_wide_image_1_1_mapper_factory}{}\label{class_wide_image_1_1_mapper_factory}\index{MapperFactory@{MapperFactory}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_wide_image_1_1_mapper_factory_a3cd11186cba95daa510f8b0dddcd8b6a}{select\+Mapper}} (\$uri, \$format=null)
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_aaf00d9d8b8673ede7cfdac1b813c752b}\label{class_wide_image_1_1_mapper_factory_aaf00d9d8b8673ede7cfdac1b813c752b} 
+static {\bfseries register\+Mapper} (\$mapper\+\_\+class\+\_\+name, \$mime\+\_\+type, \$extension)
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a555e8b8b9cf24b5d544429e08df51334}\label{class_wide_image_1_1_mapper_factory_a555e8b8b9cf24b5d544429e08df51334} 
+static {\bfseries get\+Custom\+Mappers} ()
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a26827f0befd6f6b55d87c87a9440c67c}\label{class_wide_image_1_1_mapper_factory_a26827f0befd6f6b55d87c87a9440c67c} 
+static {\bfseries unregister\+Custom\+Mapper} (\$mapper\+\_\+class\+\_\+name, \$mime\+\_\+type)
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_aba53f4e041e2994000653541751df587}\label{class_wide_image_1_1_mapper_factory_aba53f4e041e2994000653541751df587} 
+static {\bfseries determine\+Format} (\$uri, \$format=null)
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a5f80908eeb79bfa4739f8eed3ee3bdc3}\label{class_wide_image_1_1_mapper_factory_a5f80908eeb79bfa4739f8eed3ee3bdc3} 
+static {\bfseries mime\+Type} (\$format)
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a5816f0df65db01874b191c743969c9ee}\label{class_wide_image_1_1_mapper_factory_a5816f0df65db01874b191c743969c9ee} 
+static {\bfseries extract\+Extension} (\$uri)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a24787ce830a74a28cde0fa5212c754c2}\label{class_wide_image_1_1_mapper_factory_a24787ce830a74a28cde0fa5212c754c2} 
+static {\bfseries \$mappers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_wide_image_1_1_mapper_factory_a85b0b209f9b925a4e5ed3c636deae4de}\label{class_wide_image_1_1_mapper_factory_a85b0b209f9b925a4e5ed3c636deae4de} 
+static {\bfseries \$custom\+Mappers} = \mbox{[}$\,$\mbox{]}
+\item 
+static \mbox{\hyperlink{class_wide_image_1_1_mapper_factory_ab306383c89e095b30b8785ab572a81b1}{\$mime\+Table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wide_image_1_1_mapper_factory_a3cd11186cba95daa510f8b0dddcd8b6a}\index{MapperFactory@{MapperFactory}!selectMapper@{selectMapper}}
+\index{selectMapper@{selectMapper}!MapperFactory@{MapperFactory}}
+\doxysubsubsection{\texorpdfstring{selectMapper()}{selectMapper()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_mapper_factory_a3cd11186cba95daa510f8b0dddcd8b6a} 
+static select\+Mapper (\begin{DoxyParamCaption}\item[{}]{\$uri}{, }\item[{}]{\$format}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Returns a mapper, based on the \$uri and \$format
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$uri} & \doxylink{class_file}{File} URI \\
+\hline
+string & {\em \$format} & \doxylink{class_file}{File} format (extension or mime-\/type) or null \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_wide_image_1_1_mapper_factory_ab306383c89e095b30b8785ab572a81b1}\index{MapperFactory@{MapperFactory}!\$mimeTable@{\$mimeTable}}
+\index{\$mimeTable@{\$mimeTable}!MapperFactory@{MapperFactory}}
+\doxysubsubsection{\texorpdfstring{\$mimeTable}{\$mimeTable}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_mapper_factory_ab306383c89e095b30b8785ab572a81b1} 
+\$mime\+Table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/jpg'}\ \ \ =>\ \textcolor{stringliteral}{'JPEG'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/jpeg'}\ \ =>\ \textcolor{stringliteral}{'JPEG'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/pjpeg'}\ =>\ \textcolor{stringliteral}{'JPEG'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/gif'}\ \ \ =>\ \textcolor{stringliteral}{'GIF'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/png'}\ \ \ =>\ \textcolor{stringliteral}{'PNG'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'image/webp'}\ \ =>\ \textcolor{stringliteral}{'WEBP'}}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Image\+Processing/\+Wide\+Image/Mapper\+Factory.\+php\end{DoxyCompactItemize}

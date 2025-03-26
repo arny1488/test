@@ -1,0 +1,170 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Logger\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___logger_plugin}{}\label{class_swift___plugins___logger_plugin}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Logger\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.328063cm]{class_swift___plugins___logger_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_afdf5958659696aa3690cd8a76dcca912}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___plugins___logger}{Swift\+\_\+\+Plugins\+\_\+\+Logger}} \$logger)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a3e8ace22c1f21ebaba9c1415a106ed9b}{add}} (\$entry)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a5bf63e4ac70cfd9d97e3f2eab936ec8b}{dump}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a3f7432ec1503b5fb6d98ad0e47e33a5a}{command\+Sent}} (\mbox{\hyperlink{class_swift___events___command_event}{Swift\+\_\+\+Events\+\_\+\+Command\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a6bc4c6a078eeca42ae1c06c762e893fc}{response\+Received}} (\mbox{\hyperlink{class_swift___events___response_event}{Swift\+\_\+\+Events\+\_\+\+Response\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6}{before\+Transport\+Started}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_af66bb92cf83d64065627eabe3da1aba9}{transport\+Started}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a83a263e88843a2effd0c9fbda3d079d0}{before\+Transport\+Stopped}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_aa7565e467fe2861c865675ea48b9d3e6}{transport\+Stopped}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___logger_plugin_a73366ba58722202ff1c6c117961b1740}{exception\+Thrown}} (\mbox{\hyperlink{class_swift___events___transport_exception_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Exception\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Does real time logging of Transport level information.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___logger_plugin_afdf5958659696aa3690cd8a76dcca912}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_afdf5958659696aa3690cd8a76dcca912} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___plugins___logger}{Swift\+\_\+\+Plugins\+\_\+\+Logger}}}]{\$logger}{}\end{DoxyParamCaption})}
+
+Create a new Logger\+Plugin using \$logger. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___logger_plugin_a3e8ace22c1f21ebaba9c1415a106ed9b}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!add@{add}}
+\index{add@{add}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a3e8ace22c1f21ebaba9c1415a106ed9b} 
+add (\begin{DoxyParamCaption}\item[{}]{\$entry}{}\end{DoxyParamCaption})}
+
+Add a log entry.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$entry} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___logger_a3e8ace22c1f21ebaba9c1415a106ed9b}{Swift\+\_\+\+Plugins\+\_\+\+Logger}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!beforeTransportStarted@{beforeTransportStarted}}
+\index{beforeTransportStarted@{beforeTransportStarted}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeTransportStarted()}{beforeTransportStarted()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6} 
+before\+Transport\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked just before a Transport is started. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_a09c40fadcfae2f6ae2e39cea9d8297c6}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a83a263e88843a2effd0c9fbda3d079d0}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!beforeTransportStopped@{beforeTransportStopped}}
+\index{beforeTransportStopped@{beforeTransportStopped}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeTransportStopped()}{beforeTransportStopped()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a83a263e88843a2effd0c9fbda3d079d0} 
+before\+Transport\+Stopped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked just before a Transport is stopped. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_a83a263e88843a2effd0c9fbda3d079d0}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_aa821bec12eaa7e0f649397c9675ff505}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!clear@{clear}}
+\index{clear@{clear}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clear the log contents. 
+
+Implements \mbox{\hyperlink{interface_swift___plugins___logger_aa821bec12eaa7e0f649397c9675ff505}{Swift\+\_\+\+Plugins\+\_\+\+Logger}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a3f7432ec1503b5fb6d98ad0e47e33a5a}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!commandSent@{commandSent}}
+\index{commandSent@{commandSent}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{commandSent()}{commandSent()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a3f7432ec1503b5fb6d98ad0e47e33a5a} 
+command\+Sent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___command_event}{Swift\+\_\+\+Events\+\_\+\+Command\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately following a command being sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___command_listener_a3f7432ec1503b5fb6d98ad0e47e33a5a}{Swift\+\_\+\+Events\+\_\+\+Command\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a5bf63e4ac70cfd9d97e3f2eab936ec8b}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!dump@{dump}}
+\index{dump@{dump}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a5bf63e4ac70cfd9d97e3f2eab936ec8b} 
+dump (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get this log as a string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___logger_a5bf63e4ac70cfd9d97e3f2eab936ec8b}{Swift\+\_\+\+Plugins\+\_\+\+Logger}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a73366ba58722202ff1c6c117961b1740}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!exceptionThrown@{exceptionThrown}}
+\index{exceptionThrown@{exceptionThrown}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{exceptionThrown()}{exceptionThrown()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a73366ba58722202ff1c6c117961b1740} 
+exception\+Thrown (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_exception_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Exception\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked as a Transport\+Exception is thrown in the Transport system. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_exception_listener_a73366ba58722202ff1c6c117961b1740}{Swift\+\_\+\+Events\+\_\+\+Transport\+Exception\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_a6bc4c6a078eeca42ae1c06c762e893fc}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!responseReceived@{responseReceived}}
+\index{responseReceived@{responseReceived}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{responseReceived()}{responseReceived()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_a6bc4c6a078eeca42ae1c06c762e893fc} 
+response\+Received (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___response_event}{Swift\+\_\+\+Events\+\_\+\+Response\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately following a response coming back. 
+
+Implements \mbox{\hyperlink{interface_swift___events___response_listener_a6bc4c6a078eeca42ae1c06c762e893fc}{Swift\+\_\+\+Events\+\_\+\+Response\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_af66bb92cf83d64065627eabe3da1aba9}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!transportStarted@{transportStarted}}
+\index{transportStarted@{transportStarted}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{transportStarted()}{transportStarted()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_af66bb92cf83d64065627eabe3da1aba9} 
+transport\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Transport is started. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_af66bb92cf83d64065627eabe3da1aba9}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___logger_plugin_aa7565e467fe2861c865675ea48b9d3e6}\index{Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}!transportStopped@{transportStopped}}
+\index{transportStopped@{transportStopped}!Swift\_Plugins\_LoggerPlugin@{Swift\_Plugins\_LoggerPlugin}}
+\doxysubsubsection{\texorpdfstring{transportStopped()}{transportStopped()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___logger_plugin_aa7565e467fe2861c865675ea48b9d3e6} 
+transport\+Stopped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Transport is stopped. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_aa7565e467fe2861c865675ea48b9d3e6}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Logger\+Plugin.\+php\end{DoxyCompactItemize}

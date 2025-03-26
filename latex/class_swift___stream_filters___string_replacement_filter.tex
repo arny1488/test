@@ -1,0 +1,91 @@
+\doxysection{Swift\+\_\+\+Stream\+Filters\+\_\+\+String\+Replacement\+Filter Class Reference}
+\hypertarget{class_swift___stream_filters___string_replacement_filter}{}\label{class_swift___stream_filters___string_replacement_filter}\index{Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}}
+Inheritance diagram for Swift\+\_\+\+Stream\+Filters\+\_\+\+String\+Replacement\+Filter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___stream_filters___string_replacement_filter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___stream_filters___string_replacement_filter_ad3a7f126067c252903947d811c43072b}{\+\_\+\+\_\+construct}} (\$search, \$replace)
+\item 
+\mbox{\hyperlink{class_swift___stream_filters___string_replacement_filter_a718c299beb54ce75303c989b811dd597}{should\+Buffer}} (\$buffer)
+\item 
+\mbox{\hyperlink{class_swift___stream_filters___string_replacement_filter_a6d100585332705f8efd7e891e74004d6}{filter}} (\$buffer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Processes bytes as they pass through a buffer and replaces sequences in it.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___stream_filters___string_replacement_filter_ad3a7f126067c252903947d811c43072b}\index{Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___stream_filters___string_replacement_filter_ad3a7f126067c252903947d811c43072b} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$search}{, }\item[{}]{\$replace}{}\end{DoxyParamCaption})}
+
+Create a new String\+Replacement\+Filter with \$search and \$replace.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$search} & \\
+\hline
+string | array & {\em \$replace} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___stream_filters___string_replacement_filter_a6d100585332705f8efd7e891e74004d6}\index{Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}!filter@{filter}}
+\index{filter@{filter}!Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_swift___stream_filters___string_replacement_filter_a6d100585332705f8efd7e891e74004d6} 
+filter (\begin{DoxyParamCaption}\item[{}]{\$buffer}{}\end{DoxyParamCaption})}
+
+Perform the actual replacements on \$buffer and return the result.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___stream_filter_a6d100585332705f8efd7e891e74004d6}{Swift\+\_\+\+Stream\+Filter}}.
+
+\Hypertarget{class_swift___stream_filters___string_replacement_filter_a718c299beb54ce75303c989b811dd597}\index{Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}!shouldBuffer@{shouldBuffer}}
+\index{shouldBuffer@{shouldBuffer}!Swift\_StreamFilters\_StringReplacementFilter@{Swift\_StreamFilters\_StringReplacementFilter}}
+\doxysubsubsection{\texorpdfstring{shouldBuffer()}{shouldBuffer()}}
+{\footnotesize\ttfamily \label{class_swift___stream_filters___string_replacement_filter_a718c299beb54ce75303c989b811dd597} 
+should\+Buffer (\begin{DoxyParamCaption}\item[{}]{\$buffer}{}\end{DoxyParamCaption})}
+
+Returns true if based on the buffer passed more bytes should be buffered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$buffer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___stream_filter_a718c299beb54ce75303c989b811dd597}{Swift\+\_\+\+Stream\+Filter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Stream\+Filters/String\+Replacement\+Filter.\+php\end{DoxyCompactItemize}

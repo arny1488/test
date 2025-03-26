@@ -1,0 +1,70 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Reporter Interface Reference}
+\hypertarget{interface_swift___plugins___reporter}{}\label{interface_swift___plugins___reporter}\index{Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_swift___plugins___reporter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___plugins___reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}{notify}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \$address, \$result)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_swift___plugins___reporter_ab0e1dd6cf1e4b014b303f1603cc69dcb}{RESULT\+\_\+\+PASS}} = 0x01
+\item 
+const \mbox{\hyperlink{interface_swift___plugins___reporter_aa1f47070c7e684df0bec906be17b02c3}{RESULT\+\_\+\+FAIL}} = 0x10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The Reporter plugin sends pass/fail notification to a Reporter.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___plugins___reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}\index{Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}!notify@{notify}}
+\index{notify@{notify}!Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily \label{interface_swift___plugins___reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d} 
+notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{}]{\$address}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})}
+
+Notifies this Report\+Notifier that \$address failed or succeeded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+int & {\em \$result} & from {\ttfamily \doxylink{}{RESULT\+\_\+\+FAIL}} \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___plugins___reporters___hit_reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}{Swift\+\_\+\+Plugins\+\_\+\+Reporters\+\_\+\+Hit\+Reporter}}, and \mbox{\hyperlink{class_swift___plugins___reporters___html_reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}{Swift\+\_\+\+Plugins\+\_\+\+Reporters\+\_\+\+Html\+Reporter}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{interface_swift___plugins___reporter_aa1f47070c7e684df0bec906be17b02c3}\index{Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}!RESULT\_FAIL@{RESULT\_FAIL}}
+\index{RESULT\_FAIL@{RESULT\_FAIL}!Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}}
+\doxysubsubsection{\texorpdfstring{RESULT\_FAIL}{RESULT\_FAIL}}
+{\footnotesize\ttfamily \label{interface_swift___plugins___reporter_aa1f47070c7e684df0bec906be17b02c3} 
+const RESULT\+\_\+\+FAIL = 0x10}
+
+The recipient could not be accepted \Hypertarget{interface_swift___plugins___reporter_ab0e1dd6cf1e4b014b303f1603cc69dcb}\index{Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}!RESULT\_PASS@{RESULT\_PASS}}
+\index{RESULT\_PASS@{RESULT\_PASS}!Swift\_Plugins\_Reporter@{Swift\_Plugins\_Reporter}}
+\doxysubsubsection{\texorpdfstring{RESULT\_PASS}{RESULT\_PASS}}
+{\footnotesize\ttfamily \label{interface_swift___plugins___reporter_ab0e1dd6cf1e4b014b303f1603cc69dcb} 
+const RESULT\+\_\+\+PASS = 0x01}
+
+The recipient was accepted for delivery 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Reporter.\+php\end{DoxyCompactItemize}

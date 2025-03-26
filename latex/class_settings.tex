@@ -1,0 +1,104 @@
+\doxysection{Settings Class Reference}
+\hypertarget{class_settings}{}\label{class_settings}\index{Settings@{Settings}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_settings_a9f0be6ae273d3669e11c29910a0be338}{init}} ()
+\item 
+static \mbox{\hyperlink{class_settings_acefbef79a9dd23df9ab03f715c8234e4}{get}} (string \$type=\textquotesingle{}\textquotesingle{}, string \$key=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_settings_a18cd18f1845d951c48372a649e8366e6}{set}} (string \$type, string \$key, \$value)
+\item 
+static \mbox{\hyperlink{class_settings_a3bbe4309ddee9cadde0bebbf9fe67b74}{load\+User\+Settings}} (?string \$user\+\_\+id)
+\item 
+static \mbox{\hyperlink{class_settings_a385974b3f4e2dee47db36b9fc9f50382}{save\+User\+Settings}} (?string \$user\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_settings_af9d1e143761e1d2582453af073888143}\label{class_settings_af9d1e143761e1d2582453af073888143} 
+static array {\bfseries \$settings} = null
+\item 
+\Hypertarget{class_settings_aa8e6590d6b6d6aaa188b54cf9ee18723}\label{class_settings_aa8e6590d6b6d6aaa188b54cf9ee18723} 
+static \mbox{\hyperlink{class_settings}{Settings}} {\bfseries \$instance} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_settings_acefbef79a9dd23df9ab03f715c8234e4}\index{Settings@{Settings}!get@{get}}
+\index{get@{get}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_settings_acefbef79a9dd23df9ab03f715c8234e4} 
+static get (\begin{DoxyParamCaption}\item[{string}]{\$type}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$key}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get value by type and key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & раздел \\
+\hline
+string & {\em \$key} & ключ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array\texorpdfstring{$\vert$}{|}mixed\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_settings_a9f0be6ae273d3669e11c29910a0be338}\index{Settings@{Settings}!init@{init}}
+\index{init@{init}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_settings_a9f0be6ae273d3669e11c29910a0be338} 
+static init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialization
+
+\begin{DoxyReturn}{Returns}
+Settings\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_settings_a3bbe4309ddee9cadde0bebbf9fe67b74}\index{Settings@{Settings}!loadUserSettings@{loadUserSettings}}
+\index{loadUserSettings@{loadUserSettings}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{loadUserSettings()}{loadUserSettings()}}
+{\footnotesize\ttfamily \label{class_settings_a3bbe4309ddee9cadde0bebbf9fe67b74} 
+static load\+User\+Settings (\begin{DoxyParamCaption}\item[{?string}]{\$user\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load user settings
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\+\_\+id} & user ID \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_settings_a385974b3f4e2dee47db36b9fc9f50382}\index{Settings@{Settings}!saveUserSettings@{saveUserSettings}}
+\index{saveUserSettings@{saveUserSettings}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{saveUserSettings()}{saveUserSettings()}}
+{\footnotesize\ttfamily \label{class_settings_a385974b3f4e2dee47db36b9fc9f50382} 
+static save\+User\+Settings (\begin{DoxyParamCaption}\item[{?string}]{\$user\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Save user settings
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$user\+\_\+id} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_settings_a18cd18f1845d951c48372a649e8366e6}\index{Settings@{Settings}!set@{set}}
+\index{set@{set}!Settings@{Settings}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_settings_a18cd18f1845d951c48372a649e8366e6} 
+static set (\begin{DoxyParamCaption}\item[{string}]{\$type}{, }\item[{string}]{\$key}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set value by type and key
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & раздел \\
+\hline
+string & {\em \$key} & ключ \\
+\hline
+array | mixed | null & {\em \$value} & значение \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/core/Settings.\+php\end{DoxyCompactItemize}

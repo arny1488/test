@@ -1,0 +1,148 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Anti\+Flood\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___anti_flood_plugin}{}\label{class_swift___plugins___anti_flood_plugin}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Anti\+Flood\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___anti_flood_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a5f006c1e39708fb190c1e26663057f2f}{\+\_\+\+\_\+construct}} (\$threshold=99, \$\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a176bcee0424f978cd9da5de434bde676}{sleep}}=0, \mbox{\hyperlink{interface_swift___plugins___sleeper}{Swift\+\_\+\+Plugins\+\_\+\+Sleeper}} \$sleeper=null)
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a9c3571c0ccc50bef6fc9a58cf56a5f80}{set\+Threshold}} (\$threshold)
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_af8a92c09b90e58d1e6509243a1b5bb48}{get\+Threshold}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a876226893aed412315361e3a1b6f4fc7}{set\+Sleep\+Time}} (\$\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a176bcee0424f978cd9da5de434bde676}{sleep}})
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_aed36db5bb2922bca36793c5da3c45bab}{get\+Sleep\+Time}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___anti_flood_plugin_a176bcee0424f978cd9da5de434bde676}{sleep}} (\$seconds)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Reduces network flooding when sending large amounts of mail.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a5f006c1e39708fb190c1e26663057f2f}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a5f006c1e39708fb190c1e26663057f2f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$threshold}{ = {\ttfamily 99}, }\item[{}]{\$sleep}{ = {\ttfamily 0}, }\item[{\mbox{\hyperlink{interface_swift___plugins___sleeper}{Swift\+\_\+\+Plugins\+\_\+\+Sleeper}}}]{\$sleeper}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Anti\+Flood\+Plugin with \$threshold and \$sleep time.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$threshold} & \\
+\hline
+int & {\em \$sleep} & time \\
+\hline
+\doxylink{interface_swift___plugins___sleeper}{Swift\+\_\+\+Plugins\+\_\+\+Sleeper} & {\em \$sleeper} & (not needed really) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___anti_flood_plugin_aed36db5bb2922bca36793c5da3c45bab}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!getSleepTime@{getSleepTime}}
+\index{getSleepTime@{getSleepTime}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{getSleepTime()}{getSleepTime()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_aed36db5bb2922bca36793c5da3c45bab} 
+get\+Sleep\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of seconds to sleep for during a restart.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_af8a92c09b90e58d1e6509243a1b5bb48}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!getThreshold@{getThreshold}}
+\index{getThreshold@{getThreshold}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{getThreshold()}{getThreshold()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_af8a92c09b90e58d1e6509243a1b5bb48} 
+get\+Threshold (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the number of emails to send before restarting.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a876226893aed412315361e3a1b6f4fc7}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!setSleepTime@{setSleepTime}}
+\index{setSleepTime@{setSleepTime}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{setSleepTime()}{setSleepTime()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a876226893aed412315361e3a1b6f4fc7} 
+set\+Sleep\+Time (\begin{DoxyParamCaption}\item[{}]{\$sleep}{}\end{DoxyParamCaption})}
+
+Set the number of seconds to sleep for during a restart.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sleep} & time \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a9c3571c0ccc50bef6fc9a58cf56a5f80}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!setThreshold@{setThreshold}}
+\index{setThreshold@{setThreshold}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{setThreshold()}{setThreshold()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a9c3571c0ccc50bef6fc9a58cf56a5f80} 
+set\+Threshold (\begin{DoxyParamCaption}\item[{}]{\$threshold}{}\end{DoxyParamCaption})}
+
+Set the number of emails to send before restarting.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$threshold} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___plugins___anti_flood_plugin_a176bcee0424f978cd9da5de434bde676}\index{Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}!sleep@{sleep}}
+\index{sleep@{sleep}!Swift\_Plugins\_AntiFloodPlugin@{Swift\_Plugins\_AntiFloodPlugin}}
+\doxysubsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___anti_flood_plugin_a176bcee0424f978cd9da5de434bde676} 
+sleep (\begin{DoxyParamCaption}\item[{}]{\$seconds}{}\end{DoxyParamCaption})}
+
+Sleep for \$seconds.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$seconds} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___sleeper_a176bcee0424f978cd9da5de434bde676}{Swift\+\_\+\+Plugins\+\_\+\+Sleeper}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Anti\+Flood\+Plugin.\+php\end{DoxyCompactItemize}

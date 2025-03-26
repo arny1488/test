@@ -1,0 +1,134 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Redirecting\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___redirecting_plugin}{}\label{class_swift___plugins___redirecting_plugin}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Redirecting\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___redirecting_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_ab249c95769ebfee87d2ca23849ee1759}{\+\_\+\+\_\+construct}} (\$recipient, array \$whitelist=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a945ffe5b84beba10d93568796a86b5e7}{set\+Recipient}} (\$recipient)
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a14ad3e290231897f1be73086b9912fbc}{get\+Recipient}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_abb530b9c5a076980e6ba495dce028db3}{set\+Whitelist}} (array \$whitelist)
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a7331adeb0481414743674d2f6166565e}{get\+Whitelist}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___redirecting_plugin_a14b04e21f494f1e064157cfcffbcdc0c}{is\+Whitelisted}} (\$recipient)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Redirects all email to a single recipient.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___redirecting_plugin_ab249c95769ebfee87d2ca23849ee1759}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_ab249c95769ebfee87d2ca23849ee1759} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$recipient}{, }\item[{array}]{\$whitelist}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new Redirecting\+Plugin.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$recipient} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___redirecting_plugin_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___redirecting_plugin_a14ad3e290231897f1be73086b9912fbc}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!getRecipient@{getRecipient}}
+\index{getRecipient@{getRecipient}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{getRecipient()}{getRecipient()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a14ad3e290231897f1be73086b9912fbc} 
+get\+Recipient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the recipient of all messages.
+
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___redirecting_plugin_a7331adeb0481414743674d2f6166565e}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!getWhitelist@{getWhitelist}}
+\index{getWhitelist@{getWhitelist}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{getWhitelist()}{getWhitelist()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a7331adeb0481414743674d2f6166565e} 
+get\+Whitelist (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the whitelist.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___redirecting_plugin_a14b04e21f494f1e064157cfcffbcdc0c}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!isWhitelisted@{isWhitelisted}}
+\index{isWhitelisted@{isWhitelisted}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{isWhitelisted()}{isWhitelisted()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a14b04e21f494f1e064157cfcffbcdc0c} 
+is\+Whitelisted (\begin{DoxyParamCaption}\item[{}]{\$recipient}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Matches address against whitelist of regular expressions.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___redirecting_plugin_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___redirecting_plugin_a945ffe5b84beba10d93568796a86b5e7}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!setRecipient@{setRecipient}}
+\index{setRecipient@{setRecipient}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{setRecipient()}{setRecipient()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_a945ffe5b84beba10d93568796a86b5e7} 
+set\+Recipient (\begin{DoxyParamCaption}\item[{}]{\$recipient}{}\end{DoxyParamCaption})}
+
+Set the recipient of all messages.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$recipient} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___plugins___redirecting_plugin_abb530b9c5a076980e6ba495dce028db3}\index{Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}!setWhitelist@{setWhitelist}}
+\index{setWhitelist@{setWhitelist}!Swift\_Plugins\_RedirectingPlugin@{Swift\_Plugins\_RedirectingPlugin}}
+\doxysubsubsection{\texorpdfstring{setWhitelist()}{setWhitelist()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___redirecting_plugin_abb530b9c5a076980e6ba495dce028db3} 
+set\+Whitelist (\begin{DoxyParamCaption}\item[{array}]{\$whitelist}{}\end{DoxyParamCaption})}
+
+Set a list of regular expressions to whitelist certain recipients. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Redirecting\+Plugin.\+php\end{DoxyCompactItemize}

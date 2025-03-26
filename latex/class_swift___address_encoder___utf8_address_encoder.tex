@@ -1,0 +1,45 @@
+\doxysection{Swift\+\_\+\+Address\+Encoder\+\_\+\+Utf8\+Address\+Encoder Class Reference}
+\hypertarget{class_swift___address_encoder___utf8_address_encoder}{}\label{class_swift___address_encoder___utf8_address_encoder}\index{Swift\_AddressEncoder\_Utf8AddressEncoder@{Swift\_AddressEncoder\_Utf8AddressEncoder}}
+Inheritance diagram for Swift\+\_\+\+Address\+Encoder\+\_\+\+Utf8\+Address\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___address_encoder___utf8_address_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___address_encoder___utf8_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}{encode\+String}} (string \$address)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A UTF-\/8 email address encoder.
+
+Returns the email address verbatimly in UTF-\/8 as permitted by RFC 6531 and RFC 6532. It supports addresses containing non-\/\+ASCII characters in both local-\/part and domain (i.\+e. on both sides of @).
+
+This encoder must be used together with \doxylink{class_swift___transport___esmtp___smtp_utf8_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Smtp\+Utf8\+Handler} and requires that the outbound SMTP server supports the SMTPUTF8 extension.
+
+If your outbound SMTP server does not support SMTPUTF8, use \doxylink{class_swift___address_encoder___idn_address_encoder}{Swift\+\_\+\+Address\+Encoder\+\_\+\+Idn\+Address\+Encoder} instead. This allows sending to email addresses with non-\/\+ASCII characters in the domain, but not in local-\/part.
+
+\begin{DoxyAuthor}{Author}
+Christian Schmidt 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___address_encoder___utf8_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}\index{Swift\_AddressEncoder\_Utf8AddressEncoder@{Swift\_AddressEncoder\_Utf8AddressEncoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_AddressEncoder\_Utf8AddressEncoder@{Swift\_AddressEncoder\_Utf8AddressEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___address_encoder___utf8_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76} 
+encode\+String (\begin{DoxyParamCaption}\item[{string}]{\$address}{}\end{DoxyParamCaption})}
+
+Returns the address verbatimly. 
+
+Implements \mbox{\hyperlink{interface_swift___address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}{Swift\+\_\+\+Address\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Address\+Encoder/Utf8\+Address\+Encoder.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,94 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+XOAuth2\+Authenticator Class Reference}
+\hypertarget{class_swift___transport___esmtp___auth___x_o_auth2_authenticator}{}\label{class_swift___transport___esmtp___auth___x_o_auth2_authenticator}\index{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+XOAuth2\+Authenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___transport___esmtp___auth___x_o_auth2_authenticator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e624347a41af5150f04849d5f97c806}{get\+Auth\+Keyword}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a7e1ecd85f2649983f3d5cf5807d11b20}{authenticate}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$email, \$token)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e287377b80d868b7521527b6f55b3fe}{construct\+XOAuth2\+Params}} (\$email, \$token)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles XOAUTH2 authentication.
+
+Example\+: {\ttfamily  \$transport = (new \doxylink{class_swift___smtp_transport}{Swift\+\_\+\+Smtp\+Transport}(\textquotesingle{}smtp.\+gmail.\+com\textquotesingle{}, 587, \textquotesingle{}tls\textquotesingle{})) -\/\texorpdfstring{$>$}{>}set\+Auth\+Mode(\textquotesingle{}XOAUTH2\textquotesingle{}) -\/\texorpdfstring{$>$}{>}set\+Username(\textquotesingle{}YOUR\+\_\+\+EMAIL\+\_\+\+ADDRESS\textquotesingle{}) -\/\texorpdfstring{$>$}{>}set\+Password(\textquotesingle{}YOUR\+\_\+\+ACCESS\+\_\+\+TOKEN\textquotesingle{}); }
+
+\begin{DoxyAuthor}{Author}
+xu.\+li\href{mailto:AthenaLightenedMyPath@gmail.com}{\texttt{ Athena\+Lightened\+My\+Path@gmail.\+com}}
+\end{DoxyAuthor}
+\begin{DoxySeeAlso}{See also}
+\href{https://developers.google.com/google-apps/gmail/xoauth2_protocol}{\texttt{ https\+://developers.\+google.\+com/google-\/apps/gmail/xoauth2\+\_\+protocol}} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a7e1ecd85f2649983f3d5cf5807d11b20}\index{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a7e1ecd85f2649983f3d5cf5807d11b20} 
+authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$email}{, }\item[{}]{\$token}{}\end{DoxyParamCaption})}
+
+\{Try to authenticate the user with \$username and \$password.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if authentication worked (returning false is deprecated, throw a \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception} instead)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} & Allows the message to bubble up when authentication was not successful\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+\Hypertarget{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e287377b80d868b7521527b6f55b3fe}\index{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}!constructXOAuth2Params@{constructXOAuth2Params}}
+\index{constructXOAuth2Params@{constructXOAuth2Params}!Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}}
+\doxysubsubsection{\texorpdfstring{constructXOAuth2Params()}{constructXOAuth2Params()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e287377b80d868b7521527b6f55b3fe} 
+construct\+XOAuth2\+Params (\begin{DoxyParamCaption}\item[{}]{\$email}{, }\item[{}]{\$token}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Construct the auth parameter.
+
+\begin{DoxySeeAlso}{See also}
+\href{https://developers.google.com/google-apps/gmail/xoauth2_protocol\#the_sasl_xoauth2_mechanism}{\texttt{ https\+://developers.\+google.\+com/google-\/apps/gmail/xoauth2\+\_\+protocol\#the\+\_\+sasl\+\_\+xoauth2\+\_\+mechanism}} 
+\end{DoxySeeAlso}
+\Hypertarget{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e624347a41af5150f04849d5f97c806}\index{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}!getAuthKeyword@{getAuthKeyword}}
+\index{getAuthKeyword@{getAuthKeyword}!Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator@{Swift\_Transport\_Esmtp\_Auth\_XOAuth2Authenticator}}
+\doxysubsubsection{\texorpdfstring{getAuthKeyword()}{getAuthKeyword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___x_o_auth2_authenticator_a0e624347a41af5150f04849d5f97c806} 
+get\+Auth\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the AUTH mechanism this Authenticator handles.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/\+Esmtp/\+Auth/XOAuth2\+Authenticator.\+php\end{DoxyCompactItemize}

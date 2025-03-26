@@ -1,0 +1,85 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Message\+Logger Class Reference}
+\hypertarget{class_swift___plugins___message_logger}{}\label{class_swift___plugins___message_logger}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Message\+Logger\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___message_logger}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___message_logger_a7347b0b89cca1d7604e93f5b5e896fc4}{get\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___message_logger_a2af6a7c2f914df81f57a13a6a518661a}{count\+Messages}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___message_logger_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___message_logger_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___message_logger_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores all sent emails for further usage.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___message_logger_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___message_logger_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___message_logger_aa821bec12eaa7e0f649397c9675ff505}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}!clear@{clear}}
+\index{clear@{clear}!Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___message_logger_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Empty the message list. \Hypertarget{class_swift___plugins___message_logger_a2af6a7c2f914df81f57a13a6a518661a}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}!countMessages@{countMessages}}
+\index{countMessages@{countMessages}!Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+\doxysubsubsection{\texorpdfstring{countMessages()}{countMessages()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___message_logger_a2af6a7c2f914df81f57a13a6a518661a} 
+count\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the message count.
+
+\begin{DoxyReturn}{Returns}
+int count 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___message_logger_a7347b0b89cca1d7604e93f5b5e896fc4}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}!getMessages@{getMessages}}
+\index{getMessages@{getMessages}!Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+\doxysubsubsection{\texorpdfstring{getMessages()}{getMessages()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___message_logger_a7347b0b89cca1d7604e93f5b5e896fc4} 
+get\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the message list.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___message_logger_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Plugins\_MessageLogger@{Swift\_Plugins\_MessageLogger}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___message_logger_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Message\+Logger.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,201 @@
+\doxysection{Curl Class Reference}
+\hypertarget{class_curl}{}\label{class_curl}\index{Curl@{Curl}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_curl_a05cd6912c9fe133518a8fbc49076cd33}{request}} (string \$request\+Method, string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?string \$body=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\item 
+static \mbox{\hyperlink{class_curl_a3a3bad12f2b3d0ccfee57c98ff42625a}{get}} (string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\item 
+static \mbox{\hyperlink{class_curl_a604cad7d5122081287b1d7a653b0cff3}{post}} (string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?string \$body=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\item 
+static \mbox{\hyperlink{class_curl_a2c291231c86640e22c7820272af687e9}{post\+Form}} (string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?array \$body\+Params=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\item 
+static \mbox{\hyperlink{class_curl_a283928100128bfb3591623311bc10c25}{get\+Json}} (string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\item 
+static \mbox{\hyperlink{class_curl_ae1d864e657a1e6df105f6fe156653f8b}{post\+Json}} (string \$url, ?array \$headers=null, ?array \$query\+Params=null, ?array \$body\+Params=null, ?array \$auth=null, int \$cache\+TTL=0, bool \$cached\+Result\+On\+Failure=false, int \$request\+Timeout=60)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_curl_a3a3bad12f2b3d0ccfee57c98ff42625a}\index{Curl@{Curl}!get@{get}}
+\index{get@{get}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_curl_a3a3bad12f2b3d0ccfee57c98ff42625a} 
+static get (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform GET request
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & request URL \\
+\hline
+array | null & {\em \$headers} & request headers \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_curl_a283928100128bfb3591623311bc10c25}\index{Curl@{Curl}!getJson@{getJson}}
+\index{getJson@{getJson}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{getJson()}{getJson()}}
+{\footnotesize\ttfamily \label{class_curl_a283928100128bfb3591623311bc10c25} 
+static get\+Json (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform GET request
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & request URL \\
+\hline
+array | null & {\em \$headers} & request headers \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_curl_a604cad7d5122081287b1d7a653b0cff3}\index{Curl@{Curl}!post@{post}}
+\index{post@{post}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{post()}{post()}}
+{\footnotesize\ttfamily \label{class_curl_a604cad7d5122081287b1d7a653b0cff3} 
+static post (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?string}]{\$body}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform POST request
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & request URL \\
+\hline
+array | null & {\em \$headers} & request headers \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+string | null & {\em \$body} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_curl_a2c291231c86640e22c7820272af687e9}\index{Curl@{Curl}!postForm@{postForm}}
+\index{postForm@{postForm}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{postForm()}{postForm()}}
+{\footnotesize\ttfamily \label{class_curl_a2c291231c86640e22c7820272af687e9} 
+static post\+Form (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$body\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform POST request
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & request URL \\
+\hline
+array | null & {\em \$headers} & request headers \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+array | null & {\em \$body\+Params} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_curl_ae1d864e657a1e6df105f6fe156653f8b}\index{Curl@{Curl}!postJson@{postJson}}
+\index{postJson@{postJson}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{postJson()}{postJson()}}
+{\footnotesize\ttfamily \label{class_curl_ae1d864e657a1e6df105f6fe156653f8b} 
+static post\+Json (\begin{DoxyParamCaption}\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$body\+Params}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Perform POST request
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$url} & request URL \\
+\hline
+array | null & {\em \$headers} & request headers \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+array | null & {\em \$body\+Params} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_curl_a05cd6912c9fe133518a8fbc49076cd33}\index{Curl@{Curl}!request@{request}}
+\index{request@{request}!Curl@{Curl}}
+\doxysubsubsection{\texorpdfstring{request()}{request()}}
+{\footnotesize\ttfamily \label{class_curl_a05cd6912c9fe133518a8fbc49076cd33} 
+static request (\begin{DoxyParamCaption}\item[{string}]{\$request\+Method}{, }\item[{string}]{\$url}{, }\item[{?array}]{\$headers}{ = {\ttfamily null}, }\item[{?array}]{\$query\+Params}{ = {\ttfamily null}, }\item[{?string}]{\$body}{ = {\ttfamily null}, }\item[{?array}]{\$auth}{ = {\ttfamily null}, }\item[{int}]{\$cache\+TTL}{ = {\ttfamily 0}, }\item[{bool}]{\$cached\+Result\+On\+Failure}{ = {\ttfamily false}, }\item[{int}]{\$request\+Timeout}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$request\+Method} & \\
+\hline
+string & {\em \$url} & \\
+\hline
+array | null & {\em \$headers} & \\
+\hline
+array | null & {\em \$query\+Params} & \\
+\hline
+string | null & {\em \$body} & \\
+\hline
+array | null & {\em \$auth} & \\
+\hline
+int & {\em \$cache\+TTL} & \\
+\hline
+bool & {\em \$cached\+Result\+On\+Failure} & \\
+\hline
+int & {\em \$request\+Timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Curl.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,208 @@
+\doxysection{Swift\+\_\+\+File\+Spool Class Reference}
+\hypertarget{class_swift___file_spool}{}\label{class_swift___file_spool}\index{Swift\_FileSpool@{Swift\_FileSpool}}
+Inheritance diagram for Swift\+\_\+\+File\+Spool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___file_spool}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a03853ceaa393e487835b287de58aba5a}{\+\_\+\+\_\+construct}} (\$path)
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___file_spool_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a5207133b3f8fd9ee29eb654813120d63}{set\+Retry\+Limit}} (\$limit)
+\item 
+\mbox{\hyperlink{class_swift___file_spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{queue\+Message}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___file_spool_aa57cb1c44363429e9328b7c0e2d43736}{recover}} (\$timeout=900)
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a36cb9b4369999eb8a08b0ccff35a0591}{flush\+Queue}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$transport, \&\$failed\+Recipients=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___configurable_spool}{Swift\+\_\+\+Configurable\+Spool}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a6be850b7a046ce05c660b5777ecf0554}{set\+Message\+Limit}} (\$limit)
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_add50114e4ca756621f23a6bd4ea6c266}{get\+Message\+Limit}} ()
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a8dbbc47aaf0c66af599fc079789c9e66}{set\+Time\+Limit}} (\$limit)
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a8c331e9258bf91638eeb61401aee51b8}{get\+Time\+Limit}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___file_spool_a17531d5aeaf7b530c60e30a8f2d2217c}{get\+Random\+String}} (\$count)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stores Messages on the filesystem.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+
+Xavier De Cock \href{mailto:xdecock@gmail.com}{\texttt{ xdecock@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___file_spool_a03853ceaa393e487835b287de58aba5a}\index{Swift\_FileSpool@{Swift\_FileSpool}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a03853ceaa393e487835b287de58aba5a} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$path}{}\end{DoxyParamCaption})}
+
+Create a new File\+Spool.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___file_spool_a36cb9b4369999eb8a08b0ccff35a0591}\index{Swift\_FileSpool@{Swift\_FileSpool}!flushQueue@{flushQueue}}
+\index{flushQueue@{flushQueue}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{flushQueue()}{flushQueue()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a36cb9b4369999eb8a08b0ccff35a0591} 
+flush\+Queue (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$transport}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Sends messages using the given transport instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} & {\em \$transport} & A transport instance \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of sent e-\/mail\textquotesingle{}s 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___spool_a36cb9b4369999eb8a08b0ccff35a0591}{Swift\+\_\+\+Spool}}.
+
+\Hypertarget{class_swift___file_spool_a17531d5aeaf7b530c60e30a8f2d2217c}\index{Swift\_FileSpool@{Swift\_FileSpool}!getRandomString@{getRandomString}}
+\index{getRandomString@{getRandomString}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{getRandomString()}{getRandomString()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a17531d5aeaf7b530c60e30a8f2d2217c} 
+get\+Random\+String (\begin{DoxyParamCaption}\item[{}]{\$count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns a random string needed to generate a file\+Name for the queue.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$count} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___file_spool_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_FileSpool@{Swift\_FileSpool}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Tests if this Spool mechanism has started.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___spool_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Spool}}.
+
+\Hypertarget{class_swift___file_spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}\index{Swift\_FileSpool@{Swift\_FileSpool}!queueMessage@{queueMessage}}
+\index{queueMessage@{queueMessage}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{queueMessage()}{queueMessage()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_abf760f9e54194d9cc7e2cd5c7cc6fe66} 
+queue\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Queues a message.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message} & {\em \$message} & The message to store\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{Swift\+\_\+\+Spool}}.
+
+\Hypertarget{class_swift___file_spool_aa57cb1c44363429e9328b7c0e2d43736}\index{Swift\_FileSpool@{Swift\_FileSpool}!recover@{recover}}
+\index{recover@{recover}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{recover()}{recover()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_aa57cb1c44363429e9328b7c0e2d43736} 
+recover (\begin{DoxyParamCaption}\item[{}]{\$timeout}{ = {\ttfamily 900}}\end{DoxyParamCaption})}
+
+Execute a recovery if for any reason a process is sending for too long.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & in second Defaults is for very slow smtp responses \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___file_spool_a5207133b3f8fd9ee29eb654813120d63}\index{Swift\_FileSpool@{Swift\_FileSpool}!setRetryLimit@{setRetryLimit}}
+\index{setRetryLimit@{setRetryLimit}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{setRetryLimit()}{setRetryLimit()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a5207133b3f8fd9ee29eb654813120d63} 
+set\+Retry\+Limit (\begin{DoxyParamCaption}\item[{}]{\$limit}{}\end{DoxyParamCaption})}
+
+Allow to manage the enqueuing retry limit.
+
+Default, is ten and allows over 64\texorpdfstring{$^\wedge$}{\string^}20 different file\+Names
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___file_spool_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_FileSpool@{Swift\_FileSpool}!start@{start}}
+\index{start@{start}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Starts this Spool mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___spool_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Spool}}.
+
+\Hypertarget{class_swift___file_spool_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_FileSpool@{Swift\_FileSpool}!stop@{stop}}
+\index{stop@{stop}!Swift\_FileSpool@{Swift\_FileSpool}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_swift___file_spool_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stops this Spool mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___spool_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Spool}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/File\+Spool.\+php\end{DoxyCompactItemize}

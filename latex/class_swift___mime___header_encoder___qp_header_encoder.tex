@@ -1,0 +1,146 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder\+\_\+\+Qp\+Header\+Encoder Class Reference}
+\hypertarget{class_swift___mime___header_encoder___qp_header_encoder}{}\label{class_swift___mime___header_encoder___qp_header_encoder}\index{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder\+\_\+\+Qp\+Header\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.796610cm]{class_swift___mime___header_encoder___qp_header_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___qp_header_encoder_a0b77c7b3ec1b6c8593afac6a61295960}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream}} \$char\+Stream)
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___qp_header_encoder_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___qp_header_encoder_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___encoder___qp_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_a27194bedb3ccb1946a42f531b7bd3516}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream}} \$char\+Stream, \mbox{\hyperlink{interface_swift___stream_filter}{Swift\+\_\+\+Stream\+Filter}} \$filter=null)
+\item 
+{\bfseries \+\_\+\+\_\+sleep} ()
+\item 
+{\bfseries \+\_\+\+\_\+wakeup} ()
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___qp_header_encoder_a491092d16e9c8b7a450867f48b272cc6}{init\+Safe\+Map}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_swift___encoder___qp_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries get\+Safe\+Map\+Share\+Id} ()
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_ae8ca4c5e594facf528f5cc5aaf826c8e}{encode\+Byte\+Sequence}} (array \$bytes, \&\$size)
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_a8a1a28f503d5bba05f78f880f0ebd0e9}{next\+Sequence}} (\$size=4)
+\item 
+\mbox{\hyperlink{class_swift___encoder___qp_encoder_af9e596eef1b19eb76a228b9f49567f8f}{standardize}} (\$string)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_swift___encoder___qp_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries \$char\+Stream}
+\item 
+{\bfseries \$filter}
+\item 
+{\bfseries \$safe\+Map} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_swift___encoder___qp_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$qp\+Map}
+\item 
+static {\bfseries \$safe\+Map\+Share} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles Quoted Printable (Q) Header Encoding in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mime___header_encoder___qp_header_encoder_a0b77c7b3ec1b6c8593afac6a61295960}\index{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___qp_header_encoder_a0b77c7b3ec1b6c8593afac6a61295960} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream}}}]{\$char\+Stream}{}\end{DoxyParamCaption})}
+
+Creates a new Qp\+Header\+Encoder for the given Character\+Stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___character_stream}{Swift\+\_\+\+Character\+Stream} & {\em \$char\+Stream} & to use for reading characters \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___header_encoder___qp_header_encoder_a4a83bd3d529ef683d32e98e490e61a65}\index{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___qp_header_encoder_a4a83bd3d529ef683d32e98e490e61a65} 
+encode\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Takes an unencoded string and produces a QP encoded string from it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & string to encode \\
+\hline
+int & {\em \$first\+Line\+Offset} & optional \\
+\hline
+int & {\em \$max\+Line\+Length} & optional, 0 indicates the default of 76 chars\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_swift___encoder___qp_encoder_a4a83bd3d529ef683d32e98e490e61a65}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}.
+
+\Hypertarget{class_swift___mime___header_encoder___qp_header_encoder_a3d0963e68bb313b163a73f2803c64600}\index{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}!getName@{getName}}
+\index{getName@{getName}!Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___qp_header_encoder_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of this encoding scheme.
+
+Returns the string \textquotesingle{}Q\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_encoder_a3d0963e68bb313b163a73f2803c64600}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}}.
+
+\Hypertarget{class_swift___mime___header_encoder___qp_header_encoder_a491092d16e9c8b7a450867f48b272cc6}\index{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}!initSafeMap@{initSafeMap}}
+\index{initSafeMap@{initSafeMap}!Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder@{Swift\_Mime\_HeaderEncoder\_QpHeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{initSafeMap()}{initSafeMap()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___qp_header_encoder_a491092d16e9c8b7a450867f48b272cc6} 
+init\+Safe\+Map (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{class_swift___encoder___qp_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Qp\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Header\+Encoder/Qp\+Header\+Encoder.\+php\end{DoxyCompactItemize}

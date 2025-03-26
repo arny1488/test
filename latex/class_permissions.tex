@@ -1,0 +1,107 @@
+\doxysection{Permissions Class Reference}
+\hypertarget{class_permissions}{}\label{class_permissions}\index{Permissions@{Permissions}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_permissions_a37ed230fd5bcc858bc4d480e9b9e1264}{add}} (string \$module, array \$permission, string \$icon=\textquotesingle{}\textquotesingle{}, int \$priority=10)
+\item 
+static \mbox{\hyperlink{class_permissions_aefff13c28a3dbea1c98d01a82a41d6e3}{get\+List}} ()
+\item 
+static \mbox{\hyperlink{class_permissions_a2303d48abf785f001bc045bd7f191d38}{set}} (array \$permissions)
+\item 
+static \mbox{\hyperlink{class_permissions_a9c8565b8faf53863ba527dc678eed96c}{has}} (string \$perm)
+\item 
+static \mbox{\hyperlink{class_permissions_a3baa7d3be8dd96b0b721f50c9dd07af5}{check\+Access}} (string \$perm)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_permissions_a6a201ad66cb20fe056347e012c8301f0}\label{class_permissions_a6a201ad66cb20fe056347e012c8301f0} 
+static array {\bfseries \$\+\_\+permissions} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_permissions_a512dd76844d7cdfe3bbb178954cce22f}\label{class_permissions_a512dd76844d7cdfe3bbb178954cce22f} 
+static array {\bfseries \$permissions} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_permissions_a37ed230fd5bcc858bc4d480e9b9e1264}\index{Permissions@{Permissions}!add@{add}}
+\index{add@{add}!Permissions@{Permissions}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_permissions_a37ed230fd5bcc858bc4d480e9b9e1264} 
+static add (\begin{DoxyParamCaption}\item[{string}]{\$module}{, }\item[{array}]{\$permission}{, }\item[{string}]{\$icon}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{int}]{\$priority}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add permission record
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$module} & module \\
+\hline
+array & {\em \$permission} & list of permissions names \\
+\hline
+string & {\em \$icon} & CSS class of displayed icon \\
+\hline
+int & {\em \$priority} & priority for sorting \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_permissions_a3baa7d3be8dd96b0b721f50c9dd07af5}\index{Permissions@{Permissions}!checkAccess@{checkAccess}}
+\index{checkAccess@{checkAccess}!Permissions@{Permissions}}
+\doxysubsubsection{\texorpdfstring{checkAccess()}{checkAccess()}}
+{\footnotesize\ttfamily \label{class_permissions_a3baa7d3be8dd96b0b721f50c9dd07af5} 
+static check\+Access (\begin{DoxyParamCaption}\item[{string}]{\$perm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if user has permission and define NO\+\_\+\+PERMISSION constant if not
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$perm} & permission ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_permissions_aefff13c28a3dbea1c98d01a82a41d6e3}\index{Permissions@{Permissions}!getList@{getList}}
+\index{getList@{getList}!Permissions@{Permissions}}
+\doxysubsubsection{\texorpdfstring{getList()}{getList()}}
+{\footnotesize\ttfamily \label{class_permissions_aefff13c28a3dbea1c98d01a82a41d6e3} 
+static get\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get permissions list
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_permissions_a9c8565b8faf53863ba527dc678eed96c}\index{Permissions@{Permissions}!has@{has}}
+\index{has@{has}!Permissions@{Permissions}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_permissions_a9c8565b8faf53863ba527dc678eed96c} 
+static has (\begin{DoxyParamCaption}\item[{string}]{\$perm}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if user has specific permission
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$perm} & permission ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_permissions_a2303d48abf785f001bc045bd7f191d38}\index{Permissions@{Permissions}!set@{set}}
+\index{set@{set}!Permissions@{Permissions}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_permissions_a2303d48abf785f001bc045bd7f191d38} 
+static set (\begin{DoxyParamCaption}\item[{array}]{\$permissions}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set session permissions
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$permissions} & permissions \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/core/Permissions.\+php\end{DoxyCompactItemize}

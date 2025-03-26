@@ -1,0 +1,85 @@
+\doxysection{Swift Class Reference}
+\hypertarget{class_swift}{}\label{class_swift}\index{Swift@{Swift}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_swift_a5a194baf815a34c9909175af0134fb90}{init}} (\$callable)
+\item 
+static \mbox{\hyperlink{class_swift_ab4c022bf9d3474583030f31894865182}{autoload}} (\$class)
+\item 
+static \mbox{\hyperlink{class_swift_a77c5009bede555df1dc6e454395b8400}{register\+Autoload}} (\$callable=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift_af71005841ce53adac00581ab0ba24c1f}\label{class_swift_af71005841ce53adac00581ab0ba24c1f} 
+const {\bfseries VERSION} = \textquotesingle{}6.\+2.\+7\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift_a533c66c9995bd9f022b5f5b325c12ad4}\label{class_swift_a533c66c9995bd9f022b5f5b325c12ad4} 
+static {\bfseries \$initialized} = false
+\item 
+\Hypertarget{class_swift_afc9c5430687c65727d0afb47a110c9a3}\label{class_swift_afc9c5430687c65727d0afb47a110c9a3} 
+static {\bfseries \$inits} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+General utility class in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}, not to be instantiated.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift_ab4c022bf9d3474583030f31894865182}\index{Swift@{Swift}!autoload@{autoload}}
+\index{autoload@{autoload}!Swift@{Swift}}
+\doxysubsubsection{\texorpdfstring{autoload()}{autoload()}}
+{\footnotesize\ttfamily \label{class_swift_ab4c022bf9d3474583030f31894865182} 
+static autoload (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\doxylink{namespace_internal}{Internal} autoloader for spl\+\_\+autoload\+\_\+register().
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift_a5a194baf815a34c9909175af0134fb90}\index{Swift@{Swift}!init@{init}}
+\index{init@{init}!Swift@{Swift}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_swift_a5a194baf815a34c9909175af0134fb90} 
+static init (\begin{DoxyParamCaption}\item[{}]{\$callable}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers an initializer callable that will be called the first time a Swift\+Mailer class is autoloaded.
+
+This enables you to tweak the default configuration in a lazy way.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callable} & A valid PHP callable that will be called when autoloading the first \doxylink{class_swift}{Swift} class \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift_a77c5009bede555df1dc6e454395b8400}\index{Swift@{Swift}!registerAutoload@{registerAutoload}}
+\index{registerAutoload@{registerAutoload}!Swift@{Swift}}
+\doxysubsubsection{\texorpdfstring{registerAutoload()}{registerAutoload()}}
+{\footnotesize\ttfamily \label{class_swift_a77c5009bede555df1dc6e454395b8400} 
+static register\+Autoload (\begin{DoxyParamCaption}\item[{}]{\$callable}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Configure autoloading using \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+This is designed to play nicely with other autoloaders.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$callable} & A valid PHP callable that will be called when autoloading the first \doxylink{class_swift}{Swift} class \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/Swift.\+php\end{DoxyCompactItemize}

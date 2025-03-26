@@ -1,0 +1,194 @@
+\doxysection{Smarty\+\_\+\+Internal\+\_\+\+Runtime\+\_\+\+Inheritance Class Reference}
+\hypertarget{class_smarty___internal___runtime___inheritance}{}\label{class_smarty___internal___runtime___inheritance}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_af08aec3f761ad6c74f69824d0077d5b6}{init}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \$init\+Child, \$block\+Names=array())
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a15bad1b7f847498c3d15f2e60bdbf61a}{end\+Child}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \$template=null, \$uid=null, \$func=null)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a1632c18975625e379b4bb64a81c84888}{instance\+Block}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \$class\+Name, \$name, \$tpl\+Index=null)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a56a1d2e3665970bdf44f3eb6128a5eed}{process}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}} \$block, \mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}} \$parent=null)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a6022566ebbf3a03d2c2de09a510ab77d}{call\+Child}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}} \$block, \$return\+Content=false)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a05af489978fb3922428061d3bc7f84fc}{call\+Parent}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl, \mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}} \$block, \$name=null, \$return\+Content=false)
+\item 
+\mbox{\hyperlink{class_smarty___internal___runtime___inheritance_a90e2208d1313bd9d2a7505bcf7fab966}{call\+Block}} (\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}} \$block, \mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_ae82306c4f2d17d8dd5c7d8d916b33bed}\label{class_smarty___internal___runtime___inheritance_ae82306c4f2d17d8dd5c7d8d916b33bed} 
+{\bfseries \$state} = 0
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_a1b00c846f721d355cd67fd9323c5fb71}\label{class_smarty___internal___runtime___inheritance_a1b00c846f721d355cd67fd9323c5fb71} 
+{\bfseries \$child\+Root} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_a29eb23a20fdd2d8d4e67c0dceeba4c7b}\label{class_smarty___internal___runtime___inheritance_a29eb23a20fdd2d8d4e67c0dceeba4c7b} 
+{\bfseries \$inheritance\+Level} = 0
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_a6c8bd063c87f8e127547bbb375f0d557}\label{class_smarty___internal___runtime___inheritance_a6c8bd063c87f8e127547bbb375f0d557} 
+{\bfseries \$tpl\+Index} = -\/1
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_aa4b437d19a2caf088c80e03e1539a316}\label{class_smarty___internal___runtime___inheritance_aa4b437d19a2caf088c80e03e1539a316} 
+{\bfseries \$sources} = array()
+\item 
+\Hypertarget{class_smarty___internal___runtime___inheritance_abeb8621230b79c1143d7f56b9a41deaf}\label{class_smarty___internal___runtime___inheritance_abeb8621230b79c1143d7f56b9a41deaf} 
+{\bfseries \$source\+Stack} = array()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___internal___runtime___inheritance_a90e2208d1313bd9d2a7505bcf7fab966}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!callBlock@{callBlock}}
+\index{callBlock@{callBlock}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{callBlock()}{callBlock()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a90e2208d1313bd9d2a7505bcf7fab966} 
+call\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}}}]{\$block}{, }\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{}\end{DoxyParamCaption})}
+
+redender block
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Block & {\em \$block} & \\
+\hline
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___internal___runtime___inheritance_a6022566ebbf3a03d2c2de09a510ab77d}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!callChild@{callChild}}
+\index{callChild@{callChild}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{callChild()}{callChild()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a6022566ebbf3a03d2c2de09a510ab77d} 
+call\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}}}]{\$block}{, }\item[{}]{\$return\+Content}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Render child on \$smarty.\+block.\+child
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Block & {\em \$block} & \\
+\hline
+boolean & {\em \$return\+Content} & flag if content shall be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string null or block content dependent on \$return\+Content 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___internal___runtime___inheritance_a05af489978fb3922428061d3bc7f84fc}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!callParent@{callParent}}
+\index{callParent@{callParent}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{callParent()}{callParent()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a05af489978fb3922428061d3bc7f84fc} 
+call\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}}}]{\$block}{, }\item[{}]{\$name}{ = {\ttfamily null}, }\item[{}]{\$return\+Content}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Render parent block on \$smarty.\+block.\+parent or \{block append/prepend\} \texorpdfstring{$\ast$}{*}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Block & {\em \$block} & \\
+\hline
+null | string & {\em \$name} & \\
+\hline
+boolean & {\em \$return\+Content} & flag if content shall be returned\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null\texorpdfstring{$\vert$}{|}string null or block content dependent on \$return\+Content 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} \Hypertarget{class_smarty___internal___runtime___inheritance_a15bad1b7f847498c3d15f2e60bdbf61a}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!endChild@{endChild}}
+\index{endChild@{endChild}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{endChild()}{endChild()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a15bad1b7f847498c3d15f2e60bdbf61a} 
+end\+Child (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{}]{\$template}{ = {\ttfamily null}, }\item[{}]{\$uid}{ = {\ttfamily null}, }\item[{}]{\$func}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+End of child template(s)
+\begin{DoxyItemize}
+\item if outer level is reached flush output buffer and switch to wait for parent template state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+null | string & {\em \$template} & optional name of inheritance parent template \\
+\hline
+null | string & {\em \$uid} & uid of inline template \\
+\hline
+null | string & {\em \$func} & function call name of inline template \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___internal___runtime___inheritance_af08aec3f761ad6c74f69824d0077d5b6}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!init@{init}}
+\index{init@{init}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_af08aec3f761ad6c74f69824d0077d5b6} 
+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{}]{\$init\+Child}{, }\item[{}]{\$block\+Names}{ = {\ttfamily array()}}\end{DoxyParamCaption})}
+
+Initialize inheritance
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & template object of caller \\
+\hline
+bool & {\em \$init\+Child} & if true init for child template \\
+\hline
+array & {\em \$block\+Names} & outer level block name \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___internal___runtime___inheritance_a1632c18975625e379b4bb64a81c84888}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!instanceBlock@{instanceBlock}}
+\index{instanceBlock@{instanceBlock}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{instanceBlock()}{instanceBlock()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a1632c18975625e379b4bb64a81c84888} 
+instance\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{}]{\$class\+Name}{, }\item[{}]{\$name}{, }\item[{}]{\$tpl\+Index}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+\doxylink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block} constructor.
+\begin{DoxyItemize}
+\item if outer level \{block\} of child template (\$state == 1) save it as child root block
+\item otherwise process inheritance and render
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+ & {\em \$class\+Name} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+int | null & {\em \$tpl\+Index} & index of outer level \{block\} if nested \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___internal___runtime___inheritance_a56a1d2e3665970bdf44f3eb6128a5eed}\index{Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}!process@{process}}
+\index{process@{process}!Smarty\_Internal\_Runtime\_Inheritance@{Smarty\_Internal\_Runtime\_Inheritance}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___runtime___inheritance_a56a1d2e3665970bdf44f3eb6128a5eed} 
+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{, }\item[{\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}}}]{\$block}{, }\item[{\mbox{\hyperlink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block}}}]{\$parent}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Goto child block or render this
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Block & {\em \$block} & \\
+\hline
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Block | null & {\em \$parent} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+internal\+\_\+runtime\+\_\+inheritance.\+php\end{DoxyCompactItemize}

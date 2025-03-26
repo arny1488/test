@@ -1,0 +1,59 @@
+\doxysection{Metadata\+Source\+Interface Interface Reference}
+\hypertarget{interfacelibphonenumber_1_1_metadata_source_interface}{}\label{interfacelibphonenumber_1_1_metadata_source_interface}\index{MetadataSourceInterface@{MetadataSourceInterface}}
+Inheritance diagram for Metadata\+Source\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfacelibphonenumber_1_1_metadata_source_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface_aa2f2e2f3689d18f24f652bf54145ad7b}{get\+Metadata\+For\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface_a799480660f16d774a1c7acff62f307f8}{get\+Metadata\+For\+Non\+Geographical\+Region}} (\$country\+Calling\+Code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interfacelibphonenumber_1_1_metadata_source_interface_a799480660f16d774a1c7acff62f307f8}\index{MetadataSourceInterface@{MetadataSourceInterface}!getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}}
+\index{getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}!MetadataSourceInterface@{MetadataSourceInterface}}
+\doxysubsubsection{\texorpdfstring{getMetadataForNonGeographicalRegion()}{getMetadataForNonGeographicalRegion()}}
+{\footnotesize\ttfamily \label{interfacelibphonenumber_1_1_metadata_source_interface_a799480660f16d774a1c7acff62f307f8} 
+get\+Metadata\+For\+Non\+Geographical\+Region (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+Gets phone metadata for a non-\/geographical region. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & the country calling code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Metadata the phone metadata for that region, or null if there is none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_a799480660f16d774a1c7acff62f307f8}{Multi\+File\+Metadata\+Source\+Impl}}.
+
+\Hypertarget{interfacelibphonenumber_1_1_metadata_source_interface_aa2f2e2f3689d18f24f652bf54145ad7b}\index{MetadataSourceInterface@{MetadataSourceInterface}!getMetadataForRegion@{getMetadataForRegion}}
+\index{getMetadataForRegion@{getMetadataForRegion}!MetadataSourceInterface@{MetadataSourceInterface}}
+\doxysubsubsection{\texorpdfstring{getMetadataForRegion()}{getMetadataForRegion()}}
+{\footnotesize\ttfamily \label{interfacelibphonenumber_1_1_metadata_source_interface_aa2f2e2f3689d18f24f652bf54145ad7b} 
+get\+Metadata\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Gets phone metadata for a region. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Metadata the phone metadata for that region, or null if there is none. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_aa2f2e2f3689d18f24f652bf54145ad7b}{Multi\+File\+Metadata\+Source\+Impl}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Metadata\+Source\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\doxysection{Swift\+\_\+\+Preferences Class Reference}
+\hypertarget{class_swift___preferences}{}\label{class_swift___preferences}\index{Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___preferences_a81ee11b0f5fadecaece55170fea54b29}{set\+Charset}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___preferences_a3bcd21b6e166d9457c900eeb6cb39c8d}{set\+Temp\+Dir}} (\$dir)
+\item 
+\mbox{\hyperlink{class_swift___preferences_a7048493425dbc2177cb446a15606523e}{set\+Cache\+Type}} (\$type)
+\item 
+\mbox{\hyperlink{class_swift___preferences_a42034dfd3ee05d60927862907572bcd5}{set\+QPDot\+Escape}} (\$dot\+Escape)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_swift___preferences_ac93fbec81f07e5d15f80db907e63dc10}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Changes some global preference settings in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___preferences_ac93fbec81f07e5d15f80db907e63dc10}\index{Swift\_Preferences@{Swift\_Preferences}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{class_swift___preferences_ac93fbec81f07e5d15f80db907e63dc10} 
+static get\+Instance (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the instance of Preferences.
+
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+\Hypertarget{class_swift___preferences_a7048493425dbc2177cb446a15606523e}\index{Swift\_Preferences@{Swift\_Preferences}!setCacheType@{setCacheType}}
+\index{setCacheType@{setCacheType}!Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection{\texorpdfstring{setCacheType()}{setCacheType()}}
+{\footnotesize\ttfamily \label{class_swift___preferences_a7048493425dbc2177cb446a15606523e} 
+set\+Cache\+Type (\begin{DoxyParamCaption}\item[{}]{\$type}{}\end{DoxyParamCaption})}
+
+Set the type of cache to use (i.\+e. "{}disk"{} or "{}array"{}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$type} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___preferences_a81ee11b0f5fadecaece55170fea54b29}\index{Swift\_Preferences@{Swift\_Preferences}!setCharset@{setCharset}}
+\index{setCharset@{setCharset}!Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection{\texorpdfstring{setCharset()}{setCharset()}}
+{\footnotesize\ttfamily \label{class_swift___preferences_a81ee11b0f5fadecaece55170fea54b29} 
+set\+Charset (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Set the default charset used.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___preferences_a42034dfd3ee05d60927862907572bcd5}\index{Swift\_Preferences@{Swift\_Preferences}!setQPDotEscape@{setQPDotEscape}}
+\index{setQPDotEscape@{setQPDotEscape}!Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection{\texorpdfstring{setQPDotEscape()}{setQPDotEscape()}}
+{\footnotesize\ttfamily \label{class_swift___preferences_a42034dfd3ee05d60927862907572bcd5} 
+set\+QPDot\+Escape (\begin{DoxyParamCaption}\item[{}]{\$dot\+Escape}{}\end{DoxyParamCaption})}
+
+Set the Quoted\+Printable dot escaper preference.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$dot\+Escape} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___preferences_a3bcd21b6e166d9457c900eeb6cb39c8d}\index{Swift\_Preferences@{Swift\_Preferences}!setTempDir@{setTempDir}}
+\index{setTempDir@{setTempDir}!Swift\_Preferences@{Swift\_Preferences}}
+\doxysubsubsection{\texorpdfstring{setTempDir()}{setTempDir()}}
+{\footnotesize\ttfamily \label{class_swift___preferences_a3bcd21b6e166d9457c900eeb6cb39c8d} 
+set\+Temp\+Dir (\begin{DoxyParamCaption}\item[{}]{\$dir}{}\end{DoxyParamCaption})}
+
+Set the directory where temporary files can be saved.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Preferences.\+php\end{DoxyCompactItemize}

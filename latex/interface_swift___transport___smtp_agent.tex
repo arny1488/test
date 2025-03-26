@@ -1,0 +1,61 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent Interface Reference}
+\hypertarget{interface_swift___transport___smtp_agent}{}\label{interface_swift___transport___smtp_agent}\index{Swift\_Transport\_SmtpAgent@{Swift\_Transport\_SmtpAgent}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_swift___transport___smtp_agent}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___transport___smtp_agent_ae26c1e9de1a05d5b5dae90a079408ed0}{get\+Buffer}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport___smtp_agent_ac512ee0aa0eb94043eb798cc991b842e}{execute\+Command}} (\$command, \$codes=\mbox{[}$\,$\mbox{]}, \&\$failures=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wraps an Io\+Buffer to send/receive SMTP commands/responses.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___transport___smtp_agent_ac512ee0aa0eb94043eb798cc991b842e}\index{Swift\_Transport\_SmtpAgent@{Swift\_Transport\_SmtpAgent}!executeCommand@{executeCommand}}
+\index{executeCommand@{executeCommand}!Swift\_Transport\_SmtpAgent@{Swift\_Transport\_SmtpAgent}}
+\doxysubsubsection{\texorpdfstring{executeCommand()}{executeCommand()}}
+{\footnotesize\ttfamily \label{interface_swift___transport___smtp_agent_ac512ee0aa0eb94043eb798cc991b842e} 
+execute\+Command (\begin{DoxyParamCaption}\item[{}]{\$command}{, }\item[{}]{\$codes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\&}]{\$failures}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Run a command against the buffer, expecting the given response codes.
+
+If no response codes are given, the response will not be validated. If codes are given, an exception will be thrown on an invalid response.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+int\mbox{[}$\,$\mbox{]} & {\em \$codes} & \\
+\hline
+string\mbox{[}$\,$\mbox{]} & {\em \$failures} & An array of failures by-\/reference \\
+\hline
+\end{DoxyParams}
+\Hypertarget{interface_swift___transport___smtp_agent_ae26c1e9de1a05d5b5dae90a079408ed0}\index{Swift\_Transport\_SmtpAgent@{Swift\_Transport\_SmtpAgent}!getBuffer@{getBuffer}}
+\index{getBuffer@{getBuffer}!Swift\_Transport\_SmtpAgent@{Swift\_Transport\_SmtpAgent}}
+\doxysubsubsection{\texorpdfstring{getBuffer()}{getBuffer()}}
+{\footnotesize\ttfamily \label{interface_swift___transport___smtp_agent_ae26c1e9de1a05d5b5dae90a079408ed0} 
+get\+Buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Io\+Buffer where read/writes are occurring.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer} 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Smtp\+Agent.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{Mailer Class Reference}
+\hypertarget{class_mailer}{}\label{class_mailer}\index{Mailer@{Mailer}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_mailer_a7fc1f77983b5255ec4d37ef8065c8616}{send}} (\$to=\textquotesingle{}\textquotesingle{}, \$body=\textquotesingle{}\textquotesingle{}, \$subject=\textquotesingle{}\textquotesingle{}, \$from\+\_\+email=\textquotesingle{}\textquotesingle{}, \$from\+\_\+name=\textquotesingle{}\textquotesingle{}, \$type=\textquotesingle{}text\textquotesingle{}, \$attach=\mbox{[}$\,$\mbox{]}, \$saveattach=false, \$signature=true)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_mailer_a7fc1f77983b5255ec4d37ef8065c8616}\index{Mailer@{Mailer}!send@{send}}
+\index{send@{send}!Mailer@{Mailer}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_mailer_a7fc1f77983b5255ec4d37ef8065c8616} 
+static send (\begin{DoxyParamCaption}\item[{}]{\$to}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$body}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$subject}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$from\+\_\+email}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$from\+\_\+name}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{\$type}{ = {\ttfamily \textquotesingle{}text\textquotesingle{}}, }\item[{}]{\$attach}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{}]{\$saveattach}{ = {\ttfamily false}, }\item[{}]{\$signature}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Send Email
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$to} & recipient email address \\
+\hline
+string & {\em \$body} & email body / message \\
+\hline
+string & {\em \$subject} & message subject \\
+\hline
+string & {\em \$from\+\_\+email} & sender email \\
+\hline
+string & {\em \$from\+\_\+name} & sender name \\
+\hline
+string & {\em \$type} & message type (html or plain text) \\
+\hline
+array & {\em \$attach} & attachments paths \\
+\hline
+bool & {\em \$saveattach} & should save attachments to ATTACH\+\_\+\+DIR \\
+\hline
+bool & {\em \$signature} & add signature \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Mailer.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,70 @@
+\doxysection{Smarty\+\_\+\+Autoloader Class Reference}
+\hypertarget{class_smarty___autoloader}{}\label{class_smarty___autoloader}\index{Smarty\_Autoloader@{Smarty\_Autoloader}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_smarty___autoloader_af99b2955632d43b82b1df480ff63b072}{register\+BC}} (\$prepend=false)
+\item 
+static \mbox{\hyperlink{class_smarty___autoloader_aef39c6066201dbaff9270b675a4b5360}{register}} (\$prepend=false)
+\item 
+static \mbox{\hyperlink{class_smarty___autoloader_ab4c022bf9d3474583030f31894865182}{autoload}} (\$class)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___autoloader_a011f25502f1fd7847c51201964ab367e}\label{class_smarty___autoloader_a011f25502f1fd7847c51201964ab367e} 
+static {\bfseries \$\+SMARTY\+\_\+\+DIR} = null
+\item 
+\Hypertarget{class_smarty___autoloader_a32999ea1944e877dd09264ff77b340e5}\label{class_smarty___autoloader_a32999ea1944e877dd09264ff77b340e5} 
+static {\bfseries \$\+SMARTY\+\_\+\+SYSPLUGINS\+\_\+\+DIR} = null
+\item 
+\Hypertarget{class_smarty___autoloader_ad87d52b8ea8fbb2c96fdcf3f2c5fa567}\label{class_smarty___autoloader_ad87d52b8ea8fbb2c96fdcf3f2c5fa567} 
+static {\bfseries \$root\+Classes} = array(\textquotesingle{}smarty\textquotesingle{} =$>$ \textquotesingle{}Smarty.\+class.\+php\textquotesingle{}, \textquotesingle{}smartybc\textquotesingle{} =$>$ \textquotesingle{}Smarty\+BC.\+class.\+php\textquotesingle{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___autoloader_ab4c022bf9d3474583030f31894865182}\index{Smarty\_Autoloader@{Smarty\_Autoloader}!autoload@{autoload}}
+\index{autoload@{autoload}!Smarty\_Autoloader@{Smarty\_Autoloader}}
+\doxysubsubsection{\texorpdfstring{autoload()}{autoload()}}
+{\footnotesize\ttfamily \label{class_smarty___autoloader_ab4c022bf9d3474583030f31894865182} 
+static autoload (\begin{DoxyParamCaption}\item[{}]{\$class}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Handles auto loading of classes.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & A class name. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___autoloader_aef39c6066201dbaff9270b675a4b5360}\index{Smarty\_Autoloader@{Smarty\_Autoloader}!register@{register}}
+\index{register@{register}!Smarty\_Autoloader@{Smarty\_Autoloader}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{class_smarty___autoloader_aef39c6066201dbaff9270b675a4b5360} 
+static register (\begin{DoxyParamCaption}\item[{}]{\$prepend}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers \doxylink{class_smarty___autoloader}{Smarty\+\_\+\+Autoloader} as an SPL autoloader.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prepend} & Whether to prepend the autoloader or not. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_smarty___autoloader_af99b2955632d43b82b1df480ff63b072}\index{Smarty\_Autoloader@{Smarty\_Autoloader}!registerBC@{registerBC}}
+\index{registerBC@{registerBC}!Smarty\_Autoloader@{Smarty\_Autoloader}}
+\doxysubsubsection{\texorpdfstring{registerBC()}{registerBC()}}
+{\footnotesize\ttfamily \label{class_smarty___autoloader_af99b2955632d43b82b1df480ff63b072} 
+static register\+BC (\begin{DoxyParamCaption}\item[{}]{\$prepend}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Registers \doxylink{class_smarty___autoloader}{Smarty\+\_\+\+Autoloader} backward compatible to older installations.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$prepend} & Whether to prepend the autoloader or not. \\
+\hline
+\end{DoxyParams}
+register the class autoloader
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/Autoloader.\+php\end{DoxyCompactItemize}

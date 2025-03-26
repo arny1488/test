@@ -1,0 +1,172 @@
+\doxysection{Phone\+Number\+Offline\+Geocoder Class Reference}
+\hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder}{}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a8de58b0b9635ec8bb38dff6c356d85b0}{get\+Description\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$locale, \$user\+Region=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_abd537f3e14a01f9584481a1063de60c2}{get\+Description\+For\+Valid\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$locale, \$user\+Region=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a31639c53e2824e10406a538d69a9d892}{get\+Instance}} (\$mapping\+Dir=self\+::\+MAPPING\+\_\+\+DATA\+\_\+\+DIRECTORY)
+\item 
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a23bb62be5a2fa0b27abb85c36213d66a}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a23bb62be5a2fa0b27abb85c36213d66a} 
+static {\bfseries reset\+Instance} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_ae4e8cbe67551db2a987270769c66ce69}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_ae4e8cbe67551db2a987270769c66ce69} 
+const {\bfseries MAPPING\+\_\+\+DATA\+\_\+\+DIRECTORY} = \textquotesingle{}/data\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb97ee3755cff4430a2957ff3260a848}{\+\_\+\+\_\+construct}} (\$phone\+Prefix\+Data\+Directory)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb975117507bd3af4a512434f1662ad2}{get\+Country\+Name\+For\+Number}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number, \$locale)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_adb451cc108a6bc9d88fbd63ab67a6079}{get\+Region\+Display\+Name}} (\$region\+Code, \$locale)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a45b9547156b8e76a1df9ed371f1b6b86}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a45b9547156b8e76a1df9ed371f1b6b86} 
+{\bfseries \$phone\+Util}
+\item 
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a80c04d34f5612142e11b0763c89c012b}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a80c04d34f5612142e11b0763c89c012b} 
+{\bfseries \$prefix\+File\+Reader}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_ad9d7ce33ebb142b70e58b68052ca0ea8}\label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_ad9d7ce33ebb142b70e58b68052ca0ea8} 
+static {\bfseries \$instance}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb97ee3755cff4430a2957ff3260a848}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb97ee3755cff4430a2957ff3260a848} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$phone\+Prefix\+Data\+Directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Phone\+Number\+Offline\+Geocoder constructor. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$phone\+Prefix\+Data\+Directory} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb975117507bd3af4a512434f1662ad2}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!getCountryNameForNumber@{getCountryNameForNumber}}
+\index{getCountryNameForNumber@{getCountryNameForNumber}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{getCountryNameForNumber()}{getCountryNameForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_afb975117507bd3af4a512434f1662ad2} 
+get\+Country\+Name\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the customary display name in the given language for the given territory the phone number is from. If it could be from many territories, nothing is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & \\
+\hline
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a8de58b0b9635ec8bb38dff6c356d85b0}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!getDescriptionForNumber@{getDescriptionForNumber}}
+\index{getDescriptionForNumber@{getDescriptionForNumber}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{getDescriptionForNumber()}{getDescriptionForNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a8de58b0b9635ec8bb38dff6c356d85b0} 
+get\+Description\+For\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$locale}{, }\item[{}]{\$user\+Region}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+As per get\+Description\+For\+Valid\+Number, but explicitly checks the validity of the number passed in.
+
+\begin{DoxySeeAlso}{See also}
+get\+Description\+For\+Valid\+Number 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & a valid phone number for which we want to get a text description \\
+\hline
+string & {\em \$locale} & the language code for which the description should be written \\
+\hline
+string & {\em \$user\+Region} & the region code for a given user. This region will be omitted from the description if the phone number comes from this region. It is a two-\/letter uppercase CLDR region code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string a text description for the given language code for the given phone number, or empty string if the number passed in is invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_abd537f3e14a01f9584481a1063de60c2}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!getDescriptionForValidNumber@{getDescriptionForValidNumber}}
+\index{getDescriptionForValidNumber@{getDescriptionForValidNumber}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{getDescriptionForValidNumber()}{getDescriptionForValidNumber()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_abd537f3e14a01f9584481a1063de60c2} 
+get\+Description\+For\+Valid\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{, }\item[{}]{\$locale}{, }\item[{}]{\$user\+Region}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Returns a text description for the given phone number, in the language provided. The description might consist of the name of the country where the phone number is from, or the name of the geographical area the phone number is from if more detailed information is available.
+
+This method assumes the validity of the number passed in has already been checked, and that the number is suitable for geocoding. We consider fixed-\/line and mobile numbers possible candidates for geocoding.
+
+If \$user\+Region is set, we also consider the region of the user. If the phone number is from the same region as the user, only a lower-\/level description will be returned, if one exists. Otherwise, the phone number\textquotesingle{}s region will be returned, with optionally some more detailed information.
+
+For example, for a user from the region "{}\+US"{} (United States), we would show "{}\+Mountain View, \+CA"{} for a particular number, omitting the United States from the description. For a user from the United Kingdom (region "{}\+GB"{}), for the same number we may show "{}\+Mountain View, CA, United \+States"{} or even just "{}\+United States"{}.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & a valid phone number for which we want to get a text description \\
+\hline
+string & {\em \$locale} & the language code for which the description should be written \\
+\hline
+string & {\em \$user\+Region} & the region code for a given user. This region will be omitted from the description if the phone number comes from this region. It is a two-\/letter upper-\/case CLDR region code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string a text description for the given language code for the given phone number, or an empty string if the number could come from multiple countries, or the country code is in fact invalid 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a31639c53e2824e10406a538d69a9d892}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_a31639c53e2824e10406a538d69a9d892} 
+static get\+Instance (\begin{DoxyParamCaption}\item[{}]{\$mapping\+Dir}{ = {\ttfamily self\+:\+:MAPPING\+\_\+DATA\+\_\+DIRECTORY}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets a Phone\+Number\+Offline\+Geocoder instance to carry out international phone number geocoding.
+
+The Phone\+Number\+Offline\+Geocoder is implemented as a singleton. Therefore, calling this method multiple times will only result in one instance being created.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$mapping\+Dir} & (Optional) Mapping Data Directory \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Phone\+Number\+Offline\+Geocoder 
+\end{DoxyReturn}
+\Hypertarget{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_adb451cc108a6bc9d88fbd63ab67a6079}\index{PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}!getRegionDisplayName@{getRegionDisplayName}}
+\index{getRegionDisplayName@{getRegionDisplayName}!PhoneNumberOfflineGeocoder@{PhoneNumberOfflineGeocoder}}
+\doxysubsubsection{\texorpdfstring{getRegionDisplayName()}{getRegionDisplayName()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1geocoding_1_1_phone_number_offline_geocoder_adb451cc108a6bc9d88fbd63ab67a6079} 
+get\+Region\+Display\+Name (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{, }\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Returns the customary display name in the given language for the given region.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$region\+Code} & \\
+\hline
+{\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/geocoding/Phone\+Number\+Offline\+Geocoder.\+php\end{DoxyCompactItemize}

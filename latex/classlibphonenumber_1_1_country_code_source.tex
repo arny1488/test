@@ -1,0 +1,51 @@
+\doxysection{Country\+Code\+Source Class Reference}
+\hypertarget{classlibphonenumber_1_1_country_code_source}{}\label{classlibphonenumber_1_1_country_code_source}\index{CountryCodeSource@{CountryCodeSource}}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_country_code_source_a783464264fe236979efffa6360d7c3eb}{FROM\+\_\+\+NUMBER\+\_\+\+WITH\+\_\+\+PLUS\+\_\+\+SIGN}} = 0
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_country_code_source_a2ed19967211cc2a513779f08a5cd23c8}{FROM\+\_\+\+NUMBER\+\_\+\+WITH\+\_\+\+IDD}} = 1
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_country_code_source_a8425adb4b3e1a884f7be2178537ced37}{FROM\+\_\+\+NUMBER\+\_\+\+WITHOUT\+\_\+\+PLUS\+\_\+\+SIGN}} = 2
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_country_code_source_aee5e70b3e372ec5e0a9f30ec56572692}{FROM\+\_\+\+DEFAULT\+\_\+\+COUNTRY}} = 3
+\item 
+\Hypertarget{classlibphonenumber_1_1_country_code_source_a6e92999748fed3a4a2c3ea6838e6064a}\label{classlibphonenumber_1_1_country_code_source_a6e92999748fed3a4a2c3ea6838e6064a} 
+const {\bfseries UNSPECIFIED} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Country code source from number 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classlibphonenumber_1_1_country_code_source_aee5e70b3e372ec5e0a9f30ec56572692}\index{CountryCodeSource@{CountryCodeSource}!FROM\_DEFAULT\_COUNTRY@{FROM\_DEFAULT\_COUNTRY}}
+\index{FROM\_DEFAULT\_COUNTRY@{FROM\_DEFAULT\_COUNTRY}!CountryCodeSource@{CountryCodeSource}}
+\doxysubsubsection{\texorpdfstring{FROM\_DEFAULT\_COUNTRY}{FROM\_DEFAULT\_COUNTRY}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_country_code_source_aee5e70b3e372ec5e0a9f30ec56572692} 
+const FROM\+\_\+\+DEFAULT\+\_\+\+COUNTRY = 3}
+
+The country\+\_\+code is derived NOT based on the phone number itself, but from the default\+Country parameter provided in the parsing function by the clients. This happens mostly for numbers written in the national format (without country code). For example, this would be set when parsing the French number "{}01 42 68 53 00"{}, when default\+Country is supplied as France. \Hypertarget{classlibphonenumber_1_1_country_code_source_a2ed19967211cc2a513779f08a5cd23c8}\index{CountryCodeSource@{CountryCodeSource}!FROM\_NUMBER\_WITH\_IDD@{FROM\_NUMBER\_WITH\_IDD}}
+\index{FROM\_NUMBER\_WITH\_IDD@{FROM\_NUMBER\_WITH\_IDD}!CountryCodeSource@{CountryCodeSource}}
+\doxysubsubsection{\texorpdfstring{FROM\_NUMBER\_WITH\_IDD}{FROM\_NUMBER\_WITH\_IDD}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_country_code_source_a2ed19967211cc2a513779f08a5cd23c8} 
+const FROM\+\_\+\+NUMBER\+\_\+\+WITH\+\_\+\+IDD = 1}
+
+The country\+\_\+code is derived based on a phone number with a leading IDD, e.\+g. the French number "{}011 33 1 42 68 53 00"{}, as it is dialled from US. \Hypertarget{classlibphonenumber_1_1_country_code_source_a783464264fe236979efffa6360d7c3eb}\index{CountryCodeSource@{CountryCodeSource}!FROM\_NUMBER\_WITH\_PLUS\_SIGN@{FROM\_NUMBER\_WITH\_PLUS\_SIGN}}
+\index{FROM\_NUMBER\_WITH\_PLUS\_SIGN@{FROM\_NUMBER\_WITH\_PLUS\_SIGN}!CountryCodeSource@{CountryCodeSource}}
+\doxysubsubsection{\texorpdfstring{FROM\_NUMBER\_WITH\_PLUS\_SIGN}{FROM\_NUMBER\_WITH\_PLUS\_SIGN}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_country_code_source_a783464264fe236979efffa6360d7c3eb} 
+const FROM\+\_\+\+NUMBER\+\_\+\+WITH\+\_\+\+PLUS\+\_\+\+SIGN = 0}
+
+The country\+\_\+code is derived based on a phone number with a leading "{}+"{}, e.\+g. the French number "{}+33 1 42 68 53 00"{}. \Hypertarget{classlibphonenumber_1_1_country_code_source_a8425adb4b3e1a884f7be2178537ced37}\index{CountryCodeSource@{CountryCodeSource}!FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN@{FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN}}
+\index{FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN@{FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN}!CountryCodeSource@{CountryCodeSource}}
+\doxysubsubsection{\texorpdfstring{FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN}{FROM\_NUMBER\_WITHOUT\_PLUS\_SIGN}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_country_code_source_a8425adb4b3e1a884f7be2178537ced37} 
+const FROM\+\_\+\+NUMBER\+\_\+\+WITHOUT\+\_\+\+PLUS\+\_\+\+SIGN = 2}
+
+The country\+\_\+code is derived based on a phone number without a leading "{}+"{}, e.\+g. the French number "{}33 1 42 68 53 00"{} when default\+Country is supplied as France. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Country\+Code\+Source.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+\doxysection{Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream Class Reference}
+\hypertarget{class_swift___character_stream___ng_character_stream}{}\label{class_swift___character_stream___ng_character_stream}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+Inheritance diagram for Swift\+\_\+\+Character\+Stream\+\_\+\+Ng\+Character\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___character_stream___ng_character_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_ae48318bd771a44a767cb87c6d7dc89f3}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}} \$factory, \$charset)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}{set\+Character\+Set}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_aeb55290697c0f268ac8d58929c37686a}{set\+Character\+Reader\+Factory}} (\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}} \$factory)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a30b098fadaf991b5ffe27402ba7f705d}{flush\+Contents}} ()
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{import\+Byte\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{import\+String}} (\$string)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a2acacba716a933935d63b2bacf52cff6}{read}} (\$length)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a80949d4d73f53497c94385b164a4ec06}{read\+Bytes}} (\$length)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a34d080813705b65531a6aca4f372d98f}{set\+Pointer}} (\$char\+Offset)
+\item 
+\mbox{\hyperlink{class_swift___character_stream___ng_character_stream_a7177c479366fe53609a37ca70a0130b5}{write}} (\$chars)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Character\+Stream implementation which stores characters in an internal array.
+
+\begin{DoxyAuthor}{Author}
+Xavier De Cock \href{mailto:xdecock@gmail.com}{\texttt{ xdecock@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___character_stream___ng_character_stream_ae48318bd771a44a767cb87c6d7dc89f3}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_ae48318bd771a44a767cb87c6d7dc89f3} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}}}]{\$factory}{, }\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___character_stream___ng_character_stream_a30b098fadaf991b5ffe27402ba7f705d}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!flushContents@{flushContents}}
+\index{flushContents@{flushContents}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{flushContents()}{flushContents()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a30b098fadaf991b5ffe27402ba7f705d} 
+flush\+Contents (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a30b098fadaf991b5ffe27402ba7f705d}{Swift\+\_\+\+Character\+Stream\textbackslash{}flush\+Contents()} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a30b098fadaf991b5ffe27402ba7f705d}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a8ff715be7d98ad5fa0bad502ae82c620}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!importByteStream@{importByteStream}}
+\index{importByteStream@{importByteStream}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{importByteStream()}{importByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a8ff715be7d98ad5fa0bad502ae82c620} 
+import\+Byte\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{Swift\+\_\+\+Character\+Stream\textbackslash{}import\+Byte\+Stream()} 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a8ff715be7d98ad5fa0bad502ae82c620}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!importString@{importString}}
+\index{importString@{importString}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{importString()}{importString()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a704baff7ed73afcdf9d5ab38c8c2b199} 
+import\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{Swift\+\_\+\+Character\+Stream\textbackslash{}import\+String()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a704baff7ed73afcdf9d5ab38c8c2b199}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a2acacba716a933935d63b2bacf52cff6}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!read@{read}}
+\index{read@{read}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a2acacba716a933935d63b2bacf52cff6} 
+read (\begin{DoxyParamCaption}\item[{}]{\$length}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a2acacba716a933935d63b2bacf52cff6}{Swift\+\_\+\+Character\+Stream\textbackslash{}read()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a2acacba716a933935d63b2bacf52cff6}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a80949d4d73f53497c94385b164a4ec06}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!readBytes@{readBytes}}
+\index{readBytes@{readBytes}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{readBytes()}{readBytes()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a80949d4d73f53497c94385b164a4ec06} 
+read\+Bytes (\begin{DoxyParamCaption}\item[{}]{\$length}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a80949d4d73f53497c94385b164a4ec06}{Swift\+\_\+\+Character\+Stream\textbackslash{}read\+Bytes()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a80949d4d73f53497c94385b164a4ec06}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_aeb55290697c0f268ac8d58929c37686a}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!setCharacterReaderFactory@{setCharacterReaderFactory}}
+\index{setCharacterReaderFactory@{setCharacterReaderFactory}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{setCharacterReaderFactory()}{setCharacterReaderFactory()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_aeb55290697c0f268ac8d58929c37686a} 
+set\+Character\+Reader\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___character_reader_factory}{Swift\+\_\+\+Character\+Reader\+Factory}}}]{\$factory}{}\end{DoxyParamCaption})}
+
+Set the Character\+Reader\+Factory for multi charset support. 
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_aeb55290697c0f268ac8d58929c37686a}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!setCharacterSet@{setCharacterSet}}
+\index{setCharacterSet@{setCharacterSet}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{setCharacterSet()}{setCharacterSet()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd} 
+set\+Character\+Set (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Set the character set used in this Character\+Stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_ac2f8e8bdf8eda2090abeccdbd91320cd}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a34d080813705b65531a6aca4f372d98f}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!setPointer@{setPointer}}
+\index{setPointer@{setPointer}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{setPointer()}{setPointer()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a34d080813705b65531a6aca4f372d98f} 
+set\+Pointer (\begin{DoxyParamCaption}\item[{}]{\$char\+Offset}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a34d080813705b65531a6aca4f372d98f}{Swift\+\_\+\+Character\+Stream\textbackslash{}set\+Pointer()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$char\+Offset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a34d080813705b65531a6aca4f372d98f}{Swift\+\_\+\+Character\+Stream}}.
+
+\Hypertarget{class_swift___character_stream___ng_character_stream_a7177c479366fe53609a37ca70a0130b5}\index{Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}!write@{write}}
+\index{write@{write}!Swift\_CharacterStream\_NgCharacterStream@{Swift\_CharacterStream\_NgCharacterStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_swift___character_stream___ng_character_stream_a7177c479366fe53609a37ca70a0130b5} 
+write (\begin{DoxyParamCaption}\item[{}]{\$chars}{}\end{DoxyParamCaption})}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___character_stream_a7177c479366fe53609a37ca70a0130b5}{Swift\+\_\+\+Character\+Stream\textbackslash{}write()}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$chars} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___character_stream_a7177c479366fe53609a37ca70a0130b5}{Swift\+\_\+\+Character\+Stream}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Character\+Stream/Ng\+Character\+Stream.\+php\end{DoxyCompactItemize}

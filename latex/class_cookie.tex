@@ -1,0 +1,94 @@
+\doxysection{Cookie Class Reference}
+\hypertarget{class_cookie}{}\label{class_cookie}\index{Cookie@{Cookie}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cookie_ae8a4bbbb950b885c3b89c6bfca56fe44}{set}} (string \$key, string \$value, int \$expire=86400, string \$domain=\textquotesingle{}\textquotesingle{}, string \$path=\textquotesingle{}/\textquotesingle{}, bool \$secure=false, bool \$http\+Only=false)
+\item 
+static \mbox{\hyperlink{class_cookie_a44685d21302f1e914682b99767ca99e5}{get}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_cookie_a4175c790b4d512eb10d8f1f9ef666ab5}{delete}} (string \$key)
+\item 
+static \mbox{\hyperlink{class_cookie_a7279b097abf8c1d6723eb2dda4419393}{set\+Domain}} (string \$cookie\+\_\+domain=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_cookie_a4175c790b4d512eb10d8f1f9ef666ab5}\index{Cookie@{Cookie}!delete@{delete}}
+\index{delete@{delete}!Cookie@{Cookie}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_cookie_a4175c790b4d512eb10d8f1f9ef666ab5} 
+static delete (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete cookie
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & ключ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_cookie_a44685d21302f1e914682b99767ca99e5}\index{Cookie@{Cookie}!get@{get}}
+\index{get@{get}!Cookie@{Cookie}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_cookie_a44685d21302f1e914682b99767ca99e5} 
+static get (\begin{DoxyParamCaption}\item[{string}]{\$key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get cookie value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & ключ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_cookie_ae8a4bbbb950b885c3b89c6bfca56fe44}\index{Cookie@{Cookie}!set@{set}}
+\index{set@{set}!Cookie@{Cookie}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{class_cookie_ae8a4bbbb950b885c3b89c6bfca56fe44} 
+static set (\begin{DoxyParamCaption}\item[{string}]{\$key}{, }\item[{string}]{\$value}{, }\item[{int}]{\$expire}{ = {\ttfamily 86400}, }\item[{string}]{\$domain}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{string}]{\$path}{ = {\ttfamily \textquotesingle{}/\textquotesingle{}}, }\item[{bool}]{\$secure}{ = {\ttfamily false}, }\item[{bool}]{\$http\+Only}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set cookie value
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & key \\
+\hline
+string & {\em \$value} & value \\
+\hline
+int & {\em \$expire} & cookie lifetime \\
+\hline
+string & {\em \$domain} & cookie domain \\
+\hline
+string & {\em \$path} & path \\
+\hline
+bool & {\em \$secure} & should only be transmitted over a secure HTTPS connection \\
+\hline
+bool & {\em \$http\+Only} & should be accessible only through the HTTP protocol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_cookie_a7279b097abf8c1d6723eb2dda4419393}\index{Cookie@{Cookie}!setDomain@{setDomain}}
+\index{setDomain@{setDomain}!Cookie@{Cookie}}
+\doxysubsubsection{\texorpdfstring{setDomain()}{setDomain()}}
+{\footnotesize\ttfamily \label{class_cookie_a7279b097abf8c1d6723eb2dda4419393} 
+static set\+Domain (\begin{DoxyParamCaption}\item[{string}]{\$cookie\+\_\+domain}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set cookies domain
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cookie\+\_\+domain} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Cookie.\+php\end{DoxyCompactItemize}

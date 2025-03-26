@@ -1,0 +1,84 @@
+\doxysection{Coordinate Class Reference}
+\hypertarget{class_wide_image_1_1_coordinate}{}\label{class_wide_image_1_1_coordinate}\index{Coordinate@{Coordinate}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_wide_image_1_1_coordinate_ac2a7acd7b03483ad05f4667776668192}{parse}} (\$c)
+\item 
+static \mbox{\hyperlink{class_wide_image_1_1_coordinate_a1869e8a767c9d6fc839d51b815308659}{evaluate}} (\$coord, \$dim, \$sec\+\_\+dim=null)
+\item 
+static \mbox{\hyperlink{class_wide_image_1_1_coordinate_af5a717d8d0a376be3600964fd4a07bb8}{fix}} (\$value, \$dim, \$sec\+\_\+dim=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_wide_image_1_1_coordinate_a66a1fc32e755b276a34b6137d134fc76}\label{class_wide_image_1_1_coordinate_a66a1fc32e755b276a34b6137d134fc76} 
+static {\bfseries \$coord\+\_\+align} = \mbox{[}\textquotesingle{}left\textquotesingle{}, \textquotesingle{}center\textquotesingle{}, \textquotesingle{}right\textquotesingle{}, \textquotesingle{}top\textquotesingle{}, \textquotesingle{}middle\textquotesingle{}, \textquotesingle{}bottom\textquotesingle{}\mbox{]}
+\item 
+\Hypertarget{class_wide_image_1_1_coordinate_acb49b27a3189c07f8580677c6560c6fd}\label{class_wide_image_1_1_coordinate_acb49b27a3189c07f8580677c6560c6fd} 
+static {\bfseries \$coord\+\_\+numeric} = \mbox{[}\textquotesingle{}\mbox{[}0-\/9\mbox{]}+\textquotesingle{}, \textquotesingle{}\mbox{[}0-\/9\mbox{]}+\textbackslash{}.\mbox{[}0-\/9\mbox{]}+\textquotesingle{}, \textquotesingle{}\mbox{[}0-\/9\mbox{]}+\%\textquotesingle{}, \textquotesingle{}\mbox{[}0-\/9\mbox{]}+\textbackslash{}.\mbox{[}0-\/9\mbox{]}+\%\textquotesingle{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_wide_image_1_1_coordinate_a1869e8a767c9d6fc839d51b815308659}\index{Coordinate@{Coordinate}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!Coordinate@{Coordinate}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_coordinate_a1869e8a767c9d6fc839d51b815308659} 
+static evaluate (\begin{DoxyParamCaption}\item[{}]{\$coord}{, }\item[{}]{\$dim}{, }\item[{}]{\$sec\+\_\+dim}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Evaluates the \$coord relatively to \$dim
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$coord} & A numeric value or percent string \\
+\hline
+int & {\em \$dim} & Dimension \\
+\hline
+int & {\em \$sec\+\_\+dim} & Secondary dimension (for align) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Calculated value 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_coordinate_af5a717d8d0a376be3600964fd4a07bb8}\index{Coordinate@{Coordinate}!fix@{fix}}
+\index{fix@{fix}!Coordinate@{Coordinate}}
+\doxysubsubsection{\texorpdfstring{fix()}{fix()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_coordinate_af5a717d8d0a376be3600964fd4a07bb8} 
+static fix (\begin{DoxyParamCaption}\item[{}]{\$value}{, }\item[{}]{\$dim}{, }\item[{}]{\$sec\+\_\+dim}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculates and fixes a smart coordinate into a numeric value
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & Smart coordinate, relative to \$dim \\
+\hline
+int & {\em \$dim} & Coordinate to which \$value is relative \\
+\hline
+int & {\em \$sec\+\_\+dim} & Secondary dimension (for align) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Calculated value 
+\end{DoxyReturn}
+\Hypertarget{class_wide_image_1_1_coordinate_ac2a7acd7b03483ad05f4667776668192}\index{Coordinate@{Coordinate}!parse@{parse}}
+\index{parse@{parse}!Coordinate@{Coordinate}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{class_wide_image_1_1_coordinate_ac2a7acd7b03483ad05f4667776668192} 
+static parse (\begin{DoxyParamCaption}\item[{}]{\$c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Parses a numeric or string representation of a corrdinate into a structure
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$coord} & Smart coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array Parsed smart coordinate 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Image\+Processing/\+Wide\+Image/Coordinate.\+php\end{DoxyCompactItemize}

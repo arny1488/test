@@ -1,0 +1,74 @@
+<?php
+/* Smarty version {Smarty::SMARTY_VERSION}, created on 2024-08-01 11:19:25
+  from "/home/users/a/arny1488/domains/test.oblozhky.ru/app/modules/deals/view/index.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.32-dev-25',
+  'unifunc' => 'content_66ab450d5d3406_74871611',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'efce6012e6153a73013c3bd4df7065babe069dd5' => 
+    array (
+      0 => '/home/users/a/arny1488/domains/test.oblozhky.ru/app/modules/deals/view/index.tpl',
+      1 => 1696044856,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_66ab450d5d3406_74871611 (Smarty_Internal_Template $_smarty_tpl) {
+?>
+<div class="container-fluid">
+    <div class="row justify-content-center justify-content-md-between align-items-center">
+        <div class="col-12 col-sm-auto mb-3">
+            <ul class="nav nav-underline flex-column flex-sm-row">
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['ABS_PATH']->value;?>
+profile/brands"><span class="h3">Бренды</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['ABS_PATH']->value;?>
+profile/content"><span class="h3">Контент</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $_smarty_tpl->tpl_vars['ABS_PATH']->value;?>
+profile/offers"><span class="h3">Предложения</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?php echo $_smarty_tpl->tpl_vars['ABS_PATH']->value;?>
+profile/deals"><span class="h3">Сделки</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-auto mb-3">
+            <button type="button" data-action="add" class="btn btn-outline-primary rounded-pill border-style-dashed"><i class="mdi mdi-plus"></i> <?php echo $_smarty_tpl->smarty->ext->configLoad->_getConfigVariable($_smarty_tpl, 'button_add');?>
+</button>
+        </div>
+    </div>
+    <div id="dealssList" class="row g-3">
+        <?php
+$_smarty_tpl->tpl_vars['foo'] = new Smarty_Variable(null, $_smarty_tpl->isRenderingCache);$_smarty_tpl->tpl_vars['foo']->step = 1;$_smarty_tpl->tpl_vars['foo']->total = (int) ceil(($_smarty_tpl->tpl_vars['foo']->step > 0 ? 5+1 - (1) : 1-(5)+1)/abs($_smarty_tpl->tpl_vars['foo']->step));
+if ($_smarty_tpl->tpl_vars['foo']->total > 0) {
+for ($_smarty_tpl->tpl_vars['foo']->value = 1, $_smarty_tpl->tpl_vars['foo']->iteration = 1;$_smarty_tpl->tpl_vars['foo']->iteration <= $_smarty_tpl->tpl_vars['foo']->total;$_smarty_tpl->tpl_vars['foo']->value += $_smarty_tpl->tpl_vars['foo']->step, $_smarty_tpl->tpl_vars['foo']->iteration++) {
+$_smarty_tpl->tpl_vars['foo']->first = $_smarty_tpl->tpl_vars['foo']->iteration == 1;$_smarty_tpl->tpl_vars['foo']->last = $_smarty_tpl->tpl_vars['foo']->iteration == $_smarty_tpl->tpl_vars['foo']->total;?>
+            <div class="col-12">
+                <div class="card bg-transparent" role="button">
+                    <div class="card-body">
+                        <div class="shimmer hg-4 wd-200 rounded-2 mb-1"></div>
+                        <div class="shimmer hg-3 w-100 rounded-2 mb-1"></div>
+                        <div class="shimmer hg-3 w-100 rounded-2 mb-1"></div>
+                        <div class="shimmer hg-3 w-75 rounded-2 mb-1"></div>
+                    </div>
+                </div>
+            </div>
+        <?php }
+}
+?>
+
+    </div>
+</div><?php }
+}

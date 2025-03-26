@@ -1,0 +1,79 @@
+\doxysection{Smarty\+\_\+\+Internal\+\_\+\+Block Class Reference}
+\hypertarget{class_smarty___internal___block}{}\label{class_smarty___internal___block}\index{Smarty\_Internal\_Block@{Smarty\_Internal\_Block}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___internal___block_a27ad6ed1df8c30e277f2bf182f9095b5}{\+\_\+\+\_\+construct}} (\$name, \$tpl\+Index)
+\item 
+\mbox{\hyperlink{class_smarty___internal___block_a9d967c04d6ada9a1070a0fa32eda425a}{call\+Block}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$tpl)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___internal___block_ab2fc40d43824ea3e1ce5d86dee0d763b}\label{class_smarty___internal___block_ab2fc40d43824ea3e1ce5d86dee0d763b} 
+{\bfseries \$name} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_smarty___internal___block_a8f919799c8ec093ef7436076165a19ae}\label{class_smarty___internal___block_a8f919799c8ec093ef7436076165a19ae} 
+{\bfseries \$hide} = false
+\item 
+\Hypertarget{class_smarty___internal___block_a0363de7e77115bb52718abdab127e971}\label{class_smarty___internal___block_a0363de7e77115bb52718abdab127e971} 
+{\bfseries \$append} = false
+\item 
+\Hypertarget{class_smarty___internal___block_a829d62e7dd18027c1fc2c9b3fe321ae2}\label{class_smarty___internal___block_a829d62e7dd18027c1fc2c9b3fe321ae2} 
+{\bfseries \$prepend} = false
+\item 
+\Hypertarget{class_smarty___internal___block_a3a899efac03d02550ae873a7f2eb7f52}\label{class_smarty___internal___block_a3a899efac03d02550ae873a7f2eb7f52} 
+{\bfseries \$calls\+Child} = false
+\item 
+\Hypertarget{class_smarty___internal___block_a40410074f5960b0491d35e137147571c}\label{class_smarty___internal___block_a40410074f5960b0491d35e137147571c} 
+{\bfseries \$child} = null
+\item 
+\Hypertarget{class_smarty___internal___block_a4e2313a4b35b72a06ac45fd38960f677}\label{class_smarty___internal___block_a4e2313a4b35b72a06ac45fd38960f677} 
+{\bfseries \$parent} = null
+\item 
+\Hypertarget{class_smarty___internal___block_a6c8bd063c87f8e127547bbb375f0d557}\label{class_smarty___internal___block_a6c8bd063c87f8e127547bbb375f0d557} 
+{\bfseries \$tpl\+Index} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_smarty___internal___block_a27ad6ed1df8c30e277f2bf182f9095b5}\index{Smarty\_Internal\_Block@{Smarty\_Internal\_Block}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Smarty\_Internal\_Block@{Smarty\_Internal\_Block}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___block_a27ad6ed1df8c30e277f2bf182f9095b5} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{}]{\$tpl\+Index}{}\end{DoxyParamCaption})}
+
+\doxylink{class_smarty___internal___block}{Smarty\+\_\+\+Internal\+\_\+\+Block} constructor.
+\begin{DoxyItemize}
+\item if outer level \{block\} of child template (\$state == 1) save it as child root block
+\item otherwise process inheritance and render
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & block name \\
+\hline
+int | null & {\em \$tpl\+Index} & index of outer level \{block\} if nested \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___internal___block_a9d967c04d6ada9a1070a0fa32eda425a}\index{Smarty\_Internal\_Block@{Smarty\_Internal\_Block}!callBlock@{callBlock}}
+\index{callBlock@{callBlock}!Smarty\_Internal\_Block@{Smarty\_Internal\_Block}}
+\doxysubsubsection{\texorpdfstring{callBlock()}{callBlock()}}
+{\footnotesize\ttfamily \label{class_smarty___internal___block_a9d967c04d6ada9a1070a0fa32eda425a} 
+call\+Block (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$tpl}{}\end{DoxyParamCaption})}
+
+Compiled block code overloaded by \{block\} class
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$tpl} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+internal\+\_\+block.\+php\end{DoxyCompactItemize}

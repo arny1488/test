@@ -1,0 +1,66 @@
+\doxysection{Swift\+\_\+\+Signers\+\_\+\+Body\+Signer Interface Reference}
+\hypertarget{interface_swift___signers___body_signer}{}\label{interface_swift___signers___body_signer}\index{Swift\_Signers\_BodySigner@{Swift\_Signers\_BodySigner}}
+Inheritance diagram for Swift\+\_\+\+Signers\+\_\+\+Body\+Signer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_swift___signers___body_signer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___signers___body_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}{sign\+Message}} (\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}} \$message)
+\item 
+\mbox{\hyperlink{interface_swift___signers___body_signer_a71caed0ba27d07123f847a157cb9139f}{get\+Altered\+Headers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___signer}{Swift\+\_\+\+Signer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___signer_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Body Signer Interface used to apply Body-\/\+Based Signature to a message.
+
+\begin{DoxyAuthor}{Author}
+Xavier De Cock \href{mailto:xdecock@gmail.com}{\texttt{ xdecock@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___signers___body_signer_a71caed0ba27d07123f847a157cb9139f}\index{Swift\_Signers\_BodySigner@{Swift\_Signers\_BodySigner}!getAlteredHeaders@{getAlteredHeaders}}
+\index{getAlteredHeaders@{getAlteredHeaders}!Swift\_Signers\_BodySigner@{Swift\_Signers\_BodySigner}}
+\doxysubsubsection{\texorpdfstring{getAlteredHeaders()}{getAlteredHeaders()}}
+{\footnotesize\ttfamily \label{interface_swift___signers___body_signer_a71caed0ba27d07123f847a157cb9139f} 
+get\+Altered\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Return the list of header a signer might tamper.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___signers___s_mime_signer_a71caed0ba27d07123f847a157cb9139f}{Swift\+\_\+\+Signers\+\_\+\+SMime\+Signer}}.
+
+\Hypertarget{interface_swift___signers___body_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}\index{Swift\_Signers\_BodySigner@{Swift\_Signers\_BodySigner}!signMessage@{signMessage}}
+\index{signMessage@{signMessage}!Swift\_Signers\_BodySigner@{Swift\_Signers\_BodySigner}}
+\doxysubsubsection{\texorpdfstring{signMessage()}{signMessage()}}
+{\footnotesize\ttfamily \label{interface_swift___signers___body_signer_a9fd50b14a2346d4f0bfa34a907aa04a6} 
+sign\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___message}{Swift\+\_\+\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Change the Swift\+\_\+\+Signed\+\_\+\+Message to apply the singing.
+
+\begin{DoxyReturn}{Returns}
+self 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___signers___s_mime_signer_a9fd50b14a2346d4f0bfa34a907aa04a6}{Swift\+\_\+\+Signers\+\_\+\+SMime\+Signer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Signers/Body\+Signer.\+php\end{DoxyCompactItemize}

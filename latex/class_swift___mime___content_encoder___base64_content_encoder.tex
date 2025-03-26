@@ -1,0 +1,70 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Base64\+Content\+Encoder Class Reference}
+\hypertarget{class_swift___mime___content_encoder___base64_content_encoder}{}\label{class_swift___mime___content_encoder___base64_content_encoder}\index{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder@{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Base64\+Content\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.478261cm]{class_swift___mime___content_encoder___base64_content_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___base64_content_encoder_a5e3f6fc7522a154d74c888bb1d265605}{encode\+Byte\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___base64_content_encoder_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___encoder___base64_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Base64\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___encoder___base64_encoder_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___encoder___base64_encoder_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles Base 64 Transfer Encoding in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___content_encoder___base64_content_encoder_a5e3f6fc7522a154d74c888bb1d265605}\index{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder@{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder}!encodeByteStream@{encodeByteStream}}
+\index{encodeByteStream@{encodeByteStream}!Swift\_Mime\_ContentEncoder\_Base64ContentEncoder@{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeByteStream()}{encodeByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___base64_content_encoder_a5e3f6fc7522a154d74c888bb1d265605} 
+encode\+Byte\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{, }\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Encode stream \$in to stream \$out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$first\+Line\+Offset} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a5e3f6fc7522a154d74c888bb1d265605}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+\Hypertarget{class_swift___mime___content_encoder___base64_content_encoder_a3d0963e68bb313b163a73f2803c64600}\index{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder@{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder}!getName@{getName}}
+\index{getName@{getName}!Swift\_Mime\_ContentEncoder\_Base64ContentEncoder@{Swift\_Mime\_ContentEncoder\_Base64ContentEncoder}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___base64_content_encoder_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of this encoding scheme. Returns the string \textquotesingle{}base64\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a3d0963e68bb313b163a73f2803c64600}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Content\+Encoder/Base64\+Content\+Encoder.\+php\end{DoxyCompactItemize}

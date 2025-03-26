@@ -1,0 +1,136 @@
+\doxysection{Swift\+\_\+\+Transport Interface Reference}
+\hypertarget{interface_swift___transport}{}\label{interface_swift___transport}\index{Swift\_Transport@{Swift\_Transport}}
+Inheritance diagram for Swift\+\_\+\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.493333cm]{interface_swift___transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Sends Messages via an abstract Transport subsystem.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_Transport@{Swift\_Transport}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Test if this Transport mechanism has started.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+\Hypertarget{interface_swift___transport_a6dad377f74b0ce6f21b485ba11052746}\index{Swift\_Transport@{Swift\_Transport}!ping@{ping}}
+\index{ping@{ping}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_a6dad377f74b0ce6f21b485ba11052746} 
+ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___failover_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\Hypertarget{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}\index{Swift\_Transport@{Swift\_Transport}!registerPlugin@{registerPlugin}}
+\index{registerPlugin@{registerPlugin}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{registerPlugin()}{registerPlugin()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92} 
+register\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$plugin}{}\end{DoxyParamCaption})}
+
+Register a plugin in the Transport. 
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+\Hypertarget{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}\index{Swift\_Transport@{Swift\_Transport}!send@{send}}
+\index{send@{send}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given Message.
+
+Recipient/sender data will be retrieved from the Message \doxylink{class_a_p_i}{API}. The return value is the number of recipients who were accepted for delivery.
+
+This is the responsibility of the send method to start the transport if needed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___failover_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, \mbox{\hyperlink{class_swift___transport___sendmail_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+\Hypertarget{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_Transport@{Swift\_Transport}!start@{start}}
+\index{start@{start}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start this Transport mechanism. 
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, \mbox{\hyperlink{class_swift___transport___sendmail_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Sendmail\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+\Hypertarget{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_Transport@{Swift\_Transport}!stop@{stop}}
+\index{stop@{stop}!Swift\_Transport@{Swift\_Transport}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stop this Transport mechanism. 
+
+Implemented in \mbox{\hyperlink{class_swift___transport___abstract_smtp_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport\+\_\+\+Abstract\+Smtp\+Transport}}, \mbox{\hyperlink{class_swift___transport___load_balanced_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport}}, \mbox{\hyperlink{class_swift___transport___null_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport\+\_\+\+Null\+Transport}}, and \mbox{\hyperlink{class_swift___transport___spool_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport\+\_\+\+Spool\+Transport}}.
+
+\begin{Desc}
+\item[Examples]\par
+\mbox{\hyperlink{_d_1_2project_2libraries_2_swift_mailer_2classes_2_swift_2_transport_8php-example}{D\+:/project/libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport.\+php}}.\end{Desc}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Transport.\+php\end{DoxyCompactItemize}

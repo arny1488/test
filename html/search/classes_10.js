@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['reason_0',['Reason',['../interface_egulias_1_1_email_validator_1_1_result_1_1_reason_1_1_reason.html',1,'Egulias::EmailValidator::Result::Reason']]],
+  ['regex_1',['Regex',['../class_symfony_1_1_polyfill_1_1_intl_1_1_idn_1_1_resources_1_1unidata_1_1_regex.html',1,'Symfony::Polyfill::Intl::Idn::Resources::unidata']]],
+  ['regexbasedmatcher_2',['RegexBasedMatcher',['../classlibphonenumber_1_1_regex_based_matcher.html',1,'libphonenumber']]],
+  ['regioncode_3',['RegionCode',['../classlibphonenumber_1_1_region_code.html',1,'libphonenumber']]],
+  ['request_4',['Request',['../class_request.html',1,'']]],
+  ['resize_5',['Resize',['../class_wide_image_1_1_operation_1_1_resize.html',1,'WideImage::Operation']]],
+  ['resizecanvas_6',['ResizeCanvas',['../class_wide_image_1_1_operation_1_1_resize_canvas.html',1,'WideImage::Operation']]],
+  ['response_7',['Response',['../class_response.html',1,'']]],
+  ['result_8',['Result',['../interface_egulias_1_1_email_validator_1_1_result_1_1_result.html',1,'Egulias::EmailValidator::Result']]],
+  ['rfcvalidation_9',['RFCValidation',['../class_egulias_1_1_email_validator_1_1_validation_1_1_r_f_c_validation.html',1,'Egulias::EmailValidator::Validation']]],
+  ['rfcwarnings_10',['RFCWarnings',['../class_egulias_1_1_email_validator_1_1_result_1_1_reason_1_1_r_f_c_warnings.html',1,'Egulias::EmailValidator::Result::Reason']]],
+  ['rolescontroller_11',['RolesController',['../class_roles_controller.html',1,'']]],
+  ['rolesmodel_12',['RolesModel',['../class_roles_model.html',1,'']]],
+  ['rolesmodule_13',['RolesModule',['../class_roles_module.html',1,'']]],
+  ['rotate_14',['Rotate',['../class_wide_image_1_1_operation_1_1_rotate.html',1,'WideImage::Operation']]],
+  ['roundcorners_15',['RoundCorners',['../class_wide_image_1_1_operation_1_1_round_corners.html',1,'WideImage::Operation']]],
+  ['router_16',['Router',['../class_router.html',1,'']]]
+];

@@ -1,0 +1,142 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Qp\+Content\+Encoder\+Proxy Class Reference}
+\hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy}{}\label{class_swift___mime___content_encoder___qp_content_encoder_proxy}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Qp\+Content\+Encoder\+Proxy\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___mime___content_encoder___qp_content_encoder_proxy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_a0771f005aa647189a67546b0b080c8bd}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Qp\+Content\+Encoder}} \$safe\+Encoder, \mbox{\hyperlink{class_swift___mime___content_encoder___native_qp_content_encoder}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Native\+Qp\+Content\+Encoder}} \$native\+Encoder, \$charset)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_a5e3f6fc7522a154d74c888bb1d265605}{encode\+Byte\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder_proxy_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Proxy for quoted-\/printable content encoders.
+
+Switches on the best QP encoder implementation for current charset.
+
+\begin{DoxyAuthor}{Author}
+Jean-\/\+François Simon \href{mailto:jeanfrancois.simon@sensiolabs.com}{\texttt{ jeanfrancois.\+simon@sensiolabs.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_a0771f005aa647189a67546b0b080c8bd}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_a0771f005aa647189a67546b0b080c8bd} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___content_encoder___qp_content_encoder}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Qp\+Content\+Encoder}}}]{\$safe\+Encoder}{, }\item[{\mbox{\hyperlink{class_swift___mime___content_encoder___native_qp_content_encoder}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Native\+Qp\+Content\+Encoder}}}]{\$native\+Encoder}{, }\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | null & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_ad0cb87b388bc74d63dc884accdca8713}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Make a deep copy of object. \Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_a642c64487e34084ca8fa4ea115ebdb5f}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!charsetChanged@{charsetChanged}}
+\index{charsetChanged@{charsetChanged}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{charsetChanged()}{charsetChanged()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_a642c64487e34084ca8fa4ea115ebdb5f} 
+charset\+Changed (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+\{Notify this observer that the entity\textquotesingle{}s charset has changed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___mime___charset_observer_a642c64487e34084ca8fa4ea115ebdb5f}{Swift\+\_\+\+Mime\+\_\+\+Charset\+Observer}}.
+
+\Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_a5e3f6fc7522a154d74c888bb1d265605}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!encodeByteStream@{encodeByteStream}}
+\index{encodeByteStream@{encodeByteStream}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{encodeByteStream()}{encodeByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_a5e3f6fc7522a154d74c888bb1d265605} 
+encode\+Byte\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{, }\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\{Encode \$in to \$out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream} & {\em \$os} & to read from \\
+\hline
+\doxylink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream} & {\em \$is} & to write to \\
+\hline
+int & {\em \$first\+Line\+Offset} & \\
+\hline
+int & {\em \$max\+Line\+Length} & -\/ 0 indicates the default length for this encoding\\
+\hline
+\end{DoxyParams}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a5e3f6fc7522a154d74c888bb1d265605}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+\Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_a4a83bd3d529ef683d32e98e490e61a65}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_a4a83bd3d529ef683d32e98e490e61a65} 
+encode\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\{Encode a given string to produce an encoded string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+int & {\em \$first\+Line\+Offset} & if first line needs to be shorter \\
+\hline
+int & {\em \$max\+Line\+Length} & -\/ 0 indicates the default length for this encoding\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___encoder_a4a83bd3d529ef683d32e98e490e61a65}{Swift\+\_\+\+Encoder}}.
+
+\Hypertarget{class_swift___mime___content_encoder___qp_content_encoder_proxy_a3d0963e68bb313b163a73f2803c64600}\index{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}!getName@{getName}}
+\index{getName@{getName}!Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy@{Swift\_Mime\_ContentEncoder\_QpContentEncoderProxy}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___qp_content_encoder_proxy_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{Get the MIME name of this content encoding scheme.
+
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a3d0963e68bb313b163a73f2803c64600}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Content\+Encoder/Qp\+Content\+Encoder\+Proxy.\+php\end{DoxyCompactItemize}

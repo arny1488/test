@@ -1,0 +1,119 @@
+\doxysection{Navigation Class Reference}
+\hypertarget{class_navigation}{}\label{class_navigation}\index{Navigation@{Navigation}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_navigation_ad2f10193317e6a96d9974e773a5ee0e2}{add}} (int \$sorting, string \$name, string \$icon, string \$url, string \$html, string \$id, int \$type, int \$rubric, string \$parent, string \$onclick, bool \$external=false)
+\item 
+static \mbox{\hyperlink{class_navigation_af0af1b2b557fc8c409dcef4f6f96ad13}{get}} (int \$type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_navigation_a9ee396391a3aa3d07bab4067c20fdc10}\label{class_navigation_a9ee396391a3aa3d07bab4067c20fdc10} 
+const {\bfseries SIDEBAR} = 1
+\item 
+\Hypertarget{class_navigation_ad5b7bb8d630b3c50bcd6f3cbf90b91af}\label{class_navigation_ad5b7bb8d630b3c50bcd6f3cbf90b91af} 
+const {\bfseries TOP} = 2
+\item 
+\Hypertarget{class_navigation_a1bbff5b87a1e3a8d402d50c9fdb4e6e9}\label{class_navigation_a1bbff5b87a1e3a8d402d50c9fdb4e6e9} 
+const {\bfseries USER} = 3
+\item 
+\Hypertarget{class_navigation_aa22adf8674a898c61cff29895c59b1d6}\label{class_navigation_aa22adf8674a898c61cff29895c59b1d6} 
+const {\bfseries SIDEBAR\+\_\+\+MAIN} = 1
+\item 
+\Hypertarget{class_navigation_ad71ee55e42767cd54b10185ac4db6e4d}\label{class_navigation_ad71ee55e42767cd54b10185ac4db6e4d} 
+const {\bfseries SIDEBAR\+\_\+\+CONTROL} = 2
+\item 
+\Hypertarget{class_navigation_a8bd888b9e0a3aaffaa1430257fc9815e}\label{class_navigation_a8bd888b9e0a3aaffaa1430257fc9815e} 
+const {\bfseries SIDEBAR\+\_\+\+CONTENT} = 3
+\item 
+\Hypertarget{class_navigation_adfbc0e8e328ae2a91498afd568a78ef7}\label{class_navigation_adfbc0e8e328ae2a91498afd568a78ef7} 
+const {\bfseries SIDEBAR\+\_\+\+SETTINGS} = 4
+\item 
+\Hypertarget{class_navigation_a3b210cdab7fa1c6f2d3a517ef0cb4f13}\label{class_navigation_a3b210cdab7fa1c6f2d3a517ef0cb4f13} 
+const {\bfseries SIDEBAR\+\_\+\+INFO} = 5
+\item 
+const \mbox{\hyperlink{class_navigation_ab7f630f19777575cb20c2179a8ef609d}{RUBRICS}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_navigation_a8ccf51236fc971589e94698756aff630}\label{class_navigation_a8ccf51236fc971589e94698756aff630} 
+static array {\bfseries \$items} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_navigation_ad2f10193317e6a96d9974e773a5ee0e2}\index{Navigation@{Navigation}!add@{add}}
+\index{add@{add}!Navigation@{Navigation}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_navigation_ad2f10193317e6a96d9974e773a5ee0e2} 
+static add (\begin{DoxyParamCaption}\item[{int}]{\$sorting}{, }\item[{string}]{\$name}{, }\item[{string}]{\$icon}{, }\item[{string}]{\$url}{, }\item[{string}]{\$html}{, }\item[{string}]{\$id}{, }\item[{int}]{\$type}{, }\item[{int}]{\$rubric}{, }\item[{string}]{\$parent}{, }\item[{string}]{\$onclick}{, }\item[{bool}]{\$external}{ = {\ttfamily false}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Add navigation item
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sorting} & Sorting \\
+\hline
+string & {\em \$name} & Displayed name \\
+\hline
+string & {\em \$icon} & Icon CSS class \\
+\hline
+string & {\em \$url} & URL \\
+\hline
+string & {\em \$id} & Page ID \\
+\hline
+int & {\em \$type} & \doxylink{class_navigation}{Navigation} type \\
+\hline
+int & {\em \$rubric} & \doxylink{class_navigation}{Navigation} rubric \\
+\hline
+string & {\em \$parent} & Parent navigation item (for submenu) \\
+\hline
+string & {\em \$onclick} & JS on\+Click code \\
+\hline
+bool & {\em \$external} & External link flag \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_navigation_af0af1b2b557fc8c409dcef4f6f96ad13}\index{Navigation@{Navigation}!get@{get}}
+\index{get@{get}!Navigation@{Navigation}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{class_navigation_af0af1b2b557fc8c409dcef4f6f96ad13} 
+static get (\begin{DoxyParamCaption}\item[{int}]{\$type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get sorted navigation items array by navigation type
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$type} & \doxylink{class_navigation}{Navigation} type \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_navigation_ab7f630f19777575cb20c2179a8ef609d}\index{Navigation@{Navigation}!RUBRICS@{RUBRICS}}
+\index{RUBRICS@{RUBRICS}!Navigation@{Navigation}}
+\doxysubsubsection{\texorpdfstring{RUBRICS}{RUBRICS}}
+{\footnotesize\ttfamily \label{class_navigation_ab7f630f19777575cb20c2179a8ef609d} 
+const RUBRICS}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SIDEBAR\_MAIN\ =>\ \textcolor{stringliteral}{'sidebar\_header\_main'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SIDEBAR\_CONTROL\ =>\ \textcolor{stringliteral}{'sidebar\_header\_control'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SIDEBAR\_CONTENT\ =>\ \textcolor{stringliteral}{'sidebar\_header\_content'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SIDEBAR\_SETTINGS\ =>\ \textcolor{stringliteral}{'sidebar\_header\_settings'},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ self::SIDEBAR\_INFO\ =>\ \textcolor{stringliteral}{'sidebar\_header\_info'},}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/core/Navigation.\+php\end{DoxyCompactItemize}

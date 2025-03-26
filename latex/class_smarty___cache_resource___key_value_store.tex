@@ -1,0 +1,491 @@
+\doxysection{Smarty\+\_\+\+Cache\+Resource\+\_\+\+Key\+Value\+Store Class Reference}
+\hypertarget{class_smarty___cache_resource___key_value_store}{}\label{class_smarty___cache_resource___key_value_store}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+Inheritance diagram for Smarty\+\_\+\+Cache\+Resource\+\_\+\+Key\+Value\+Store\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_smarty___cache_resource___key_value_store}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a397dea1ffad6f2ff9111ef7218cea345}{populate}} (\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached, \mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a4722beac1ad0bb6c485476c9d77f294b}{populate\+Timestamp}} (\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a7ad975d0d821cb411c554195d203e89c}{process}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+smarty\+\_\+tpl, \mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached=null, \$update=false)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_af18c2dd2d421b8de6847db415fcb2a7c}{write\+Cached\+Content}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template, \$content)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_ac9bf9b25c58c7488366e85ef889157a7}{read\+Cached\+Content}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a116dae666984bacbc85ba9ee69dff1d7}{clear\+All}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \$exp\+\_\+time=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a03b181c51244030a1173478514367b86}{clear}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \$resource\+\_\+name, \$cache\+\_\+id, \$compile\+\_\+id, \$exp\+\_\+time)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a8ea21dba853364366abd58fe9a6b9bd1}{has\+Lock}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a7d1ce76cfa7371aa4e27f88ed1289460}{acquire\+Lock}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_ac606c17f197b801c9c9df1b184f34910}{release\+Lock}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource_aa645ec746221da5b60c967f399bc814f}{get\+Cached\+Content}} (\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}} \$\+\_\+template)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource_a25d360bf9084e5f54e9dad94697b3a3c}{locked}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}} \$cached)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a430b93e5eedf7fdac694d8a401d4f6f4}{get\+Template\+Uid}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \$resource\+\_\+name)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a1c6fcac93e6a822bd1f7421b1b19b400}{sanitize}} (\$string)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a1b6dbb55fdcd9832d0d908eff480507b}{fetch}} (\$cid, \$resource\+\_\+name=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \&\$content=null, \&\$timestamp=null, \$resource\+\_\+uid=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a3a893a6d30d78eeaaa23e549e4b77a0b}{add\+Meta\+Timestamp}} (\&\$content)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a5c78dd7a89ac217eb644a4a3622180a7}{invalidate}} (\$cid=null, \$resource\+\_\+name=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$resource\+\_\+uid=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_ac2869042f0c313061a3dfa064fbb1a99}{get\+Latest\+Invalidation\+Timestamp}} (\$cid, \$resource\+\_\+name=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$resource\+\_\+uid=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a29087f10121cd4646e7c719109b87546}{list\+Invalidation\+Keys}} (\$cid, \$resource\+\_\+name=null, \$cache\+\_\+id=null, \$compile\+\_\+id=null, \$resource\+\_\+uid=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a22b42d6b1291b3a59c1e457c0d4727a5}{read}} (array \$keys)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a914ddd5bfb233d53b6413ec9d51dcd99}{write}} (array \$keys, \$expire=null)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_a9959a1c2ba36e72aee7f974df28b60d1}{delete}} (array \$keys)
+\item 
+\mbox{\hyperlink{class_smarty___cache_resource___key_value_store_ac400be513972a68ea08ef845d5b16824}{purge}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_smarty___cache_resource___key_value_store_a87e6516f43ab874500590fe9ec8315fb}\label{class_smarty___cache_resource___key_value_store_a87e6516f43ab874500590fe9ec8315fb} 
+{\bfseries \$contents} = array()
+\item 
+\Hypertarget{class_smarty___cache_resource___key_value_store_a51267c24c8fae742ed8f9be0ba6085ee}\label{class_smarty___cache_resource___key_value_store_a51267c24c8fae742ed8f9be0ba6085ee} 
+{\bfseries \$timestamps} = array()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_smarty___cache_resource_ac67235dda15979b929d453e5264553f7}{load}} (\mbox{\hyperlink{class_smarty}{Smarty}} \$smarty, \$type=null)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{class_smarty___cache_resource}{Smarty\+\_\+\+Cache\+Resource}}}
+\begin{DoxyCompactItemize}
+\item 
+static {\bfseries \$sysplugins} = array(\textquotesingle{}file\textquotesingle{} =$>$ \textquotesingle{}smarty\+\_\+internal\+\_\+cacheresource\+\_\+file.\+php\textquotesingle{},)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a7d1ce76cfa7371aa4e27f88ed1289460}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!acquireLock@{acquireLock}}
+\index{acquireLock@{acquireLock}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{acquireLock()}{acquireLock()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a7d1ce76cfa7371aa4e27f88ed1289460} 
+acquire\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{}\end{DoxyParamCaption})}
+
+Lock cache for this template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty}{Smarty} & {\em \$smarty} & \doxylink{class_smarty}{Smarty} object \\
+\hline
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a7d1ce76cfa7371aa4e27f88ed1289460}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a3a893a6d30d78eeaaa23e549e4b77a0b}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!addMetaTimestamp@{addMetaTimestamp}}
+\index{addMetaTimestamp@{addMetaTimestamp}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{addMetaTimestamp()}{addMetaTimestamp()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a3a893a6d30d78eeaaa23e549e4b77a0b} 
+add\+Meta\+Timestamp (\begin{DoxyParamCaption}\item[{\&}]{\$content}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Add current microtime to the beginning of \$cache\+\_\+content \{ \Hypertarget{class_smarty___cache_resource___key_value_store_a03b181c51244030a1173478514367b86}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!clear@{clear}}
+\index{clear@{clear}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a03b181c51244030a1173478514367b86} 
+clear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{}]{\$resource\+\_\+name}{, }\item[{}]{\$cache\+\_\+id}{, }\item[{}]{\$compile\+\_\+id}{, }\item[{}]{\$exp\+\_\+time}{}\end{DoxyParamCaption})}
+
+Empty cache for a specific template \{ 
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a03b181c51244030a1173478514367b86}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a116dae666984bacbc85ba9ee69dff1d7}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!clearAll@{clearAll}}
+\index{clearAll@{clearAll}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{clearAll()}{clearAll()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a116dae666984bacbc85ba9ee69dff1d7} 
+clear\+All (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{}]{\$exp\+\_\+time}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Empty cache \{ 
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a116dae666984bacbc85ba9ee69dff1d7}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a9959a1c2ba36e72aee7f974df28b60d1}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!delete@{delete}}
+\index{delete@{delete}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a9959a1c2ba36e72aee7f974df28b60d1} 
+delete (\begin{DoxyParamCaption}\item[{array}]{\$keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Remove values from cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & list of keys to delete\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false on failure 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a1b6dbb55fdcd9832d0d908eff480507b}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!fetch@{fetch}}
+\index{fetch@{fetch}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{fetch()}{fetch()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a1b6dbb55fdcd9832d0d908eff480507b} 
+fetch (\begin{DoxyParamCaption}\item[{}]{\$cid}{, }\item[{}]{\$resource\+\_\+name}{ = {\ttfamily null}, }\item[{}]{\$cache\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$compile\+\_\+id}{ = {\ttfamily null}, }\item[{\&}]{\$content}{ = {\ttfamily null}, }\item[{\&}]{\$timestamp}{ = {\ttfamily null}, }\item[{}]{\$resource\+\_\+uid}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Fetch and prepare a cache object.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cid} & Cache\+ID to fetch \\
+\hline
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+string & {\em \$content} & cached content \\
+\hline
+integer & {\em \&\$timestamp} & cached timestamp (epoch) \\
+\hline
+string & {\em \$resource\+\_\+uid} & resource\textquotesingle{}s uid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean success 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_ac2869042f0c313061a3dfa064fbb1a99}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!getLatestInvalidationTimestamp@{getLatestInvalidationTimestamp}}
+\index{getLatestInvalidationTimestamp@{getLatestInvalidationTimestamp}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{getLatestInvalidationTimestamp()}{getLatestInvalidationTimestamp()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_ac2869042f0c313061a3dfa064fbb1a99} 
+get\+Latest\+Invalidation\+Timestamp (\begin{DoxyParamCaption}\item[{}]{\$cid}{, }\item[{}]{\$resource\+\_\+name}{ = {\ttfamily null}, }\item[{}]{\$cache\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$compile\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$resource\+\_\+uid}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Determine the latest timestamp known to the invalidation chain
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cid} & Cache\+ID to determine latest invalidation timestamp of \\
+\hline
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+string & {\em \$resource\+\_\+uid} & source\textquotesingle{}s filepath\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float the microtime the Cache\+ID was invalidated 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a430b93e5eedf7fdac694d8a401d4f6f4}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!getTemplateUid@{getTemplateUid}}
+\index{getTemplateUid@{getTemplateUid}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{getTemplateUid()}{getTemplateUid()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a430b93e5eedf7fdac694d8a401d4f6f4} 
+get\+Template\+Uid (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{}]{\$resource\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Get template\textquotesingle{}s unique ID
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty}{Smarty} & {\em \$smarty} & \doxylink{class_smarty}{Smarty} object \\
+\hline
+string & {\em \$resource\+\_\+name} & template name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string filepath of cache file 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+\doxylink{class_smarty_exception}{Smarty\+Exception} \Hypertarget{class_smarty___cache_resource___key_value_store_a8ea21dba853364366abd58fe9a6b9bd1}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!hasLock@{hasLock}}
+\index{hasLock@{hasLock}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{hasLock()}{hasLock()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a8ea21dba853364366abd58fe9a6b9bd1} 
+has\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{}\end{DoxyParamCaption})}
+
+Check is cache is locked for this template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty}{Smarty} & {\em \$smarty} & \doxylink{class_smarty}{Smarty} object \\
+\hline
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true or false if cache is locked 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a8ea21dba853364366abd58fe9a6b9bd1}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a5c78dd7a89ac217eb644a4a3622180a7}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!invalidate@{invalidate}}
+\index{invalidate@{invalidate}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{invalidate()}{invalidate()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a5c78dd7a89ac217eb644a4a3622180a7} 
+invalidate (\begin{DoxyParamCaption}\item[{}]{\$cid}{ = {\ttfamily null}, }\item[{}]{\$resource\+\_\+name}{ = {\ttfamily null}, }\item[{}]{\$cache\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$compile\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$resource\+\_\+uid}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Invalidate Cache\+ID
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cid} & Cache\+ID \\
+\hline
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+string & {\em \$resource\+\_\+uid} & source\textquotesingle{}s uid\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a29087f10121cd4646e7c719109b87546}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!listInvalidationKeys@{listInvalidationKeys}}
+\index{listInvalidationKeys@{listInvalidationKeys}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{listInvalidationKeys()}{listInvalidationKeys()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a29087f10121cd4646e7c719109b87546} 
+list\+Invalidation\+Keys (\begin{DoxyParamCaption}\item[{}]{\$cid}{, }\item[{}]{\$resource\+\_\+name}{ = {\ttfamily null}, }\item[{}]{\$cache\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$compile\+\_\+id}{ = {\ttfamily null}, }\item[{}]{\$resource\+\_\+uid}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Translate a Cache\+ID into the list of applicable Invalidation\+Keys. Splits "{}some\texorpdfstring{$\vert$}{|}chain\texorpdfstring{$\vert$}{|}into\texorpdfstring{$\vert$}{|}an\texorpdfstring{$\vert$}{|}array"{} into array( \textquotesingle{}\doxylink{class_smarty___cache_resource___key_value_store_a116dae666984bacbc85ba9ee69dff1d7}{clear\+All}\#\textquotesingle{}, \textquotesingle{}some\textquotesingle{}, \textquotesingle{}some\texorpdfstring{$\vert$}{|}chain\textquotesingle{}, \textquotesingle{}some\texorpdfstring{$\vert$}{|}chain\texorpdfstring{$\vert$}{|}into\textquotesingle{}, ... )
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$cid} & Cache\+ID to translate \\
+\hline
+string & {\em \$resource\+\_\+name} & template name \\
+\hline
+string & {\em \$cache\+\_\+id} & cache id \\
+\hline
+string & {\em \$compile\+\_\+id} & compile id \\
+\hline
+string & {\em \$resource\+\_\+uid} & source\textquotesingle{}s filepath\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array list of Invalidation\+Keys @uses \$invalidation\+Key\+Prefix to prepend to each Invalidation\+Key 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a397dea1ffad6f2ff9111ef7218cea345}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!populate@{populate}}
+\index{populate@{populate}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{populate()}{populate()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a397dea1ffad6f2ff9111ef7218cea345} 
+populate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{, }\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+populate Cached Object with meta data from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object \\
+\hline
+\doxylink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a397dea1ffad6f2ff9111ef7218cea345}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a4722beac1ad0bb6c485476c9d77f294b}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!populateTimestamp@{populateTimestamp}}
+\index{populateTimestamp@{populateTimestamp}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{populateTimestamp()}{populateTimestamp()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a4722beac1ad0bb6c485476c9d77f294b} 
+populate\+Timestamp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{}\end{DoxyParamCaption})}
+
+populate Cached Object with timestamp and exists from Resource
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a4722beac1ad0bb6c485476c9d77f294b}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a7ad975d0d821cb411c554195d203e89c}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!process@{process}}
+\index{process@{process}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a7ad975d0d821cb411c554195d203e89c} 
+process (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+smarty\+\_\+tpl}{, }\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{ = {\ttfamily null}, }\item[{}]{\$update}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Read the cached template and process the header
+
+
+\begin{DoxyParams}[1]{Parameters}
+\textbackslash{}\+Smarty\+\_\+\+Internal\+\_\+\+Template & {\em \$\+\_\+smarty\+\_\+tpl} & do not change variable name, is used by compiled template \\
+\hline
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object \\
+\hline
+boolean & {\em \$update} & flag if called because cache update\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true or false if the cached content does not exist 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_a970b8312fb4111a2061febe9715d014e}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_ac400be513972a68ea08ef845d5b16824}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!purge@{purge}}
+\index{purge@{purge}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{purge()}{purge()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_ac400be513972a68ea08ef845d5b16824} 
+purge (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Remove {\itshape all} values from cache
+
+\begin{DoxyReturn}{Returns}
+boolean true on success, false on failure 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a22b42d6b1291b3a59c1e457c0d4727a5}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!read@{read}}
+\index{read@{read}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a22b42d6b1291b3a59c1e457c0d4727a5} 
+read (\begin{DoxyParamCaption}\item[{array}]{\$keys}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Read values for a set of keys from cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & list of keys to fetch\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array list of values with the given keys used as indexes 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_ac9bf9b25c58c7488366e85ef889157a7}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!readCachedContent@{readCachedContent}}
+\index{readCachedContent@{readCachedContent}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{readCachedContent()}{readCachedContent()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_ac9bf9b25c58c7488366e85ef889157a7} 
+read\+Cached\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{}\end{DoxyParamCaption})}
+
+Read cached template from cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}false content 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_ac9bf9b25c58c7488366e85ef889157a7}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_ac606c17f197b801c9c9df1b184f34910}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!releaseLock@{releaseLock}}
+\index{releaseLock@{releaseLock}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{releaseLock()}{releaseLock()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_ac606c17f197b801c9c9df1b184f34910} 
+release\+Lock (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty}{Smarty}}}]{\$smarty}{, }\item[{\mbox{\hyperlink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached}}}]{\$cached}{}\end{DoxyParamCaption})}
+
+Unlock cache for this template
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty}{Smarty} & {\em \$smarty} & \doxylink{class_smarty}{Smarty} object \\
+\hline
+\doxylink{class_smarty___template___cached}{Smarty\+\_\+\+Template\+\_\+\+Cached} & {\em \$cached} & cached object\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}void 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_ac606c17f197b801c9c9df1b184f34910}{Smarty\+\_\+\+Cache\+Resource}}.
+
+\Hypertarget{class_smarty___cache_resource___key_value_store_a1c6fcac93e6a822bd1f7421b1b19b400}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!sanitize@{sanitize}}
+\index{sanitize@{sanitize}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{sanitize()}{sanitize()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a1c6fcac93e6a822bd1f7421b1b19b400} 
+sanitize (\begin{DoxyParamCaption}\item[{}]{\$string}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Sanitize Cache\+ID components
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & Cache\+ID component to sanitize\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string sanitized Cache\+ID component 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_a914ddd5bfb233d53b6413ec9d51dcd99}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!write@{write}}
+\index{write@{write}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_a914ddd5bfb233d53b6413ec9d51dcd99} 
+write (\begin{DoxyParamCaption}\item[{array}]{\$keys}{, }\item[{}]{\$expire}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Save values for a set of keys to cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$keys} & list of values to save \\
+\hline
+int & {\em \$expire} & expiration time\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean true on success, false on failure 
+\end{DoxyReturn}
+\Hypertarget{class_smarty___cache_resource___key_value_store_af18c2dd2d421b8de6847db415fcb2a7c}\index{Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}!writeCachedContent@{writeCachedContent}}
+\index{writeCachedContent@{writeCachedContent}!Smarty\_CacheResource\_KeyValueStore@{Smarty\_CacheResource\_KeyValueStore}}
+\doxysubsubsection{\texorpdfstring{writeCachedContent()}{writeCachedContent()}}
+{\footnotesize\ttfamily \label{class_smarty___cache_resource___key_value_store_af18c2dd2d421b8de6847db415fcb2a7c} 
+write\+Cached\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template}}}]{\$\+\_\+template}{, }\item[{}]{\$content}{}\end{DoxyParamCaption})}
+
+Write the rendered template output to cache
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{class_smarty___internal___template}{Smarty\+\_\+\+Internal\+\_\+\+Template} & {\em \$\+\_\+template} & template object \\
+\hline
+string & {\em \$content} & content to cache\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean success 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_smarty___cache_resource_af18c2dd2d421b8de6847db415fcb2a7c}{Smarty\+\_\+\+Cache\+Resource}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Smarty/sysplugins/smarty\+\_\+cacheresource\+\_\+keyvaluestore.\+php\end{DoxyCompactItemize}

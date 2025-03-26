@@ -1,0 +1,164 @@
+\doxysection{Hooks Class Reference}
+\hypertarget{class_hooks}{}\label{class_hooks}\index{Hooks@{Hooks}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_hooks_a9f0be6ae273d3669e11c29910a0be338}{init}} ()
+\item 
+static \mbox{\hyperlink{class_hooks_ae35d20ffdc4bd2c971c13057ff1b067d}{add}} (string \$name, string \$function, int \$priority=10)
+\item 
+static \mbox{\hyperlink{class_hooks_a887ac03666d3b5cfb7276e3efc16f4e5}{action}} (string \$name, \$arguments=\textquotesingle{}\textquotesingle{})
+\item 
+static \mbox{\hyperlink{class_hooks_a9b74cda684c9c4f897bf553f3e2e2cd6}{remove}} (string \$name, string \$function, int \$priority=10)
+\item 
+static \mbox{\hyperlink{class_hooks_a360c3e285ca6fd0d8235dbec3ebace86}{get\+Current}} ()
+\item 
+static \mbox{\hyperlink{class_hooks_abd9529e3052ac5cbbd907a5cb106e7c0}{has}} (string \$name, int \$priority=10)
+\item 
+static \mbox{\hyperlink{class_hooks_ae18feb88b7aa127bfa2bacc75232918a}{exists}} (string \$name)
+\item 
+static \mbox{\hyperlink{class_hooks_a6f94454961915eeb8ddf6bf0286392c3}{debug}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_hooks_ad9d7ce33ebb142b70e58b68052ca0ea8}\label{class_hooks_ad9d7ce33ebb142b70e58b68052ca0ea8} 
+static {\bfseries \$instance}
+\item 
+\Hypertarget{class_hooks_a05aec88c3516c6db5da524fbcc673aff}\label{class_hooks_a05aec88c3516c6db5da524fbcc673aff} 
+static {\bfseries \$hooks}
+\item 
+\Hypertarget{class_hooks_aa2420f9e6163ab3d34be3c7aad696516}\label{class_hooks_aa2420f9e6163ab3d34be3c7aad696516} 
+static string {\bfseries \$current\+\_\+hook} = \textquotesingle{}\textquotesingle{}
+\item 
+\Hypertarget{class_hooks_a0def7f5ad919df2ca70d0df6349824a3}\label{class_hooks_a0def7f5ad919df2ca70d0df6349824a3} 
+static {\bfseries \$run\+\_\+hooks}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_hooks_a887ac03666d3b5cfb7276e3efc16f4e5}\index{Hooks@{Hooks}!action@{action}}
+\index{action@{action}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{action()}{action()}}
+{\footnotesize\ttfamily \label{class_hooks_a887ac03666d3b5cfb7276e3efc16f4e5} 
+static action (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{}]{\$arguments}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Выполнить хук функции
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & имя хука \\
+\hline
+array | mixed | string & {\em \$arguments} & параметры вызова функций \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_ae35d20ffdc4bd2c971c13057ff1b067d}\index{Hooks@{Hooks}!add@{add}}
+\index{add@{add}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_hooks_ae35d20ffdc4bd2c971c13057ff1b067d} 
+static add (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$function}{, }\item[{int}]{\$priority}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Добавить функцию
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & имя хука \\
+\hline
+string & {\em \$function} & имя функции \\
+\hline
+int & {\em \$priority} & приоритет выполнения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_a6f94454961915eeb8ddf6bf0286392c3}\index{Hooks@{Hooks}!debug@{debug}}
+\index{debug@{debug}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}}
+{\footnotesize\ttfamily \label{class_hooks_a6f94454961915eeb8ddf6bf0286392c3} 
+static debug (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Вывести отладочную информацию о хуках \Hypertarget{class_hooks_ae18feb88b7aa127bfa2bacc75232918a}\index{Hooks@{Hooks}!exists@{exists}}
+\index{exists@{exists}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_hooks_ae18feb88b7aa127bfa2bacc75232918a} 
+static exists (\begin{DoxyParamCaption}\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Проверить наличие хука с указанным именем
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & имя хука \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_a360c3e285ca6fd0d8235dbec3ebace86}\index{Hooks@{Hooks}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily \label{class_hooks_a360c3e285ca6fd0d8235dbec3ebace86} 
+static get\+Current (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Получить текущий хук
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_abd9529e3052ac5cbbd907a5cb106e7c0}\index{Hooks@{Hooks}!has@{has}}
+\index{has@{has}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{has()}{has()}}
+{\footnotesize\ttfamily \label{class_hooks_abd9529e3052ac5cbbd907a5cb106e7c0} 
+static has (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{int}]{\$priority}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Проверить наличие хука с указанным именем и приоритетом
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & имя хука \\
+\hline
+int & {\em \$priority} & приоритет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_a9f0be6ae273d3669e11c29910a0be338}\index{Hooks@{Hooks}!init@{init}}
+\index{init@{init}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_hooks_a9f0be6ae273d3669e11c29910a0be338} 
+static init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Инициализация инстанса класса
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_hooks}{Hooks} 
+\end{DoxyReturn}
+\Hypertarget{class_hooks_a9b74cda684c9c4f897bf553f3e2e2cd6}\index{Hooks@{Hooks}!remove@{remove}}
+\index{remove@{remove}!Hooks@{Hooks}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_hooks_a9b74cda684c9c4f897bf553f3e2e2cd6} 
+static remove (\begin{DoxyParamCaption}\item[{string}]{\$name}{, }\item[{string}]{\$function}{, }\item[{int}]{\$priority}{ = {\ttfamily 10}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Удалить функцию из хуков
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & имя хука \\
+\hline
+string & {\em \$function} & имя функции \\
+\hline
+int & {\em \$priority} & приоритет \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Hooks.\+php\end{DoxyCompactItemize}

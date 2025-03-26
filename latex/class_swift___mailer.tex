@@ -1,0 +1,97 @@
+\doxysection{Swift\+\_\+\+Mailer Class Reference}
+\hypertarget{class_swift___mailer}{}\label{class_swift___mailer}\index{Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mailer_a381bb735a4feeec66ab76ce9c8c20a79}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$transport)
+\item 
+\mbox{\hyperlink{class_swift___mailer_a815cf3433126c2023789358786d700a2}{create\+Message}} (\$service=\textquotesingle{}message\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_swift___mailer_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{class_swift___mailer_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\item 
+\mbox{\hyperlink{class_swift___mailer_a62db13394d9416f4cfc864858cca433b}{get\+Transport}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer} class.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mailer_a381bb735a4feeec66ab76ce9c8c20a79}\index{Swift\_Mailer@{Swift\_Mailer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mailer_a381bb735a4feeec66ab76ce9c8c20a79} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$transport}{}\end{DoxyParamCaption})}
+
+Create a new \doxylink{class_mailer}{Mailer} using \$transport for delivery. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mailer_a815cf3433126c2023789358786d700a2}\index{Swift\_Mailer@{Swift\_Mailer}!createMessage@{createMessage}}
+\index{createMessage@{createMessage}!Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection{\texorpdfstring{createMessage()}{createMessage()}}
+{\footnotesize\ttfamily \label{class_swift___mailer_a815cf3433126c2023789358786d700a2} 
+create\+Message (\begin{DoxyParamCaption}\item[{}]{\$service}{ = {\ttfamily \textquotesingle{}message\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Create a new class instance of one of the message services.
+
+For example \textquotesingle{}mimepart\textquotesingle{} would create a \textquotesingle{}message.\+mimepart\textquotesingle{} instance
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$service} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mailer_a62db13394d9416f4cfc864858cca433b}\index{Swift\_Mailer@{Swift\_Mailer}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection{\texorpdfstring{getTransport()}{getTransport()}}
+{\footnotesize\ttfamily \label{class_swift___mailer_a62db13394d9416f4cfc864858cca433b} 
+get\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+The Transport used to send messages.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mailer_ab89f0e56e80b5a21c0f09004a418ae92}\index{Swift\_Mailer@{Swift\_Mailer}!registerPlugin@{registerPlugin}}
+\index{registerPlugin@{registerPlugin}!Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection{\texorpdfstring{registerPlugin()}{registerPlugin()}}
+{\footnotesize\ttfamily \label{class_swift___mailer_ab89f0e56e80b5a21c0f09004a418ae92} 
+register\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$plugin}{}\end{DoxyParamCaption})}
+
+Register a plugin using a known unique key (e.\+g. my\+Plugin). \Hypertarget{class_swift___mailer_ac2f1a5be8ad5f7740c8f95503d48a26e}\index{Swift\_Mailer@{Swift\_Mailer}!send@{send}}
+\index{send@{send}!Swift\_Mailer@{Swift\_Mailer}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_swift___mailer_ac2f1a5be8ad5f7740c8f95503d48a26e} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given Message like it would be sent in a mail client.
+
+All recipients (with the exception of Bcc) will be able to see the other recipients this message was sent to.
+
+Recipient/sender data will be retrieved from the Message object.
+
+The return value is the number of recipients who were accepted for delivery.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int The number of successful recipients. Can be 0 which indicates failure 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Mailer.\+php\end{DoxyCompactItemize}

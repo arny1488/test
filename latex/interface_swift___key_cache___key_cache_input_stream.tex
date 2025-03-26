@@ -1,0 +1,114 @@
+\doxysection{Swift\+\_\+\+Key\+Cache\+\_\+\+Key\+Cache\+Input\+Stream Interface Reference}
+\hypertarget{interface_swift___key_cache___key_cache_input_stream}{}\label{interface_swift___key_cache___key_cache_input_stream}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+Inheritance diagram for Swift\+\_\+\+Key\+Cache\+\_\+\+Key\+Cache\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_swift___key_cache___key_cache_input_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream_a12d3bfe633b3e2ccd03217400ef1f3b6}{set\+Key\+Cache}} (\mbox{\hyperlink{interface_swift___key_cache}{Swift\+\_\+\+Key\+Cache}} \$key\+Cache)
+\item 
+\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream_a9d2dc842567a1af9b4db0f6576259f43}{set\+Ns\+Key}} (\$ns\+Key)
+\item 
+\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream_aacc4b124863658c2f9fee41047de5d7d}{set\+Item\+Key}} (\$item\+Key)
+\item 
+\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream_a25f092ebd8bda8e434eed575bfb22ec4}{set\+Write\+Through\+Stream}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{interface_swift___key_cache___key_cache_input_stream_ad0cb87b388bc74d63dc884accdca8713}{\+\_\+\+\_\+clone}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_aa4ea8baf64d864129d4276f76df3b4a0}{write}} (\$bytes)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a6bc548ebcba2e4cc04550cadebd2f973}{bind}} (self \$is)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a731f39e6f118eaef16571d36cc7a80a7}{unbind}} (self \$is)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Writes data to a Key\+Cache using a stream.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___key_cache___key_cache_input_stream_ad0cb87b388bc74d63dc884accdca8713}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}!\_\_clone@{\_\_clone}}
+\index{\_\_clone@{\_\_clone}!Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+\doxysubsubsection{\texorpdfstring{\_\_clone()}{\_\_clone()}}
+{\footnotesize\ttfamily \label{interface_swift___key_cache___key_cache_input_stream_ad0cb87b388bc74d63dc884accdca8713} 
+\+\_\+\+\_\+clone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Any implementation should be cloneable, allowing the clone to access a separate \$ns\+Key and \$item\+Key. 
+
+Implemented in \mbox{\hyperlink{class_swift___key_cache___simple_key_cache_input_stream_ad0cb87b388bc74d63dc884accdca8713}{Swift\+\_\+\+Key\+Cache\+\_\+\+Simple\+Key\+Cache\+Input\+Stream}}.
+
+\Hypertarget{interface_swift___key_cache___key_cache_input_stream_aacc4b124863658c2f9fee41047de5d7d}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}!setItemKey@{setItemKey}}
+\index{setItemKey@{setItemKey}!Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+\doxysubsubsection{\texorpdfstring{setItemKey()}{setItemKey()}}
+{\footnotesize\ttfamily \label{interface_swift___key_cache___key_cache_input_stream_aacc4b124863658c2f9fee41047de5d7d} 
+set\+Item\+Key (\begin{DoxyParamCaption}\item[{}]{\$item\+Key}{}\end{DoxyParamCaption})}
+
+Set the item\+Key which will be written to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$item\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___key_cache___simple_key_cache_input_stream_aacc4b124863658c2f9fee41047de5d7d}{Swift\+\_\+\+Key\+Cache\+\_\+\+Simple\+Key\+Cache\+Input\+Stream}}.
+
+\Hypertarget{interface_swift___key_cache___key_cache_input_stream_a12d3bfe633b3e2ccd03217400ef1f3b6}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}!setKeyCache@{setKeyCache}}
+\index{setKeyCache@{setKeyCache}!Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+\doxysubsubsection{\texorpdfstring{setKeyCache()}{setKeyCache()}}
+{\footnotesize\ttfamily \label{interface_swift___key_cache___key_cache_input_stream_a12d3bfe633b3e2ccd03217400ef1f3b6} 
+set\+Key\+Cache (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___key_cache}{Swift\+\_\+\+Key\+Cache}}}]{\$key\+Cache}{}\end{DoxyParamCaption})}
+
+Set the Key\+Cache to wrap. 
+
+Implemented in \mbox{\hyperlink{class_swift___key_cache___simple_key_cache_input_stream_a12d3bfe633b3e2ccd03217400ef1f3b6}{Swift\+\_\+\+Key\+Cache\+\_\+\+Simple\+Key\+Cache\+Input\+Stream}}.
+
+\Hypertarget{interface_swift___key_cache___key_cache_input_stream_a9d2dc842567a1af9b4db0f6576259f43}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}!setNsKey@{setNsKey}}
+\index{setNsKey@{setNsKey}!Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+\doxysubsubsection{\texorpdfstring{setNsKey()}{setNsKey()}}
+{\footnotesize\ttfamily \label{interface_swift___key_cache___key_cache_input_stream_a9d2dc842567a1af9b4db0f6576259f43} 
+set\+Ns\+Key (\begin{DoxyParamCaption}\item[{}]{\$ns\+Key}{}\end{DoxyParamCaption})}
+
+Set the ns\+Key which will be written to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$ns\+Key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_swift___key_cache___simple_key_cache_input_stream_a9d2dc842567a1af9b4db0f6576259f43}{Swift\+\_\+\+Key\+Cache\+\_\+\+Simple\+Key\+Cache\+Input\+Stream}}.
+
+\Hypertarget{interface_swift___key_cache___key_cache_input_stream_a25f092ebd8bda8e434eed575bfb22ec4}\index{Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}!setWriteThroughStream@{setWriteThroughStream}}
+\index{setWriteThroughStream@{setWriteThroughStream}!Swift\_KeyCache\_KeyCacheInputStream@{Swift\_KeyCache\_KeyCacheInputStream}}
+\doxysubsubsection{\texorpdfstring{setWriteThroughStream()}{setWriteThroughStream()}}
+{\footnotesize\ttfamily \label{interface_swift___key_cache___key_cache_input_stream_a25f092ebd8bda8e434eed575bfb22ec4} 
+set\+Write\+Through\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Specify a stream to write through for each \doxylink{interface_swift___input_byte_stream_aa4ea8baf64d864129d4276f76df3b4a0}{write()}. 
+
+Implemented in \mbox{\hyperlink{class_swift___key_cache___simple_key_cache_input_stream_a25f092ebd8bda8e434eed575bfb22ec4}{Swift\+\_\+\+Key\+Cache\+\_\+\+Simple\+Key\+Cache\+Input\+Stream}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Key\+Cache/Key\+Cache\+Input\+Stream.\+php\end{DoxyCompactItemize}

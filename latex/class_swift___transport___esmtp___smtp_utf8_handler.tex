@@ -1,0 +1,161 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Smtp\+Utf8\+Handler Class Reference}
+\hypertarget{class_swift___transport___esmtp___smtp_utf8_handler}{}\label{class_swift___transport___esmtp___smtp_utf8_handler}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Smtp\+Utf8\+Handler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___transport___esmtp___smtp_utf8_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a6ef50b03ee0b54faffc753b56e1fb197}{get\+Handled\+Keyword}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a3b1b0311ea93ce143ac24a17d5de287f}{set\+Keyword\+Params}} (array \$parameters)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a29fc05674cf80c3613a04730d9995db8}{after\+Ehlo}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_ab31e6e32a4fedc142a23a985844fb957}{get\+Mail\+Params}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_acc49f0d474bc9b5802c74cf61165f7fb}{get\+Rcpt\+Params}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a0481e73f5074a42fa2f008cf3c573cf3}{on\+Command}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$command, \$codes=\mbox{[}$\,$\mbox{]}, \&\$failed\+Recipients=null, \&\$stop=false)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a795e8d2ce9b5aa6ebd8fbfa9b3c1abaf}{get\+Priority\+Over}} (\$esmtp\+Keyword)
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_a3573dbdf89256a1af760fbf34425b859}{expose\+Mixin\+Methods}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___smtp_utf8_handler_af3e0425e4fe6c418a0a4b65fe611a0de}{reset\+State}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An ESMTP handler for SMTPUTF8 support (RFC 6531).
+
+SMTPUTF8 is required when sending to email addresses containing non-\/\+ASCII characters in local-\/part (the substring before @). This handler should be used together with \doxylink{class_swift___address_encoder___utf8_address_encoder}{Swift\+\_\+\+Address\+Encoder\+\_\+\+Utf8\+Address\+Encoder}.
+
+SMTPUTF8 mode is enabled unconditionally, even when sending to ASCII-\/only addresses, so it should only be used with an outbound SMTP server that will deliver ASCII-\/only messages even if the next hop does not support SMTPUTF8.
+
+\begin{DoxyAuthor}{Author}
+Christian Schmidt 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a29fc05674cf80c3613a04730d9995db8}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!afterEhlo@{afterEhlo}}
+\index{afterEhlo@{afterEhlo}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{afterEhlo()}{afterEhlo()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a29fc05674cf80c3613a04730d9995db8} 
+after\+Ehlo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a29fc05674cf80c3613a04730d9995db8}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a3573dbdf89256a1af760fbf34425b859}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!exposeMixinMethods@{exposeMixinMethods}}
+\index{exposeMixinMethods@{exposeMixinMethods}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{exposeMixinMethods()}{exposeMixinMethods()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a3573dbdf89256a1af760fbf34425b859} 
+expose\+Mixin\+Methods (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a3573dbdf89256a1af760fbf34425b859}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a6ef50b03ee0b54faffc753b56e1fb197}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!getHandledKeyword@{getHandledKeyword}}
+\index{getHandledKeyword@{getHandledKeyword}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{getHandledKeyword()}{getHandledKeyword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a6ef50b03ee0b54faffc753b56e1fb197} 
+get\+Handled\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the ESMTP extension this handles.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a6ef50b03ee0b54faffc753b56e1fb197}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_ab31e6e32a4fedc142a23a985844fb957}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!getMailParams@{getMailParams}}
+\index{getMailParams@{getMailParams}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{getMailParams()}{getMailParams()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_ab31e6e32a4fedc142a23a985844fb957} 
+get\+Mail\+Params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get params which are appended to MAIL FROM\+:\texorpdfstring{$<$}{<}\texorpdfstring{$>$}{>}.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_ab31e6e32a4fedc142a23a985844fb957}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a795e8d2ce9b5aa6ebd8fbfa9b3c1abaf}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!getPriorityOver@{getPriorityOver}}
+\index{getPriorityOver@{getPriorityOver}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{getPriorityOver()}{getPriorityOver()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a795e8d2ce9b5aa6ebd8fbfa9b3c1abaf} 
+get\+Priority\+Over (\begin{DoxyParamCaption}\item[{}]{\$esmtp\+Keyword}{}\end{DoxyParamCaption})}
+
+Returns +1, -\/1 or 0 according to the rules for usort().
+
+This method is called to ensure extensions can be execute in an appropriate order.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$esmtp\+Keyword} & to compare with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a795e8d2ce9b5aa6ebd8fbfa9b3c1abaf}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_acc49f0d474bc9b5802c74cf61165f7fb}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!getRcptParams@{getRcptParams}}
+\index{getRcptParams@{getRcptParams}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{getRcptParams()}{getRcptParams()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_acc49f0d474bc9b5802c74cf61165f7fb} 
+get\+Rcpt\+Params (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_acc49f0d474bc9b5802c74cf61165f7fb}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a0481e73f5074a42fa2f008cf3c573cf3}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!onCommand@{onCommand}}
+\index{onCommand@{onCommand}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{onCommand()}{onCommand()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a0481e73f5074a42fa2f008cf3c573cf3} 
+on\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$command}{, }\item[{}]{\$codes}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}, }\item[{\&}]{\$stop}{ = {\ttfamily false}}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a0481e73f5074a42fa2f008cf3c573cf3}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_af3e0425e4fe6c418a0a4b65fe611a0de}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!resetState@{resetState}}
+\index{resetState@{resetState}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{resetState()}{resetState()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_af3e0425e4fe6c418a0a4b65fe611a0de} 
+reset\+State (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_af3e0425e4fe6c418a0a4b65fe611a0de}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+\Hypertarget{class_swift___transport___esmtp___smtp_utf8_handler_a3b1b0311ea93ce143ac24a17d5de287f}\index{Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}!setKeywordParams@{setKeywordParams}}
+\index{setKeywordParams@{setKeywordParams}!Swift\_Transport\_Esmtp\_SmtpUtf8Handler@{Swift\_Transport\_Esmtp\_SmtpUtf8Handler}}
+\doxysubsubsection{\texorpdfstring{setKeywordParams()}{setKeywordParams()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___smtp_utf8_handler_a3b1b0311ea93ce143ac24a17d5de287f} 
+set\+Keyword\+Params (\begin{DoxyParamCaption}\item[{array}]{\$parameters}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp_handler_a3b1b0311ea93ce143ac24a17d5de287f}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+Handler}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/\+Esmtp/Smtp\+Utf8\+Handler.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,180 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Send\+Event Class Reference}
+\hypertarget{class_swift___events___send_event}{}\label{class_swift___events___send_event}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Send\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___events___send_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_a1c44e6aa0bbbecc75c38e3945f610323}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_a62db13394d9416f4cfc864858cca433b}{get\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_a0b0e611236742aac18ba1936d03ba89a}{get\+Message}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_ad9e6cd066a229c3100c9ffe9a92ad6f6}{set\+Failed\+Recipients}} (\$recipients)
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_a59d320364fe0e262eeb1d8627a6c4061}{get\+Failed\+Recipients}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_a02644cacaff67ad8a6b92bbe6127321f}{set\+Result}} (\$result)
+\item 
+\mbox{\hyperlink{class_swift___events___send_event_ae077eb8a032a325ceb939bfabfa5f472}{get\+Result}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___events___event_object}{Swift\+\_\+\+Events\+\_\+\+Event\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654}{\+\_\+\+\_\+construct}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a}{get\+Source}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054}{cancel\+Bubble}} (\$cancel=true)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a}{bubble\+Cancelled}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{class_swift___events___send_event_a0f9463d8962212b93c454f7de4bfc116}{RESULT\+\_\+\+PENDING}} = 0x0001
+\item 
+const \mbox{\hyperlink{class_swift___events___send_event_a101db8d8f8519ce042492e087048ee93}{RESULT\+\_\+\+SPOOLED}} = 0x0011
+\item 
+const \mbox{\hyperlink{class_swift___events___send_event_a1be8beadbe9ebd50ae0a78ae1b31ce12}{RESULT\+\_\+\+SUCCESS}} = 0x0010
+\item 
+const \mbox{\hyperlink{class_swift___events___send_event_ae667473c8ebb8f19c698eb57036f39d5}{RESULT\+\_\+\+TENTATIVE}} = 0x0100
+\item 
+const \mbox{\hyperlink{class_swift___events___send_event_a79bf8467f9c46ad35a11228d6640d725}{RESULT\+\_\+\+FAILED}} = 0x1000
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generated when a message is being sent.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___events___send_event_a1c44e6aa0bbbecc75c38e3945f610323}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a1c44e6aa0bbbecc75c38e3945f610323} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{}\end{DoxyParamCaption})}
+
+Create a new Send\+Event for \$source and \$message. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___events___send_event_a59d320364fe0e262eeb1d8627a6c4061}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!getFailedRecipients@{getFailedRecipients}}
+\index{getFailedRecipients@{getFailedRecipients}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{getFailedRecipients()}{getFailedRecipients()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a59d320364fe0e262eeb1d8627a6c4061} 
+get\+Failed\+Recipients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an recipient addresses which were not accepted for delivery.
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___send_event_a0b0e611236742aac18ba1936d03ba89a}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!getMessage@{getMessage}}
+\index{getMessage@{getMessage}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{getMessage()}{getMessage()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a0b0e611236742aac18ba1936d03ba89a} 
+get\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Message being sent.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___send_event_ae077eb8a032a325ceb939bfabfa5f472}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!getResult@{getResult}}
+\index{getResult@{getResult}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{getResult()}{getResult()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_ae077eb8a032a325ceb939bfabfa5f472} 
+get\+Result (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the result of this Event.
+
+The return value is a bitmask from \{\begin{DoxySeeAlso}{See also}
+\doxylink{class_swift___events___send_event_a0f9463d8962212b93c454f7de4bfc116}{RESULT\+\_\+\+PENDING}, \doxylink{class_swift___events___send_event_a1be8beadbe9ebd50ae0a78ae1b31ce12}{RESULT\+\_\+\+SUCCESS}, \doxylink{class_swift___events___send_event_ae667473c8ebb8f19c698eb57036f39d5}{RESULT\+\_\+\+TENTATIVE}, \doxylink{class_swift___events___send_event_a79bf8467f9c46ad35a11228d6640d725}{RESULT\+\_\+\+FAILED}\}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___send_event_a62db13394d9416f4cfc864858cca433b}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!getTransport@{getTransport}}
+\index{getTransport@{getTransport}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{getTransport()}{getTransport()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a62db13394d9416f4cfc864858cca433b} 
+get\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Transport used to send the Message.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___send_event_ad9e6cd066a229c3100c9ffe9a92ad6f6}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!setFailedRecipients@{setFailedRecipients}}
+\index{setFailedRecipients@{setFailedRecipients}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{setFailedRecipients()}{setFailedRecipients()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_ad9e6cd066a229c3100c9ffe9a92ad6f6} 
+set\+Failed\+Recipients (\begin{DoxyParamCaption}\item[{}]{\$recipients}{}\end{DoxyParamCaption})}
+
+Set the array of addresses that failed in sending.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$recipients} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___events___send_event_a02644cacaff67ad8a6b92bbe6127321f}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!setResult@{setResult}}
+\index{setResult@{setResult}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{setResult()}{setResult()}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a02644cacaff67ad8a6b92bbe6127321f} 
+set\+Result (\begin{DoxyParamCaption}\item[{}]{\$result}{}\end{DoxyParamCaption})}
+
+Set the result of sending.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$result} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_swift___events___send_event_a79bf8467f9c46ad35a11228d6640d725}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!RESULT\_FAILED@{RESULT\_FAILED}}
+\index{RESULT\_FAILED@{RESULT\_FAILED}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{RESULT\_FAILED}{RESULT\_FAILED}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a79bf8467f9c46ad35a11228d6640d725} 
+const RESULT\+\_\+\+FAILED = 0x1000}
+
+Sending failed \Hypertarget{class_swift___events___send_event_a0f9463d8962212b93c454f7de4bfc116}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!RESULT\_PENDING@{RESULT\_PENDING}}
+\index{RESULT\_PENDING@{RESULT\_PENDING}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{RESULT\_PENDING}{RESULT\_PENDING}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a0f9463d8962212b93c454f7de4bfc116} 
+const RESULT\+\_\+\+PENDING = 0x0001}
+
+Sending has yet to occur \Hypertarget{class_swift___events___send_event_a101db8d8f8519ce042492e087048ee93}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!RESULT\_SPOOLED@{RESULT\_SPOOLED}}
+\index{RESULT\_SPOOLED@{RESULT\_SPOOLED}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{RESULT\_SPOOLED}{RESULT\_SPOOLED}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a101db8d8f8519ce042492e087048ee93} 
+const RESULT\+\_\+\+SPOOLED = 0x0011}
+
+Email is spooled, ready to be sent \Hypertarget{class_swift___events___send_event_a1be8beadbe9ebd50ae0a78ae1b31ce12}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!RESULT\_SUCCESS@{RESULT\_SUCCESS}}
+\index{RESULT\_SUCCESS@{RESULT\_SUCCESS}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{RESULT\_SUCCESS}{RESULT\_SUCCESS}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_a1be8beadbe9ebd50ae0a78ae1b31ce12} 
+const RESULT\+\_\+\+SUCCESS = 0x0010}
+
+Sending was successful \Hypertarget{class_swift___events___send_event_ae667473c8ebb8f19c698eb57036f39d5}\index{Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}!RESULT\_TENTATIVE@{RESULT\_TENTATIVE}}
+\index{RESULT\_TENTATIVE@{RESULT\_TENTATIVE}!Swift\_Events\_SendEvent@{Swift\_Events\_SendEvent}}
+\doxysubsubsection{\texorpdfstring{RESULT\_TENTATIVE}{RESULT\_TENTATIVE}}
+{\footnotesize\ttfamily \label{class_swift___events___send_event_ae667473c8ebb8f19c698eb57036f39d5} 
+const RESULT\+\_\+\+TENTATIVE = 0x0100}
+
+Sending worked, but there were some failures 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Send\+Event.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,498 @@
+\doxysection{Swift\+\_\+\+Signers\+\_\+\+DKIMSigner Class Reference}
+\hypertarget{class_swift___signers___d_k_i_m_signer}{}\label{class_swift___signers___d_k_i_m_signer}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+Inheritance diagram for Swift\+\_\+\+Signers\+\_\+\+DKIMSigner\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___signers___d_k_i_m_signer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ac56eed858794ab2fb6498a9a127e4868}{\+\_\+\+\_\+construct}} (\$private\+Key, \$domain\+Name, \$selector, \$passphrase=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a4a20559544fdf4dcb457e258dc976cf8}{reset}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_aa4ea8baf64d864129d4276f76df3b4a0}{write}} (\$bytes)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a02ffafc53dcce641baaff3b9c84643a1}{bind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_acad3cfddf5b36bb4b9d3cee2d38482b1}{unbind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a866e542f6d187e28426f762159e17ac6}{set\+Hash\+Algorithm}} (\$hash)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a5952ddb9c2d7ba7c504d1fd5fe96afe8}{set\+Body\+Canon}} (\$canon)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a29e337cb6eaa8fb41fa2e7b7ef974963}{set\+Header\+Canon}} (\$canon)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ac46261cf72e61f24b85758bdf98d829c}{set\+Signer\+Identity}} (\$identity)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ae960078575e8fce9fc64645e37021fc7}{set\+Body\+Signed\+Len}} (\$len)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ae88c8f5d396361e60fd731a90ec834c8}{set\+Signature\+Timestamp}} (\$time)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_afdc662933079eea6242315f558145f18}{set\+Signature\+Expiration}} (\$time)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a42b9656898403cb346a68607dfbdc109}{set\+Debug\+Headers}} (\$debug)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ab8e8c47ea1a5df86db753df28cc294da}{start\+Body}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_ab28e92c98309aca50aec0cba41592f65}{end\+Body}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a71caed0ba27d07123f847a157cb9139f}{get\+Altered\+Headers}} ()
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_af3f07957f2fc1c9ec7410f3912ab004e}{ignore\+Header}} (\$header\+\_\+name)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a8e70ff4fd49fbfaf36beef2b2c041b47}{set\+Headers}} (\mbox{\hyperlink{class_swift___mime___simple_header_set}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Set}} \$headers)
+\item 
+\mbox{\hyperlink{class_swift___signers___d_k_i_m_signer_a7e043e2a678dcf4381f8ee74eceb8991}{add\+Signature}} (\mbox{\hyperlink{class_swift___mime___simple_header_set}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Set}} \$headers)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a6bc548ebcba2e4cc04550cadebd2f973}{bind}} (self \$is)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a731f39e6f118eaef16571d36cc7a80a7}{unbind}} (self \$is)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_abd9efc7526b6804eeaf2940005a2d72e}\label{class_swift___signers___d_k_i_m_signer_abd9efc7526b6804eeaf2940005a2d72e} 
+{\bfseries add\+Header} (\$header, \$is\+\_\+sig=false)
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_acdb6eddd6b4daa19a6a971aa3ba28579}\label{class_swift___signers___d_k_i_m_signer_acdb6eddd6b4daa19a6a971aa3ba28579} 
+{\bfseries canonicalize\+Body} (\$string)
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a2549f94d5edb14ace4502a22acbae246}\label{class_swift___signers___d_k_i_m_signer_a2549f94d5edb14ace4502a22acbae246} 
+{\bfseries end\+Of\+Body} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a0efebc1f06535a262ea0c2d33d794502}\label{class_swift___signers___d_k_i_m_signer_a0efebc1f06535a262ea0c2d33d794502} 
+{\bfseries \$private\+Key}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a921351e60d291df33de58aed030522ed}\label{class_swift___signers___d_k_i_m_signer_a921351e60d291df33de58aed030522ed} 
+{\bfseries \$domain\+Name}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a3014d0a3a57985c974251f5e8496ddc1}\label{class_swift___signers___d_k_i_m_signer_a3014d0a3a57985c974251f5e8496ddc1} 
+{\bfseries \$selector}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a6599d058e39440cbe6b0270f7109e0fc}\label{class_swift___signers___d_k_i_m_signer_a6599d058e39440cbe6b0270f7109e0fc} 
+{\bfseries \$hash\+Algorithm} = \textquotesingle{}rsa-\/sha256\textquotesingle{}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_aa5735393f13b2507009083f47ad16ee1}\label{class_swift___signers___d_k_i_m_signer_aa5735393f13b2507009083f47ad16ee1} 
+{\bfseries \$body\+Canon} = \textquotesingle{}simple\textquotesingle{}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ad7f4601d76f534dc76917ca32687d5fe}\label{class_swift___signers___d_k_i_m_signer_ad7f4601d76f534dc76917ca32687d5fe} 
+{\bfseries \$header\+Canon} = \textquotesingle{}simple\textquotesingle{}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a2d236136e790432c15e0deaa56eb878d}\label{class_swift___signers___d_k_i_m_signer_a2d236136e790432c15e0deaa56eb878d} 
+{\bfseries \$ignored\+Headers} = \mbox{[}\textquotesingle{}return-\/path\textquotesingle{} =$>$ true\mbox{]}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a9bd45268ee518154ab785982e58c8587}\label{class_swift___signers___d_k_i_m_signer_a9bd45268ee518154ab785982e58c8587} 
+{\bfseries \$signer\+Identity}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a21dde035c9f334eb88cadb782e099d0b}\label{class_swift___signers___d_k_i_m_signer_a21dde035c9f334eb88cadb782e099d0b} 
+{\bfseries \$body\+Len} = 0
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ae7f471d243a8d922857b920d87cfd858}\label{class_swift___signers___d_k_i_m_signer_ae7f471d243a8d922857b920d87cfd858} 
+{\bfseries \$max\+Len} = PHP\+\_\+\+INT\+\_\+\+MAX
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a799a2d5c70df461c20dd9e27acd0e648}\label{class_swift___signers___d_k_i_m_signer_a799a2d5c70df461c20dd9e27acd0e648} 
+{\bfseries \$show\+Len} = false
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a7351322e776e1fdc0989eb7ca360f4b8}\label{class_swift___signers___d_k_i_m_signer_a7351322e776e1fdc0989eb7ca360f4b8} 
+{\bfseries \$signature\+Timestamp} = true
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a3a171c7f52fc9b0f8ac6bb428219ae48}\label{class_swift___signers___d_k_i_m_signer_a3a171c7f52fc9b0f8ac6bb428219ae48} 
+{\bfseries \$signature\+Expiration} = false
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ae46225310b8369110838a610bae562c8}\label{class_swift___signers___d_k_i_m_signer_ae46225310b8369110838a610bae562c8} 
+{\bfseries \$debug\+Headers} = false
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a7818919ed5915496861c0fc33c7c0a05}\label{class_swift___signers___d_k_i_m_signer_a7818919ed5915496861c0fc33c7c0a05} 
+{\bfseries \$signed\+Headers} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ac3ff27c255f7fda936f59ffd99789c8b}\label{class_swift___signers___d_k_i_m_signer_ac3ff27c255f7fda936f59ffd99789c8b} 
+{\bfseries \$dkim\+Header}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+DKIM Signer used to apply DKIM Signature to a message.
+
+\begin{DoxyAuthor}{Author}
+Xavier De Cock \href{mailto:xdecock@gmail.com}{\texttt{ xdecock@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ac56eed858794ab2fb6498a9a127e4868}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ac56eed858794ab2fb6498a9a127e4868} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$private\+Key}{, }\item[{}]{\$domain\+Name}{, }\item[{}]{\$selector}{, }\item[{}]{\$passphrase}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$private\+Key} & \\
+\hline
+string & {\em \$domain\+Name} & \\
+\hline
+string & {\em \$selector} & \\
+\hline
+string & {\em \$passphrase} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a7e043e2a678dcf4381f8ee74eceb8991}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!addSignature@{addSignature}}
+\index{addSignature@{addSignature}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{addSignature()}{addSignature()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a7e043e2a678dcf4381f8ee74eceb8991} 
+add\+Signature (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_header_set}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Set}}}]{\$headers}{}\end{DoxyParamCaption})}
+
+Add the signature to the given Headers.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___signers___d_k_i_m_signer}{Swift\+\_\+\+Signers\+\_\+\+DKIMSigner} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_a7e043e2a678dcf4381f8ee74eceb8991}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_a7e043e2a678dcf4381f8ee74eceb8991}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a02ffafc53dcce641baaff3b9c84643a1}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!bind@{bind}}
+\index{bind@{bind}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a02ffafc53dcce641baaff3b9c84643a1} 
+bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Attach \$is to this stream.
+
+The stream acts as an observer, receiving all data that is written. All {\ttfamily \doxylink{class_swift___signers___d_k_i_m_signer_aa4ea8baf64d864129d4276f76df3b4a0}{write()}} and {\ttfamily \doxylink{class_swift___signers___d_k_i_m_signer_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers()}} operations will be mirrored. \Hypertarget{class_swift___signers___d_k_i_m_signer_af5674c27d4a92f6228565010eacbb9cb}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!commit@{commit}}
+\index{commit@{commit}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_af5674c27d4a92f6228565010eacbb9cb} 
+commit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+For any bytes that are currently buffered inside the stream, force them off the buffer. 
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_af5674c27d4a92f6228565010eacbb9cb}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ab28e92c98309aca50aec0cba41592f65}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!endBody@{endBody}}
+\index{endBody@{endBody}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{endBody()}{endBody()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ab28e92c98309aca50aec0cba41592f65} 
+end\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+End Body. 
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_ab28e92c98309aca50aec0cba41592f65}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_ab28e92c98309aca50aec0cba41592f65}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a77ecc2d8c17e5057cc82509a2dca076e}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!flushBuffers@{flushBuffers}}
+\index{flushBuffers@{flushBuffers}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{flushBuffers()}{flushBuffers()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a77ecc2d8c17e5057cc82509a2dca076e} 
+flush\+Buffers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flush the contents of the stream (empty it) and set the internal pointer to the beginning.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_a77ecc2d8c17e5057cc82509a2dca076e}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a71caed0ba27d07123f847a157cb9139f}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!getAlteredHeaders@{getAlteredHeaders}}
+\index{getAlteredHeaders@{getAlteredHeaders}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{getAlteredHeaders()}{getAlteredHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a71caed0ba27d07123f847a157cb9139f} 
+get\+Altered\+Headers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the list of Headers Tampered by this plugin.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_a71caed0ba27d07123f847a157cb9139f}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_af3f07957f2fc1c9ec7410f3912ab004e}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!ignoreHeader@{ignoreHeader}}
+\index{ignoreHeader@{ignoreHeader}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{ignoreHeader()}{ignoreHeader()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_af3f07957f2fc1c9ec7410f3912ab004e} 
+ignore\+Header (\begin{DoxyParamCaption}\item[{}]{\$header\+\_\+name}{}\end{DoxyParamCaption})}
+
+Adds an ignored Header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___signers___d_k_i_m_signer}{Swift\+\_\+\+Signers\+\_\+\+DKIMSigner} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_af3f07957f2fc1c9ec7410f3912ab004e}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a4a20559544fdf4dcb457e258dc976cf8}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!reset@{reset}}
+\index{reset@{reset}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a4a20559544fdf4dcb457e258dc976cf8} 
+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Reset the Signer.
+
+\begin{DoxySeeAlso}{See also}
+Swift\+\_\+\+Signer\textbackslash{}reset() 
+\end{DoxySeeAlso}
+
+
+Implements \mbox{\hyperlink{interface_swift___signer}{Swift\+\_\+\+Signer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_a4a20559544fdf4dcb457e258dc976cf8}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a5952ddb9c2d7ba7c504d1fd5fe96afe8}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setBodyCanon@{setBodyCanon}}
+\index{setBodyCanon@{setBodyCanon}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setBodyCanon()}{setBodyCanon()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a5952ddb9c2d7ba7c504d1fd5fe96afe8} 
+set\+Body\+Canon (\begin{DoxyParamCaption}\item[{}]{\$canon}{}\end{DoxyParamCaption})}
+
+Set the body canonicalization algorithm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$canon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ae960078575e8fce9fc64645e37021fc7}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setBodySignedLen@{setBodySignedLen}}
+\index{setBodySignedLen@{setBodySignedLen}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setBodySignedLen()}{setBodySignedLen()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ae960078575e8fce9fc64645e37021fc7} 
+set\+Body\+Signed\+Len (\begin{DoxyParamCaption}\item[{}]{\$len}{}\end{DoxyParamCaption})}
+
+Set the length of the body to sign.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$len} & (bool or int)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a42b9656898403cb346a68607dfbdc109}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setDebugHeaders@{setDebugHeaders}}
+\index{setDebugHeaders@{setDebugHeaders}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setDebugHeaders()}{setDebugHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a42b9656898403cb346a68607dfbdc109} 
+set\+Debug\+Headers (\begin{DoxyParamCaption}\item[{}]{\$debug}{}\end{DoxyParamCaption})}
+
+Enable / disable the Debug\+Headers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$debug} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___signers___d_k_i_m_signer}{Swift\+\_\+\+Signers\+\_\+\+DKIMSigner} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_a42b9656898403cb346a68607dfbdc109}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a866e542f6d187e28426f762159e17ac6}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setHashAlgorithm@{setHashAlgorithm}}
+\index{setHashAlgorithm@{setHashAlgorithm}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setHashAlgorithm()}{setHashAlgorithm()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a866e542f6d187e28426f762159e17ac6} 
+set\+Hash\+Algorithm (\begin{DoxyParamCaption}\item[{}]{\$hash}{}\end{DoxyParamCaption})}
+
+Set hash\+\_\+algorithm, must be one of rsa-\/sha256 \texorpdfstring{$\vert$}{|} rsa-\/sha1.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$hash} & \textquotesingle{}rsa-\/sha1\textquotesingle{} or \textquotesingle{}rsa-\/sha256\textquotesingle{}\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___swift_exception}{Swift\+\_\+\+Swift\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a29e337cb6eaa8fb41fa2e7b7ef974963}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setHeaderCanon@{setHeaderCanon}}
+\index{setHeaderCanon@{setHeaderCanon}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setHeaderCanon()}{setHeaderCanon()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a29e337cb6eaa8fb41fa2e7b7ef974963} 
+set\+Header\+Canon (\begin{DoxyParamCaption}\item[{}]{\$canon}{}\end{DoxyParamCaption})}
+
+Set the header canonicalization algorithm.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$canon} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_a8e70ff4fd49fbfaf36beef2b2c041b47}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setHeaders@{setHeaders}}
+\index{setHeaders@{setHeaders}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_a8e70ff4fd49fbfaf36beef2b2c041b47} 
+set\+Headers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_header_set}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Header\+Set}}}]{\$headers}{}\end{DoxyParamCaption})}
+
+Set the headers to sign.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_swift___signers___d_k_i_m_signer}{Swift\+\_\+\+Signers\+\_\+\+DKIMSigner} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_a8e70ff4fd49fbfaf36beef2b2c041b47}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_a8e70ff4fd49fbfaf36beef2b2c041b47}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_afdc662933079eea6242315f558145f18}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setSignatureExpiration@{setSignatureExpiration}}
+\index{setSignatureExpiration@{setSignatureExpiration}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setSignatureExpiration()}{setSignatureExpiration()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_afdc662933079eea6242315f558145f18} 
+set\+Signature\+Expiration (\begin{DoxyParamCaption}\item[{}]{\$time}{}\end{DoxyParamCaption})}
+
+Set the signature expiration timestamp.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$time} & A timestamp\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_afdc662933079eea6242315f558145f18}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ae88c8f5d396361e60fd731a90ec834c8}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setSignatureTimestamp@{setSignatureTimestamp}}
+\index{setSignatureTimestamp@{setSignatureTimestamp}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setSignatureTimestamp()}{setSignatureTimestamp()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ae88c8f5d396361e60fd731a90ec834c8} 
+set\+Signature\+Timestamp (\begin{DoxyParamCaption}\item[{}]{\$time}{}\end{DoxyParamCaption})}
+
+Set the signature timestamp.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$time} & A timestamp\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_ae88c8f5d396361e60fd731a90ec834c8}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ac46261cf72e61f24b85758bdf98d829c}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!setSignerIdentity@{setSignerIdentity}}
+\index{setSignerIdentity@{setSignerIdentity}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{setSignerIdentity()}{setSignerIdentity()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ac46261cf72e61f24b85758bdf98d829c} 
+set\+Signer\+Identity (\begin{DoxyParamCaption}\item[{}]{\$identity}{}\end{DoxyParamCaption})}
+
+Set the signer identity.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$identity} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___signers___d_k_i_m_signer_ab8e8c47ea1a5df86db753df28cc294da}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!startBody@{startBody}}
+\index{startBody@{startBody}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{startBody()}{startBody()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_ab8e8c47ea1a5df86db753df28cc294da} 
+start\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start Body. 
+
+Implements \mbox{\hyperlink{interface_swift___signers___header_signer_ab8e8c47ea1a5df86db753df28cc294da}{Swift\+\_\+\+Signers\+\_\+\+Header\+Signer}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___signers___open_d_k_i_m_signer_ab8e8c47ea1a5df86db753df28cc294da}{Swift\+\_\+\+Signers\+\_\+\+Open\+DKIMSigner}}.
+
+\Hypertarget{class_swift___signers___d_k_i_m_signer_acad3cfddf5b36bb4b9d3cee2d38482b1}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!unbind@{unbind}}
+\index{unbind@{unbind}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_acad3cfddf5b36bb4b9d3cee2d38482b1} 
+unbind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Remove an already bound stream.
+
+If \$is is not bound, no errors will be raised. If the stream currently has any buffered data it will be written to \$is before unbinding occurs. \Hypertarget{class_swift___signers___d_k_i_m_signer_aa4ea8baf64d864129d4276f76df3b4a0}\index{Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}!write@{write}}
+\index{write@{write}!Swift\_Signers\_DKIMSigner@{Swift\_Signers\_DKIMSigner}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_swift___signers___d_k_i_m_signer_aa4ea8baf64d864129d4276f76df3b4a0} 
+write (\begin{DoxyParamCaption}\item[{}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Writes \$bytes to the end of the stream.
+
+Writing may not happen immediately if the stream chooses to buffer. If you want to write these bytes with immediate effect, call {\ttfamily \doxylink{class_swift___signers___d_k_i_m_signer_af5674c27d4a92f6228565010eacbb9cb}{commit()}} after calling \doxylink{class_swift___signers___d_k_i_m_signer_aa4ea8baf64d864129d4276f76df3b4a0}{write()}.
+
+This method returns the sequence ID of the write (i.\+e. 1 for first, 2 for second, etc etc).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_aa4ea8baf64d864129d4276f76df3b4a0}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Signers/DKIMSigner.\+php\end{DoxyCompactItemize}

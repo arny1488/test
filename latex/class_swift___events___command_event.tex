@@ -1,0 +1,84 @@
+\doxysection{Swift\+\_\+\+Events\+\_\+\+Command\+Event Class Reference}
+\hypertarget{class_swift___events___command_event}{}\label{class_swift___events___command_event}\index{Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}}
+Inheritance diagram for Swift\+\_\+\+Events\+\_\+\+Command\+Event\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___events___command_event}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___command_event_a6d27f1a74300e89035d30aad6ba4c8c6}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$source, \$command, \$success\+Codes=\mbox{[}$\,$\mbox{]})
+\item 
+\mbox{\hyperlink{class_swift___events___command_event_a154e8997a5c7e497d5d54dcf340a80b1}{get\+Command}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___command_event_a72269076f0bee5d84962a2ec5496cbbb}{get\+Success\+Codes}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___events___event_object}{Swift\+\_\+\+Events\+\_\+\+Event\+Object}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_afc2fce8f243001962e868734f4c76654}{\+\_\+\+\_\+construct}} (\$source)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a42fdd8313c99d9c5f80219c1e192b93a}{get\+Source}} ()
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a1e97da9817b5ba54c36066b7c5394054}{cancel\+Bubble}} (\$cancel=true)
+\item 
+\mbox{\hyperlink{class_swift___events___event_object_a6a539b82f4ce42326434defbab9b454a}{bubble\+Cancelled}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Generated when a command is sent over an SMTP connection.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___events___command_event_a6d27f1a74300e89035d30aad6ba4c8c6}\index{Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___events___command_event_a6d27f1a74300e89035d30aad6ba4c8c6} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$source}{, }\item[{}]{\$command}{, }\item[{}]{\$success\+Codes}{ = {\ttfamily \mbox{[}\mbox{]}}}\end{DoxyParamCaption})}
+
+Create a new Command\+Event for \$source with \$command.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$command} & \\
+\hline
+array & {\em \$success\+Codes} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___events___command_event_a154e8997a5c7e497d5d54dcf340a80b1}\index{Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}!getCommand@{getCommand}}
+\index{getCommand@{getCommand}!Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}}
+\doxysubsubsection{\texorpdfstring{getCommand()}{getCommand()}}
+{\footnotesize\ttfamily \label{class_swift___events___command_event_a154e8997a5c7e497d5d54dcf340a80b1} 
+get\+Command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the command which was sent to the server.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___events___command_event_a72269076f0bee5d84962a2ec5496cbbb}\index{Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}!getSuccessCodes@{getSuccessCodes}}
+\index{getSuccessCodes@{getSuccessCodes}!Swift\_Events\_CommandEvent@{Swift\_Events\_CommandEvent}}
+\doxysubsubsection{\texorpdfstring{getSuccessCodes()}{getSuccessCodes()}}
+{\footnotesize\ttfamily \label{class_swift___events___command_event_a72269076f0bee5d84962a2ec5496cbbb} 
+get\+Success\+Codes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the numeric response codes which indicate success for this command.
+
+\begin{DoxyReturn}{Returns}
+int\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Events/Command\+Event.\+php\end{DoxyCompactItemize}

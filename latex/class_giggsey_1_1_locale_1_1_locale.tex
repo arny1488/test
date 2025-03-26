@@ -1,0 +1,114 @@
+\doxysection{Locale Class Reference}
+\hypertarget{class_giggsey_1_1_locale_1_1_locale}{}\label{class_giggsey_1_1_locale_1_1_locale}\index{Locale@{Locale}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_giggsey_1_1_locale_1_1_locale_a02d985df79331b881cf49204d8257fce}{get\+Primary\+Language}} (\$locale)
+\item 
+static \mbox{\hyperlink{class_giggsey_1_1_locale_1_1_locale_af127359ebfb35a53f508cd4fe05ae3b3}{get\+Region}} (\$locale)
+\item 
+static \mbox{\hyperlink{class_giggsey_1_1_locale_1_1_locale_a1ca0053f877e35b169ef85743fa003f0}{get\+Display\+Region}} (\$locale, \$in\+Locale)
+\item 
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_a173368ef6c164eee16c7cf59f5e83510}\label{class_giggsey_1_1_locale_1_1_locale_a173368ef6c164eee16c7cf59f5e83510} 
+static {\bfseries get\+Version} ()
+\item 
+static \mbox{\hyperlink{class_giggsey_1_1_locale_1_1_locale_a6c0f6b2c509632c76c28e1ca2bce0cd1}{get\+Supported\+Locales}} ()
+\item 
+static \mbox{\hyperlink{class_giggsey_1_1_locale_1_1_locale_a6d78e9d417648345b18d684d0a53b19c}{get\+All\+Countries\+For\+Locale}} (\$locale)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_a14dd7f5bc442c6869a18b14bc23be719}\label{class_giggsey_1_1_locale_1_1_locale_a14dd7f5bc442c6869a18b14bc23be719} 
+static {\bfseries \$data\+Dir} = \textquotesingle{}../data/\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_a6d78e9d417648345b18d684d0a53b19c}\index{Locale@{Locale}!getAllCountriesForLocale@{getAllCountriesForLocale}}
+\index{getAllCountriesForLocale@{getAllCountriesForLocale}!Locale@{Locale}}
+\doxysubsubsection{\texorpdfstring{getAllCountriesForLocale()}{getAllCountriesForLocale()}}
+{\footnotesize\ttfamily \label{class_giggsey_1_1_locale_1_1_locale_a6d78e9d417648345b18d684d0a53b19c} 
+static get\+All\+Countries\+For\+Locale (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load a list of all countries supported by a particular Locale
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} Associative array of Country Code =\texorpdfstring{$>$}{>} Country Name 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception On an invalid region \Hypertarget{class_giggsey_1_1_locale_1_1_locale_a1ca0053f877e35b169ef85743fa003f0}\index{Locale@{Locale}!getDisplayRegion@{getDisplayRegion}}
+\index{getDisplayRegion@{getDisplayRegion}!Locale@{Locale}}
+\doxysubsubsection{\texorpdfstring{getDisplayRegion()}{getDisplayRegion()}}
+{\footnotesize\ttfamily \label{class_giggsey_1_1_locale_1_1_locale_a1ca0053f877e35b169ef85743fa003f0} 
+static get\+Display\+Region (\begin{DoxyParamCaption}\item[{}]{\$locale}{, }\item[{}]{\$in\+Locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the localised display name for the region of the input locale
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & The locale to return a display region for \\
+\hline
+string & {\em \$in\+Locale} & Format locale to display the region name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Display name for the region, or an empty string if no result could be found 
+\end{DoxyReturn}
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_a02d985df79331b881cf49204d8257fce}\index{Locale@{Locale}!getPrimaryLanguage@{getPrimaryLanguage}}
+\index{getPrimaryLanguage@{getPrimaryLanguage}!Locale@{Locale}}
+\doxysubsubsection{\texorpdfstring{getPrimaryLanguage()}{getPrimaryLanguage()}}
+{\footnotesize\ttfamily \label{class_giggsey_1_1_locale_1_1_locale_a02d985df79331b881cf49204d8257fce} 
+static get\+Primary\+Language (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Gets the primary language for the input locale
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & Input locale (e.\+g. en-\/\+GB) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Primary Language (e.\+g. en) 
+\end{DoxyReturn}
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_af127359ebfb35a53f508cd4fe05ae3b3}\index{Locale@{Locale}!getRegion@{getRegion}}
+\index{getRegion@{getRegion}!Locale@{Locale}}
+\doxysubsubsection{\texorpdfstring{getRegion()}{getRegion()}}
+{\footnotesize\ttfamily \label{class_giggsey_1_1_locale_1_1_locale_af127359ebfb35a53f508cd4fe05ae3b3} 
+static get\+Region (\begin{DoxyParamCaption}\item[{}]{\$locale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the region for the input locale
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$locale} & Input locale (e.\+g. de-\/\+CH-\/1991) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string Region (e.\+g. CH) 
+\end{DoxyReturn}
+\Hypertarget{class_giggsey_1_1_locale_1_1_locale_a6c0f6b2c509632c76c28e1ca2bce0cd1}\index{Locale@{Locale}!getSupportedLocales@{getSupportedLocales}}
+\index{getSupportedLocales@{getSupportedLocales}!Locale@{Locale}}
+\doxysubsubsection{\texorpdfstring{getSupportedLocales()}{getSupportedLocales()}}
+{\footnotesize\ttfamily \label{class_giggsey_1_1_locale_1_1_locale_a6c0f6b2c509632c76c28e1ca2bce0cd1} 
+static get\+Supported\+Locales (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return a list of all the supported locales
+
+\begin{DoxyReturn}{Returns}
+string\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/\+Giggsey/\+Locale/Locale.\+php\end{DoxyCompactItemize}

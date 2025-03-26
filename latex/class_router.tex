@@ -1,0 +1,116 @@
+\doxysection{Router Class Reference}
+\hypertarget{class_router}{}\label{class_router}\index{Router@{Router}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_router_a9f0be6ae273d3669e11c29910a0be338}{init}} ()
+\item 
+static \mbox{\hyperlink{class_router_a2279b344f60d97bcd423674e042026ef}{get\+Module}} ()
+\item 
+static \mbox{\hyperlink{class_router_aabe69344490065ea05784e9f71512bc1}{get\+Model}} ()
+\item 
+\Hypertarget{class_router_ad07488f0d1d1b49c2389c162d47a5497}\label{class_router_ad07488f0d1d1b49c2389c162d47a5497} 
+static {\bfseries add\+Alias} (string \$regex, ?string \$module, string \$function)
+\item 
+static \mbox{\hyperlink{class_router_a4185207573f94157f301b8ef35354db4}{execute}} (string \$route)
+\item 
+static \mbox{\hyperlink{class_router_a120cad7ec3b0edab510e7a4488ecc95d}{response}} (bool \$success, string \$message, string \$url=\textquotesingle{}\textquotesingle{}, array \$args=\mbox{[}$\,$\mbox{]}, ?int \$status=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_router_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_router_a89c6cc0a7a4e5bc16eb52d015dd8faa4}\label{class_router_a89c6cc0a7a4e5bc16eb52d015dd8faa4} 
+static \mbox{\hyperlink{class_router}{Router}} {\bfseries \$instance} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_router_a095c5d389db211932136b53f25f39685}\index{Router@{Router}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_router_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_router_a4185207573f94157f301b8ef35354db4}\index{Router@{Router}!execute@{execute}}
+\index{execute@{execute}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \label{class_router_a4185207573f94157f301b8ef35354db4} 
+static execute (\begin{DoxyParamCaption}\item[{string}]{\$route}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Execute router
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$route} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed 
+\end{DoxyReturn}
+\Hypertarget{class_router_aabe69344490065ea05784e9f71512bc1}\index{Router@{Router}!getModel@{getModel}}
+\index{getModel@{getModel}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \label{class_router_aabe69344490065ea05784e9f71512bc1} 
+static get\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get model
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_model}{Model} 
+\end{DoxyReturn}
+\Hypertarget{class_router_a2279b344f60d97bcd423674e042026ef}\index{Router@{Router}!getModule@{getModule}}
+\index{getModule@{getModule}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{getModule()}{getModule()}}
+{\footnotesize\ttfamily \label{class_router_a2279b344f60d97bcd423674e042026ef} 
+static get\+Module (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get module
+
+\begin{DoxyReturn}{Returns}
+\doxylink{class_module}{Module} 
+\end{DoxyReturn}
+\Hypertarget{class_router_a9f0be6ae273d3669e11c29910a0be338}\index{Router@{Router}!init@{init}}
+\index{init@{init}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_router_a9f0be6ae273d3669e11c29910a0be338} 
+static init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialization
+
+\begin{DoxyReturn}{Returns}
+Router\texorpdfstring{$\vert$}{|}null 
+\end{DoxyReturn}
+\Hypertarget{class_router_a120cad7ec3b0edab510e7a4488ecc95d}\index{Router@{Router}!response@{response}}
+\index{response@{response}!Router@{Router}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{class_router_a120cad7ec3b0edab510e7a4488ecc95d} 
+static response (\begin{DoxyParamCaption}\item[{bool}]{\$success}{, }\item[{string}]{\$message}{, }\item[{string}]{\$url}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{array}]{\$args}{ = {\ttfamily \mbox{[}\mbox{]}}, }\item[{?int}]{\$status}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Display message and stop execution
+
+
+\begin{DoxyParams}[1]{Parameters}
+bool & {\em \$success} & \\
+\hline
+string & {\em \$message} & \\
+\hline
+string & {\em \$url} & redirect URL \\
+\hline
+array & {\em \$args} & \\
+\hline
+int | null & {\em \$status} & response HTTP status \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/core/Router.\+php\end{DoxyCompactItemize}

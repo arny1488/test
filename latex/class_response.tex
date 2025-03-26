@@ -1,0 +1,76 @@
+\doxysection{Response Class Reference}
+\hypertarget{class_response}{}\label{class_response}\index{Response@{Response}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_response_ab8c243bfffaf09e4900a1fdef95936aa}{set\+Status}} (int \$status)
+\item 
+static \mbox{\hyperlink{class_response_a9d62650726f2d55bb5a2a1cc7a2c4a01}{set\+Header}} (string \$header, bool \$replace=false, int \$status=0)
+\item 
+static \mbox{\hyperlink{class_response_aa06f162ca95abaa7c50be2e575e07778}{set\+Headers}} (array \$headers)
+\item 
+static \mbox{\hyperlink{class_response_a7e5f46bf0890a990301bd7ba5e1e7ee3}{shut\+Down}} (?int \$status=null)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_response_a7dea8a7f15742f4285e878dbb40e5a1b}\label{class_response_a7dea8a7f15742f4285e878dbb40e5a1b} 
+static array {\bfseries \$http\+\_\+statuses}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_response_a9d62650726f2d55bb5a2a1cc7a2c4a01}\index{Response@{Response}!setHeader@{setHeader}}
+\index{setHeader@{setHeader}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{setHeader()}{setHeader()}}
+{\footnotesize\ttfamily \label{class_response_a9d62650726f2d55bb5a2a1cc7a2c4a01} 
+static set\+Header (\begin{DoxyParamCaption}\item[{string}]{\$header}{, }\item[{bool}]{\$replace}{ = {\ttfamily false}, }\item[{int}]{\$status}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set header
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$header} & header name \\
+\hline
+bool & {\em \$replace} & replace a previous similar header \\
+\hline
+int & {\em \$status} & set HTTP status \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_response_aa06f162ca95abaa7c50be2e575e07778}\index{Response@{Response}!setHeaders@{setHeaders}}
+\index{setHeaders@{setHeaders}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{setHeaders()}{setHeaders()}}
+{\footnotesize\ttfamily \label{class_response_aa06f162ca95abaa7c50be2e575e07778} 
+static set\+Headers (\begin{DoxyParamCaption}\item[{array}]{\$headers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set multiple headers from array
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$headers} & headers array \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_response_ab8c243bfffaf09e4900a1fdef95936aa}\index{Response@{Response}!setStatus@{setStatus}}
+\index{setStatus@{setStatus}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{setStatus()}{setStatus()}}
+{\footnotesize\ttfamily \label{class_response_ab8c243bfffaf09e4900a1fdef95936aa} 
+static set\+Status (\begin{DoxyParamCaption}\item[{int}]{\$status}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Set HTTP status
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$status} & status code \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_response_a7e5f46bf0890a990301bd7ba5e1e7ee3}\index{Response@{Response}!shutDown@{shutDown}}
+\index{shutDown@{shutDown}!Response@{Response}}
+\doxysubsubsection{\texorpdfstring{shutDown()}{shutDown()}}
+{\footnotesize\ttfamily \label{class_response_a7e5f46bf0890a990301bd7ba5e1e7ee3} 
+static shut\+Down (\begin{DoxyParamCaption}\item[{?int}]{\$status}{ = {\ttfamily null}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Shutdown script execution 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Response.\+php\end{DoxyCompactItemize}

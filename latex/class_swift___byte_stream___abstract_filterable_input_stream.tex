@@ -1,0 +1,205 @@
+\doxysection{Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream Class Reference}
+\hypertarget{class_swift___byte_stream___abstract_filterable_input_stream}{}\label{class_swift___byte_stream___abstract_filterable_input_stream}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+Inheritance diagram for Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.848797cm]{class_swift___byte_stream___abstract_filterable_input_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a864cadedb7d676a2375441b61cdb709c}{add\+Filter}} (\mbox{\hyperlink{interface_swift___stream_filter}{Swift\+\_\+\+Stream\+Filter}} \$filter, \$key)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a25ba5ccefd796cbb91dd27c26e4a9eea}{remove\+Filter}} (\$key)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_aa4ea8baf64d864129d4276f76df3b4a0}{write}} (\$bytes)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a02ffafc53dcce641baaff3b9c84643a1}{bind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_acad3cfddf5b36bb4b9d3cee2d38482b1}{unbind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a6bc548ebcba2e4cc04550cadebd2f973}{bind}} (self \$is)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a731f39e6f118eaef16571d36cc7a80a7}{unbind}} (self \$is)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_af67098fd2bab289a20a49eddcd521fa6}{do\+Commit}} (\$bytes)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a5d0d9dd56c2dfd61e7fedb04ca7c3cec}{\$sequence}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides the base functionality for an Input\+Stream supporting filters.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a864cadedb7d676a2375441b61cdb709c}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!addFilter@{addFilter}}
+\index{addFilter@{addFilter}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{addFilter()}{addFilter()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a864cadedb7d676a2375441b61cdb709c} 
+add\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___stream_filter}{Swift\+\_\+\+Stream\+Filter}}}]{\$filter}{, }\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Add a Stream\+Filter to this Input\+Byte\+Stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___filterable_a864cadedb7d676a2375441b61cdb709c}{Swift\+\_\+\+Filterable}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a02ffafc53dcce641baaff3b9c84643a1}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!bind@{bind}}
+\index{bind@{bind}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{bind()}{bind()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a02ffafc53dcce641baaff3b9c84643a1} 
+bind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Attach \$is to this stream.
+
+The stream acts as an observer, receiving all data that is written. All {\ttfamily \doxylink{class_swift___byte_stream___abstract_filterable_input_stream_aa4ea8baf64d864129d4276f76df3b4a0}{write()}} and {\ttfamily \doxylink{class_swift___byte_stream___abstract_filterable_input_stream_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers()}} operations will be mirrored. \Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_af5674c27d4a92f6228565010eacbb9cb}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!commit@{commit}}
+\index{commit@{commit}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{commit()}{commit()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_af5674c27d4a92f6228565010eacbb9cb} 
+commit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+For any bytes that are currently buffered inside the stream, force them off the buffer.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_af5674c27d4a92f6228565010eacbb9cb}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_af67098fd2bab289a20a49eddcd521fa6}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!doCommit@{doCommit}}
+\index{doCommit@{doCommit}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{doCommit()}{doCommit()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_af67098fd2bab289a20a49eddcd521fa6} 
+do\+Commit (\begin{DoxyParamCaption}\item[{}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Commit the given bytes to the storage medium immediately.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___byte_stream___file_byte_stream_af67098fd2bab289a20a49eddcd521fa6}{Swift\+\_\+\+Byte\+Stream\+\_\+\+File\+Byte\+Stream}}, and \mbox{\hyperlink{class_swift___transport___stream_buffer_af67098fd2bab289a20a49eddcd521fa6}{Swift\+\_\+\+Transport\+\_\+\+Stream\+Buffer}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a7751f77b5263bcf940ece6e824a05b38}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!flush@{flush}}
+\index{flush@{flush}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a7751f77b5263bcf940ece6e824a05b38} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}, {\ttfamily [protected]}}
+
+Flush any buffers/content with immediate effect. 
+
+Reimplemented in \mbox{\hyperlink{class_swift___byte_stream___file_byte_stream_a7751f77b5263bcf940ece6e824a05b38}{Swift\+\_\+\+Byte\+Stream\+\_\+\+File\+Byte\+Stream}}, and \mbox{\hyperlink{class_swift___transport___stream_buffer_a7751f77b5263bcf940ece6e824a05b38}{Swift\+\_\+\+Transport\+\_\+\+Stream\+Buffer}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a77ecc2d8c17e5057cc82509a2dca076e}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!flushBuffers@{flushBuffers}}
+\index{flushBuffers@{flushBuffers}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{flushBuffers()}{flushBuffers()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a77ecc2d8c17e5057cc82509a2dca076e} 
+flush\+Buffers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Flush the contents of the stream (empty it) and set the internal pointer to the beginning.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_a77ecc2d8c17e5057cc82509a2dca076e}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a25ba5ccefd796cbb91dd27c26e4a9eea}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!removeFilter@{removeFilter}}
+\index{removeFilter@{removeFilter}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{removeFilter()}{removeFilter()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a25ba5ccefd796cbb91dd27c26e4a9eea} 
+remove\+Filter (\begin{DoxyParamCaption}\item[{}]{\$key}{}\end{DoxyParamCaption})}
+
+Remove an already present Stream\+Filter based on its \$key.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$key} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___filterable_a25ba5ccefd796cbb91dd27c26e4a9eea}{Swift\+\_\+\+Filterable}}.
+
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_acad3cfddf5b36bb4b9d3cee2d38482b1}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!unbind@{unbind}}
+\index{unbind@{unbind}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{unbind()}{unbind()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_acad3cfddf5b36bb4b9d3cee2d38482b1} 
+unbind (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{}\end{DoxyParamCaption})}
+
+Remove an already bound stream.
+
+If \$is is not bound, no errors will be raised. If the stream currently has any buffered data it will be written to \$is before unbinding occurs. \Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_aa4ea8baf64d864129d4276f76df3b4a0}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!write@{write}}
+\index{write@{write}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_aa4ea8baf64d864129d4276f76df3b4a0} 
+write (\begin{DoxyParamCaption}\item[{}]{\$bytes}{}\end{DoxyParamCaption})}
+
+Writes \$bytes to the end of the stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$bytes} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___input_byte_stream_aa4ea8baf64d864129d4276f76df3b4a0}{Swift\+\_\+\+Input\+Byte\+Stream}}.
+
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{class_swift___byte_stream___abstract_filterable_input_stream_a5d0d9dd56c2dfd61e7fedb04ca7c3cec}\index{Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}!\$sequence@{\$sequence}}
+\index{\$sequence@{\$sequence}!Swift\_ByteStream\_AbstractFilterableInputStream@{Swift\_ByteStream\_AbstractFilterableInputStream}}
+\doxysubsubsection{\texorpdfstring{\$sequence}{\$sequence}}
+{\footnotesize\ttfamily \label{class_swift___byte_stream___abstract_filterable_input_stream_a5d0d9dd56c2dfd61e7fedb04ca7c3cec} 
+\$sequence = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write sequence. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Byte\+Stream/Abstract\+Filterable\+Input\+Stream.\+php\end{DoxyCompactItemize}

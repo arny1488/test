@@ -1,0 +1,203 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Pop\+Before\+Smtp\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___pop_before_smtp_plugin}{}\label{class_swift___plugins___pop_before_smtp_plugin}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Pop\+Before\+Smtp\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___pop_before_smtp_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a099a70a7e721abac24ebe66611d47bb4}{\+\_\+\+\_\+construct}} (\$host, \$port=110, \$crypto=null)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a07732cae0c6411937d248228a0564112}{set\+Connection}} (\mbox{\hyperlink{interface_swift___plugins___pop___pop3_connection}{Swift\+\_\+\+Plugins\+\_\+\+Pop\+\_\+\+Pop3\+Connection}} \$connection)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_ab5ab67c29600585eae24af94cd17e424}{bind\+Smtp}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$smtp)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a3d80d4d51ec21d8237d6ed6808d70b8e}{set\+Timeout}} (\$timeout)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_ac359b701a2ccaff746dd480f03314244}{set\+Username}} (\$username)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a3e35c8d3dbb2c513c618a664389e0926}{set\+Password}} (\$password)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a78572828d11dcdf2a498497d9001d557}{connect}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_abe175fcf658475bc56e9d6fa02bc88ec}{disconnect}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6}{before\+Transport\+Started}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_af66bb92cf83d64065627eabe3da1aba9}{transport\+Started}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_a83a263e88843a2effd0c9fbda3d079d0}{before\+Transport\+Stopped}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___pop_before_smtp_plugin_aa7565e467fe2861c865675ea48b9d3e6}{transport\+Stopped}} (\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Makes sure a connection to a POP3 host has been established prior to connecting to SMTP.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a099a70a7e721abac24ebe66611d47bb4}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a099a70a7e721abac24ebe66611d47bb4} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$host}{, }\item[{}]{\$port}{ = {\ttfamily 110}, }\item[{}]{\$crypto}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Create a new Pop\+Before\+Smtp\+Plugin for \$host and \$port.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$host} & Hostname or \doxylink{class_i_p}{IP}. Literal IPv6 addresses should be wrapped in square brackets. \\
+\hline
+int & {\em \$port} & \\
+\hline
+string & {\em \$crypto} & as "{}tls"{} or "{}ssl"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!beforeTransportStarted@{beforeTransportStarted}}
+\index{beforeTransportStarted@{beforeTransportStarted}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeTransportStarted()}{beforeTransportStarted()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a09c40fadcfae2f6ae2e39cea9d8297c6} 
+before\+Transport\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked just before a Transport is started. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_a09c40fadcfae2f6ae2e39cea9d8297c6}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a83a263e88843a2effd0c9fbda3d079d0}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!beforeTransportStopped@{beforeTransportStopped}}
+\index{beforeTransportStopped@{beforeTransportStopped}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{beforeTransportStopped()}{beforeTransportStopped()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a83a263e88843a2effd0c9fbda3d079d0} 
+before\+Transport\+Stopped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_a83a263e88843a2effd0c9fbda3d079d0}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_ab5ab67c29600585eae24af94cd17e424}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!bindSmtp@{bindSmtp}}
+\index{bindSmtp@{bindSmtp}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{bindSmtp()}{bindSmtp()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_ab5ab67c29600585eae24af94cd17e424} 
+bind\+Smtp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}}]{\$smtp}{}\end{DoxyParamCaption})}
+
+Bind this plugin to a specific SMTP transport instance. \Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a78572828d11dcdf2a498497d9001d557}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!connect@{connect}}
+\index{connect@{connect}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a78572828d11dcdf2a498497d9001d557} 
+connect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Connect to the POP3 host and authenticate.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___plugins___pop___pop3_exception}{Swift\+\_\+\+Plugins\+\_\+\+Pop\+\_\+\+Pop3\+Exception}} & if connection fails \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___pop___pop3_connection_a78572828d11dcdf2a498497d9001d557}{Swift\+\_\+\+Plugins\+\_\+\+Pop\+\_\+\+Pop3\+Connection}}.
+
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_abe175fcf658475bc56e9d6fa02bc88ec}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_abe175fcf658475bc56e9d6fa02bc88ec} 
+disconnect (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Disconnect from the POP3 host. 
+
+Implements \mbox{\hyperlink{interface_swift___plugins___pop___pop3_connection_abe175fcf658475bc56e9d6fa02bc88ec}{Swift\+\_\+\+Plugins\+\_\+\+Pop\+\_\+\+Pop3\+Connection}}.
+
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a07732cae0c6411937d248228a0564112}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!setConnection@{setConnection}}
+\index{setConnection@{setConnection}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{setConnection()}{setConnection()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a07732cae0c6411937d248228a0564112} 
+set\+Connection (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___plugins___pop___pop3_connection}{Swift\+\_\+\+Plugins\+\_\+\+Pop\+\_\+\+Pop3\+Connection}}}]{\$connection}{}\end{DoxyParamCaption})}
+
+Set a Pop3\+Connection to delegate to instead of connecting directly.
+
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a3e35c8d3dbb2c513c618a664389e0926}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!setPassword@{setPassword}}
+\index{setPassword@{setPassword}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{setPassword()}{setPassword()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a3e35c8d3dbb2c513c618a664389e0926} 
+set\+Password (\begin{DoxyParamCaption}\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+Set the password to use when connecting (if needed).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_a3d80d4d51ec21d8237d6ed6808d70b8e}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!setTimeout@{setTimeout}}
+\index{setTimeout@{setTimeout}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{setTimeout()}{setTimeout()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_a3d80d4d51ec21d8237d6ed6808d70b8e} 
+set\+Timeout (\begin{DoxyParamCaption}\item[{}]{\$timeout}{}\end{DoxyParamCaption})}
+
+Set the connection timeout in seconds (default 10).
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$timeout} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_ac359b701a2ccaff746dd480f03314244}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!setUsername@{setUsername}}
+\index{setUsername@{setUsername}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{setUsername()}{setUsername()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_ac359b701a2ccaff746dd480f03314244} 
+set\+Username (\begin{DoxyParamCaption}\item[{}]{\$username}{}\end{DoxyParamCaption})}
+
+Set the username to use when connecting (if needed).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\$this 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_af66bb92cf83d64065627eabe3da1aba9}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!transportStarted@{transportStarted}}
+\index{transportStarted@{transportStarted}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{transportStarted()}{transportStarted()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_af66bb92cf83d64065627eabe3da1aba9} 
+transport\+Started (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_af66bb92cf83d64065627eabe3da1aba9}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+\Hypertarget{class_swift___plugins___pop_before_smtp_plugin_aa7565e467fe2861c865675ea48b9d3e6}\index{Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}!transportStopped@{transportStopped}}
+\index{transportStopped@{transportStopped}!Swift\_Plugins\_PopBeforeSmtpPlugin@{Swift\_Plugins\_PopBeforeSmtpPlugin}}
+\doxysubsubsection{\texorpdfstring{transportStopped()}{transportStopped()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___pop_before_smtp_plugin_aa7565e467fe2861c865675ea48b9d3e6} 
+transport\+Stopped (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___transport_change_event}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___events___transport_change_listener_aa7565e467fe2861c865675ea48b9d3e6}{Swift\+\_\+\+Events\+\_\+\+Transport\+Change\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Pop\+Before\+Smtp\+Plugin.\+php\end{DoxyCompactItemize}

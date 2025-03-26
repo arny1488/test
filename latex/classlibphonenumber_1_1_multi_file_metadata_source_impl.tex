@@ -1,0 +1,122 @@
+\doxysection{Multi\+File\+Metadata\+Source\+Impl Class Reference}
+\hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl}{}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl}\index{MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}}
+Inheritance diagram for Multi\+File\+Metadata\+Source\+Impl\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classlibphonenumber_1_1_multi_file_metadata_source_impl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_ada5550209ffefc9e61f74b5a18a2c164}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}} \$metadata\+Loader, \$current\+File\+Prefix=null)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_aa2f2e2f3689d18f24f652bf54145ad7b}{get\+Metadata\+For\+Region}} (\$region\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_a799480660f16d774a1c7acff62f307f8}{get\+Metadata\+For\+Non\+Geographical\+Region}} (\$country\+Calling\+Code)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1_multi_file_metadata_source_impl_a04919111460b576052bdd2fc80c2741b}{load\+Metadata\+From\+File}} (\$file\+Prefix, \$region\+Code, \$country\+Calling\+Code, \mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}} \$metadata\+Loader)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_a2c7a8d6a03ae62da0eecfa9e0e983788}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl_a2c7a8d6a03ae62da0eecfa9e0e983788} 
+{\bfseries \$region\+To\+Metadata\+Map} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_aecaaf43faa9732b1654fb9efcb579c2a}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl_aecaaf43faa9732b1654fb9efcb579c2a} 
+{\bfseries \$country\+Code\+To\+Non\+Geographical\+Metadata\+Map} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_ae53dbf1795775510910ae9239d997187}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl_ae53dbf1795775510910ae9239d997187} 
+{\bfseries \$current\+File\+Prefix}
+\item 
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_a51eb8349dbed51eacfb0eab7a959bc9a}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl_a51eb8349dbed51eacfb0eab7a959bc9a} 
+{\bfseries \$metadata\+Loader}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_a9f01d0913c22e53cc116e6bf9ba6a0a6}\label{classlibphonenumber_1_1_multi_file_metadata_source_impl_a9f01d0913c22e53cc116e6bf9ba6a0a6} 
+static {\bfseries \$meta\+Data\+File\+Prefix} = Phone\+Number\+Util\+::\+META\+\_\+\+DATA\+\_\+\+FILE\+\_\+\+PREFIX
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_ada5550209ffefc9e61f74b5a18a2c164}\index{MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_multi_file_metadata_source_impl_ada5550209ffefc9e61f74b5a18a2c164} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}}}]{\$metadata\+Loader}{, }\item[{}]{\$current\+File\+Prefix}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+Metadata\+Loader\+Interface & {\em \$metadata\+Loader} & \\
+\hline
+string | null & {\em \$current\+File\+Prefix} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_a799480660f16d774a1c7acff62f307f8}\index{MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}!getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}}
+\index{getMetadataForNonGeographicalRegion@{getMetadataForNonGeographicalRegion}!MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}}
+\doxysubsubsection{\texorpdfstring{getMetadataForNonGeographicalRegion()}{getMetadataForNonGeographicalRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_multi_file_metadata_source_impl_a799480660f16d774a1c7acff62f307f8} 
+get\+Metadata\+For\+Non\+Geographical\+Region (\begin{DoxyParamCaption}\item[{}]{\$country\+Calling\+Code}{}\end{DoxyParamCaption})}
+
+Gets phone metadata for a non-\/geographical region. 
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$country\+Calling\+Code} & the country calling code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata} the phone metadata for that region, or null if there is none.
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface_a799480660f16d774a1c7acff62f307f8}{Metadata\+Source\+Interface}}.
+
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_aa2f2e2f3689d18f24f652bf54145ad7b}\index{MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}!getMetadataForRegion@{getMetadataForRegion}}
+\index{getMetadataForRegion@{getMetadataForRegion}!MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}}
+\doxysubsubsection{\texorpdfstring{getMetadataForRegion()}{getMetadataForRegion()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_multi_file_metadata_source_impl_aa2f2e2f3689d18f24f652bf54145ad7b} 
+get\+Metadata\+For\+Region (\begin{DoxyParamCaption}\item[{}]{\$region\+Code}{}\end{DoxyParamCaption})}
+
+Gets phone metadata for a region. 
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$region\+Code} & the region code. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classlibphonenumber_1_1_phone_metadata}{Phone\+Metadata} the phone metadata for that region, or null if there is none.
+\end{DoxyReturn}
+ 
+
+Implements \mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_source_interface_aa2f2e2f3689d18f24f652bf54145ad7b}{Metadata\+Source\+Interface}}.
+
+\Hypertarget{classlibphonenumber_1_1_multi_file_metadata_source_impl_a04919111460b576052bdd2fc80c2741b}\index{MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}!loadMetadataFromFile@{loadMetadataFromFile}}
+\index{loadMetadataFromFile@{loadMetadataFromFile}!MultiFileMetadataSourceImpl@{MultiFileMetadataSourceImpl}}
+\doxysubsubsection{\texorpdfstring{loadMetadataFromFile()}{loadMetadataFromFile()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_multi_file_metadata_source_impl_a04919111460b576052bdd2fc80c2741b} 
+load\+Metadata\+From\+File (\begin{DoxyParamCaption}\item[{}]{\$file\+Prefix}{, }\item[{}]{\$region\+Code}{, }\item[{}]{\$country\+Calling\+Code}{, }\item[{\mbox{\hyperlink{interfacelibphonenumber_1_1_metadata_loader_interface}{Metadata\+Loader\+Interface}}}]{\$metadata\+Loader}{}\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$file\+Prefix} & \\
+\hline
+string & {\em \$region\+Code} & \\
+\hline
+int & {\em \$country\+Calling\+Code} & \\
+\hline
+Metadata\+Loader\+Interface & {\em \$metadata\+Loader} & \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em } & \\
+\hline
+\end{DoxyExceptions}
+Runtime\+Exception 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Multi\+File\+Metadata\+Source\+Impl.\+php\end{DoxyCompactItemize}

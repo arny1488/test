@@ -1,0 +1,46 @@
+\doxysection{Phone\+Prefix\+Map Class Reference}
+\hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map}{}\label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map}\index{PhonePrefixMap@{PhonePrefixMap}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_ad841c31f76316ed60b2a31f782e04f7f}\label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_ad841c31f76316ed60b2a31f782e04f7f} 
+{\bfseries \+\_\+\+\_\+construct} (\$map)
+\item 
+\mbox{\hyperlink{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a91dc7e0d41afdaba9dc62c6c79e84858}{lookup}} (\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}} \$number)
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a8671c2f5ef34211b4f3dc58d58ad2e13}\label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a8671c2f5ef34211b4f3dc58d58ad2e13} 
+{\bfseries lookup\+Key} (\$key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a713cfc04fca655686040c27dd1d1ead9}\label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a713cfc04fca655686040c27dd1d1ead9} 
+{\bfseries \$phone\+Prefix\+Map\+Storage} = array()
+\item 
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a45b9547156b8e76a1df9ed371f1b6b86}\label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a45b9547156b8e76a1df9ed371f1b6b86} 
+{\bfseries \$phone\+Util}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a91dc7e0d41afdaba9dc62c6c79e84858}\index{PhonePrefixMap@{PhonePrefixMap}!lookup@{lookup}}
+\index{lookup@{lookup}!PhonePrefixMap@{PhonePrefixMap}}
+\doxysubsubsection{\texorpdfstring{lookup()}{lookup()}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1prefixmapper_1_1_phone_prefix_map_a91dc7e0d41afdaba9dc62c6c79e84858} 
+lookup (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classlibphonenumber_1_1_phone_number}{Phone\+Number}}}]{\$number}{}\end{DoxyParamCaption})}
+
+Returns the description of the {\ttfamily \$number}. This method distinguishes the case of an invalid prefix and a prefix for which the name is not available in the current language. If the description is not available in the current language an empty string is returned. If no description was found for the provided number, null is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+Phone\+Number & {\em \$number} & The phone number to look up \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}null the description of the number 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/prefixmapper/Phone\+Prefix\+Map.\+php\end{DoxyCompactItemize}

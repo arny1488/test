@@ -1,0 +1,73 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Cram\+Md5\+Authenticator Class Reference}
+\hypertarget{class_swift___transport___esmtp___auth___cram_md5_authenticator}{}\label{class_swift___transport___esmtp___auth___cram_md5_authenticator}\index{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator@{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Auth\+\_\+\+Cram\+Md5\+Authenticator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___transport___esmtp___auth___cram_md5_authenticator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___cram_md5_authenticator_a0e624347a41af5150f04849d5f97c806}{get\+Auth\+Keyword}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___esmtp___auth___cram_md5_authenticator_a31dbc6b53c7437e485b96e1337db5e61}{authenticate}} (\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}} \$agent, \$username, \$password)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles CRAM-\/\+MD5 authentication.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___esmtp___auth___cram_md5_authenticator_a31dbc6b53c7437e485b96e1337db5e61}\index{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator@{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator}!authenticate@{authenticate}}
+\index{authenticate@{authenticate}!Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator@{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator}}
+\doxysubsubsection{\texorpdfstring{authenticate()}{authenticate()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___cram_md5_authenticator_a31dbc6b53c7437e485b96e1337db5e61} 
+authenticate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___transport___smtp_agent}{Swift\+\_\+\+Transport\+\_\+\+Smtp\+Agent}}}]{\$agent}{, }\item[{}]{\$username}{, }\item[{}]{\$password}{}\end{DoxyParamCaption})}
+
+\{Try to authenticate the user with \$username and \$password.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$username} & \\
+\hline
+string & {\em \$password} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if authentication worked (returning false is deprecated, throw a \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception} instead)
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___transport_exception}{Swift\+\_\+\+Transport\+Exception}} & Allows the message to bubble up when authentication was not successful\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a31dbc6b53c7437e485b96e1337db5e61}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+\Hypertarget{class_swift___transport___esmtp___auth___cram_md5_authenticator_a0e624347a41af5150f04849d5f97c806}\index{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator@{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator}!getAuthKeyword@{getAuthKeyword}}
+\index{getAuthKeyword@{getAuthKeyword}!Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator@{Swift\_Transport\_Esmtp\_Auth\_CramMd5Authenticator}}
+\doxysubsubsection{\texorpdfstring{getAuthKeyword()}{getAuthKeyword()}}
+{\footnotesize\ttfamily \label{class_swift___transport___esmtp___auth___cram_md5_authenticator_a0e624347a41af5150f04849d5f97c806} 
+get\+Auth\+Keyword (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of the AUTH mechanism this Authenticator handles.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___esmtp___authenticator_a0e624347a41af5150f04849d5f97c806}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Authenticator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/\+Esmtp/\+Auth/Cram\+Md5\+Authenticator.\+php\end{DoxyCompactItemize}

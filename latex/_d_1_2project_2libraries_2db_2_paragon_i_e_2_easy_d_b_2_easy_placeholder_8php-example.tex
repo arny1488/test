@@ -1,0 +1,59 @@
+\doxysection{D\+:/project/libraries/db/\+Paragon\+IE/\+Easy\+DB/\+Easy\+Placeholder.\+php}
+\hypertarget{_d_1_2project_2libraries_2db_2_paragon_i_e_2_easy_d_b_2_easy_placeholder_8php-example}{}\label{_d_1_2project_2libraries_2db_2_paragon_i_e_2_easy_d_b_2_easy_placeholder_8php-example}
+\begin{DoxyCodeInclude}{0}
+\DoxyCodeLine{<?php}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{namespace\ }ParagonIE\(\backslash\)EasyDB;}
+\DoxyCodeLine{}
+\DoxyCodeLine{use\ ParagonIE\(\backslash\)EasyDB\(\backslash\)Exception\(\backslash\)MustBeNonEmpty;}
+\DoxyCodeLine{use\ ParagonIE\(\backslash\)EasyDB\(\backslash\)Exception\(\backslash\)EasyDBException;}
+\DoxyCodeLine{use\ \textcolor{keyword}{function}}
+\DoxyCodeLine{\ \ \ \ array\_merge,}
+\DoxyCodeLine{\ \ \ \ array\_reduce,}
+\DoxyCodeLine{\ \ \ \ is\_array,}
+\DoxyCodeLine{\ \ \ \ strpos,}
+\DoxyCodeLine{\ \ \ \ substr,}
+\DoxyCodeLine{\ \ \ \ str\_repeat;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{keyword}{class\ }\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder}{EasyPlaceholder}}}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ \textcolor{keywordtype}{string}\ \$mask;}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{protected}\ array\ \$values\ =\ [];}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder_ab38f24983258c3496ade309de075d57a}{\_\_construct}}(\textcolor{keywordtype}{string}\ \$mask,\ ...\$values)}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$values\ =\ array\_reduce(\$values,\ \textcolor{keyword}{function}\ (\$values,\ \$value)\ use\ (\&\$mask)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!is\_array(\$value))\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \$values\ []=\ \$value;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$values;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$start\_pos\ =\ strpos(\$mask,\ \textcolor{stringliteral}{'?*'});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\$start\_pos\ ===\ \textcolor{keyword}{false})\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ EasyDBException(\textcolor{stringliteral}{"{}Mask\ don't\ have\ \(\backslash\)"{}?*\(\backslash\)"{}"{}});}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (count(\$value)\ <\ 1)\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ \textcolor{keyword}{new}\ MustBeNonEmpty();}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \$mask\ =\ substr(\$mask,\ 0,\ \$start\_pos)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .\ \textcolor{stringliteral}{"{}?"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .\ str\_repeat(\textcolor{stringliteral}{',\ ?'},\ \(\backslash\)count(\$value)\ -\/\ 1)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ .\ substr(\$mask,\ \$start\_pos\ +\ 2);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ array\_merge(\$values,\ \$value);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \},\ []);}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder_a4eb4a5c3aa2185a1fc811c44c4b1cf85}{mask}}\ =\ \$mask;}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \$this-\/>\mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder_a64c4525e820a1aac3f58fa6f652280eb}{values}}\ =\ \$values;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder_a4eb4a5c3aa2185a1fc811c44c4b1cf85}{mask}}():\ string}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>mask;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{\ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{function}\ \mbox{\hyperlink{class_paragon_i_e_1_1_easy_d_b_1_1_easy_placeholder_a64c4525e820a1aac3f58fa6f652280eb}{values}}():\ array}
+\DoxyCodeLine{\ \ \ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \$this-\/>values;}
+\DoxyCodeLine{\ \ \ \ \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCodeInclude}
+ 

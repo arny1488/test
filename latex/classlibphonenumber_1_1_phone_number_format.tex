@@ -1,0 +1,27 @@
+\doxysection{Phone\+Number\+Format Class Reference}
+\hypertarget{classlibphonenumber_1_1_phone_number_format}{}\label{classlibphonenumber_1_1_phone_number_format}\index{PhoneNumberFormat@{PhoneNumberFormat}}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_format_a959f1f39224ae02ef99e0cc9fa813e8e}\label{classlibphonenumber_1_1_phone_number_format_a959f1f39224ae02ef99e0cc9fa813e8e} 
+const {\bfseries E164} = 0
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_format_a8c587a995505e62029a9d1ba5d570246}\label{classlibphonenumber_1_1_phone_number_format_a8c587a995505e62029a9d1ba5d570246} 
+const {\bfseries INTERNATIONAL} = 1
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_format_a15d788aa7927f72c6dc9d13b53d0edea}\label{classlibphonenumber_1_1_phone_number_format_a15d788aa7927f72c6dc9d13b53d0edea} 
+const {\bfseries NATIONAL} = 2
+\item 
+\Hypertarget{classlibphonenumber_1_1_phone_number_format_a37f75bd6d6455757948c6bca29a41345}\label{classlibphonenumber_1_1_phone_number_format_a37f75bd6d6455757948c6bca29a41345} 
+const {\bfseries RFC3966} = 3
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+INTERNATIONAL and NATIONAL formats are consistent with the definition in ITU-\/T Recommendation E123. For example, the number of the Google Switzerland office will be written as "{}+41 44 668 1800"{} in INTERNATIONAL format, and as "{}044 668 1800"{} in NATIONAL format. E164 format is as per INTERNATIONAL format but with no formatting applied, e.\+g. "{}+41446681800"{}. RFC3966 is as per INTERNATIONAL format, but with all spaces and other separating symbols replaced with a hyphen, and with any phone number extension appended with "{};ext="{}. It also will have a prefix of "{}tel\+:"{} added, e.\+g. "{}tel\+:+41-\/44-\/668-\/1800"{}.
+
+Note\+: If you are considering storing the number in a neutral format, you are highly advised to use the Phone\+Number class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Phone\+Number\+Format.\+php\end{DoxyCompactItemize}

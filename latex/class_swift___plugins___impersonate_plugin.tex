@@ -1,0 +1,69 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Impersonate\+Plugin Class Reference}
+\hypertarget{class_swift___plugins___impersonate_plugin}{}\label{class_swift___plugins___impersonate_plugin}\index{Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Impersonate\+Plugin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___plugins___impersonate_plugin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___impersonate_plugin_a1481a4fa782bcf54cfec328a297e22be}{\+\_\+\+\_\+construct}} (\$sender)
+\item 
+\mbox{\hyperlink{class_swift___plugins___impersonate_plugin_a941622ff727bb3121b075a67b09b4a5d}{before\+Send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\item 
+\mbox{\hyperlink{class_swift___plugins___impersonate_plugin_a7c3dcdd16f538ba21696e8b27702e19f}{send\+Performed}} (\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}} \$evt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Replaces the sender of a message.
+
+\begin{DoxyAuthor}{Author}
+Arjen Brouwer 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___plugins___impersonate_plugin_a1481a4fa782bcf54cfec328a297e22be}\index{Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___impersonate_plugin_a1481a4fa782bcf54cfec328a297e22be} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$sender}{}\end{DoxyParamCaption})}
+
+Create a new Impersonate\+Plugin to impersonate \$sender.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$sender} & address \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___impersonate_plugin_a941622ff727bb3121b075a67b09b4a5d}\index{Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}!beforeSendPerformed@{beforeSendPerformed}}
+\index{beforeSendPerformed@{beforeSendPerformed}!Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}}
+\doxysubsubsection{\texorpdfstring{beforeSendPerformed()}{beforeSendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___impersonate_plugin_a941622ff727bb3121b075a67b09b4a5d} 
+before\+Send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately before the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a941622ff727bb3121b075a67b09b4a5d}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+\Hypertarget{class_swift___plugins___impersonate_plugin_a7c3dcdd16f538ba21696e8b27702e19f}\index{Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}!sendPerformed@{sendPerformed}}
+\index{sendPerformed@{sendPerformed}!Swift\_Plugins\_ImpersonatePlugin@{Swift\_Plugins\_ImpersonatePlugin}}
+\doxysubsubsection{\texorpdfstring{sendPerformed()}{sendPerformed()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___impersonate_plugin_a7c3dcdd16f538ba21696e8b27702e19f} 
+send\+Performed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___events___send_event}{Swift\+\_\+\+Events\+\_\+\+Send\+Event}}}]{\$evt}{}\end{DoxyParamCaption})}
+
+Invoked immediately after the Message is sent. 
+
+Implements \mbox{\hyperlink{interface_swift___events___send_listener_a7c3dcdd16f538ba21696e8b27702e19f}{Swift\+\_\+\+Events\+\_\+\+Send\+Listener}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/Impersonate\+Plugin.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\doxysection{Swift\+\_\+\+Character\+Reader Interface Reference}
+\hypertarget{interface_swift___character_reader}{}\label{interface_swift___character_reader}\index{Swift\_CharacterReader@{Swift\_CharacterReader}}
+Inheritance diagram for Swift\+\_\+\+Character\+Reader\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.216069cm]{interface_swift___character_reader}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___character_reader_a612726d35648ebdc0f6c09b413cbcfdb}{get\+Char\+Positions}} (\$string, \$start\+Offset, \&\$current\+Map, \&\$ignored\+Chars)
+\item 
+\mbox{\hyperlink{interface_swift___character_reader_a296b09bb0f80e8aebba896a7f7943680}{get\+Map\+Type}} ()
+\item 
+\mbox{\hyperlink{interface_swift___character_reader_ac514583156b18bf93d10ff6e217b943a}{validate\+Byte\+Sequence}} (\$bytes, \$size)
+\item 
+\mbox{\hyperlink{interface_swift___character_reader_aea5f9c33d10e0017900d458115367c5f}{get\+Initial\+Byte\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{interface_swift___character_reader_afb0e00478f797f48b5df39218727b03e}\label{interface_swift___character_reader_afb0e00478f797f48b5df39218727b03e} 
+const {\bfseries MAP\+\_\+\+TYPE\+\_\+\+INVALID} = 0x01
+\item 
+\Hypertarget{interface_swift___character_reader_a312cebad32579842f4b528cec411d8cd}\label{interface_swift___character_reader_a312cebad32579842f4b528cec411d8cd} 
+const {\bfseries MAP\+\_\+\+TYPE\+\_\+\+FIXED\+\_\+\+LEN} = 0x02
+\item 
+\Hypertarget{interface_swift___character_reader_a84d0fb74e4fef2a153ed1e874ce40efc}\label{interface_swift___character_reader_a84d0fb74e4fef2a153ed1e874ce40efc} 
+const {\bfseries MAP\+\_\+\+TYPE\+\_\+\+POSITIONS} = 0x03
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Analyzes characters for a specific character set.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+
+Xavier De Cock \href{mailto:xdecock@gmail.com}{\texttt{ xdecock@gmail.\+com}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{interface_swift___character_reader_a612726d35648ebdc0f6c09b413cbcfdb}\index{Swift\_CharacterReader@{Swift\_CharacterReader}!getCharPositions@{getCharPositions}}
+\index{getCharPositions@{getCharPositions}!Swift\_CharacterReader@{Swift\_CharacterReader}}
+\doxysubsubsection{\texorpdfstring{getCharPositions()}{getCharPositions()}}
+{\footnotesize\ttfamily \label{interface_swift___character_reader_a612726d35648ebdc0f6c09b413cbcfdb} 
+get\+Char\+Positions (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$start\+Offset}{, }\item[{\&}]{\$current\+Map}{, }\item[{\&}]{\$ignored\+Chars}{}\end{DoxyParamCaption})}
+
+Returns the complete character map.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+int & {\em \$start\+Offset} & \\
+\hline
+array & {\em \$current\+Map} & \\
+\hline
+mixed & {\em \$ignored\+Chars} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_reader___generic_fixed_width_reader_a612726d35648ebdc0f6c09b413cbcfdb}{Swift\+\_\+\+Character\+Reader\+\_\+\+Generic\+Fixed\+Width\+Reader}}, \mbox{\hyperlink{class_swift___character_reader___us_ascii_reader_a612726d35648ebdc0f6c09b413cbcfdb}{Swift\+\_\+\+Character\+Reader\+\_\+\+Us\+Ascii\+Reader}}, and \mbox{\hyperlink{class_swift___character_reader___utf8_reader_a612726d35648ebdc0f6c09b413cbcfdb}{Swift\+\_\+\+Character\+Reader\+\_\+\+Utf8\+Reader}}.
+
+\Hypertarget{interface_swift___character_reader_aea5f9c33d10e0017900d458115367c5f}\index{Swift\_CharacterReader@{Swift\_CharacterReader}!getInitialByteSize@{getInitialByteSize}}
+\index{getInitialByteSize@{getInitialByteSize}!Swift\_CharacterReader@{Swift\_CharacterReader}}
+\doxysubsubsection{\texorpdfstring{getInitialByteSize()}{getInitialByteSize()}}
+{\footnotesize\ttfamily \label{interface_swift___character_reader_aea5f9c33d10e0017900d458115367c5f} 
+get\+Initial\+Byte\+Size (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the number of bytes which should be read to start each character.
+
+For fixed width character sets this should be the number of octets-\/per-\/character. For multibyte character sets this will probably be 1.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_reader___generic_fixed_width_reader_aea5f9c33d10e0017900d458115367c5f}{Swift\+\_\+\+Character\+Reader\+\_\+\+Generic\+Fixed\+Width\+Reader}}, \mbox{\hyperlink{class_swift___character_reader___us_ascii_reader_aea5f9c33d10e0017900d458115367c5f}{Swift\+\_\+\+Character\+Reader\+\_\+\+Us\+Ascii\+Reader}}, and \mbox{\hyperlink{class_swift___character_reader___utf8_reader_aea5f9c33d10e0017900d458115367c5f}{Swift\+\_\+\+Character\+Reader\+\_\+\+Utf8\+Reader}}.
+
+\Hypertarget{interface_swift___character_reader_a296b09bb0f80e8aebba896a7f7943680}\index{Swift\_CharacterReader@{Swift\_CharacterReader}!getMapType@{getMapType}}
+\index{getMapType@{getMapType}!Swift\_CharacterReader@{Swift\_CharacterReader}}
+\doxysubsubsection{\texorpdfstring{getMapType()}{getMapType()}}
+{\footnotesize\ttfamily \label{interface_swift___character_reader_a296b09bb0f80e8aebba896a7f7943680} 
+get\+Map\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns the map\+Type, see constants.
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_reader___generic_fixed_width_reader_a296b09bb0f80e8aebba896a7f7943680}{Swift\+\_\+\+Character\+Reader\+\_\+\+Generic\+Fixed\+Width\+Reader}}, \mbox{\hyperlink{class_swift___character_reader___us_ascii_reader_a296b09bb0f80e8aebba896a7f7943680}{Swift\+\_\+\+Character\+Reader\+\_\+\+Us\+Ascii\+Reader}}, and \mbox{\hyperlink{class_swift___character_reader___utf8_reader_a296b09bb0f80e8aebba896a7f7943680}{Swift\+\_\+\+Character\+Reader\+\_\+\+Utf8\+Reader}}.
+
+\Hypertarget{interface_swift___character_reader_ac514583156b18bf93d10ff6e217b943a}\index{Swift\_CharacterReader@{Swift\_CharacterReader}!validateByteSequence@{validateByteSequence}}
+\index{validateByteSequence@{validateByteSequence}!Swift\_CharacterReader@{Swift\_CharacterReader}}
+\doxysubsubsection{\texorpdfstring{validateByteSequence()}{validateByteSequence()}}
+{\footnotesize\ttfamily \label{interface_swift___character_reader_ac514583156b18bf93d10ff6e217b943a} 
+validate\+Byte\+Sequence (\begin{DoxyParamCaption}\item[{}]{\$bytes}{, }\item[{}]{\$size}{}\end{DoxyParamCaption})}
+
+Returns an integer which specifies how many more bytes to read.
+
+A positive integer indicates the number of more bytes to fetch before invoking this method again.
+
+A value of zero means this is already a valid character. A value of -\/1 means this cannot possibly be a valid character.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int\mbox{[}$\,$\mbox{]} & {\em \$bytes} & \\
+\hline
+int & {\em \$size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_swift___character_reader___generic_fixed_width_reader_ac514583156b18bf93d10ff6e217b943a}{Swift\+\_\+\+Character\+Reader\+\_\+\+Generic\+Fixed\+Width\+Reader}}, \mbox{\hyperlink{class_swift___character_reader___us_ascii_reader_ac514583156b18bf93d10ff6e217b943a}{Swift\+\_\+\+Character\+Reader\+\_\+\+Us\+Ascii\+Reader}}, and \mbox{\hyperlink{class_swift___character_reader___utf8_reader_ac514583156b18bf93d10ff6e217b943a}{Swift\+\_\+\+Character\+Reader\+\_\+\+Utf8\+Reader}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Character\+Reader.\+php\end{DoxyCompactItemize}

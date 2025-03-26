@@ -1,0 +1,103 @@
+\doxysection{UUID Class Reference}
+\hypertarget{class_u_u_i_d}{}\label{class_u_u_i_d}\index{UUID@{UUID}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_u_u_i_d_a9572e8d4c6b8cc1579f9d9127ca3c92a}{v1}} (string \$node)
+\item 
+static \mbox{\hyperlink{class_u_u_i_d_a91b214d29c4d43f8c1b8358d000e1603}{v3}} (string \$namespace, string \$name)
+\item 
+static \mbox{\hyperlink{class_u_u_i_d_a099249a05ec5607f8efbbf5475077f11}{v4}} ()
+\item 
+static \mbox{\hyperlink{class_u_u_i_d_a401bc359b72342e1071610509e2a1bc8}{v5}} (string \$namespace, string \$name)
+\item 
+\Hypertarget{class_u_u_i_d_a1ecf105a4fa32b7c1a27a21bae4daf7d}\label{class_u_u_i_d_a1ecf105a4fa32b7c1a27a21bae4daf7d} 
+static {\bfseries is\+\_\+valid} (string \$uuid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_u_u_i_d_a9572e8d4c6b8cc1579f9d9127ca3c92a}\index{UUID@{UUID}!v1@{v1}}
+\index{v1@{v1}!UUID@{UUID}}
+\doxysubsubsection{\texorpdfstring{v1()}{v1()}}
+{\footnotesize\ttfamily \label{class_u_u_i_d_a9572e8d4c6b8cc1579f9d9127ca3c92a} 
+static v1 (\begin{DoxyParamCaption}\item[{string}]{\$node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate v1 UUID
+
+Version 1 UUIDs are time-\/based based. It can take an optional node identifier based on mac address or a unique string id.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$node} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_u_u_i_d_a91b214d29c4d43f8c1b8358d000e1603}\index{UUID@{UUID}!v3@{v3}}
+\index{v3@{v3}!UUID@{UUID}}
+\doxysubsubsection{\texorpdfstring{v3()}{v3()}}
+{\footnotesize\ttfamily \label{class_u_u_i_d_a91b214d29c4d43f8c1b8358d000e1603} 
+static v3 (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{, }\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate v3 UUID
+
+Version 3 UUIDs are named based. They require a namespace (another valid UUID) and a value (the name). Given the same namespace and name, the output is always the same.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool\texorpdfstring{$\vert$}{|}string 
+\end{DoxyReturn}
+\Hypertarget{class_u_u_i_d_a099249a05ec5607f8efbbf5475077f11}\index{UUID@{UUID}!v4@{v4}}
+\index{v4@{v4}!UUID@{UUID}}
+\doxysubsubsection{\texorpdfstring{v4()}{v4()}}
+{\footnotesize\ttfamily \label{class_u_u_i_d_a099249a05ec5607f8efbbf5475077f11} 
+static v4 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate v4 UUID
+
+Version 4 UUIDs are pseudo-\/random. \begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{class_u_u_i_d_a401bc359b72342e1071610509e2a1bc8}\index{UUID@{UUID}!v5@{v5}}
+\index{v5@{v5}!UUID@{UUID}}
+\doxysubsubsection{\texorpdfstring{v5()}{v5()}}
+{\footnotesize\ttfamily \label{class_u_u_i_d_a401bc359b72342e1071610509e2a1bc8} 
+static v5 (\begin{DoxyParamCaption}\item[{string}]{\$namespace}{, }\item[{string}]{\$name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Generate v5 UUID
+
+Version 5 UUIDs are named based. They require a namespace (another valid UUID) and a value (the name). Given the same namespace and name, the output is always the same.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & \\
+\hline
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/UUID.\+php\end{DoxyCompactItemize}

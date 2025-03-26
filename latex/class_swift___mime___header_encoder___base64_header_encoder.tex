@@ -1,0 +1,77 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder\+\_\+\+Base64\+Header\+Encoder Class Reference}
+\hypertarget{class_swift___mime___header_encoder___base64_header_encoder}{}\label{class_swift___mime___header_encoder___base64_header_encoder}\index{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder@{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder\+\_\+\+Base64\+Header\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.500000cm]{class_swift___mime___header_encoder___base64_header_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___base64_header_encoder_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___header_encoder___base64_header_encoder_a116ecaa5077078413b77be213cfbf02e}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0, \$charset=\textquotesingle{}utf-\/8\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___encoder___base64_encoder}{Swift\+\_\+\+Encoder\+\_\+\+Base64\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___encoder___base64_encoder_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___encoder___base64_encoder_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles Base64 (B) Header Encoding in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___header_encoder___base64_header_encoder_a116ecaa5077078413b77be213cfbf02e}\index{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder@{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder@{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___base64_header_encoder_a116ecaa5077078413b77be213cfbf02e} 
+encode\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}, }\item[{}]{\$charset}{ = {\ttfamily \textquotesingle{}utf-\/8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+Takes an unencoded string and produces a Base64 encoded string from it.
+
+If the charset is iso-\/2022-\/jp, it uses mb\+\_\+encode\+\_\+mimeheader instead of default encode\+String, otherwise pass to the parent method.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & string to encode \\
+\hline
+int & {\em \$first\+Line\+Offset} & \\
+\hline
+int & {\em \$max\+Line\+Length} & optional, 0 indicates the default of 76 bytes \\
+\hline
+string & {\em \$charset} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___header_encoder___base64_header_encoder_a3d0963e68bb313b163a73f2803c64600}\index{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder@{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder}!getName@{getName}}
+\index{getName@{getName}!Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder@{Swift\_Mime\_HeaderEncoder\_Base64HeaderEncoder}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_swift___mime___header_encoder___base64_header_encoder_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of this encoding scheme. Returns the string \textquotesingle{}B\textquotesingle{}.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_encoder_a3d0963e68bb313b163a73f2803c64600}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Header\+Encoder/Base64\+Header\+Encoder.\+php\end{DoxyCompactItemize}

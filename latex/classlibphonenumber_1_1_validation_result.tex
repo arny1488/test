@@ -1,0 +1,64 @@
+\doxysection{Validation\+Result Class Reference}
+\hypertarget{classlibphonenumber_1_1_validation_result}{}\label{classlibphonenumber_1_1_validation_result}\index{ValidationResult@{ValidationResult}}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_a5feda55f855881e6298c126f6ba86f14}{IS\+\_\+\+POSSIBLE}} = 0
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_af95b895c0e832d1940fc4a3ac4083363}{INVALID\+\_\+\+COUNTRY\+\_\+\+CODE}} = 1
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_af38fe1d4c844dad4621730b3d83cbab8}{TOO\+\_\+\+SHORT}} = 2
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_a02ef79b57cdde01e759ce9bc9c98aa24}{TOO\+\_\+\+LONG}} = 3
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_a67878f2faeafc8902699884829f12fc5}{IS\+\_\+\+POSSIBLE\+\_\+\+LOCAL\+\_\+\+ONLY}} = 4
+\item 
+const \mbox{\hyperlink{classlibphonenumber_1_1_validation_result_a75c43e5ba43bae097f579791bc9dfd13}{INVALID\+\_\+\+LENGTH}} = 5
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Possible outcomes when testing if a Phone\+Number is possible. 
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classlibphonenumber_1_1_validation_result_af95b895c0e832d1940fc4a3ac4083363}\index{ValidationResult@{ValidationResult}!INVALID\_COUNTRY\_CODE@{INVALID\_COUNTRY\_CODE}}
+\index{INVALID\_COUNTRY\_CODE@{INVALID\_COUNTRY\_CODE}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{INVALID\_COUNTRY\_CODE}{INVALID\_COUNTRY\_CODE}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_af95b895c0e832d1940fc4a3ac4083363} 
+const INVALID\+\_\+\+COUNTRY\+\_\+\+CODE = 1}
+
+The number has an invalid country calling code. \Hypertarget{classlibphonenumber_1_1_validation_result_a75c43e5ba43bae097f579791bc9dfd13}\index{ValidationResult@{ValidationResult}!INVALID\_LENGTH@{INVALID\_LENGTH}}
+\index{INVALID\_LENGTH@{INVALID\_LENGTH}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{INVALID\_LENGTH}{INVALID\_LENGTH}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_a75c43e5ba43bae097f579791bc9dfd13} 
+const INVALID\+\_\+\+LENGTH = 5}
+
+The number is longer than the shortest valid numbers for this region, shorter than the longest valid numbers for this region, and does not itself have a number length that matches valid numbers for this region. This can also be returned in the case where is\+Possible\+Number\+For\+Type\+With\+Reason was called, and there are no numbers of this type at all for this region. \Hypertarget{classlibphonenumber_1_1_validation_result_a5feda55f855881e6298c126f6ba86f14}\index{ValidationResult@{ValidationResult}!IS\_POSSIBLE@{IS\_POSSIBLE}}
+\index{IS\_POSSIBLE@{IS\_POSSIBLE}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{IS\_POSSIBLE}{IS\_POSSIBLE}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_a5feda55f855881e6298c126f6ba86f14} 
+const IS\+\_\+\+POSSIBLE = 0}
+
+The number length matches that of valid numbers for this region \Hypertarget{classlibphonenumber_1_1_validation_result_a67878f2faeafc8902699884829f12fc5}\index{ValidationResult@{ValidationResult}!IS\_POSSIBLE\_LOCAL\_ONLY@{IS\_POSSIBLE\_LOCAL\_ONLY}}
+\index{IS\_POSSIBLE\_LOCAL\_ONLY@{IS\_POSSIBLE\_LOCAL\_ONLY}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{IS\_POSSIBLE\_LOCAL\_ONLY}{IS\_POSSIBLE\_LOCAL\_ONLY}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_a67878f2faeafc8902699884829f12fc5} 
+const IS\+\_\+\+POSSIBLE\+\_\+\+LOCAL\+\_\+\+ONLY = 4}
+
+The number length matches that of local numbers for this region only (i.\+e. numbers that may be able to be dialled within an area, but do not have all the information to be dialled from anywhere inside or outside the country). \Hypertarget{classlibphonenumber_1_1_validation_result_a02ef79b57cdde01e759ce9bc9c98aa24}\index{ValidationResult@{ValidationResult}!TOO\_LONG@{TOO\_LONG}}
+\index{TOO\_LONG@{TOO\_LONG}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{TOO\_LONG}{TOO\_LONG}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_a02ef79b57cdde01e759ce9bc9c98aa24} 
+const TOO\+\_\+\+LONG = 3}
+
+The number is longer than all valid numbers for this region. \Hypertarget{classlibphonenumber_1_1_validation_result_af38fe1d4c844dad4621730b3d83cbab8}\index{ValidationResult@{ValidationResult}!TOO\_SHORT@{TOO\_SHORT}}
+\index{TOO\_SHORT@{TOO\_SHORT}!ValidationResult@{ValidationResult}}
+\doxysubsubsection{\texorpdfstring{TOO\_SHORT}{TOO\_SHORT}}
+{\footnotesize\ttfamily \label{classlibphonenumber_1_1_validation_result_af38fe1d4c844dad4621730b3d83cbab8} 
+const TOO\+\_\+\+SHORT = 2}
+
+The number is shorter than all valid numbers for this region. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Phone\+Lib/libphonenumber/Validation\+Result.\+php\end{DoxyCompactItemize}

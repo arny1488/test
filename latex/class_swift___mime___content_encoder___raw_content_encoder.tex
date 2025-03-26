@@ -1,0 +1,105 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Raw\+Content\+Encoder Class Reference}
+\hypertarget{class_swift___mime___content_encoder___raw_content_encoder}{}\label{class_swift___mime___content_encoder___raw_content_encoder}\index{Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder\+\_\+\+Raw\+Content\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___mime___content_encoder___raw_content_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___raw_content_encoder_a4a83bd3d529ef683d32e98e490e61a65}{encode\+String}} (\$string, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___raw_content_encoder_a5e3f6fc7522a154d74c888bb1d265605}{encode\+Byte\+Stream}} (\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}} \$os, \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is, \$first\+Line\+Offset=0, \$max\+Line\+Length=0)
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___raw_content_encoder_a3d0963e68bb313b163a73f2803c64600}{get\+Name}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___content_encoder___raw_content_encoder_a642c64487e34084ca8fa4ea115ebdb5f}{charset\+Changed}} (\$charset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Handles raw Transfer Encoding in \doxylink{class_swift}{Swift} \doxylink{class_mailer}{Mailer}.
+
+When sending 8-\/bit content over SMTP, you should use \doxylink{class_swift___transport___esmtp___eight_bit_mime_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Eight\+Bit\+Mime\+Handler} to enable the 8BITMIME SMTP extension.
+
+\begin{DoxyAuthor}{Author}
+Sebastiaan Stok \href{mailto:s.stok@rollerscapes.net}{\texttt{ s.\+stok@rollerscapes.\+net}} 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___content_encoder___raw_content_encoder_a642c64487e34084ca8fa4ea115ebdb5f}\index{Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}!charsetChanged@{charsetChanged}}
+\index{charsetChanged@{charsetChanged}!Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}}
+\doxysubsubsection{\texorpdfstring{charsetChanged()}{charsetChanged()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___raw_content_encoder_a642c64487e34084ca8fa4ea115ebdb5f} 
+charset\+Changed (\begin{DoxyParamCaption}\item[{}]{\$charset}{}\end{DoxyParamCaption})}
+
+Not used. 
+
+Implements \mbox{\hyperlink{interface_swift___mime___charset_observer_a642c64487e34084ca8fa4ea115ebdb5f}{Swift\+\_\+\+Mime\+\_\+\+Charset\+Observer}}.
+
+\Hypertarget{class_swift___mime___content_encoder___raw_content_encoder_a5e3f6fc7522a154d74c888bb1d265605}\index{Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}!encodeByteStream@{encodeByteStream}}
+\index{encodeByteStream@{encodeByteStream}!Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeByteStream()}{encodeByteStream()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___raw_content_encoder_a5e3f6fc7522a154d74c888bb1d265605} 
+encode\+Byte\+Stream (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___output_byte_stream}{Swift\+\_\+\+Output\+Byte\+Stream}}}]{\$os}{, }\item[{\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}]{\$is}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Encode stream \$in to stream \$out.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$first\+Line\+Offset} & ignored \\
+\hline
+int & {\em \$max\+Line\+Length} & ignored \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a5e3f6fc7522a154d74c888bb1d265605}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+\Hypertarget{class_swift___mime___content_encoder___raw_content_encoder_a4a83bd3d529ef683d32e98e490e61a65}\index{Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___raw_content_encoder_a4a83bd3d529ef683d32e98e490e61a65} 
+encode\+String (\begin{DoxyParamCaption}\item[{}]{\$string}{, }\item[{}]{\$first\+Line\+Offset}{ = {\ttfamily 0}, }\item[{}]{\$max\+Line\+Length}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+Encode a given string to produce an encoded string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & \\
+\hline
+int & {\em \$first\+Line\+Offset} & ignored \\
+\hline
+int & {\em \$max\+Line\+Length} & ignored\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___encoder_a4a83bd3d529ef683d32e98e490e61a65}{Swift\+\_\+\+Encoder}}.
+
+\Hypertarget{class_swift___mime___content_encoder___raw_content_encoder_a3d0963e68bb313b163a73f2803c64600}\index{Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}!getName@{getName}}
+\index{getName@{getName}!Swift\_Mime\_ContentEncoder\_RawContentEncoder@{Swift\_Mime\_ContentEncoder\_RawContentEncoder}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_swift___mime___content_encoder___raw_content_encoder_a3d0963e68bb313b163a73f2803c64600} 
+get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the name of this encoding scheme.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___content_encoder_a3d0963e68bb313b163a73f2803c64600}{Swift\+\_\+\+Mime\+\_\+\+Content\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Content\+Encoder/Raw\+Content\+Encoder.\+php\end{DoxyCompactItemize}

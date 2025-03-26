@@ -1,0 +1,84 @@
+\doxysection{Login\+Model Class Reference}
+\hypertarget{class_login_model}{}\label{class_login_model}\index{LoginModel@{LoginModel}}
+Inheritance diagram for Login\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_login_model}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_model_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\mbox{\hyperlink{class_login_model_a439f9378778c6586f273b8cb565f5122}{prepare\+Pass\+Change}} (string \$email, string \$hash, string \$expired)
+\item 
+\mbox{\hyperlink{class_login_model_aca287e61af744bc05c8c341b1737d8c1}{do\+Pass\+Change}} (string \$email, string \$hash, string \$pass)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_model}{Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_module}{Module}} {\bfseries \$module}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_login_model_a095c5d389db211932136b53f25f39685}\index{LoginModel@{LoginModel}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_login_model_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor 
+
+Reimplemented from \mbox{\hyperlink{class_model_a095c5d389db211932136b53f25f39685}{Model}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_login_model_aca287e61af744bc05c8c341b1737d8c1}\index{LoginModel@{LoginModel}!doPassChange@{doPassChange}}
+\index{doPassChange@{doPassChange}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{doPassChange()}{doPassChange()}}
+{\footnotesize\ttfamily \label{class_login_model_aca287e61af744bc05c8c341b1737d8c1} 
+do\+Pass\+Change (\begin{DoxyParamCaption}\item[{string}]{\$email}{, }\item[{string}]{\$hash}{, }\item[{string}]{\$pass}{}\end{DoxyParamCaption})}
+
+Change user password
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & user email \\
+\hline
+string & {\em \$hash} & verification hash \\
+\hline
+string & {\em \$pass} & new password \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_login_model_a439f9378778c6586f273b8cb565f5122}\index{LoginModel@{LoginModel}!preparePassChange@{preparePassChange}}
+\index{preparePassChange@{preparePassChange}!LoginModel@{LoginModel}}
+\doxysubsubsection{\texorpdfstring{preparePassChange()}{preparePassChange()}}
+{\footnotesize\ttfamily \label{class_login_model_a439f9378778c6586f273b8cb565f5122} 
+prepare\+Pass\+Change (\begin{DoxyParamCaption}\item[{string}]{\$email}{, }\item[{string}]{\$hash}{, }\item[{string}]{\$expired}{}\end{DoxyParamCaption})}
+
+Save verification hash
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$email} & user email \\
+\hline
+string & {\em \$hash} & verification hash to change password \\
+\hline
+string & {\em \$expired} & hash valid until \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/modules/login/model/Model.\+php\end{DoxyCompactItemize}

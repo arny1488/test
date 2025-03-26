@@ -1,0 +1,170 @@
+\doxysection{Dir Class Reference}
+\hypertarget{class_dir}{}\label{class_dir}\index{Dir@{Dir}}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_dir_a137c32359007e9204367d7fe66ca0d59}{create}} (string \$dir, int \$chmod=0775)
+\item 
+static \mbox{\hyperlink{class_dir_ac2901917a109dc630f4ad0b08954a0a6}{exists}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_dir_ac035e02faf8111d3cc233d249f345a4e}{check\+Perm}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_dir_a70dfa804f8f13c2bb0b8d672ea44c14c}{delete\+\_\+contents}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_dir_a96473d86809e65b56c0e9de64f6d3d01}{delete}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_dir_a4a79525b1e7975f4edbf0a25c225369c}{scan}} (string \$dir)
+\item 
+static \mbox{\hyperlink{class_dir_a14436b5204e1ff9099fb2b7f5912c238}{writable}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_dir_aa7f124c7015072caa26e73f680dd54d6}{size}} (string \$path)
+\item 
+static \mbox{\hyperlink{class_dir_a4f83b4848e8817883a3bc967fe91058e}{copy}} (string \$src, string \$dst)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_dir_ac035e02faf8111d3cc233d249f345a4e}\index{Dir@{Dir}!checkPerm@{checkPerm}}
+\index{checkPerm@{checkPerm}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{checkPerm()}{checkPerm()}}
+{\footnotesize\ttfamily \label{class_dir_ac035e02faf8111d3cc233d249f345a4e} 
+static check\+Perm (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get access permissions
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dir_a4f83b4848e8817883a3bc967fe91058e}\index{Dir@{Dir}!copy@{copy}}
+\index{copy@{copy}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_dir_a4f83b4848e8817883a3bc967fe91058e} 
+static copy (\begin{DoxyParamCaption}\item[{string}]{\$src}{, }\item[{string}]{\$dst}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Copy (clone) directory
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$src} & source path \\
+\hline
+string & {\em \$dst} & destination path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dir_a137c32359007e9204367d7fe66ca0d59}\index{Dir@{Dir}!create@{create}}
+\index{create@{create}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{class_dir_a137c32359007e9204367d7fe66ca0d59} 
+static create (\begin{DoxyParamCaption}\item[{string}]{\$dir}{, }\item[{int}]{\$chmod}{ = {\ttfamily 0775}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create new directory if not exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+int & {\em \$chmod} & permissions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_dir_a96473d86809e65b56c0e9de64f6d3d01}\index{Dir@{Dir}!delete@{delete}}
+\index{delete@{delete}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{delete()}{delete()}}
+{\footnotesize\ttfamily \label{class_dir_a96473d86809e65b56c0e9de64f6d3d01} 
+static delete (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete directory and all contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dir_a70dfa804f8f13c2bb0b8d672ea44c14c}\index{Dir@{Dir}!delete\_contents@{delete\_contents}}
+\index{delete\_contents@{delete\_contents}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{delete\_contents()}{delete\_contents()}}
+{\footnotesize\ttfamily \label{class_dir_a70dfa804f8f13c2bb0b8d672ea44c14c} 
+static delete\+\_\+contents (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Delete directory contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_dir_ac2901917a109dc630f4ad0b08954a0a6}\index{Dir@{Dir}!exists@{exists}}
+\index{exists@{exists}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{exists()}{exists()}}
+{\footnotesize\ttfamily \label{class_dir_ac2901917a109dc630f4ad0b08954a0a6} 
+static exists (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if directory exists
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\Hypertarget{class_dir_a4a79525b1e7975f4edbf0a25c225369c}\index{Dir@{Dir}!scan@{scan}}
+\index{scan@{scan}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{scan()}{scan()}}
+{\footnotesize\ttfamily \label{class_dir_a4a79525b1e7975f4edbf0a25c225369c} 
+static scan (\begin{DoxyParamCaption}\item[{string}]{\$dir}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get directory contents
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$dir} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_dir_aa7f124c7015072caa26e73f680dd54d6}\index{Dir@{Dir}!size@{size}}
+\index{size@{size}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_dir_aa7f124c7015072caa26e73f680dd54d6} 
+static size (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get directory size
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\Hypertarget{class_dir_a14436b5204e1ff9099fb2b7f5912c238}\index{Dir@{Dir}!writable@{writable}}
+\index{writable@{writable}!Dir@{Dir}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily \label{class_dir_a14436b5204e1ff9099fb2b7f5912c238} 
+static writable (\begin{DoxyParamCaption}\item[{string}]{\$path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Check if directory writable
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & path \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+system/common/Dir.\+php\end{DoxyCompactItemize}

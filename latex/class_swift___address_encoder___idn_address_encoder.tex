@@ -1,0 +1,50 @@
+\doxysection{Swift\+\_\+\+Address\+Encoder\+\_\+\+Idn\+Address\+Encoder Class Reference}
+\hypertarget{class_swift___address_encoder___idn_address_encoder}{}\label{class_swift___address_encoder___idn_address_encoder}\index{Swift\_AddressEncoder\_IdnAddressEncoder@{Swift\_AddressEncoder\_IdnAddressEncoder}}
+Inheritance diagram for Swift\+\_\+\+Address\+Encoder\+\_\+\+Idn\+Address\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___address_encoder___idn_address_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___address_encoder___idn_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}{encode\+String}} (string \$address)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+An IDN email address encoder.
+
+Encodes the domain part of an address using IDN. This is compatible will all SMTP servers.
+
+This encoder does not support email addresses with non-\/\+ASCII characters in local-\/part (the substring before @). To send to such addresses, use \doxylink{class_swift___address_encoder___utf8_address_encoder}{Swift\+\_\+\+Address\+Encoder\+\_\+\+Utf8\+Address\+Encoder} together with \doxylink{class_swift___transport___esmtp___smtp_utf8_handler}{Swift\+\_\+\+Transport\+\_\+\+Esmtp\+\_\+\+Smtp\+Utf8\+Handler}. Your outbound SMTP server must support the SMTPUTF8 extension.
+
+\begin{DoxyAuthor}{Author}
+Christian Schmidt 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___address_encoder___idn_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}\index{Swift\_AddressEncoder\_IdnAddressEncoder@{Swift\_AddressEncoder\_IdnAddressEncoder}!encodeString@{encodeString}}
+\index{encodeString@{encodeString}!Swift\_AddressEncoder\_IdnAddressEncoder@{Swift\_AddressEncoder\_IdnAddressEncoder}}
+\doxysubsubsection{\texorpdfstring{encodeString()}{encodeString()}}
+{\footnotesize\ttfamily \label{class_swift___address_encoder___idn_address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76} 
+encode\+String (\begin{DoxyParamCaption}\item[{string}]{\$address}{}\end{DoxyParamCaption})}
+
+Encodes the domain part of an address using IDN.
+
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___address_encoder_exception}{Swift\+\_\+\+Address\+Encoder\+Exception}} & If local-\/part contains non-\/\+ASCII characters \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___address_encoder_a7e8ec62ec2a395e2ab1b743028d2ff76}{Swift\+\_\+\+Address\+Encoder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Address\+Encoder/Idn\+Address\+Encoder.\+php\end{DoxyCompactItemize}

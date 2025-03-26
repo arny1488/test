@@ -1,0 +1,96 @@
+\doxysection{Swift\+\_\+\+Configurable\+Spool Class Reference}
+\hypertarget{class_swift___configurable_spool}{}\label{class_swift___configurable_spool}\index{Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}}
+Inheritance diagram for Swift\+\_\+\+Configurable\+Spool\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_swift___configurable_spool}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a6be850b7a046ce05c660b5777ecf0554}{set\+Message\+Limit}} (\$limit)
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_add50114e4ca756621f23a6bd4ea6c266}{get\+Message\+Limit}} ()
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a8dbbc47aaf0c66af599fc079789c9e66}{set\+Time\+Limit}} (\$limit)
+\item 
+\mbox{\hyperlink{class_swift___configurable_spool_a8c331e9258bf91638eeb61401aee51b8}{get\+Time\+Limit}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___spool}{Swift\+\_\+\+Spool}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___spool_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{interface_swift___spool_abf760f9e54194d9cc7e2cd5c7cc6fe66}{queue\+Message}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message)
+\item 
+\mbox{\hyperlink{interface_swift___spool_a36cb9b4369999eb8a08b0ccff35a0591}{flush\+Queue}} (\mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}} \$transport, \&\$failed\+Recipients=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class for Spools (implements time and message limits).
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___configurable_spool_add50114e4ca756621f23a6bd4ea6c266}\index{Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}!getMessageLimit@{getMessageLimit}}
+\index{getMessageLimit@{getMessageLimit}!Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}}
+\doxysubsubsection{\texorpdfstring{getMessageLimit()}{getMessageLimit()}}
+{\footnotesize\ttfamily \label{class_swift___configurable_spool_add50114e4ca756621f23a6bd4ea6c266} 
+get\+Message\+Limit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the maximum number of messages to send per flush.
+
+\begin{DoxyReturn}{Returns}
+int The limit 
+\end{DoxyReturn}
+\Hypertarget{class_swift___configurable_spool_a8c331e9258bf91638eeb61401aee51b8}\index{Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}!getTimeLimit@{getTimeLimit}}
+\index{getTimeLimit@{getTimeLimit}!Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}}
+\doxysubsubsection{\texorpdfstring{getTimeLimit()}{getTimeLimit()}}
+{\footnotesize\ttfamily \label{class_swift___configurable_spool_a8c331e9258bf91638eeb61401aee51b8} 
+get\+Time\+Limit (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Gets the time limit (in seconds) per flush.
+
+\begin{DoxyReturn}{Returns}
+int The limit 
+\end{DoxyReturn}
+\Hypertarget{class_swift___configurable_spool_a6be850b7a046ce05c660b5777ecf0554}\index{Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}!setMessageLimit@{setMessageLimit}}
+\index{setMessageLimit@{setMessageLimit}!Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}}
+\doxysubsubsection{\texorpdfstring{setMessageLimit()}{setMessageLimit()}}
+{\footnotesize\ttfamily \label{class_swift___configurable_spool_a6be850b7a046ce05c660b5777ecf0554} 
+set\+Message\+Limit (\begin{DoxyParamCaption}\item[{}]{\$limit}{}\end{DoxyParamCaption})}
+
+Sets the maximum number of messages to send per flush.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___configurable_spool_a8dbbc47aaf0c66af599fc079789c9e66}\index{Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}!setTimeLimit@{setTimeLimit}}
+\index{setTimeLimit@{setTimeLimit}!Swift\_ConfigurableSpool@{Swift\_ConfigurableSpool}}
+\doxysubsubsection{\texorpdfstring{setTimeLimit()}{setTimeLimit()}}
+{\footnotesize\ttfamily \label{class_swift___configurable_spool_a8dbbc47aaf0c66af599fc079789c9e66} 
+set\+Time\+Limit (\begin{DoxyParamCaption}\item[{}]{\$limit}{}\end{DoxyParamCaption})}
+
+Sets the time limit (in seconds) per flush.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$limit} & The limit \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/Configurable\+Spool.\+php\end{DoxyCompactItemize}

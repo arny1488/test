@@ -1,0 +1,144 @@
+\doxysection{API Class Reference}
+\hypertarget{class_a_p_i}{}\label{class_a_p_i}\index{API@{API}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_a_p_i_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct}} ()
+\item 
+\Hypertarget{class_a_p_i_a4f0033c6861a7f8f3edac545c4c7e771}\label{class_a_p_i_a4f0033c6861a7f8f3edac545c4c7e771} 
+{\bfseries post\+\_\+create\+\_\+module} (string \$name)
+\item 
+\Hypertarget{class_a_p_i_a181f3170b5996f498691c6a0a228ccd4}\label{class_a_p_i_a181f3170b5996f498691c6a0a228ccd4} 
+{\bfseries get\+\_\+app\+\_\+version} ()
+\item 
+\Hypertarget{class_a_p_i_a491f95234a2e323b2206e11ddbc83324}\label{class_a_p_i_a491f95234a2e323b2206e11ddbc83324} 
+{\bfseries get\+\_\+wss\+\_\+credentials} ()
+\item 
+\Hypertarget{class_a_p_i_aad939c9562e9bbea9e83a54c51d77e85}\label{class_a_p_i_aad939c9562e9bbea9e83a54c51d77e85} 
+{\bfseries post\+\_\+tokens\+\_\+refresh} (string \$refresh\+\_\+token, ?string \$fcm\+\_\+token=\textquotesingle{}\textquotesingle{})
+\item 
+\Hypertarget{class_a_p_i_aeec00ce5eb7b426ceace20bd4aebe5f1}\label{class_a_p_i_aeec00ce5eb7b426ceace20bd4aebe5f1} 
+{\bfseries post\+\_\+reset\+\_\+request} (string \$country\+\_\+code, string \$phone, string \$email)
+\item 
+\Hypertarget{class_a_p_i_a95d38b674dcb382aeb678306f802f4fc}\label{class_a_p_i_a95d38b674dcb382aeb678306f802f4fc} 
+{\bfseries post\+\_\+reset\+\_\+finish} (string \$country\+\_\+code, string \$phone, string \$verification\+\_\+code, string \$password)
+\item 
+\Hypertarget{class_a_p_i_ad53f4130fda5355ef1e407d921642b94}\label{class_a_p_i_ad53f4130fda5355ef1e407d921642b94} 
+{\bfseries post\+\_\+check\+\_\+email} (string \$email, ?string \$user\+\_\+id=null)
+\item 
+\Hypertarget{class_a_p_i_a563d11d66aa3a813e5e46e9722a30f2b}\label{class_a_p_i_a563d11d66aa3a813e5e46e9722a30f2b} 
+{\bfseries post\+\_\+check\+\_\+phone} (string \$phone, string \$country\+\_\+code, ?string \$user\+\_\+id=null)
+\item 
+\Hypertarget{class_a_p_i_a0d29afb3b68026f1cbd02fb5eb024ad4}\label{class_a_p_i_a0d29afb3b68026f1cbd02fb5eb024ad4} 
+{\bfseries get\+\_\+suggestions\+\_\+address} (string \$query)
+\item 
+\Hypertarget{class_a_p_i_af4cab2ba9f5a81f2b42f66c8f9e6f840}\label{class_a_p_i_af4cab2ba9f5a81f2b42f66c8f9e6f840} 
+{\bfseries get\+\_\+suggestions\+\_\+party\+\_\+legal} (string \$query)
+\item 
+\Hypertarget{class_a_p_i_a61b92b457f90936418acb42ed7fffa97}\label{class_a_p_i_a61b92b457f90936418acb42ed7fffa97} 
+{\bfseries get\+\_\+suggestions\+\_\+party\+\_\+individual} (string \$query)
+\item 
+\Hypertarget{class_a_p_i_a1e3c843ded98d1aec72978482d7f68ef}\label{class_a_p_i_a1e3c843ded98d1aec72978482d7f68ef} 
+{\bfseries get\+\_\+suggestions\+\_\+bank} (string \$query)
+\item 
+\Hypertarget{class_a_p_i_aa25ad2eac87f69a8b18dc88cd60a64dd}\label{class_a_p_i_aa25ad2eac87f69a8b18dc88cd60a64dd} 
+{\bfseries put\+\_\+profile} (string \$firstname, string \$lastname, string \$patronymic, string \$country\+\_\+code, string \$phone, string \$email, ?string \$password=null, ?string \$photo=null)
+\item 
+\Hypertarget{class_a_p_i_aa51f0ab03deb01a771989cc2e2e1d8b6}\label{class_a_p_i_aa51f0ab03deb01a771989cc2e2e1d8b6} 
+{\bfseries get\+\_\+profile\+\_\+organizations} ()
+\item 
+\Hypertarget{class_a_p_i_a00310fffc01401c4ba2598109ae12327}\label{class_a_p_i_a00310fffc01401c4ba2598109ae12327} 
+{\bfseries get\+\_\+profile\+\_\+organization\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_a3211fc17698eea43a390f9798318d0f1}\label{class_a_p_i_a3211fc17698eea43a390f9798318d0f1} 
+{\bfseries post\+\_\+profile\+\_\+organization} (int \$type, string \$inn, ?string \$name=null, ?array \$documents=null, ?array \$details=null, ?array \$banks=null)
+\item 
+\Hypertarget{class_a_p_i_a544eca0a0d1bf72957dbb26e089ca68c}\label{class_a_p_i_a544eca0a0d1bf72957dbb26e089ca68c} 
+{\bfseries patch\+\_\+profile\+\_\+organization\+\_\+\+ARGid} (string \$id, int \$type, string \$inn, ?string \$name=null, ?array \$documents=null, ?array \$details=null, ?array \$banks=null)
+\item 
+\Hypertarget{class_a_p_i_a7321ced39c43e6d2d1e3142ba22c3cf2}\label{class_a_p_i_a7321ced39c43e6d2d1e3142ba22c3cf2} 
+{\bfseries delete\+\_\+profile\+\_\+organization\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_a4604839369177d852701a030a5b2f402}\label{class_a_p_i_a4604839369177d852701a030a5b2f402} 
+{\bfseries get\+\_\+profile\+\_\+brands} ()
+\item 
+\Hypertarget{class_a_p_i_afc9226b8cee1d462ff2b3f36f16ea32b}\label{class_a_p_i_afc9226b8cee1d462ff2b3f36f16ea32b} 
+{\bfseries get\+\_\+profile\+\_\+brand\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_a7d588ec33fad998bce771d3ffd362d2b}\label{class_a_p_i_a7d588ec33fad998bce771d3ffd362d2b} 
+{\bfseries post\+\_\+profile\+\_\+brand} (string \$organization\+\_\+id, string \$name, int \$country\+\_\+id, array \$notoriety\+\_\+ids, ?string \$logotype=null, ?string \$document=null, string \$description=null, ?bool \$licensor=false, ?bool \$licensee=false, ?bool \$fund=false, ?bool \$top=false,)
+\item 
+\Hypertarget{class_a_p_i_ac51da87db6f478fcf7ed59bb324c3a40}\label{class_a_p_i_ac51da87db6f478fcf7ed59bb324c3a40} 
+{\bfseries patch\+\_\+profile\+\_\+brand\+\_\+\+ARGid} (string \$id, string \$name=null, int \$country\+\_\+id=null, array \$notoriety\+\_\+ids=null, ?string \$organization\+\_\+id=null, ?string \$logotype=null, ?string \$document=null, ?string \$description=null,)
+\item 
+\Hypertarget{class_a_p_i_a692ecf39550141aee1c69fefb6605de7}\label{class_a_p_i_a692ecf39550141aee1c69fefb6605de7} 
+{\bfseries delete\+\_\+profile\+\_\+brand\+\_\+\+ARGid} (string \$id,)
+\item 
+\Hypertarget{class_a_p_i_a1621db03659d14221170d8b30b12d41a}\label{class_a_p_i_a1621db03659d14221170d8b30b12d41a} 
+{\bfseries get\+\_\+profile\+\_\+contents} ()
+\item 
+\Hypertarget{class_a_p_i_ac17a20873cf9c7764333b4911a0a755d}\label{class_a_p_i_ac17a20873cf9c7764333b4911a0a755d} 
+{\bfseries get\+\_\+profile\+\_\+content\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_ae859f8e44f6eaf8668a4e07fa829672b}\label{class_a_p_i_ae859f8e44f6eaf8668a4e07fa829672b} 
+{\bfseries post\+\_\+profile\+\_\+content} (string \$name, string \$brand\+\_\+id, array \$type\+\_\+ids, ?string \$description=null, ?string \$document=null,)
+\item 
+\Hypertarget{class_a_p_i_a99131fd2d904c58751a8158fb05c9cea}\label{class_a_p_i_a99131fd2d904c58751a8158fb05c9cea} 
+{\bfseries patch\+\_\+profile\+\_\+content\+\_\+\+ARGid} (string \$id, string \$name=null, string \$brand\+\_\+id=null, ?array \$type\+\_\+ids=null, ?string \$description=null, ?string \$document=null, ?array \$delete\+\_\+media=null,)
+\item 
+\Hypertarget{class_a_p_i_a9635291fb6c598ed17929606b93d1bd6}\label{class_a_p_i_a9635291fb6c598ed17929606b93d1bd6} 
+{\bfseries post\+\_\+profile\+\_\+content\+\_\+\+ARGid\+\_\+upload} (string \$id, ?string \$dzuuid=null, ?int \$dzchunkindex=null, ?string \$full\+\_\+path=null)
+\item 
+\Hypertarget{class_a_p_i_acc409e38a36fff432f8b2c7b8c1e8bd0}\label{class_a_p_i_acc409e38a36fff432f8b2c7b8c1e8bd0} 
+{\bfseries patch\+\_\+profile\+\_\+content\+\_\+\+ARGid\+\_\+upload} (string \$id, string \$dzuuid, int \$dztotalchunkcount, string \$full\+\_\+path)
+\item 
+\Hypertarget{class_a_p_i_a89b06f30d186c78d18dd4299721c248d}\label{class_a_p_i_a89b06f30d186c78d18dd4299721c248d} 
+{\bfseries delete\+\_\+profile\+\_\+content\+\_\+\+ARGid} (string \$id,)
+\item 
+\Hypertarget{class_a_p_i_a7b49c01445e31e106c5b2b8d0be83332}\label{class_a_p_i_a7b49c01445e31e106c5b2b8d0be83332} 
+{\bfseries get\+\_\+profile\+\_\+offers} ()
+\item 
+\Hypertarget{class_a_p_i_a2700eb64de2b4c15714be73f09bb8b63}\label{class_a_p_i_a2700eb64de2b4c15714be73f09bb8b63} 
+{\bfseries get\+\_\+profile\+\_\+offer\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_a62bdf517d412bd439ca7c41a8462d22b}\label{class_a_p_i_a62bdf517d412bd439ca7c41a8462d22b} 
+{\bfseries post\+\_\+profile\+\_\+offer} (string \$content\+\_\+id, string \$description, float \$price, int \$country\+\_\+id, ?int \$term\+\_\+min=null, ?int \$term\+\_\+max=null, bool \$termless=false, ?array \$allowed\+\_\+for\+\_\+ids=null, ?array \$application\+\_\+ids=null, ?array \$region\+\_\+ids=null, ?array \$placement\+\_\+ids=null, bool \$exclusive=false, bool \$fast\+\_\+deal=false, bool \$charity=false, ?string \$fund\+\_\+id=null, ?float \$charity\+\_\+percent=null, ?float \$charity\+\_\+sum=null,)
+\item 
+\Hypertarget{class_a_p_i_a8d96026099c4cf5fe08499a2dd250aae}\label{class_a_p_i_a8d96026099c4cf5fe08499a2dd250aae} 
+{\bfseries patch\+\_\+profile\+\_\+offer\+\_\+\+ARGid} (string \$id, ?string \$content\+\_\+id=null, ?string \$description=null, ?float \$price=null, ?int \$country\+\_\+id=null, ?int \$term\+\_\+min=null, ?int \$term\+\_\+max=null, ?bool \$termless=false, ?array \$allowed\+\_\+for\+\_\+ids=null, ?array \$application\+\_\+ids=null, ?array \$region\+\_\+ids=null, ?array \$placement\+\_\+ids=null, ?bool \$exclusive=false, ?bool \$fast\+\_\+deal=false, ?bool \$charity=false, ?string \$fund\+\_\+id=null, ?float \$charity\+\_\+percent=null, ?float \$charity\+\_\+sum=null,)
+\item 
+\Hypertarget{class_a_p_i_a88605381b46247a0cf6ae42b09985d42}\label{class_a_p_i_a88605381b46247a0cf6ae42b09985d42} 
+{\bfseries delete\+\_\+profile\+\_\+offer\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_acea7bd3b8402066389201ad76411e13d}\label{class_a_p_i_acea7bd3b8402066389201ad76411e13d} 
+{\bfseries get\+\_\+profile\+\_\+favorites} ()
+\item 
+\Hypertarget{class_a_p_i_a752d3287b5176a899e93903bdab4db93}\label{class_a_p_i_a752d3287b5176a899e93903bdab4db93} 
+{\bfseries post\+\_\+profile\+\_\+favorite} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_aba5b2be276d64ebdbad7ab84f7856da7}\label{class_a_p_i_aba5b2be276d64ebdbad7ab84f7856da7} 
+{\bfseries delete\+\_\+profile\+\_\+favorite\+\_\+\+ARGid} (string \$id)
+\item 
+\Hypertarget{class_a_p_i_ae6c6bc3d9bba3a91c216cc8ef8dec0a8}\label{class_a_p_i_ae6c6bc3d9bba3a91c216cc8ef8dec0a8} 
+{\bfseries get\+\_\+offers} (string \$sort=\textquotesingle{}o.\+created\textquotesingle{}, string \$order=\textquotesingle{}DESC\textquotesingle{}, int \$limit=null, int \$start=null, string \$search=null, ?array \$filters=null)
+\item 
+\Hypertarget{class_a_p_i_a9248086a1b46a91b428bc12cc4212f1d}\label{class_a_p_i_a9248086a1b46a91b428bc12cc4212f1d} 
+{\bfseries get\+\_\+categories} ()
+\item 
+\Hypertarget{class_a_p_i_a8b499c7a41d52176825c5ffe0c5dc68f}\label{class_a_p_i_a8b499c7a41d52176825c5ffe0c5dc68f} 
+{\bfseries get\+\_\+brands} (string \$sort=\textquotesingle{}name\textquotesingle{}, string \$order=\textquotesingle{}ASC\textquotesingle{}, int \$limit=null, int \$start=null, string \$search=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_a_p_i_a095c5d389db211932136b53f25f39685}\index{API@{API}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!API@{API}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_a_p_i_a095c5d389db211932136b53f25f39685} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Constructor Set auth token and user ID if available 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+app/api/API.\+php\end{DoxyCompactItemize}

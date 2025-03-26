@@ -1,0 +1,206 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport Class Reference}
+\hypertarget{class_swift___transport___load_balanced_transport}{}\label{class_swift___transport___load_balanced_transport}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Load\+Balanced\+Transport\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___transport___load_balanced_transport}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a3a792aa18c6c9cd906b7a214eaf0a7d5}{set\+Transports}} (array \$transports)
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_aad454089f500b9773ac793474a9c02ef}{get\+Transports}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a56f73f7c51fd721e43e9039e2e05bf48}{get\+Last\+Used\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a1ffe0e26cd53b764f58c5bbed489c278}{is\+Started}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_af8fa59992209e36dccb3eefb0f75531f}{start}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a8b6fc76a620d7557d06e9a11a9ffb509}{stop}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a6dad377f74b0ce6f21b485ba11052746}{ping}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{send}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \&\$failed\+Recipients=null)
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_ab89f0e56e80b5a21c0f09004a418ae92}{register\+Plugin}} (\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}} \$plugin)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_af64dc468c020e131bdd990b0a8632b95}{get\+Next\+Transport}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___load_balanced_transport_a8e1225c1640bbd6935f8676e218274d2}{kill\+Current\+Transport}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_swift___transport___load_balanced_transport_a4f7726e373afab863a827f4bfd56f4fa}\label{class_swift___transport___load_balanced_transport_a4f7726e373afab863a827f4bfd56f4fa} 
+{\bfseries \$transports} = \mbox{[}$\,$\mbox{]}
+\item 
+\Hypertarget{class_swift___transport___load_balanced_transport_ad4e80f6324767102c944b708f72d37c6}\label{class_swift___transport___load_balanced_transport_ad4e80f6324767102c944b708f72d37c6} 
+{\bfseries \$last\+Used\+Transport} = null
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Redundantly and rotationally uses several Transports when sending.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___load_balanced_transport_a56f73f7c51fd721e43e9039e2e05bf48}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!getLastUsedTransport@{getLastUsedTransport}}
+\index{getLastUsedTransport@{getLastUsedTransport}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{getLastUsedTransport()}{getLastUsedTransport()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a56f73f7c51fd721e43e9039e2e05bf48} 
+get\+Last\+Used\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the Transport used in the last successful send operation.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___load_balanced_transport_af64dc468c020e131bdd990b0a8632b95}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!getNextTransport@{getNextTransport}}
+\index{getNextTransport@{getNextTransport}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{getNextTransport()}{getNextTransport()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_af64dc468c020e131bdd990b0a8632b95} 
+get\+Next\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rotates the transport list around and returns the first instance.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport} 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___failover_transport_af64dc468c020e131bdd990b0a8632b95}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_aad454089f500b9773ac793474a9c02ef}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!getTransports@{getTransports}}
+\index{getTransports@{getTransports}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{getTransports()}{getTransports()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_aad454089f500b9773ac793474a9c02ef} 
+get\+Transports (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get \$transports to delegate to.
+
+\begin{DoxyReturn}{Returns}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport}\mbox{[}\mbox{]} 
+\end{DoxyReturn}
+\Hypertarget{class_swift___transport___load_balanced_transport_a1ffe0e26cd53b764f58c5bbed489c278}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!isStarted@{isStarted}}
+\index{isStarted@{isStarted}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{isStarted()}{isStarted()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a1ffe0e26cd53b764f58c5bbed489c278} 
+is\+Started (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Test if this Transport mechanism has started.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_a1ffe0e26cd53b764f58c5bbed489c278}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_a8e1225c1640bbd6935f8676e218274d2}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!killCurrentTransport@{killCurrentTransport}}
+\index{killCurrentTransport@{killCurrentTransport}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{killCurrentTransport()}{killCurrentTransport()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a8e1225c1640bbd6935f8676e218274d2} 
+kill\+Current\+Transport (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Tag the currently used (top of stack) transport as dead/useless. 
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___failover_transport_a8e1225c1640bbd6935f8676e218274d2}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_a6dad377f74b0ce6f21b485ba11052746}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!ping@{ping}}
+\index{ping@{ping}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{ping()}{ping()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a6dad377f74b0ce6f21b485ba11052746} 
+ping (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\{\} 
+
+Implements \mbox{\hyperlink{interface_swift___transport}{Swift\+\_\+\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___failover_transport_a6dad377f74b0ce6f21b485ba11052746}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_ab89f0e56e80b5a21c0f09004a418ae92}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!registerPlugin@{registerPlugin}}
+\index{registerPlugin@{registerPlugin}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{registerPlugin()}{registerPlugin()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_ab89f0e56e80b5a21c0f09004a418ae92} 
+register\+Plugin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___events___event_listener}{Swift\+\_\+\+Events\+\_\+\+Event\+Listener}}}]{\$plugin}{}\end{DoxyParamCaption})}
+
+Register a plugin. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_ab89f0e56e80b5a21c0f09004a418ae92}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!send@{send}}
+\index{send@{send}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_ac2f1a5be8ad5f7740c8f95503d48a26e} 
+send (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{\&}]{\$failed\+Recipients}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+Send the given Message.
+
+Recipient/sender data will be retrieved from the Message \doxylink{class_a_p_i}{API}. The return value is the number of recipients who were accepted for delivery.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$failed\+Recipients} & An array of failures by-\/reference\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___transport___failover_transport_ac2f1a5be8ad5f7740c8f95503d48a26e}{Swift\+\_\+\+Transport\+\_\+\+Failover\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_a3a792aa18c6c9cd906b7a214eaf0a7d5}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!setTransports@{setTransports}}
+\index{setTransports@{setTransports}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{setTransports()}{setTransports()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a3a792aa18c6c9cd906b7a214eaf0a7d5} 
+set\+Transports (\begin{DoxyParamCaption}\item[{array}]{\$transports}{}\end{DoxyParamCaption})}
+
+Set \$transports to delegate to.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\doxylink{interface_swift___transport}{Swift\+\_\+\+Transport}\mbox{[}$\,$\mbox{]} & {\em \$transports} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_swift___transport___load_balanced_transport_af8fa59992209e36dccb3eefb0f75531f}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!start@{start}}
+\index{start@{start}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_af8fa59992209e36dccb3eefb0f75531f} 
+start (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Start this Transport mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_af8fa59992209e36dccb3eefb0f75531f}{Swift\+\_\+\+Transport}}.
+
+\Hypertarget{class_swift___transport___load_balanced_transport_a8b6fc76a620d7557d06e9a11a9ffb509}\index{Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}!stop@{stop}}
+\index{stop@{stop}!Swift\_Transport\_LoadBalancedTransport@{Swift\_Transport\_LoadBalancedTransport}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{class_swift___transport___load_balanced_transport_a8b6fc76a620d7557d06e9a11a9ffb509} 
+stop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Stop this Transport mechanism. 
+
+Implements \mbox{\hyperlink{interface_swift___transport_a8b6fc76a620d7557d06e9a11a9ffb509}{Swift\+\_\+\+Transport}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Load\+Balanced\+Transport.\+php\end{DoxyCompactItemize}

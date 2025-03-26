@@ -1,0 +1,72 @@
+\doxysection{Swift\+\_\+\+Mailer\+\_\+\+Array\+Recipient\+Iterator Class Reference}
+\hypertarget{class_swift___mailer___array_recipient_iterator}{}\label{class_swift___mailer___array_recipient_iterator}\index{Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}}
+Inheritance diagram for Swift\+\_\+\+Mailer\+\_\+\+Array\+Recipient\+Iterator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___mailer___array_recipient_iterator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mailer___array_recipient_iterator_ae211588a90ae6c5445c725e2bddc094f}{\+\_\+\+\_\+construct}} (array \$recipients)
+\item 
+\mbox{\hyperlink{class_swift___mailer___array_recipient_iterator_ad5f632c692bfbffc53c8327bda99ab46}{has\+Next}} ()
+\item 
+\mbox{\hyperlink{class_swift___mailer___array_recipient_iterator_a3cd404ef116c6da796b78642c356e343}{next\+Recipient}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Wraps a standard PHP array in an iterator.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mailer___array_recipient_iterator_ae211588a90ae6c5445c725e2bddc094f}\index{Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mailer___array_recipient_iterator_ae211588a90ae6c5445c725e2bddc094f} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{array}]{\$recipients}{}\end{DoxyParamCaption})}
+
+Create a new Array\+Recipient\+Iterator from \$recipients. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mailer___array_recipient_iterator_ad5f632c692bfbffc53c8327bda99ab46}\index{Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily \label{class_swift___mailer___array_recipient_iterator_ad5f632c692bfbffc53c8327bda99ab46} 
+has\+Next (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns true only if there are more recipients to send to.
+
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mailer___recipient_iterator_ad5f632c692bfbffc53c8327bda99ab46}{Swift\+\_\+\+Mailer\+\_\+\+Recipient\+Iterator}}.
+
+\Hypertarget{class_swift___mailer___array_recipient_iterator_a3cd404ef116c6da796b78642c356e343}\index{Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}!nextRecipient@{nextRecipient}}
+\index{nextRecipient@{nextRecipient}!Swift\_Mailer\_ArrayRecipientIterator@{Swift\_Mailer\_ArrayRecipientIterator}}
+\doxysubsubsection{\texorpdfstring{nextRecipient()}{nextRecipient()}}
+{\footnotesize\ttfamily \label{class_swift___mailer___array_recipient_iterator_a3cd404ef116c6da796b78642c356e343} 
+next\+Recipient (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Returns an array where the keys are the addresses of recipients and the values are the names. e.\+g. (\textquotesingle{}foo@bar\textquotesingle{} =\texorpdfstring{$>$}{>} \textquotesingle{}Foo\textquotesingle{}) or (\textquotesingle{}foo@bar\textquotesingle{} =\texorpdfstring{$>$}{>} NULL).
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mailer___recipient_iterator_a3cd404ef116c6da796b78642c356e343}{Swift\+\_\+\+Mailer\+\_\+\+Recipient\+Iterator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mailer/Array\+Recipient\+Iterator.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,243 @@
+\doxysection{Swift\+\_\+\+Transport\+\_\+\+Stream\+Buffer Class Reference}
+\hypertarget{class_swift___transport___stream_buffer}{}\label{class_swift___transport___stream_buffer}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+Inheritance diagram for Swift\+\_\+\+Transport\+\_\+\+Stream\+Buffer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.443299cm]{class_swift___transport___stream_buffer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_a5d35fdfa0875ab5845c8804f3ae3fdea}{\+\_\+\+\_\+construct}} (\mbox{\hyperlink{interface_swift___replacement_filter_factory}{Swift\+\_\+\+Replacement\+Filter\+Factory}} \$replacement\+Factory)
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_ada6f73e99259423863fe312baa4dad10}{initialize}} (array \$params)
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_acea5a6751051a653870cb7812bdc530f}{set\+Param}} (\$param, \$value)
+\item 
+\Hypertarget{class_swift___transport___stream_buffer_a58d9443a0a1690565edae142b85e0e26}\label{class_swift___transport___stream_buffer_a58d9443a0a1690565edae142b85e0e26} 
+{\bfseries start\+TLS} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_aae6d2f0ed43d77087c71ffd4919dcf5d}{terminate}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_ad1f7a87e66f8234cf634552bb01907d2}{set\+Write\+Translations}} (array \$replacements)
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_ae92d38f95f81310fe14c861bf752c22f}{read\+Line}} (\$sequence)
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_a2acacba716a933935d63b2bacf52cff6}{read}} (\$length)
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_a76c011fc05dcd32af1a5fb09038d4b61}{set\+Read\+Pointer}} (\$byte\+Offset)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream}{Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a864cadedb7d676a2375441b61cdb709c}{add\+Filter}} (\mbox{\hyperlink{interface_swift___stream_filter}{Swift\+\_\+\+Stream\+Filter}} \$filter, \$key)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a25ba5ccefd796cbb91dd27c26e4a9eea}{remove\+Filter}} (\$key)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_aa4ea8baf64d864129d4276f76df3b4a0}{write}} (\$bytes)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_af5674c27d4a92f6228565010eacbb9cb}{commit}} ()
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a02ffafc53dcce641baaff3b9c84643a1}{bind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_acad3cfddf5b36bb4b9d3cee2d38482b1}{unbind}} (\mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}} \$is)
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a77ecc2d8c17e5057cc82509a2dca076e}{flush\+Buffers}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{interface_swift___input_byte_stream}{Swift\+\_\+\+Input\+Byte\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a6bc548ebcba2e4cc04550cadebd2f973}{bind}} (self \$is)
+\item 
+\mbox{\hyperlink{interface_swift___input_byte_stream_a731f39e6f118eaef16571d36cc7a80a7}{unbind}} (self \$is)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_a7751f77b5263bcf940ece6e824a05b38}{flush}} ()
+\item 
+\mbox{\hyperlink{class_swift___transport___stream_buffer_af67098fd2bab289a20a49eddcd521fa6}{do\+Commit}} (\$bytes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_swift___transport___io_buffer}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_swift___transport___io_buffer_acac981720dab42ad1fc14ec7c5ef285a}{TYPE\+\_\+\+SOCKET}} = 0x0001
+\item 
+const \mbox{\hyperlink{interface_swift___transport___io_buffer_aba5f25d0187e9dfadc519648909ef0d4}{TYPE\+\_\+\+PROCESS}} = 0x0010
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream}{Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a5d0d9dd56c2dfd61e7fedb04ca7c3cec}{\$sequence}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A generic Io\+Buffer implementation supporting remote sockets and local processes.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___transport___stream_buffer_a5d35fdfa0875ab5845c8804f3ae3fdea}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_a5d35fdfa0875ab5845c8804f3ae3fdea} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_swift___replacement_filter_factory}{Swift\+\_\+\+Replacement\+Filter\+Factory}}}]{\$replacement\+Factory}{}\end{DoxyParamCaption})}
+
+Create a new Stream\+Buffer using \$replacement\+Factory for transformations. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___transport___stream_buffer_af67098fd2bab289a20a49eddcd521fa6}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!doCommit@{doCommit}}
+\index{doCommit@{doCommit}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{doCommit()}{doCommit()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_af67098fd2bab289a20a49eddcd521fa6} 
+do\+Commit (\begin{DoxyParamCaption}\item[{}]{\$bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Write this bytes to the stream 
+
+Reimplemented from \mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_af67098fd2bab289a20a49eddcd521fa6}{Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_a7751f77b5263bcf940ece6e824a05b38}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!flush@{flush}}
+\index{flush@{flush}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_a7751f77b5263bcf940ece6e824a05b38} 
+flush (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Flush the stream contents 
+
+Reimplemented from \mbox{\hyperlink{class_swift___byte_stream___abstract_filterable_input_stream_a7751f77b5263bcf940ece6e824a05b38}{Swift\+\_\+\+Byte\+Stream\+\_\+\+Abstract\+Filterable\+Input\+Stream}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_ada6f73e99259423863fe312baa4dad10}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!initialize@{initialize}}
+\index{initialize@{initialize}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{initialize()}{initialize()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_ada6f73e99259423863fe312baa4dad10} 
+initialize (\begin{DoxyParamCaption}\item[{array}]{\$params}{}\end{DoxyParamCaption})}
+
+Perform any initialization needed, using the given \$params.
+
+Parameters will vary depending upon the type of Io\+Buffer used. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___io_buffer_ada6f73e99259423863fe312baa4dad10}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_a2acacba716a933935d63b2bacf52cff6}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!read@{read}}
+\index{read@{read}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_a2acacba716a933935d63b2bacf52cff6} 
+read (\begin{DoxyParamCaption}\item[{}]{\$length}{}\end{DoxyParamCaption})}
+
+Reads \$length bytes from the stream into a string and moves the pointer through the stream by \$length.
+
+If less bytes exist than are requested the remaining bytes are given instead. If no bytes are remaining at all, boolean false is returned.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$length} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string\texorpdfstring{$\vert$}{|}bool
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___output_byte_stream_a2acacba716a933935d63b2bacf52cff6}{Swift\+\_\+\+Output\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_ae92d38f95f81310fe14c861bf752c22f}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!readLine@{readLine}}
+\index{readLine@{readLine}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_ae92d38f95f81310fe14c861bf752c22f} 
+read\+Line (\begin{DoxyParamCaption}\item[{}]{\$sequence}{}\end{DoxyParamCaption})}
+
+Get a line of output (including any CRLF).
+
+The \$sequence number comes from any writes and may or may not be used depending upon the implementation.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$sequence} & of last write to scan from\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_swift___io_exception}{Swift\+\_\+\+Io\+Exception}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___io_buffer_ae92d38f95f81310fe14c861bf752c22f}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_acea5a6751051a653870cb7812bdc530f}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!setParam@{setParam}}
+\index{setParam@{setParam}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{setParam()}{setParam()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_acea5a6751051a653870cb7812bdc530f} 
+set\+Param (\begin{DoxyParamCaption}\item[{}]{\$param}{, }\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set an individual param on the buffer (e.\+g. switching to SSL).
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$param} & \\
+\hline
+mixed & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___io_buffer_acea5a6751051a653870cb7812bdc530f}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_a76c011fc05dcd32af1a5fb09038d4b61}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!setReadPointer@{setReadPointer}}
+\index{setReadPointer@{setReadPointer}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{setReadPointer()}{setReadPointer()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_a76c011fc05dcd32af1a5fb09038d4b61} 
+set\+Read\+Pointer (\begin{DoxyParamCaption}\item[{}]{\$byte\+Offset}{}\end{DoxyParamCaption})}
+
+Not implemented 
+
+Implements \mbox{\hyperlink{interface_swift___output_byte_stream_a76c011fc05dcd32af1a5fb09038d4b61}{Swift\+\_\+\+Output\+Byte\+Stream}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_ad1f7a87e66f8234cf634552bb01907d2}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!setWriteTranslations@{setWriteTranslations}}
+\index{setWriteTranslations@{setWriteTranslations}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{setWriteTranslations()}{setWriteTranslations()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_ad1f7a87e66f8234cf634552bb01907d2} 
+set\+Write\+Translations (\begin{DoxyParamCaption}\item[{array}]{\$replacements}{}\end{DoxyParamCaption})}
+
+Set an array of string replacements which should be made on data written to the buffer.
+
+This could replace LF with CRLF for example.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string\mbox{[}$\,$\mbox{]} & {\em \$replacements} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___transport___io_buffer_ad1f7a87e66f8234cf634552bb01907d2}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}.
+
+\Hypertarget{class_swift___transport___stream_buffer_aae6d2f0ed43d77087c71ffd4919dcf5d}\index{Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}!terminate@{terminate}}
+\index{terminate@{terminate}!Swift\_Transport\_StreamBuffer@{Swift\_Transport\_StreamBuffer}}
+\doxysubsubsection{\texorpdfstring{terminate()}{terminate()}}
+{\footnotesize\ttfamily \label{class_swift___transport___stream_buffer_aae6d2f0ed43d77087c71ffd4919dcf5d} 
+terminate (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Perform any shutdown logic needed. 
+
+Implements \mbox{\hyperlink{interface_swift___transport___io_buffer_aae6d2f0ed43d77087c71ffd4919dcf5d}{Swift\+\_\+\+Transport\+\_\+\+Io\+Buffer}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Transport/Stream\+Buffer.\+php\end{DoxyCompactItemize}

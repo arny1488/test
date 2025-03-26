@@ -1,0 +1,231 @@
+\doxysection{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Unstructured\+Header Class Reference}
+\hypertarget{class_swift___mime___headers___unstructured_header}{}\label{class_swift___mime___headers___unstructured_header}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+Inheritance diagram for Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Unstructured\+Header\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_swift___mime___headers___unstructured_header}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_af0a57b4cdd2c69b342b6962698883ae3}{\+\_\+\+\_\+construct}} (\$name, \mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}} \$encoder)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_a6ed487d8c36b3e3557c0ef5a98873812}{get\+Field\+Type}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_a391b3026e0bc58b8b0af2aba14e376fa}{set\+Field\+Body\+Model}} (\$model)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_ae5b54fae109f26198bf019669aa8cca5}{get\+Field\+Body\+Model}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_ac0bc18784b182c89fcfd276625aef435}{get\+Value}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_a7494441b6ed08a391704971873f31432}{set\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___unstructured_header_aeaf4dd1ca9d6da05204c2e3d8d6df171}{get\+Field\+Body}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_swift___mime___headers___abstract_header}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Abstract\+Header}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a81ee11b0f5fadecaece55170fea54b29}{set\+Charset}} (\$charset)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_abca2d528da8311b6fcfe040768cbaa24}{get\+Charset}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_ab611393ebe9bdfa9ea57e683909d3c76}{set\+Language}} (\$lang)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_afcef2403c4111bc44ef0530f1e493909}{get\+Language}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_afa341bcff48b182c25afb81fd35ea6d5}{set\+Encoder}} (\mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}} \$encoder)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_ab2cafaf839a93565624201a958265ec4}{get\+Encoder}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a2d91ba7a665f48e0fb0f4ebf3f567417}{get\+Field\+Name}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a6805abd3bd21873fde3298aee0d9cb36}{set\+Max\+Line\+Length}} (\$line\+Length)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_ac9be5b30d39eed72d13b10fecfcc8561}{get\+Max\+Line\+Length}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a5558c5d549f41597377fa1ea8a1cefa3}{to\+String}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a7516ca30af0db3cdbf9a7739b48ce91d}{\+\_\+\+\_\+to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{class_swift___mime___headers___abstract_header}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Abstract\+Header}}}
+\begin{DoxyCompactItemize}
+\item 
+const {\bfseries PHRASE\+\_\+\+PATTERN} = \textquotesingle{}(?\+:(?\+:(?\+:(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\ast$}{*}(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})))?\mbox{[}a-\/zA-\/Z0-\/9!\#\textbackslash{}\$\%\&\textbackslash{}\textquotesingle{}\textbackslash{}\texorpdfstring{$\ast$}{*}\textbackslash{}+\textbackslash{}-\/\textbackslash{}/=\textbackslash{}?\textbackslash{}\texorpdfstring{$^\wedge$}{\string^}\+\_\+\`{}\textbackslash{}\{\textbackslash{}\}\textbackslash{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}\mbox{]}+(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\ast$}{*}(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})))?)\texorpdfstring{$\vert$}{|}(?\+:(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\ast$}{*}(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})))?"{}((?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21\textbackslash{}x23-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?"{}(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\ast$}{*}(?\+:(?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?(\textbackslash{}((?\+:(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[}\textbackslash{}x01-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x19\textbackslash{}x7F\mbox{]}\texorpdfstring{$\vert$}{|}\mbox{[}\textbackslash{}x21-\/\textbackslash{}x27\textbackslash{}x2A-\/\textbackslash{}x5\+B\textbackslash{}x5D-\/\textbackslash{}x7E\mbox{]})\texorpdfstring{$\vert$}{|}(?\+:\textbackslash{}\textbackslash{}\mbox{[}\textbackslash{}x00-\/\textbackslash{}x08\textbackslash{}x0\+B\textbackslash{}x0\+C\textbackslash{}x0E-\/\textbackslash{}x7F\mbox{]})\texorpdfstring{$\vert$}{|}(?1)))\texorpdfstring{$\ast$}{*}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})?\textbackslash{})))\texorpdfstring{$\vert$}{|}(?\+:(?\+:\mbox{[} \textbackslash{}t\mbox{]}\texorpdfstring{$\ast$}{*}(?\+:\textbackslash{}r\textbackslash{}n))?\mbox{[} \textbackslash{}t\mbox{]})))?))+?)\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_ae1fdaa7ba3f181a024bf1a6506dd169c}{TYPE\+\_\+\+TEXT}} = 2
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_a101d03a86ffe7074848595203341f9ca}{TYPE\+\_\+\+PARAMETERIZED}} = 6
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_a47cd4f6adb3252bcb6a1c75b61a10e3c}{TYPE\+\_\+\+MAILBOX}} = 8
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_a26606719a7a6353088b949b38c866c88}{TYPE\+\_\+\+DATE}} = 16
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_a17a150b866ebd9e6da1605bcf6a65ace}{TYPE\+\_\+\+ID}} = 32
+\item 
+const \mbox{\hyperlink{interface_swift___mime___header_ac6059f1891f70905157a341b95d9db75}{TYPE\+\_\+\+PATH}} = 64
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_swift___mime___headers___abstract_header}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Abstract\+Header}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_aa23f9d1abb351bf768f125cd4d9cdaf5}{set\+Field\+Name}} (\$name)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_ab9293f1e14fa32775d768aa76ebc8e44}{create\+Phrase}} (\mbox{\hyperlink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header}} \$header, \$string, \$charset, \mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}} \$encoder=null, \$shorten=false)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_aaf0ccc1f5ee954765eb0c644ef016e8e}{encode\+Words}} (\mbox{\hyperlink{interface_swift___mime___header}{Swift\+\_\+\+Mime\+\_\+\+Header}} \$header, \$input, \$used\+Length=-\/1)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a51dac5a1616dfa5c4ad1baa4ee5aa0f4}{token\+Needs\+Encoding}} (\$token)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_aa1f79a3d1f48b921661285a816b4440a}{get\+Encodable\+Word\+Tokens}} (\$string)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a07d3819800839e44d447714aa0e42629}{get\+Token\+As\+Encoded\+Word}} (\$token, \$first\+Line\+Offset=0)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a22e3fadc4c23332e008281952a99f40d}{generate\+Token\+Lines}} (\$token)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_aeabd8f637d7c72036eddc83fae0cfde1}{set\+Cached\+Value}} (\$value)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a91fd4466571928a22473b4e3f394fdf1}{get\+Cached\+Value}} ()
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a82291fb7b7c47341444070173b1d95d3}{clear\+Cached\+Value\+If}} (\$condition)
+\item 
+\mbox{\hyperlink{class_swift___mime___headers___abstract_header_a840f1fb0ca33bf81e8d1496337bbbd64}{to\+Tokens}} (\$string=null)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A Simple MIME Header.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_swift___mime___headers___unstructured_header_af0a57b4cdd2c69b342b6962698883ae3}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!\_\_construct@{\_\_construct}}
+\index{\_\_construct@{\_\_construct}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{\_\_construct()}{\_\_construct()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_af0a57b4cdd2c69b342b6962698883ae3} 
+\+\_\+\+\_\+construct (\begin{DoxyParamCaption}\item[{}]{\$name}{, }\item[{\mbox{\hyperlink{interface_swift___mime___header_encoder}{Swift\+\_\+\+Mime\+\_\+\+Header\+Encoder}}}]{\$encoder}{}\end{DoxyParamCaption})}
+
+Creates a new Simple\+Header with \$name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___mime___headers___unstructured_header_aeaf4dd1ca9d6da05204c2e3d8d6df171}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!getFieldBody@{getFieldBody}}
+\index{getFieldBody@{getFieldBody}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{getFieldBody()}{getFieldBody()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_aeaf4dd1ca9d6da05204c2e3d8d6df171} 
+get\+Field\+Body (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the value of this header prepared for rendering.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_aeaf4dd1ca9d6da05204c2e3d8d6df171}{Swift\+\_\+\+Mime\+\_\+\+Header}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___mime___headers___parameterized_header_aeaf4dd1ca9d6da05204c2e3d8d6df171}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Parameterized\+Header}}.
+
+\Hypertarget{class_swift___mime___headers___unstructured_header_ae5b54fae109f26198bf019669aa8cca5}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!getFieldBodyModel@{getFieldBodyModel}}
+\index{getFieldBodyModel@{getFieldBodyModel}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{getFieldBodyModel()}{getFieldBodyModel()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_ae5b54fae109f26198bf019669aa8cca5} 
+get\+Field\+Body\+Model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the model for the field body.
+
+This method returns a string.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_ae5b54fae109f26198bf019669aa8cca5}{Swift\+\_\+\+Mime\+\_\+\+Header}}.
+
+\Hypertarget{class_swift___mime___headers___unstructured_header_a6ed487d8c36b3e3557c0ef5a98873812}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!getFieldType@{getFieldType}}
+\index{getFieldType@{getFieldType}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{getFieldType()}{getFieldType()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_a6ed487d8c36b3e3557c0ef5a98873812} 
+get\+Field\+Type (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the type of Header that this instance represents.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{interface_swift___mime___header_ae1fdaa7ba3f181a024bf1a6506dd169c}{TYPE\+\_\+\+TEXT}, \doxylink{interface_swift___mime___header_a101d03a86ffe7074848595203341f9ca}{TYPE\+\_\+\+PARAMETERIZED}, \doxylink{interface_swift___mime___header_a47cd4f6adb3252bcb6a1c75b61a10e3c}{TYPE\+\_\+\+MAILBOX} 
+
+\doxylink{interface_swift___mime___header_a26606719a7a6353088b949b38c866c88}{TYPE\+\_\+\+DATE}, \doxylink{interface_swift___mime___header_a17a150b866ebd9e6da1605bcf6a65ace}{TYPE\+\_\+\+ID}, \doxylink{interface_swift___mime___header_ac6059f1891f70905157a341b95d9db75}{TYPE\+\_\+\+PATH}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_a6ed487d8c36b3e3557c0ef5a98873812}{Swift\+\_\+\+Mime\+\_\+\+Header}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_swift___mime___headers___parameterized_header_a6ed487d8c36b3e3557c0ef5a98873812}{Swift\+\_\+\+Mime\+\_\+\+Headers\+\_\+\+Parameterized\+Header}}.
+
+\Hypertarget{class_swift___mime___headers___unstructured_header_ac0bc18784b182c89fcfd276625aef435}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!getValue@{getValue}}
+\index{getValue@{getValue}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_ac0bc18784b182c89fcfd276625aef435} 
+get\+Value (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get the (unencoded) value of this header.
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\Hypertarget{class_swift___mime___headers___unstructured_header_a391b3026e0bc58b8b0af2aba14e376fa}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!setFieldBodyModel@{setFieldBodyModel}}
+\index{setFieldBodyModel@{setFieldBodyModel}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{setFieldBodyModel()}{setFieldBodyModel()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_a391b3026e0bc58b8b0af2aba14e376fa} 
+set\+Field\+Body\+Model (\begin{DoxyParamCaption}\item[{}]{\$model}{}\end{DoxyParamCaption})}
+
+Set the model for the field body.
+
+This method takes a string for the field value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$model} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___mime___header_a391b3026e0bc58b8b0af2aba14e376fa}{Swift\+\_\+\+Mime\+\_\+\+Header}}.
+
+\Hypertarget{class_swift___mime___headers___unstructured_header_a7494441b6ed08a391704971873f31432}\index{Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}!setValue@{setValue}}
+\index{setValue@{setValue}!Swift\_Mime\_Headers\_UnstructuredHeader@{Swift\_Mime\_Headers\_UnstructuredHeader}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily \label{class_swift___mime___headers___unstructured_header_a7494441b6ed08a391704971873f31432} 
+set\+Value (\begin{DoxyParamCaption}\item[{}]{\$value}{}\end{DoxyParamCaption})}
+
+Set the (unencoded) value of this header.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Mime/\+Headers/Unstructured\+Header.\+php\end{DoxyCompactItemize}

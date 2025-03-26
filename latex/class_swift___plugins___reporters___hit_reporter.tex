@@ -1,0 +1,77 @@
+\doxysection{Swift\+\_\+\+Plugins\+\_\+\+Reporters\+\_\+\+Hit\+Reporter Class Reference}
+\hypertarget{class_swift___plugins___reporters___hit_reporter}{}\label{class_swift___plugins___reporters___hit_reporter}\index{Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}}
+Inheritance diagram for Swift\+\_\+\+Plugins\+\_\+\+Reporters\+\_\+\+Hit\+Reporter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_swift___plugins___reporters___hit_reporter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_swift___plugins___reporters___hit_reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}{notify}} (\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}} \$message, \$address, \$result)
+\item 
+\mbox{\hyperlink{class_swift___plugins___reporters___hit_reporter_a59d320364fe0e262eeb1d8627a6c4061}{get\+Failed\+Recipients}} ()
+\item 
+\mbox{\hyperlink{class_swift___plugins___reporters___hit_reporter_aa821bec12eaa7e0f649397c9675ff505}{clear}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Data Fields inherited from \mbox{\hyperlink{interface_swift___plugins___reporter}{Swift\+\_\+\+Plugins\+\_\+\+Reporter}}}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{interface_swift___plugins___reporter_ab0e1dd6cf1e4b014b303f1603cc69dcb}{RESULT\+\_\+\+PASS}} = 0x01
+\item 
+const \mbox{\hyperlink{interface_swift___plugins___reporter_aa1f47070c7e684df0bec906be17b02c3}{RESULT\+\_\+\+FAIL}} = 0x10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A reporter which "{}collects"{} failures for the Reporter plugin.
+
+\begin{DoxyAuthor}{Author}
+Chris Corbyn 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_swift___plugins___reporters___hit_reporter_aa821bec12eaa7e0f649397c9675ff505}\index{Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}!clear@{clear}}
+\index{clear@{clear}!Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___reporters___hit_reporter_aa821bec12eaa7e0f649397c9675ff505} 
+clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Clear the buffer (empty the list). \Hypertarget{class_swift___plugins___reporters___hit_reporter_a59d320364fe0e262eeb1d8627a6c4061}\index{Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}!getFailedRecipients@{getFailedRecipients}}
+\index{getFailedRecipients@{getFailedRecipients}!Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}}
+\doxysubsubsection{\texorpdfstring{getFailedRecipients()}{getFailedRecipients()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___reporters___hit_reporter_a59d320364fe0e262eeb1d8627a6c4061} 
+get\+Failed\+Recipients (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+Get an array of addresses for which delivery failed.
+
+\begin{DoxyReturn}{Returns}
+array 
+\end{DoxyReturn}
+\Hypertarget{class_swift___plugins___reporters___hit_reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}\index{Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}!notify@{notify}}
+\index{notify@{notify}!Swift\_Plugins\_Reporters\_HitReporter@{Swift\_Plugins\_Reporters\_HitReporter}}
+\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
+{\footnotesize\ttfamily \label{class_swift___plugins___reporters___hit_reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d} 
+notify (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_swift___mime___simple_message}{Swift\+\_\+\+Mime\+\_\+\+Simple\+Message}}}]{\$message}{, }\item[{}]{\$address}{, }\item[{}]{\$result}{}\end{DoxyParamCaption})}
+
+Notifies this Report\+Notifier that \$address failed or succeeded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$address} & \\
+\hline
+int & {\em \$result} & from {\ttfamily \doxylink{}{RESULT\+\_\+\+FAIL}} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{interface_swift___plugins___reporter_a5ef211bfaba33d2415a6d2f2e0df2c0d}{Swift\+\_\+\+Plugins\+\_\+\+Reporter}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+libraries/\+Swift\+Mailer/classes/\+Swift/\+Plugins/\+Reporters/Hit\+Reporter.\+php\end{DoxyCompactItemize}
